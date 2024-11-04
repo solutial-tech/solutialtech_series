@@ -1,0 +1,1231 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\fme-form_202401-b24202\fme.exe" D:\gitHub\quick-tips-fme\2-spikes\3-workspace\qa_spikes_outliers_complete.fmw
+#          --SourceDataset_IGDS "D:\gitHub\quick-tips-fme\2-spikes\1-dataset\bathymetry.dgn"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY="Solutial_Tech"
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Exemplo de remoção de Spikes &amp;amp; Outliers de dados geográficos com FME&lt;/span&gt;&lt;/p&gt;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="6028.73 1130.64"
+#!   DOC_TOP_LEFT="-4959.42 381.254"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24202"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="10906293-0884-4f2b-ae83-a8b65dc322a8"
+#!   FME_DOCUMENT_PRIORGUID="3ad9bd71-d213-4c27-ab95-380c41d14c09,9112e377-759e-41f4-9d5a-dbdc2d0edf31,ce19f7be-1118-42ac-a3b1-3b4b68c97301,14ce81c8-9ce4-4c1e-8021-adf7495d9aa3,a89c749c-5f39-4bce-9238-d8a25b3fa9b2,e9db7e5b-802f-4f1c-aaa4-ab49f237b4f5,2b603e2f-c1ab-4e7c-bb40-c6448ef7801e"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY="22&lt;solidus&gt;10&lt;solidus&gt;2024,Thiago&lt;space&gt;Brigag&lt;u00e3&gt;o,Cria&lt;u00e7&gt;&lt;u00e3&gt;o&lt;space&gt;de&lt;space&gt;Workspace&lt;space&gt;Template"
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.1.0 (20240328 - Build 24202 - WIN64)"
+#!   LAST_SAVE_DATE="2024-11-04T07:37:32"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="311"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="Validação e Qualidade de Dados com FME&#10;"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-2701.57 1687.06"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="138"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="IGDS"
+#!   DATASET="$(SourceDataset_IGDS)"
+#!   KEYWORD="IGDS_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE="igds_level  igds_level_comment  igds_level_color 0 igds_level_style 0 igds_level_weight 0 igds_level_display yes igds_level_freeze no igds_level_lock no igds_level_override_color 0 igds_use_level_override_color No igds_level_override_style 0 igds_use_level_override_style No igds_level_override_weight 0 igds_use_level_override_weight No"
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="comp_count integer comp_num integer entity_num_0 integer entity_num_1 integer entity_num_2 integer feat_num integer fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) igds_align integer igds_arc_orientation char(40) igds_arrow_height double igds_arrow_width double igds_base_line_cos_value double igds_base_line_sin_value double igds_base_to_text_dist double igds_basename char(50) igds_box_around_text integer igds_cell_element_class integer igds_cell_element_color integer igds_cell_element_color.blue integer igds_cell_element_color.green integer igds_cell_element_color.red integer igds_cell_element_level integer igds_cell_element_level_name char(80) igds_cell_element_style integer igds_cell_element_weight integer igds_cell_insertion_x double igds_cell_insertion_y double igds_cell_insertion_z double igds_cell_name char(10) igds_cell_num_members integer igds_cell_sequence_number integer igds_cell_size_x double igds_cell_size_y double igds_cell_x_scale double igds_cell_y_scale double igds_cell_z_scale double igds_center_mark_size double igds_chain_number integer igds_class integer igds_color integer igds_color.blue integer igds_color.green integer igds_color.red integer igds_color_set_bylevel char(5) igds_cone3d_flags integer igds_custom_linestyle string igds_custom_linestyle_center_shift char(5) igds_custom_linestyle_class integer igds_custom_linestyle_distance_shift double igds_custom_linestyle_end_width double igds_custom_linestyle_flags integer igds_custom_linestyle_fraction_shift double igds_custom_linestyle_ibit integer igds_custom_linestyle_mbit integer igds_custom_linestyle_rbit integer igds_custom_linestyle_rotation double igds_custom_linestyle_scale double igds_custom_linestyle_start_width double igds_date_last_modified char(20) igds_deleted char(4) igds_dim_color integer igds_dim_freezegroup integer igds_dim_primary_accuracy integer igds_dim_refx{}.base_offset double igds_dim_refx{}.base_offset_y double igds_dim_refx{}.flags integer igds_dim_refx{}.primary_text_string string igds_dim_refx{}.pt.x double igds_dim_refx{}.pt.y double igds_dim_refx{}.pt.z double igds_dim_refx{}.rxflags.associative integer igds_dim_refx{}.rxflags.justification integer igds_dim_refx{}.rxflags.lowerText integer igds_dim_refx{}.rxflags.relative integer igds_dim_refx{}.rxflags.upperText integer igds_dim_refx{}.segment_text_offset integer igds_dim_scale double igds_dim_secondary_accuracy integer igds_dim_stack_offset double igds_dim_style integer igds_dim_text_height double igds_dim_text_width double igds_dim_textstyle_id integer igds_dim_text{}.font integer igds_dim_text{}.original_justification integer igds_dim_text{}.text_insertion_x double igds_dim_text{}.text_insertion_y double igds_dim_text{}.text_rotation double igds_dim_text{}.text_size double igds_dim_text{}.text_string char(80) igds_dim_text{}.text_used_string_len integer igds_dim_text{}.text_width_multiplier double igds_dim_type integer igds_dim_version integer igds_dim_weight integer igds_dimstyle_center_bottom integer igds_dimstyle_center_left integer igds_dimstyle_center_mark integer igds_dimstyle_center_right integer igds_dimstyle_center_top integer igds_dimstyle_first_term integer igds_dimstyle_left_term integer igds_dimstyle_left_witness integer igds_dimstyle_nofit_vertical integer igds_dimstyle_postfix_symbol integer igds_dimstyle_prefix_symbol integer igds_dimstyle_right_term integer igds_dimstyle_right_witness integer igds_dimstyle_vertical_text integer igds_dual_format integer igds_element_association_id integer igds_element_byteoffset integer igds_element_id integer igds_element_locked char(5) igds_element_modified char(4) igds_element_new char(4) igds_element_priority integer igds_element_type integer igds_element_view_independent char(4) igds_element_visibility char(5) igds_endcap_angle double igds_endcap_color integer igds_endcap_style integer igds_endcap_weight integer igds_fill_angle1 double igds_fill_angle2 double igds_fill_color integer igds_fill_color.blue integer igds_fill_color.green integer igds_fill_color.red integer igds_fill_hole_style_id integer igds_fill_island_style_id integer igds_fill_offset_x double igds_fill_offset_y double igds_fill_offset_z double igds_fill_pattern_color integer igds_fill_pattern_color.blue integer igds_fill_pattern_color.green integer igds_fill_pattern_color.red integer igds_fill_pattern_type char(16) igds_fill_pixel_size double igds_fill_rotation double igds_fill_scale double igds_fill_snappable integer igds_fill_spacing1 double igds_fill_spacing2 double igds_fill_style_id integer igds_fill_tolerance double igds_fill_weight integer igds_font integer igds_graphic_group integer igds_insertion_x double igds_insertion_y double igds_insertion_z double igds_item_names{} char(50) igds_joint_color integer igds_joint_style integer igds_joint_weight integer igds_justification integer igds_leader_to_text_dist double igds_level integer igds_level_active string igds_level_comment char(80) igds_level_freeze char(5) igds_level_group_id char(80) igds_level_lock char(5) igds_level_name char(80) igds_linkage{}.blob string igds_linkage{}.blobsize integer igds_linkage{}.class integer igds_linkage{}.component_count integer igds_linkage{}.component_num integer igds_linkage{}.display_attribute integer igds_linkage{}.entity_number integer igds_linkage{}.feature_num integer igds_linkage{}.firstword integer igds_linkage{}.flags integer igds_linkage{}.ibit integer igds_linkage{}.key integer igds_linkage{}.key2 integer igds_linkage{}.long{} integer igds_linkage{}.ltype integer igds_linkage{}.mbit integer igds_linkage{}.rbit integer igds_linkage{}.readonly char(4) igds_linkage{}.rule_base_id integer igds_linkage{}.state_num integer igds_linkage{}.string string igds_linkage{}.string_id integer igds_linkage{}.suspectlinkage char(40) igds_linkage{}.trailing_flags integer igds_linkage{}.type char(40) igds_linkage{}.ubit integer igds_linkage{}.ufid integer igds_linkage{}.userId integer igds_linkage{}.word{} integer igds_linkage{}.xfm_data_prefix char(8) igds_linkage{}.xfm_parent_uuid char(36) igds_linkage{}.xfm_root_uuid char(36) igds_linkage{}.xfm_uuid char(36) igds_linkage{}.xml_data string igds_linkage{}.xml_data_prefix char(64) igds_lower_x double igds_lower_y double igds_measure_angle integer igds_mlattrib_endcap.cap_color_from_segment integer igds_mlattrib_endcap.cap_line integer igds_mlattrib_endcap.cap_on_arc integer igds_mlattrib_endcap.cap_out_arc integer igds_mlattrib_endcap.color integer igds_mlattrib_endcap.construction_class integer igds_mlattrib_endcap.customstyle integer igds_mlattrib_endcap.level integer igds_mlattrib_endcap.style integer igds_mlattrib_endcap.use_class integer igds_mlattrib_endcap.usecolor integer igds_mlattrib_endcap.usestyle integer igds_mlattrib_endcap.useweight integer igds_mlattrib_endcap.weight integer igds_mlattrib_joint.cap_color_from_segment integer igds_mlattrib_joint.cap_line integer igds_mlattrib_joint.cap_on_arc integer igds_mlattrib_joint.cap_out_arc integer igds_mlattrib_joint.color integer igds_mlattrib_joint.construction_class integer igds_mlattrib_joint.customstyle integer igds_mlattrib_joint.level integer igds_mlattrib_joint.style integer igds_mlattrib_joint.use_class integer igds_mlattrib_joint.usecolor integer igds_mlattrib_joint.usestyle integer igds_mlattrib_joint.useweight integer igds_mlattrib_joint.weight integer igds_mlattrib_startcap.cap_color_from_segment integer igds_mlattrib_startcap.cap_line integer igds_mlattrib_startcap.cap_on_arc integer igds_mlattrib_startcap.cap_out_arc integer igds_mlattrib_startcap.color integer igds_mlattrib_startcap.construction_class integer igds_mlattrib_startcap.customstyle integer igds_mlattrib_startcap.level integer igds_mlattrib_startcap.style integer igds_mlattrib_startcap.use_class integer igds_mlattrib_startcap.usecolor integer igds_mlattrib_startcap.usestyle integer igds_mlattrib_startcap.useweight integer igds_mlattrib_startcap.weight integer igds_mlineStyle{}.lineattrib.cap_color_from_segment integer igds_mlineStyle{}.lineattrib.cap_line integer igds_mlineStyle{}.lineattrib.cap_on_arc integer igds_mlineStyle{}.lineattrib.cap_out_arc integer igds_mlineStyle{}.lineattrib.color integer igds_mlineStyle{}.lineattrib.construction_class integer igds_mlineStyle{}.lineattrib.customstyle integer igds_mlineStyle{}.lineattrib.level integer igds_mlineStyle{}.lineattrib.style integer igds_mlineStyle{}.lineattrib.use_class integer igds_mlineStyle{}.lineattrib.usecolor integer igds_mlineStyle{}.lineattrib.usestyle integer igds_mlineStyle{}.lineattrib.useweight integer igds_mlineStyle{}.lineattrib.weight integer igds_mlineStyle{}.offset double igds_mlinebreak{}.angle double igds_mlinebreak{}.from_joint integer igds_mlinebreak{}.length double igds_mlinebreak{}.point_offset double igds_mlinebreak{}.segmask integer igds_mlinebreak{}.to_joint integer igds_mlinehdr_arc_cap_by_profile_line integer igds_mlinehdr_closed integer igds_mlinehdr_endcap_angle double igds_mlinehdr_freeze_group integer igds_mlinehdr_num_breaks integer igds_mlinehdr_num_lines integer igds_mlinehdr_num_nodes integer igds_mlinehdr_offset_mode integer igds_mlinehdr_offset_model_valid integer igds_mlinehdr_placement_offset integer igds_mlinehdr_startcap_angle double igds_mlinehdr_styleScale double igds_mlinehdr_style_id integer igds_mlinehdr_updv.x double igds_mlinehdr_updv.y double igds_mlinehdr_updv.z double igds_mlinehdr_version integer igds_mlinenode_props string igds_model_id integer igds_model_name string igds_model_type string igds_multiline_closed char(5) igds_multiline{}.color integer igds_multiline{}.offset double igds_multiline{}.style integer igds_multiline{}.weight integer igds_node_number integer igds_num_breaks integer igds_num_lines integer igds_num_ref_points integer igds_options_count integer igds_originalType integer igds_original_justification integer igds_oval_around_text integer igds_primary_axis double igds_quat.w double igds_quat.x double igds_quat.y double igds_quat.z double igds_rotation double igds_secondary_axis double igds_show_leading_zeroes integer igds_show_secondary integer igds_show_trailing_zeroes integer igds_snappable char(4) igds_start_angle double igds_startcap_angle double igds_startcap_color integer igds_startcap_style integer igds_startcap_weight integer igds_string_len double igds_style integer igds_style_name char(60) igds_style_set_bylevel char(5) igds_sweep_angle double igds_symbology integer igds_tag_names{} char(50) igds_terminator integer igds_terminator_location integer igds_text_color integer igds_text_elements{}.fme_color integer igds_text_elements{}.igds_color integer igds_text_elements{}.igds_font integer igds_text_elements{}.igds_insertion_x double igds_text_elements{}.igds_insertion_y double igds_text_elements{}.igds_insertion_z double igds_text_elements{}.igds_justification integer igds_text_elements{}.igds_original_justification integer igds_text_elements{}.igds_rotation double igds_text_elements{}.igds_text_size double igds_text_elements{}.igds_text_string string igds_text_elements{}.igds_text_width_multiplier double igds_text_elements{}.x double igds_text_elements{}.y double igds_text_elements{}.z double igds_text_font integer igds_text_horizontal_flip logical igds_text_min_leader double igds_text_size double igds_text_string string igds_text_string{} char(80) igds_text_underlined integer igds_text_vert integer igds_text_vertical_flip logical igds_text_weight integer igds_text_width_multiplier double igds_textstyle_bg_border.x double igds_textstyle_bg_border.y double igds_textstyle_bg_color integer igds_textstyle_bg_fill_color integer igds_textstyle_bg_style integer igds_textstyle_bg_weight integer igds_textstyle_bold char(5) igds_textstyle_char_spacing integer igds_textstyle_codepage integer igds_textstyle_color integer igds_textstyle_exflags integer igds_textstyle_font integer igds_textstyle_id integer igds_textstyle_line_offset.x double igds_textstyle_line_offset.y double igds_textstyle_overline char(5) igds_textstyle_overline_color integer igds_textstyle_overline_spacing integer igds_textstyle_overline_style integer igds_textstyle_overline_weight integer igds_textstyle_overrides_style1 integer igds_textstyle_overrides_style2 integer igds_textstyle_slant integer igds_textstyle_tnode_word_wrap_len integer igds_textstyle_txflags integer igds_textstyle_underline char(5) igds_textstyle_underline_color integer igds_textstyle_underline_spacing integer igds_textstyle_underline_style integer igds_textstyle_underline_weight integer igds_tolerance_present integer igds_tolerance_type integer igds_transparency double igds_type char(20) igds_upper_x double igds_upper_y double igds_use_comma_not_point integer igds_use_text_color integer igds_use_text_weight integer igds_view_id integer igds_weight integer igds_weight_set_bylevel char(5) igds_witness_line_cos_value double igds_witness_line_extension double igds_witness_line_offset double igds_witness_line_sin_value double igds_xattributes{}.attr_id integer igds_xattributes{}.childIds string igds_xattributes{}.data string igds_xattributes{}.data_prefix string igds_xattributes{}.feature char(80) igds_xattributes{}.fileName string igds_xattributes{}.fullPath string igds_xattributes{}.handler_id integer igds_xattributes{}.handler_type integer igds_xattributes{}.isValid char(4) igds_xattributes{}.linkName string igds_xattributes{}.linkType char(12) igds_xattributes{}.ref_elem_id integer igds_xattributes{}.type char(40) igds_xattributes{}.url string igds_xattributes{}.uuid char(36) igds_xattributes{}.xml string igds_xfm_data_prefix char(8) igds_xfm_name string igds_xfm_parent_uuid char(36) igds_xfm_ref_elem_id integer igds_xfm_root_uuid char(36) igds_xfm_url string igds_xfm_uuid char(36) igds_xfm_xml string igds_xfmstore_appid_word0 integer igds_xfmstore_appid_word1 integer igds_xfmstore_storeid char(5) igds_xfmstore_url string igds_xfmstore_xml string igds_xhigh double igds_xlow double igds_xref_base_nest_depth integer igds_xref_camera_focal_len double igds_xref_camera_pos_x double igds_xref_camera_pos_y double igds_xref_camera_pos_z double igds_xref_clip_pt{}.x double igds_xref_clip_pt{}.y double igds_xref_desc string igds_xref_file_build_opts integer igds_xref_file_disp_opts integer igds_xref_file_name string igds_xref_file_num integer igds_xref_group_id integer igds_xref_master_origin_x double igds_xref_master_origin_y double igds_xref_master_origin_z double igds_xref_model_name string igds_xref_name string igds_xref_nest_depth integer igds_xref_parent_attach_id integer igds_xref_parent_file_path string igds_xref_path string igds_xref_priority integer igds_xref_ref_origin_x double igds_xref_ref_origin_y double igds_xref_ref_origin_z double igds_xref_rotation double igds_xref_scale double igds_xref_version integer igds_xref_z_back double igds_xref_z_front double igds_yhigh double igds_ylow double igds_zhigh integer igds_zhigh_uor integer igds_zlow double igds_zlow_uor double incosada_feature_code integer incosada_fid string incosada_sequence_num integer link_type_0 char(40) link_type_1 char(40) link_type_2 char(40) mslink_0 integer mslink_1 integer mslink_2 integer multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50) state_num integer ufid integer"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24202"
+#!   COORDSYS="UTM83-10"
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="IGDS_IN_EXPAND_UNNAMED_CELLS IGDS_IN_SPLIT_COMPLEX_CHAINS IGDS_IN_SPLIT_MULTITEXT IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS IGDS_IN_EXPLODE_DIMENSION_ELEM IGDS_IN_USE_XREF_PARENT_MODEL IGDS_IN_READ_XREF_NEST_DEPTH IGDS_IN_UOR_SCALE IGDS_IN_UORS_PER_SUB IGDS_IN_SUBS_PER_MASTER IGDS_IN_ELEVATION_SHIFT_FACTOR IGDS_IN_CURVE_VERTICES IGDS_IN_READ_TAGS IGDS_IN_READ_XATTRS_AND_ITEM_SETS COMPUTE_SEED_FILE_PARMS IGDS_IN_APPLY_WORLD_FILE IGDS_IN_REMOVE_DUPLICATES IGDS_IN_PRESERVE_CURVES IGDS_IN_ASSUME_MATCHING_UNITS IGDS_IN_RSC_FONT_FILE UOR_GLOBAL_ORIGIN_X UOR_GLOBAL_ORIGIN_Y UOR_GLOBAL_ORIGIN_Z IGDS_OUT_UOR_GLOBAL_ORIGIN_X IGDS_OUT_UOR_GLOBAL_ORIGIN_Y IGDS_OUT_UOR_GLOBAL_ORIGIN_Z MASTER_UNIT_NAME SUB_UNIT_NAME UORS_PER_SUB SUBS_PER_MASTER IGDS_OUT_CREATE_LINE_ELEMENTS IGDS_OUT_MANGLE_DBCS_TEXT IGDS_OUT_DEFAULT_CELL_NAME IGDS_OUT_SPLIT_BIG_DGN7_FILES IGDS_OUT_SPLIT_SIZE_DGN7_FILES IGDS_OUT_SCALE_CELL_MODELS IGDS_OUT_WRITE_XFM_DGNSTORES_FROM_SEED IGDS_OUT_ENHANCED_TEXT_PRECISION IGDS_OUT_RSC_FONT_FILE"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(14)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(6)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(5)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="IGDS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="IGDS"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shared_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_text_node"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_3d_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_mesh"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_smart_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_complex_shape"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_complex_chain"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_xref"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_xfmstore"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_polygon_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_nongeom_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="IGDS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="IGDS"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="1"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="igds_point igds_line"
+#!   POSITION="-2554.7721877218792 854.38584385843842"
+#!   BOUNDING_RECT="-2554.7721877218792 854.38584385843842 436 65"
+#!   ORDER="500000000000027"
+#!   COLLAPSED="true"
+#!   KEYWORD="IGDS_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="IGDS_1"
+#!   OVERRIDE="-IGDS_1_DATASET"
+#!   DATASET="IGDS_1/bathymetry.dgn"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_IGDS INCLUDE_WEB_BROWSER%Design_Files(*.dgn)|*.dgn|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source Bentley MicroStation Design File(s):"
+#!   DEFAULT_VALUE="D:\gitHub\quick-tips-fme\2-spikes\1-dataset\bathymetry.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxnaXRIdWJcXHF1aWNrLXRpcHMtZm1lXFwyLXNwaWtlc1xcMS1kYXRhc2V0XFxiYXRoeW1ldHJ5LmRnbiIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiRGVzaWduIEZpbGVzIiwiZmlsdGVyIjpbIiouZGduIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9JR0RTIiwicHJvbXB0IjoiU291cmNlIEJlbnRsZXkgTWljcm9TdGF0aW9uIERlc2lnbiBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_IGDS" 
+#!   DEFAULT_VALUE="D:\gitHub\quick-tips-fme\2-spikes\1-dataset\bathymetry.dgn"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_IGDS INCLUDE_WEB_BROWSER%Design_Files(*.dgn)|*.dgn|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source Bentley MicroStation Design File(s):"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="6"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Leitor | &lt;span style=&quot; font-weight:700;&quot;&gt;DGN&lt;/span&gt; | Dados de Batimetria&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-2554.7721877218792 1039.3870938709385"
+#!   TOP_LEFT="-2554.7721877218792 1039.3870938709385"
+#!   BOTTOM_RIGHT="-2107.7955617056191 1038.3870938709385"
+#!   BOUNDING_RECT="-2554.7721877218792 1039.3870938709385 446.97662601626013 1"
+#!   ORDER="500000000000016"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{9ecacf4a-a0f2-46e5-ba86-ce37c4750454}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="12"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Contagem de quantos registros removemos&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-546.88046880468823 910.00850008500106"
+#!   TOP_LEFT="-546.88046880468823 910.00850008500106"
+#!   BOTTOM_RIGHT="3.1245312453122551 755.00725007250094"
+#!   BOUNDING_RECT="-546.88046880468823 910.00850008500106 550.00500005000049 155.00125001250012"
+#!   ORDER="500000000000021"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{012da815-e6f5-4316-b816-b4b85920439b}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="9"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="15"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; text-decoration: underline;&quot;&gt;IMAGENS DE EXEMPLO&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1-Spike Exemplo&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/2-spikes/2-images/1-Spike%20Exemplo.png&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#0078d4;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;2-SpikeRemover&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/Spikes/Images/2-SpikeRemover.png&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/2-spikes/2-images/2-SpikeRemover.png&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;3-Spike Resultado&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/Spikes/Images/3-Spike%20Resultado.png&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/2-spikes/2-images/3-Spike%20Resultado.png&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;4-Spike 45 Graus&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; font-weight:700;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/Spikes/Images/4-Spike%2045%20Graus.png&quot;&gt;&lt;span style=&quot; font-weight:400; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/2-spikes/2-images/4-Spike%2045%20Graus.png&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;5-Spike Z&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; font-weight:700;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/Spikes/Images/5-Spike%20Z.png&quot;&gt;&lt;span style=&quot; font-weight:400; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/2-spikes/2-images/5-Spike%20Z.png&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-4959.4245942459438 1343.7634376343769"
+#!   TOP_LEFT="-4959.4245942459438 1343.7634376343769"
+#!   BOTTOM_RIGHT="-2912.5296252962544 476.25506255062612"
+#!   BOUNDING_RECT="-4959.4245942459438 1343.7634376343769 2046.8949689496894 867.50837508375082"
+#!   ORDER="500000000000025"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{003a0fe2-923e-45fc-bb65-d22b04ab224c}"
+#!   COLOUR="1,0.95686274509803926,0.80000000000000004,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="18"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Inspecionando:&lt;/span&gt; os spikes removidos&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="317.24781247812473 786.25881258812592"
+#!   TOP_LEFT="317.24781247812473 786.25881258812592"
+#!   BOTTOM_RIGHT="991.17983304833047 785.25881258812592"
+#!   BOUNDING_RECT="317.24781247812473 786.25881258812592 673.93202057020574 1"
+#!   ORDER="500000000000026"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{2e46dd22-bf15-4ee7-af8a-bd9c6bfd76cc}"
+#!   COLOUR="1,0.95686274509803926,0.80000000000000004,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="16"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="20"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Inspecionando &lt;/span&gt;Dados corrigidos de Batimetria&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="395.37309373093694 1467.5161251612519"
+#!   TOP_LEFT="395.37309373093694 1467.5161251612519"
+#!   BOTTOM_RIGHT="1069.3051143011426 1466.5161251612519"
+#!   BOUNDING_RECT="395.37309373093694 1467.5161251612519 673.93202057020574 1"
+#!   ORDER="500000000000026"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b24ebf43-2975-4ddc-b288-f7cafd97471b}"
+#!   COLOUR="1,0.95686274509803926,0.80000000000000004,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="19"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="8"
+#!   COMMENT_VALUE="&lt;b&gt;SpikeRemover&amp;nbsp;[SpikeRemover&amp;nbsp;Version&amp;nbsp;3]&lt;/b&gt;&lt;br&gt;General:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Maximum&amp;nbsp;Spike&amp;nbsp;Angle:&amp;nbsp;10&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Maximum&amp;nbsp;Spike&amp;nbsp;Length:&amp;nbsp;250&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Dimension:&amp;nbsp;2D&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Remove&amp;nbsp;Spikes&amp;nbsp;Iteratively:&amp;nbsp;No"
+#!   POSITION="-1668.5191604391298 1291.138549009253"
+#!   TOP_LEFT="-1668.5191604391298 1291.138549009253"
+#!   BOTTOM_RIGHT="-879.4004411269367 1292.138549009253"
+#!   BOUNDING_RECT="-1668.5191604391298 1291.138549009253 789.11871931219309 -1"
+#!   ORDER="500000000000017"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b2521bb4-6655-4ccc-8d41-3c8e223cfe18}"
+#!   ANCHORED_NODE="3"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="5"
+#!   NAME="1.0 | Reader DGN "
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2657.8977189771904 1128.1362813628136"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-1975.0197501975024 718.75718757187576"
+#!   BOUNDING_RECT="-2657.8977189771904 1128.1362813628136 682.87796877968799 409.37909379093787"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="2 6 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="7"
+#!   NAME="2.1 | Removendo Spikes"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1787.5178751787519 1421.8892188921891"
+#!   ORDER="500000000000028.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-731.25731257312577 434.37934379343812"
+#!   BOUNDING_RECT="-1787.5178751787519 1421.8892188921891 1056.2605626056261 987.50987509875097"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="3 8 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="11"
+#!   NAME="2.2 | Count de Removidos"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-656.25936542812701 1125.0112501125011"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="128.12628126281265 425.00452869976687"
+#!   BOUNDING_RECT="-656.25936542812701 1125.0112501125011 784.38564669093967 700.00672141273424"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="12 9 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="13"
+#!   NAME="2.0 | Remoção de Spikes"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1837.5178751787519 1511.8892188921891"
+#!   ORDER="500000000000022"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="240.62740627406288 381.25381253812543"
+#!   BOUNDING_RECT="-1837.5178751787519 1511.8892188921891 2078.1452814528147 1130.6354063540637"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="3 24 23 12 9 21 10 7 11 8 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="SpikeRemover"
+#!   VERSION="3"
+#!   POSITION="-1512.2675979235048 906.13529897675255"
+#!   BOUNDING_RECT="-1512.2675979235048 906.13529897675255 436 65"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="UNCHANGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <OUTPUT_FEAT NAME="CHANGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <OUTPUT_FEAT NAME="REMOVED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_spike_angle" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_spike_length1" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_spike_length2" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="DIMENSIONS" PARM_VALUE="2D"/>
+#!     <XFORM_PARM PARM_NAME="ITERATIVE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SPIKEANGLE" PARM_VALUE="10"/>
+#!     <XFORM_PARM PARM_NAME="SPIKELENGTH" PARM_VALUE="250"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpikeRemover"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="StatisticsCalculator"
+#!   VERSION="11"
+#!   POSITION="-487.50487504875053 721.88221882218841"
+#!   BOUNDING_RECT="-487.50487504875053 721.88221882218841 436 65"
+#!   ORDER="500000000000018"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_spike_angle.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="COMPLETE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_spike_angle" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_spike_length1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_spike_length2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_spike_angle.total_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADV_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ADV_PARAMETERMAP_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="CALCULATION_MODE" PARM_VALUE="NUMERIC"/>
+#!     <XFORM_PARM PARM_NAME="CUMULATIVE_STATS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FEAT_STATS" PARM_VALUE="_spike_angle,NUMERIC_MODE,,,COUNT,,,,,,,,,,"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREPEND_ATTR_NAME_OBS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="STATISTIC_SUFFIX_RENAME_MAP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="STATS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StatisticsCalculator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="426.62390623906231 601.2575625756258"
+#!   BOUNDING_RECT="426.62390623906231 601.2575625756258 452.296875 65"
+#!   ORDER="500000000000024"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="count_removidos"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="470.37384373843702 1282.5148751487518"
+#!   BOUNDING_RECT="470.37384373843702 1282.5148751487518 452.296875 65"
+#!   ORDER="500000000000024"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="count_removidos_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="Junction"
+#!   VERSION="0"
+#!   POSITION="-671.57251572515781 1225.6382813828141"
+#!   BOUNDING_RECT="-671.57251572515781 1225.6382813828141 132 58"
+#!   ORDER="500000000000029"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Junction"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 UNCHANGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 1 CHANGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 1 COMPLETE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 2 REMOVED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 311
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_IGDS_1,UNITS_IGDS_1,UOR_GLOBAL_ORIGIN_X_IGDS_1,UOR_GLOBAL_ORIGIN_Y_IGDS_1,UOR_GLOBAL_ORIGIN_Z_IGDS_1,IGDS_IN_FME_GROUP_NAMED1_IGDS_1,IGDS_IN_ENCODING_IGDS_1,IGDS_IN_FME_GROUP_NAMED2_IGDS_1,IGDS_IN_EXPAND_CELLS_IGDS_1,IGDS_IN_PRESERVE_CELL_INSERTS_IGDS_1,IGDS_IN_EXPAND_UNNAMED_CELLS_IGDS_1,IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS_IGDS_1,IGDS_IN_XREF_OPTIONS_IGDS_1,IGDS_IN_READ_XREF_FILES_IGDS_1,IGDS_IN_READ_XREF_NEST_DEPTH_IGDS_1,IGDS_IN_USE_XREF_PARENT_MODEL_IGDS_1,IGDS_IN_READ_XREFS_AS_ELEMENTS_IGDS_1,IGDS_IN_TAGS_AS_TEXT_IGDS_1,IGDS_IN_FME_GROUP_NAMED3_IGDS_1,IGDS_IN_READ_TAGS_IGDS_1,IGDS_IN_READ_XATTRS_AND_ITEM_SETS_IGDS_1,IGDS_IN_FME_GROUP_NAMED4_IGDS_1,IGDS_IN_FME_GROUP_NAMED5_IGDS_1,IGDS_IN_READ_SELECTED_MODELS_IGDS_1,IGDS_IN_SELECTED_MODELS_IGDS_1,IGDS_IN_USE_SEARCH_ENVELOPE_IGDS_1,IGDS_IN_SEARCH_ENVELOPE_MINX_IGDS_1,IGDS_IN_SEARCH_ENVELOPE_MINY_IGDS_1,IGDS_IN_SEARCH_ENVELOPE_MAXX_IGDS_1,IGDS_IN_SEARCH_ENVELOPE_MAXY_IGDS_1,IGDS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IGDS_1,IGDS_IN_CLIP_TO_ENVELOPE_IGDS_1,IGDS_IN_IGDS_RDR_ADV_PARM_GROUP_IGDS_1,IGDS_IN_SPLIT_COMPLEX_CHAINS_IGDS_1,IGDS_IN_SPLIT_MULTITEXT_IGDS_1,IGDS_IN_EXPLODE_DIMENSION_ELEM_IGDS_1,IGDS_IN_APPLY_WORLD_FILE_IGDS_1,IGDS_IN_PRESERVE_CURVES_IGDS_1,IGDS_IN_REMOVE_DUPLICATES_IGDS_1,IGDS_IN_ASSUME_MATCHING_UNITS_IGDS_1,IGDS_IN_UOR_SCALE_IGDS_1,IGDS_IN_UORS_PER_SUB_IGDS_1,IGDS_IN_SUBS_PER_MASTER_IGDS_1,IGDS_IN_ELEVATION_SHIFT_FACTOR_IGDS_1,IGDS_IN_CURVE_VERTICES_IGDS_1,IGDS_IN_NETWORK_AUTHENTICATION_IGDS_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_IGDS D:\gitHub\quick-tips-fme\2-spikes\1-dataset\bathymetry.dgn
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_IGDS$encode)} == {}} { puts_real {Parameter 'SourceDataset_IGDS' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} IGDS
+MULTI_READER_KEYWORD{0} IGDS_1
+MULTI_READER_GEN_DIRECTIVES{0} READ_XATTRS_AND_ITEM_SETS,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MAXY,0,UOR_GLOBAL_ORIGIN_Z,,SELECTED_MODELS,,READ_XREFS_AS_ELEMENTS,YES,READ_SELECTED_MODELS,NO,READ_XREF_NEST_DEPTH,0,ELEVATION_SHIFT_FACTOR,,IGDS_RDR_ADV_PARM_GROUP,,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SEARCH_ENVELOPE_MINX,0,TAGS_AS_TEXT,NO,APPLY_WORLD_FILE_TO_ATTRS,YES,PRESERVE_UNNAMEDCELL_INSERTS,no,XREF_OPTIONS,,IGDS_FRAMME,NO,READER_META_ATTRIBUTES,fme_dataset,SUBS_PER_MASTER,,SPLIT_MULTITEXT,YES,IGDS_EXPOSE_FORMAT_ATTRS,,ENCODING,windows-1252,METAFILE,design,IGDS_MSLINKS,NO,UOR_SCALE,,UOR_GLOBAL_ORIGIN_Y,,APPLY_WORLD_FILE,YES,CURVE_VERTICES,,CLIP_TO_ENVELOPE,NO,READ_XREF_FILES,NO,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXX,0,PRESERVE_CURVES,NO,EXPAND_CELLS,yes,EXPAND_UNNAMED_CELLS,no,PRESERVE_CELL_INSERTS,no,OVERRIDE_GLOBAL_ORIGIN,no,USE_LEVEL_NAMES,NO,SPLIT_COMPLEX_CHAINS,NO,_MERGE_SCHEMAS,YES,UNITS,IGDS_MASTER_UNITS,UORS_PER_SUB,,ASSUME_MATCHING_UNITS,NO,UOR_GLOBAL_ORIGIN_X,,EXPLODE_DIMENSION_ELEM,YES,REMOVE_DUPLICATES,NO,USE_RICH_ARC_GEOM,YES,READ_TAGS,NO,USE_XREF_PARENT_MODEL,<lt>Unused<gt>,SEARCH_ENVELOPE_MINY,0
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "IGDS_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER IGDS IGDS_1
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the Microstation design file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_IGDS_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER IGDS IGDS_1
+DEFAULT_MACRO SourceDataset_IGDS_1 $(SourceDataset_IGDS)
+GUI MULTIFILE SourceDataset_IGDS_1 Design_Files(*.dgn)|*.dgn|All_files(*)|* Source Bentley MicroStation Design File(s):
+# ============================================================================
+# alternative GUI line for nav pane, otherwise specified in the settings box
+# the default macro line and related directive line here are required to allow
+# WB generate calls to get defaults in the nav pane, from the settings box
+DEFAULT_MACRO UNITS_IGDS_1 IGDS_MASTER_UNITS
+IGDS_1_UNITS $(UNITS_IGDS_1)
+GUI LOOKUP_CHOICE UNITS_IGDS_1 Master<space>Units,IGDS_MASTER_UNITS%Sub<space>Units,IGDS_SUB_UNITS%UORs,IGDS_UORS Input Units:
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_X_IGDS_1 
+IGDS_1_UOR_GLOBAL_ORIGIN_X $(UOR_GLOBAL_ORIGIN_X_IGDS_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_X_IGDS_1 UOR X Global Origin
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_Y_IGDS_1 
+IGDS_1_UOR_GLOBAL_ORIGIN_Y $(UOR_GLOBAL_ORIGIN_Y_IGDS_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_Y_IGDS_1 UOR Y Global Origin
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_Z_IGDS_1 
+IGDS_1_UOR_GLOBAL_ORIGIN_Z $(UOR_GLOBAL_ORIGIN_Z_IGDS_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_Z_IGDS_1 UOR Z Global Origin
+# ============================================================================
+# The following line controls whether or not complex chain element linkages
+# are propagated up to the header element from the members -- only applies
+# when we are NOT dropping complex elements
+#
+#We don't expose _PROPAGATE_CHAIN_ELEMENT_LINKAGES anymore as it is now deprecated since the introduction
+#of rich geometry
+# This is deprecated, and not available in the GUI settings
+DEFAULT_MACRO READ_ELEMENT_TYPE_68_IGDS_1 NO
+IGDS_1_READ_ELEMENT_TYPE_68 $(READ_ELEMENT_TYPE_68_IGDS_1)
+# ============================================================================
+# Indicate if we are to use level names or level numbers as the feature type
+# This is something that is only set when a mapping file or workspace header
+# is originally generated. It should not be modified afterwards.
+IGDS_1_USE_LEVEL_NAMES NO
+DEFAULT_MACRO IGDS_IN_READER_META_ATTRIBUTES_IGDS_1 fme_dataset
+IGDS_1_READER_META_ATTRIBUTES "$(IGDS_IN_READER_META_ATTRIBUTES_IGDS_1)"
+# Expose the encoding keyword
+DEFAULT_MACRO IGDS_IN_FME_GROUP_NAMED1_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_FME_GROUP_NAMED1_IGDS_1 IGDS_IN_ENCODING_IGDS_1 File Contents
+DEFAULT_MACRO IGDS_IN_ENCODING_IGDS_1 windows-1252
+IGDS_1_ENCODING "$(IGDS_IN_ENCODING_IGDS_1)"
+GUI STRING_OR_ENCODING IGDS_IN_ENCODING_IGDS_1 fme-system%SJIS%CP437%CP850%CP852%CP855%CP857%CP860%CP861%CP863%CP864%CP865%CP869%CP874%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9 Character Encoding
+DEFAULT_MACRO IGDS_IN_FME_GROUP_NAMED2_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_FME_GROUP_NAMED2_IGDS_1 IGDS_IN_EXPAND_CELLS_IGDS_1%IGDS_IN_EXPAND_UNNAMED_CELLS_IGDS_1%IGDS_IN_XREF_OPTIONS_IGDS_1%IGDS_IN_TAGS_AS_TEXT_IGDS_1 Element Options
+# The following line controls whether or not cell elements are to be
+# expanded by the FME as it reads the source file.
+DEFAULT_MACRO IGDS_IN_EXPAND_CELLS_IGDS_1 yes
+IGDS_1_EXPAND_CELLS "$(IGDS_IN_EXPAND_CELLS_IGDS_1)"
+GUI ACTIVEDISCLOSUREGROUP IGDS_IN_EXPAND_CELLS_IGDS_1 FME_DISCLOSURE_CLOSED%IGDS_IN_PRESERVE_CELL_INSERTS_IGDS_1 Expand Named Cells
+GUI LOOKUP IGDS_IN_EXPAND_CELLS_IGDS_1 YES,yes%NO,no 
+# ============================================================================
+# Ask if the cell insert points should be preserved -- this only matters
+# if cells are being expanded
+DEFAULT_MACRO IGDS_IN_PRESERVE_CELL_INSERTS_IGDS_1 no
+IGDS_1_PRESERVE_CELL_INSERTS "$(IGDS_IN_PRESERVE_CELL_INSERTS_IGDS_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL IGDS_IN_PRESERVE_CELL_INSERTS_IGDS_1 yes%no Preserve Named Cell Insert Points
+GUI LOOKUP IGDS_IN_PRESERVE_CELL_INSERTS_IGDS_1 <Unused>,no 
+# The following line controls whether or not unnamed cell elements are to be
+# expanded by the FME as it reads the source file.
+DEFAULT_MACRO IGDS_IN_EXPAND_UNNAMED_CELLS_IGDS_1 no
+IGDS_1_EXPAND_UNNAMED_CELLS "$(IGDS_IN_EXPAND_UNNAMED_CELLS_IGDS_1)"
+GUI ACTIVEDISCLOSUREGROUP IGDS_IN_EXPAND_UNNAMED_CELLS_IGDS_1 FME_DISCLOSURE_CLOSED%IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS_IGDS_1 Expand Unnamed (Group Hole) Cells
+GUI LOOKUP IGDS_IN_EXPAND_UNNAMED_CELLS_IGDS_1 YES,yes%NO,no 
+# ============================================================================
+#By default we do not output unnamed cell insert points
+DEFAULT_MACRO IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS_IGDS_1 no
+IGDS_1_PRESERVE_UNNAMEDCELL_INSERTS "$(IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS_IGDS_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS_IGDS_1 yes%no Preserve Unnamed Cell Insert Points
+GUI LOOKUP IGDS_IN_PRESERVE_UNNAMEDCELL_INSERTS_IGDS_1 <Unused>,no 
+DEFAULT_MACRO IGDS_IN_XREF_OPTIONS_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_XREF_OPTIONS_IGDS_1 FME_DISCLOSURE_CLOSED%IGDS_IN_READ_XREF_FILES_IGDS_1%IGDS_IN_READ_XREFS_AS_ELEMENTS_IGDS_1 External Reference File Options
+#By default we don't read elements from reference files
+DEFAULT_MACRO IGDS_IN_READ_XREF_FILES_IGDS_1 NO
+IGDS_1_READ_XREF_FILES "$(IGDS_IN_READ_XREF_FILES_IGDS_1)"
+GUI ACTIVEDISCLOSUREGROUP IGDS_IN_READ_XREF_FILES_IGDS_1 FME_DISCLOSURE_CLOSED%IGDS_IN_XREF_ELEMENTS_MSG%IGDS_IN_READ_XREF_NEST_DEPTH_IGDS_1%IGDS_IN_USE_XREF_PARENT_MODEL_IGDS_1 Read Elements From Reference Files
+# ============================================================================
+#By default we read all the nested levels
+# Now deprecated from the GUI, in lieu of READ_XREF_NEST_DEPTH
+#DEFAULT_VALUE READ_XREF_UPTO_FIRST_LVL NO
+#GUI CHECKBOX READ_XREF_UPTO_FIRST_LVL yes%no Read Reference Files up to First Level
+# ============================================================================
+#By default we read one level of xrefs
+DEFAULT_MACRO IGDS_IN_READ_XREF_NEST_DEPTH_IGDS_1 0
+IGDS_1_READ_XREF_NEST_DEPTH "$(IGDS_IN_READ_XREF_NEST_DEPTH_IGDS_1)"
+GUI INTEGER IGDS_IN_READ_XREF_NEST_DEPTH_IGDS_1 Max Depth of Reference Files to Read
+GUI LOOKUP IGDS_IN_READ_XREF_NEST_DEPTH_IGDS_1 <Unused>,0 
+# ============================================================================
+# PR38292 This is default YES, but will be ignored unless READ_XREF_FILES is YES.
+# Enable USE_XREF_PARENT_MODEL for v8 reader (PR#18510).
+# By default we use xref's parent model when reading reference files
+DEFAULT_MACRO IGDS_IN_USE_XREF_PARENT_MODEL_IGDS_1 
+IGDS_1_USE_XREF_PARENT_MODEL "$(IGDS_IN_USE_XREF_PARENT_MODEL_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_USE_XREF_PARENT_MODEL_IGDS_1 yes%no Use Reference's Parent Model (V8 only)
+# ============================================================================
+#By default we read reference files as xref elements
+DEFAULT_MACRO IGDS_IN_READ_XREFS_AS_ELEMENTS_IGDS_1 YES
+IGDS_1_READ_XREFS_AS_ELEMENTS "$(IGDS_IN_READ_XREFS_AS_ELEMENTS_IGDS_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL IGDS_IN_READ_XREFS_AS_ELEMENTS_IGDS_1 YES%NO Keep Elements That Represent Reference Files (V8 only)
+# ============================================================================
+# The following line controls whether or not tag elements are to be
+# output as text by the FME as it reads the source file.
+DEFAULT_MACRO IGDS_IN_TAGS_AS_TEXT_IGDS_1 NO
+IGDS_1_TAGS_AS_TEXT "$(IGDS_IN_TAGS_AS_TEXT_IGDS_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL IGDS_IN_TAGS_AS_TEXT_IGDS_1 YES%NO Output Tags as Text
+DEFAULT_MACRO IGDS_IN_FME_GROUP_NAMED3_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_FME_GROUP_NAMED3_IGDS_1 IGDS_IN_READ_TAGS_IGDS_1%IGDS_IN_READ_XATTRS_AND_ITEM_SETS_IGDS_1 Attribute Options
+# ============================================================================
+# Should we strip off tag information
+# replaces legacy TRIM_DOWN_TAGS, which was default NO, and meant keep tag attributes
+DEFAULT_MACRO IGDS_IN_READ_TAGS_IGDS_1 NO
+IGDS_1_READ_TAGS "$(IGDS_IN_READ_TAGS_IGDS_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL IGDS_IN_READ_TAGS_IGDS_1 YES%NO Read Tag Attributes:
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_READ_XATTRS_AND_ITEM_SETS_IGDS_1 NO
+IGDS_1_READ_XATTRS_AND_ITEM_SETS "$(IGDS_IN_READ_XATTRS_AND_ITEM_SETS_IGDS_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL IGDS_IN_READ_XATTRS_AND_ITEM_SETS_IGDS_1 YES%NO Read XAttributes and Item Type attributes (V8 only):
+DEFAULT_MACRO IGDS_IN_FME_GROUP_NAMED4_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_FME_GROUP_NAMED4_IGDS_1 2%IGDS_IN_IGDS_MSLINKS%IGDS_IN_IGDS_FRAMME Linkage Extraction
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_FME_GROUP_NAMED5_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_FME_GROUP_NAMED5_IGDS_1 IGDS_IN_READ_SELECTED_MODELS_IGDS_1 Model Selection Options
+# Should we read only certain models?
+DEFAULT_MACRO IGDS_IN_READ_SELECTED_MODELS_IGDS_1 NO
+IGDS_1_READ_SELECTED_MODELS "$(IGDS_IN_READ_SELECTED_MODELS_IGDS_1)"
+GUI ACTIVEDISCLOSUREGROUP IGDS_IN_READ_SELECTED_MODELS_IGDS_1 IGDS_IN_SELECTED_MODELS_IGDS_1 Read Only Selected Models
+# Indicate which models we will read
+DEFAULT_MACRO IGDS_IN_SELECTED_MODELS_IGDS_1 
+IGDS_1_SELECTED_MODELS "$(IGDS_IN_SELECTED_MODELS_IGDS_1)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED IGDS_IN_SELECTED_MODELS_IGDS_1 $[SourceDataset_IGDS_1],READ_MODEL_NAMES,MODEL_NAMES,_FORMAT_OVERRIDE_,IGDS Models
+GUI LOOKUP IGDS_IN_SELECTED_MODELS_IGDS_1 <Unused>, 
+# The following line controls how all the FME coordinates read from the
+# design file will be interpreted.
+# Valid values IGDS_MASTER_UNITS -- FME coordinates are treated as Master Units
+# IGDS_SUB_UNITS -- FME coordinates are treated as Sub Units
+# IGDS_UORS -- FME coordinates are treated as UORs
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_EXPOSE_ATTRS_GROUP_IGDS_1 
+IGDS_1_EXPOSE_ATTRS_GROUP "$(IGDS_IN_EXPOSE_ATTRS_GROUP_IGDS_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO IGDS_IN_USE_SEARCH_ENVELOPE_IGDS_1 NO
+IGDS_1_USE_SEARCH_ENVELOPE "$(IGDS_IN_USE_SEARCH_ENVELOPE_IGDS_1)"
+GUI ACTIVEDISCLOSUREGROUP IGDS_IN_USE_SEARCH_ENVELOPE_IGDS_1 IGDS_IN_SEARCH_ENVELOPE_MINX_IGDS_1%IGDS_IN_SEARCH_ENVELOPE_MINY_IGDS_1%IGDS_IN_SEARCH_ENVELOPE_MAXX_IGDS_1%IGDS_IN_SEARCH_ENVELOPE_MAXY_IGDS_1%IGDS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IGDS_1%IGDS_IN_CLIP_TO_ENVELOPE_IGDS_1%IGDS_IN_SEARCH_METHOD%IGDS_IN_SEARCH_METHOD_FILTER%IGDS_IN_SEARCH_ORDER%IGDS_IN_SEARCH_FEATURE%IGDS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP IGDS_IN_SEARCH_ENVELOPE_MINX_IGDS_1 <Unused>,0 
+DEFAULT_MACRO IGDS_IN_SEARCH_ENVELOPE_MINX_IGDS_1 0
+IGDS_1_SEARCH_ENVELOPE "$(IGDS_IN_SEARCH_ENVELOPE_MINX_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_SEARCH_ENVELOPE_MINX_IGDS_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP IGDS_IN_SEARCH_ENVELOPE_MINY_IGDS_1 <Unused>,0 
+DEFAULT_MACRO IGDS_IN_SEARCH_ENVELOPE_MINY_IGDS_1 0
+IGDS_1_SEARCH_ENVELOPE "$(IGDS_IN_SEARCH_ENVELOPE_MINY_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_SEARCH_ENVELOPE_MINY_IGDS_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP IGDS_IN_SEARCH_ENVELOPE_MAXX_IGDS_1 <Unused>,0 
+DEFAULT_MACRO IGDS_IN_SEARCH_ENVELOPE_MAXX_IGDS_1 0
+IGDS_1_SEARCH_ENVELOPE "$(IGDS_IN_SEARCH_ENVELOPE_MAXX_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_SEARCH_ENVELOPE_MAXX_IGDS_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP IGDS_IN_SEARCH_ENVELOPE_MAXY_IGDS_1 <Unused>,0 
+DEFAULT_MACRO IGDS_IN_SEARCH_ENVELOPE_MAXY_IGDS_1 0
+IGDS_1_SEARCH_ENVELOPE "$(IGDS_IN_SEARCH_ENVELOPE_MAXY_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_SEARCH_ENVELOPE_MAXY_IGDS_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP IGDS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IGDS_1 <Unused>, 
+DEFAULT_MACRO IGDS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IGDS_1 
+IGDS_1_SEARCH_ENVELOPE "$(IGDS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IGDS_1)"
+GUI OPTIONAL COORDSYS IGDS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_IGDS_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP IGDS_IN_CLIP_TO_ENVELOPE_IGDS_1 <Unused>,NO 
+DEFAULT_MACRO IGDS_IN_CLIP_TO_ENVELOPE_IGDS_1 NO
+IGDS_1_CLIP_TO_ENVELOPE "$(IGDS_IN_CLIP_TO_ENVELOPE_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_CLIP_TO_ENVELOPE_IGDS_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO IGDS_IN_IGDS_RDR_ADV_PARM_GROUP_IGDS_1 
+GUI OPTIONAL DISCLOSUREGROUP IGDS_IN_IGDS_RDR_ADV_PARM_GROUP_IGDS_1 IGDS_IN_SPLIT_COMPLEX_CHAINS_IGDS_1%IGDS_IN_SPLIT_MULTITEXT_IGDS_1%IGDS_IN_EXPLODE_DIMENSION_ELEM_IGDS_1%IGDS_IN_APPLY_WORLD_FILE_IGDS_1%IGDS_IN_PRESERVE_CURVES_IGDS_1%IGDS_IN_REMOVE_DUPLICATES_IGDS_1%IGDS_IN_ASSUME_MATCHING_UNITS_IGDS_1%IGDS_IN_UOR_SCALE_IGDS_1%IGDS_IN_UORS_PER_SUB_IGDS_1%IGDS_IN_SUBS_PER_MASTER_IGDS_1%IGDS_IN_ELEVATION_SHIFT_FACTOR_IGDS_1%IGDS_IN_CURVE_VERTICES_IGDS_1 Advanced
+# ============================================================================
+# The following line controls whether or not complex elements are dropped
+# while we are reading
+#We don't expose _SPLIT_COMPLEX_CHAINS anymore as it is now deprecated since the introduction
+#of rich geometry
+#Restored _SPLIT_COMPLEX_CHAINS as of May 10, 2009
+DEFAULT_MACRO IGDS_IN_SPLIT_COMPLEX_CHAINS_IGDS_1 NO
+IGDS_1_SPLIT_COMPLEX_CHAINS "$(IGDS_IN_SPLIT_COMPLEX_CHAINS_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_SPLIT_COMPLEX_CHAINS_IGDS_1 YES%NO Drop Complex Chains/Shapes
+# ============================================================================
+# Should we split multi text
+DEFAULT_MACRO IGDS_IN_SPLIT_MULTITEXT_IGDS_1 YES
+IGDS_1_SPLIT_MULTITEXT "$(IGDS_IN_SPLIT_MULTITEXT_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_SPLIT_MULTITEXT_IGDS_1 YES%NO Split Multi Text
+# ============================================================================
+#By default we explode dimension elements into its pieces
+DEFAULT_MACRO IGDS_IN_EXPLODE_DIMENSION_ELEM_IGDS_1 YES
+IGDS_1_EXPLODE_DIMENSION_ELEM "$(IGDS_IN_EXPLODE_DIMENSION_ELEM_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_EXPLODE_DIMENSION_ELEM_IGDS_1 YES%NO Drop Dimensions
+# ============================================================================
+# PR#10117 - Indicate whether we want to apply world files (.wld/.wld3) when reading in the features.
+DEFAULT_MACRO IGDS_IN_APPLY_WORLD_FILE_IGDS_1 YES
+IGDS_1_APPLY_WORLD_FILE "$(IGDS_IN_APPLY_WORLD_FILE_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_APPLY_WORLD_FILE_IGDS_1 YES%NO Apply World File (.wld/.wld3)
+# ============================================================================
+# Should we preserve the curves?
+DEFAULT_MACRO IGDS_IN_PRESERVE_CURVES_IGDS_1 NO
+IGDS_1_PRESERVE_CURVES "$(IGDS_IN_PRESERVE_CURVES_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_PRESERVE_CURVES_IGDS_1 YES%NO Preserve curves
+# ============================================================================
+# PR#10553 - Set the boolean to yes if want to remove duplicate points.
+# Metafile default is NO but code default is YES for backwards compatibility
+DEFAULT_MACRO IGDS_IN_REMOVE_DUPLICATES_IGDS_1 NO
+IGDS_1_REMOVE_DUPLICATES "$(IGDS_IN_REMOVE_DUPLICATES_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_REMOVE_DUPLICATES_IGDS_1 YES%NO Remove duplicate points:
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_ASSUME_MATCHING_UNITS_IGDS_1 NO
+IGDS_1_ASSUME_MATCHING_UNITS "$(IGDS_IN_ASSUME_MATCHING_UNITS_IGDS_1)"
+GUI OPTIONAL CHECKBOX IGDS_IN_ASSUME_MATCHING_UNITS_IGDS_1 YES%NO Assume master units equal working units:
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_UOR_SCALE_IGDS_1 
+IGDS_1_UOR_SCALE "$(IGDS_IN_UOR_SCALE_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_UOR_SCALE_IGDS_1 UOR to FME units scale factor:
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_UORS_PER_SUB_IGDS_1 
+IGDS_1_UORS_PER_SUB "$(IGDS_IN_UORS_PER_SUB_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_UORS_PER_SUB_IGDS_1 UORS PER SUB UNIT:
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_SUBS_PER_MASTER_IGDS_1 
+IGDS_1_SUBS_PER_MASTER "$(IGDS_IN_SUBS_PER_MASTER_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_SUBS_PER_MASTER_IGDS_1 SUBS PER MASTER UNIT:
+# ============================================================================
+# Value of elevation shift factor
+DEFAULT_MACRO IGDS_IN_ELEVATION_SHIFT_FACTOR_IGDS_1 
+IGDS_1_ELEVATION_SHIFT_FACTOR "$(IGDS_IN_ELEVATION_SHIFT_FACTOR_IGDS_1)"
+GUI OPTIONAL FLOAT IGDS_IN_ELEVATION_SHIFT_FACTOR_IGDS_1 Elevation Shift Factor
+# ============================================================================
+# Value of number of curve vertices
+DEFAULT_MACRO IGDS_IN_CURVE_VERTICES_IGDS_1 
+IGDS_1_CURVE_VERTICES "$(IGDS_IN_CURVE_VERTICES_IGDS_1)"
+GUI OPTIONAL INTEGER IGDS_IN_CURVE_VERTICES_IGDS_1 Number of interpolated curve vertices
+IGDS_1_ASSUME_MATCHING_UNITS "$(IGDS_IN_ASSUME_MATCHING_UNITS_IGDS_1)"
+IGDS_1_USE_XREF_PARENT_MODEL "$(IGDS_IN_USE_XREF_PARENT_MODEL_IGDS_1)"
+DEFAULT_MACRO IGDS_IN_USE_RICH_ARC_GEOM_IGDS_1 YES
+IGDS_1_USE_RICH_ARC_GEOM "$(IGDS_IN_USE_RICH_ARC_GEOM_IGDS_1)"
+DEFAULT_MACRO IGDS_IN_APPLY_WORLD_FILE_TO_ATTRS_IGDS_1 YES
+IGDS_1_APPLY_WORLD_FILE_TO_ATTRS "$(IGDS_IN_APPLY_WORLD_FILE_TO_ATTRS_IGDS_1)"
+# ===========================================================================
+DEFAULT_MACRO IGDS_IN_NETWORK_AUTHENTICATION_IGDS_1 
+IGDS_1_NETWORK_AUTHENTICATION "$(IGDS_IN_NETWORK_AUTHENTICATION_IGDS_1)"
+GUI OPTIONAL AUTHENTICATOR IGDS_IN_NETWORK_AUTHENTICATION_IGDS_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO IGDS_IN_ATTRIBUTE_READING_IGDS_1 ALL
+IGDS_1_ATTRIBUTE_READING "$(IGDS_IN_ATTRIBUTE_READING_IGDS_1)"
+# ============================================================================
+IGDS_1_GENERATE_FME_BUILD_NUM 24202
+# Allow complex chains to be returned as single feature. If this is turned on,
+# special handling must be done with the feature returned because for each complex
+# chain encountered, an aggregate with several parts of potentially different
+# geometries may be returned. The Workbench cannot handle this currently, so a
+# custom mapping file would be required.
+# DEFAULT_MACRO _AGGREGATE_COMPLEX_CHAINS NO
+# GUI OPTIONAL CHOICE _AGGREGATE_COMPLEX_CHAINS YES%NO Handle Complex Chains as Single Elements:
+# IGDS_AGGREGATE_COMPLEX_CHAINS $(_AGGREGATE_COMPLEX_CHAINS_IGDS_1)
+IGDS_1_DATASET "$(SourceDataset_IGDS_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)qa_spikes_outliers_complete.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.1.0 (20240328 - Build 24202 - WIN64)"
+MAPPING_FILE_ID Valida<u00e7><u00e3>o<space>e<space>Qualidade<space>de<space>Dados<space>com<space>FME<lf>
+DEFAULT_MACRO DATASET_KEYWORD_IGDS_1 IGDS_1
+# -------------------------------------------------------------------------
+
+IGDS_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+IGDS_1_COORDINATE_SYSTEM UTM83-10
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME qa_spikes_outliers_complete
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_IGDS_1)   INPUT FEATURE_TYPE *    ROUTE IGDS IGDS_1::1 multi_reader_keyword,$(DATASET_KEYWORD_IGDS_1) TO FME_GENERIC ::1 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+IGDS_1_MERGE_DEF IGDS_1::1 EXACT 1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "1_IGDS_1 Splitter"    INPUT FEATURE_TYPE 1    OUTPUT FEATURE_TYPE 1_IGDS_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SpikeRemoverFactory    FACTORY_NAME { SpikeRemover }    INPUT  FEATURE_TYPE 1_IGDS_1    SPIKE_ANGLE_ATTR _spike_angle    SPIKE_LENGTH1_ATTR _spike_length1    SPIKE_LENGTH2_ATTR _spike_length2    SPIKE_ANGLE { "10" }    SPIKE_LENGTH { "250" }    DIMENSIONS { "2D" }    REMOVE_SPIKES_ITERATIVELY { "No" }    REJECT_INVALID_GEOM Yes    OUTPUT { UNCHANGED FEATURE_TYPE SpikeRemover_UNCHANGED        }    OUTPUT { CHANGED FEATURE_TYPE SpikeRemover_CHANGED        }    OUTPUT { FLAGGED FEATURE_TYPE SpikeRemover_REMOVED        }    OUTPUT { REJECTED FEATURE_TYPE SpikeRemover_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SpikeRemover_<Rejected> INPUT FEATURE_TYPE SpikeRemover_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SpikeRemover<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Junction }    INPUT  FEATURE_TYPE SpikeRemover_UNCHANGED    INPUT  FEATURE_TYPE SpikeRemover_CHANGED    OUTPUT { FEATURE_TYPE Junction_Output         }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "count_removidos_2 (Disabled) Nuker"   INPUT FEATURE_TYPE Junction_Output
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StatisticsCalculatorFactory    FACTORY_NAME { StatisticsCalculator }    INPUT  FEATURE_TYPE SpikeRemover_REMOVED    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    FEAT_STATS { _spike_angle,NUMERIC_MODE,,,COUNT,,,,,,,,,, }    ADVANCED_MODE { NO }    CUMULATIVE_STATS {  }    CALCULATION_MODE { NUMERIC }    ATTR_ACCUM_MODE { None }    ATTRIBUTE_NAMES_AND_TYPES { _spike_angle,real64,_spike_length1,real64,_spike_length2,real64 }    TREAT_INVALID_AS_NULL Yes    OUTPUT { COMPLETE FEATURE_TYPE StatisticsCalculator_COMPLETE        }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "count_removidos (Disabled) Nuker"   INPUT FEATURE_TYPE StatisticsCalculator_COMPLETE
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

@@ -1,0 +1,2237 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\fme-form_202401-b24202\fme.exe" D:\gitHub\quick-tips-fme\1-shortlines\3-workspace\qa_shortlines_complete.fmw
+#          --SourceDataset_ACAD "D:\gitHub\quick-tips-fme\1-shortlines\1-dataset\Roads.dwg"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY="SolutialTech"
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="13642.9 1126.7"
+#!   DOC_TOP_LEFT="-8239.7 233.92"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24202"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="72bbcbed-204a-4020-bbe3-76533893f704"
+#!   FME_DOCUMENT_PRIORGUID="3b6aa353-64a7-4b94-baba-ae6d6a211d2c,c57f815b-23a5-4464-8761-6c5d60d61148,68d86188-2cd5-4905-b339-15f2ae6e1c99,61e6e841-55ab-488e-b4d4-53fc315f17b8,c1eabff1-05cd-480d-b21d-87d9d900e9af,d4c00971-b8b8-471f-a856-50b902125a9e,4d1b0a4c-b490-46c6-9f50-7252977c475c,934d959f-ba2f-453f-af70-6f6b23162c54,7c0ae11d-092c-4e43-828f-6b546fe40ac2,5a47bcb7-bf51-4a79-906f-ea0ad04be37d"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY="27&lt;solidus&gt;10&lt;solidus&gt;2024,Thiago&lt;space&gt;Brigag&lt;u00e3&gt;o,Cria&lt;u00e7&gt;&lt;u00e3&gt;o&lt;space&gt;do&lt;space&gt;fluxo"
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.1.0 (20240328 - Build 24202 - WIN64)"
+#!   LAST_SAVE_DATE="2024-11-04T07:37:01"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="311"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="Validação e Qualidade de Dados com FME&#10;"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-7749.41 1921.56"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="94"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ACAD"
+#!   DATASET="$(SourceDataset_ACAD)"
+#!   KEYWORD="ACAD_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="autocad_color 10 autocad_linetype CONTINUOUS autocad_layer_frozen no autocad_layer_hidden no autocad_layer_locked no autocad_layer_on yes autocad_layer_plottable yes autocad_layer_desc &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="autocad_active_anno_scale string autocad_alignment_x number(31,15) autocad_alignment_y number(31,15) autocad_alignment_z number(31,15) autocad_angbase number(31,15) autocad_angdir logical autocad_anno_force_visible logical autocad_anno_handle char(50) autocad_anno_height number(31,15) autocad_anno_scale{}.drawing_units number(31,15) autocad_anno_scale{}.name string autocad_anno_scale{}.paper_units number(31,15) autocad_anno_type char(30) autocad_anno_width number(31,15) autocad_arc_defpt.x number(31,15) autocad_arc_defpt.y number(31,15) autocad_arc_defpt.z number(31,15) autocad_arrow_head_on logical autocad_arrow_head_size number(31,15) autocad_attach_point char(50) autocad_attmode number(6,0) autocad_attr_def_default string autocad_attr_def_prompt string autocad_attr_def_tag string autocad_attribute_display char(50) autocad_attributes_follow logical autocad_aunits number(6,0) autocad_auprec number(6,0) autocad_backwards char(1) autocad_base_x number(31,15) autocad_base_y number(31,15) autocad_base_z number(31,15) autocad_big_fontname char(65) autocad_block_insert_handle char(50) autocad_block_insert_x number(31,15) autocad_block_insert_y number(31,15) autocad_block_insert_z number(31,15) autocad_block_name char(50) autocad_block_number number(5,0) autocad_box_height number(31,15) autocad_box_width number(31,15) autocad_bulge char(50) autocad_cannoscale char(32) autocad_cannoscale_drawing_units number(31,15) autocad_cannoscale_paper_units number(31,15) autocad_clayer char(32) autocad_closed_spline number(6,0) autocad_color number(6,0) autocad_column_distance number(31,15) autocad_control_weights string autocad_control_x string autocad_control_y string autocad_control_z string autocad_defpt2.x number(31,15) autocad_defpt2.y number(31,15) autocad_defpt2.z number(31,15) autocad_defpt3.x number(31,15) autocad_defpt3.y number(31,15) autocad_defpt3.z number(31,15) autocad_defpt4.x number(31,15) autocad_defpt4.y number(31,15) autocad_defpt4.z number(31,15) autocad_degree number(31,15) autocad_dictionary_name char(50) autocad_dim_arc_end_param number(31,15) autocad_dim_arc_is_partial logical autocad_dim_arc_start_param number(31,15) autocad_dim_arc_symbol_type number(6,0) autocad_dim_arrowhead_pt_1.x number(31,15) autocad_dim_arrowhead_pt_1.y number(31,15) autocad_dim_arrowhead_pt_2.x number(31,15) autocad_dim_arrowhead_pt_2.y number(31,15) autocad_dim_clone_inspection_point.x number(31,15) autocad_dim_clone_inspection_point.y number(31,15) autocad_dim_clone_inspection_point.z number(31,15) autocad_dim_flag number(5,0) autocad_dim_leader_pt1.x number(31,15) autocad_dim_leader_pt1.y number(31,15) autocad_dim_leader_pt1.z number(31,15) autocad_dim_leader_pt2.x number(31,15) autocad_dim_leader_pt2.y number(31,15) autocad_dim_leader_pt2.z number(31,15) autocad_dim_original_text_size number(31,15) autocad_dimension_attach_point number(5,0) autocad_dimension_style_name char(50) autocad_dimension_type char(50) autocad_edge_1 char(10) autocad_edge_2 char(10) autocad_edge_3 char(10) autocad_edge_4 char(10) autocad_elevation number(31,15) autocad_end_tangent_x number(31,15) autocad_end_tangent_y number(31,15) autocad_end_tangent_z number(31,15) autocad_end_width number(31,15) autocad_entity char(50) autocad_entity_handle char(50) autocad_entity_visibility char(10) autocad_estimated_num_lines number(5,0) autocad_extended_data_list{} char(50) autocad_extended_data{0}.16Bit_integer{0} number(5,0) autocad_extended_data{0}.application_name char(50) autocad_extended_data{0}.autocad_layer{0} char(50) autocad_extended_data{0}.autocad_scale{0} number(31,15) autocad_extended_data{0}.binary{0} char(50) autocad_extended_data{0}.distance{0} number(31,15) autocad_extended_data{0}.handle{0} char(50) autocad_extended_data{0}.handle{1} char(50) autocad_extended_data{0}.handle{2} char(50) autocad_extended_data{0}.real{0} number(31,15) autocad_extended_data{0}.string{0} char(50) autocad_extended_data{0}.three_reals{0}.real1 number(31,15) autocad_extended_data{0}.three_reals{0}.real2 number(31,15) autocad_extended_data{0}.three_reals{0}.real3 number(31,15) autocad_extended_data{0}.world_direction{0}.x number(31,15) autocad_extended_data{0}.world_direction{0}.y number(31,15) autocad_extended_data{0}.world_direction{0}.z number(31,15) autocad_extended_data{0}.world_displacement{0}.x number(31,15) autocad_extended_data{0}.world_displacement{0}.y number(31,15) autocad_extended_data{0}.world_displacement{0}.z number(31,15) autocad_extended_data{0}.world_position{0}.x number(31,15) autocad_extended_data{0}.world_position{0}.y number(31,15) autocad_extended_data{0}.world_position{0}.z number(31,15) autocad_extended_data{}.16Bit_integer{0} number(5,0) autocad_extended_data{}.application_name char(50) autocad_extended_data{}.autocad_layer{0} char(50) autocad_extended_data{}.autocad_scale{0} number(31,15) autocad_extended_data{}.binary{0} char(50) autocad_extended_data{}.distance{0} number(31,15) autocad_extended_data{}.handle{0} char(50) autocad_extended_data{}.handle{1} char(50) autocad_extended_data{}.handle{2} char(50) autocad_extended_data{}.real{0} number(31,15) autocad_extended_data{}.string{} char(50) autocad_extended_data{}.three_reals{0}.real1 number(31,15) autocad_extended_data{}.three_reals{0}.real2 number(31,15) autocad_extended_data{}.three_reals{0}.real3 number(31,15) autocad_extended_data{}.world_direction{0}.x number(31,15) autocad_extended_data{}.world_direction{0}.y number(31,15) autocad_extended_data{}.world_direction{0}.z number(31,15) autocad_extended_data{}.world_displacement{0}.x number(31,15) autocad_extended_data{}.world_displacement{0}.y number(31,15) autocad_extended_data{}.world_displacement{0}.z number(31,15) autocad_extended_data{}.world_position{0}.x number(31,15) autocad_extended_data{}.world_position{0}.y number(31,15) autocad_extended_data{}.world_position{0}.z number(31,15) autocad_extmax_x number(31,15) autocad_extmax_y number(31,15) autocad_extmax_z number(31,15) autocad_extmin_x number(31,15) autocad_extmin_y number(31,15) autocad_extmin_z number(31,15) autocad_extrusion_x number(31,15) autocad_extrusion_y number(31,15) autocad_extrusion_z number(31,15) autocad_fill_color number(6,0) autocad_fillmode logical autocad_fit_tolerance number(31,15) autocad_fit_x string autocad_fit_y string autocad_fit_z string autocad_flag number(6,0) autocad_font_bold logical autocad_font_charset number(11,0) autocad_font_italic logical autocad_font_pitch_family number(11,0) autocad_font_typeface char(50) autocad_generation char(30) autocad_group_accessible char(50) autocad_group_anonymous char(50) autocad_group_description char(50) autocad_group_name char(50) autocad_group_num_entities char(50) autocad_group_selectable char(50) autocad_has_hook_line logical autocad_hatch_associative number(5,0) autocad_hatch_complex_mode number(5,0) autocad_hatch_gradient_angle number(31,15) autocad_hatch_gradient_color1 char(50) autocad_hatch_gradient_color2 char(50) autocad_hatch_gradient_name char(32) autocad_hatch_gradient_one_color_mode number(5,0) autocad_hatch_gradient_shift number(31,15) autocad_hatch_gradient_type number(6,0) autocad_hatch_loop{}.autocad_hatch_bulges_present number(5,0) autocad_hatch_loop{}.autocad_hatch_bulge{} number(31,15) autocad_hatch_loop{}.autocad_hatch_loop_type number(11,0) autocad_hatch_object_type number(6,0) autocad_hatch_origin_point_x number(31,15) autocad_hatch_origin_point_y number(31,15) autocad_hatch_pattern_angle number(31,15) autocad_hatch_pattern_double number(5,0) autocad_hatch_pattern_name char(32) autocad_hatch_pattern_scale number(31,15) autocad_hatch_pattern_space number(31,15) autocad_hatch_pattern_type number(6,0) autocad_hatch_pixel_size number(31,15) autocad_hatch_shade_tint_value number(31,15) autocad_hatch_style number(6,0) autocad_hook_line_on_xdir logical autocad_insunits number(6,0) autocad_invisible_attributes{} char(50) autocad_justification char(50) autocad_knot_param char(10) autocad_knot_tolerance number(31,15) autocad_knots string autocad_latitude number(31,15) autocad_layer char(50) autocad_layer_color number(6,0) autocad_layer_desc string autocad_layer_frozen char(10) autocad_layer_hidden char(10) autocad_layer_linetype char(32) autocad_layer_lineweight number(5,0) autocad_layer_locked char(10) autocad_layer_on char(10) autocad_layer_plottable char(10) autocad_layer_transparency number(5,0) autocad_layer_type char(50) autocad_layout_insert_base_x number(31,15) autocad_layout_insert_base_y number(31,15) autocad_layout_insert_base_z number(31,15) autocad_layout_limit_check logical autocad_layout_limit_max_x number(31,15) autocad_layout_limit_max_y number(31,15) autocad_layout_limit_min_x number(31,15) autocad_layout_limit_min_y number(31,15) autocad_layout_linetype_scale logical autocad_layout_name char(254) autocad_layout_tab_order number(11,0) autocad_line_defpoint.x number(31,15) autocad_line_defpoint.y number(31,15) autocad_line_defpoint.z number(31,15) autocad_linespace_factor number(31,15) autocad_linetype char(50) autocad_linetype_generation number(1,0) autocad_linetype_scale number(31,15) autocad_lineweight char(10) autocad_longitude number(31,15) autocad_lunits number(6,0) autocad_luprec number(6,0) autocad_mline_style char(50) autocad_mline_type char(50) autocad_mpolygon_associative number(5,0) autocad_mpolygon_gradient_angle number(31,15) autocad_mpolygon_gradient_color1 char(50) autocad_mpolygon_gradient_color2 char(50) autocad_mpolygon_gradient_name char(32) autocad_mpolygon_gradient_one_color_mode number(5,0) autocad_mpolygon_gradient_shift number(31,15) autocad_mpolygon_gradient_type number(6,0) autocad_mpolygon_object_type number(6,0) autocad_mpolygon_offset_x number(31,15) autocad_mpolygon_offset_y number(31,15) autocad_mpolygon_origin_point_x number(31,15) autocad_mpolygon_origin_point_y number(31,15) autocad_mpolygon_pattern_angle number(31,15) autocad_mpolygon_pattern_color char(50) autocad_mpolygon_pattern_double number(5,0) autocad_mpolygon_pattern_name char(32) autocad_mpolygon_pattern_scale number(31,15) autocad_mpolygon_pattern_space number(31,15) autocad_mpolygon_pattern_type number(6,0) autocad_mpolygon_pixel_size number(31,15) autocad_mpolygon_shade_tint_value number(31,15) autocad_mpolygon_style number(6,0) autocad_mtext_ref_rect_width number(31,15) autocad_mtext_string char(50) autocad_mtext_text_height number(31,15) autocad_normal_x number(31,15) autocad_normal_y number(31,15) autocad_normal_z number(31,15) autocad_num_cntl_pts number(11,0) autocad_num_fit_pts number(11,0) autocad_num_knots number(11,0) autocad_num_lines number(5,0) autocad_num_verts number(5,0) autocad_number_columns number(5,0) autocad_number_rows number(5,0) autocad_oblique number(31,15) autocad_original_color char(10) autocad_original_entity char(50) autocad_original_entity_type char(50) autocad_original_layer char(50) autocad_original_rotation number(31,15) autocad_original_text_size number(31,15) autocad_original_text_string string autocad_overlined char(1) autocad_path_type char(10) autocad_pdmode number(6,0) autocad_pdsize number(31,15) autocad_periodic_spline number(6,0) autocad_polyflag char(50) autocad_primary_axis number(31,15) autocad_projectname char(32) autocad_proxygraphics number(6,0) autocad_raster_brightness number(4,0) autocad_raster_clip_inverted logical autocad_raster_clip_points{}.x number(31,15) autocad_raster_clip_points{}.y number(31,15) autocad_raster_clip_points{}.z number(31,15) autocad_raster_contrast number(4,0) autocad_raster_display_opt_clip logical autocad_raster_display_opt_show logical autocad_raster_display_opt_show_unaligned logical autocad_raster_display_opt_transparent logical autocad_raster_fade number(4,0) autocad_raster_filename string autocad_raster_original_transparency char(50) autocad_raster_transparency number(4,0) autocad_rational_spline number(6,0) autocad_resolved_linetype char(50) autocad_resolved_lineweight number(5,0) autocad_resolved_transparency number(5,0) autocad_rotation number(31,15) autocad_row_distance number(31,15) autocad_scale number(31,15) autocad_secondary_axis number(31,15) autocad_shape_filename char(65) autocad_shape_height number(31,15) autocad_shape_index number(31,15) autocad_shape_name char(32) autocad_shape_rotation number(31,15) autocad_shape_vertical char(6) autocad_shape_width number(31,15) autocad_source_filename string autocad_space string autocad_spline_type char(15) autocad_start_angle number(31,15) autocad_start_tangent_x number(31,15) autocad_start_tangent_y number(31,15) autocad_start_tangent_z number(31,15) autocad_start_width number(31,15) autocad_store_bulges_mode logical autocad_sweep_angle number(31,15) autocad_text_midpoint.x number(31,15) autocad_text_midpoint.y number(31,15) autocad_text_midpoint.z number(31,15) autocad_text_rotation number(31,15) autocad_text_size number(31,15) autocad_text_string char(50) autocad_text_x_pos number(31,15) autocad_text_y_pos number(31,15) autocad_text_z_pos number(31,15) autocad_textpict char(50) autocad_thickness number(31,15) autocad_tracking_percent number(31,15) autocad_transparency number(5,0) autocad_true_color char(50) autocad_true_type_font char(50) autocad_txt_offset_x number(31,15) autocad_txt_offset_y number(31,15) autocad_txt_offset_z number(31,15) autocad_ucs_applied logical autocad_ucs_origin_x number(31,15) autocad_ucs_origin_y number(31,15) autocad_ucs_origin_z number(31,15) autocad_ucs_xangle number(31,15) autocad_ucs_xdir_x number(31,15) autocad_ucs_xdir_y number(31,15) autocad_ucs_xdir_z number(31,15) autocad_ucs_ydir_x number(31,15) autocad_ucs_ydir_y number(31,15) autocad_ucs_ydir_z number(31,15) autocad_underlay_adjusted_for_background logical autocad_underlay_clip_inverted logical autocad_underlay_clipped logical autocad_underlay_contrast number(6,0) autocad_underlay_definition_id char(50) autocad_underlay_fade number(6,0) autocad_underlay_item_name char(65) autocad_underlay_monochrome logical autocad_underlay_on logical autocad_underlay_source_filename char(65) autocad_underlay_type char(65) autocad_underlined char(1) autocad_upside_down char(1) autocad_version char(32) autocad_vertical char(1) autocad_viewport_ambient_light_color number(6,0) autocad_viewport_anno_scale string autocad_viewport_anno_scale_drawing_units number(31,15) autocad_viewport_anno_scale_paper_units number(31,15) autocad_viewport_back_clip logical autocad_viewport_back_clip_distance number(31,15) autocad_viewport_brightness number(31,15) autocad_viewport_center_point_x number(31,15) autocad_viewport_center_point_y number(31,15) autocad_viewport_center_point_z number(31,15) autocad_viewport_circle_sides number(6,0) autocad_viewport_clipped_handle char(50) autocad_viewport_contrast number(31,15) autocad_viewport_custom_scale number(31,15) autocad_viewport_default_lighting logical autocad_viewport_default_lighting_type number(6,0) autocad_viewport_front_clip logical autocad_viewport_front_clip_distance number(31,15) autocad_viewport_front_clip_eye logical autocad_viewport_grid logical autocad_viewport_grid_adaptive logical autocad_viewport_grid_bound_limits logical autocad_viewport_grid_follow logical autocad_viewport_grid_increment_x number(31,15) autocad_viewport_grid_increment_y number(31,15) autocad_viewport_grid_major number(6,0) autocad_viewport_grid_subdivision_restricted logical autocad_viewport_handle char(50) autocad_viewport_height number(31,15) autocad_viewport_hidden_lines_removed logical autocad_viewport_lens_length number(31,15) autocad_viewport_locked logical autocad_viewport_non_rect_clip logical autocad_viewport_non_rect_clip_handle char(50) autocad_viewport_on logical autocad_viewport_perspective logical autocad_viewport_plot_style_sheet string autocad_viewport_resolved_target_x number(31,15) autocad_viewport_resolved_target_y number(31,15) autocad_viewport_resolved_target_z number(31,15) autocad_viewport_shade_plot char(32) autocad_viewport_snap logical autocad_viewport_snap_angle number(31,15) autocad_viewport_snap_base_point_x number(31,15) autocad_viewport_snap_base_point_y number(31,15) autocad_viewport_snap_increment_x number(31,15) autocad_viewport_snap_increment_y number(31,15) autocad_viewport_snap_iso_pair number(6,0) autocad_viewport_snap_isometric logical autocad_viewport_standard_scale char(32) autocad_viewport_twist_angle number(31,15) autocad_viewport_ucs_elevation number(31,15) autocad_viewport_ucs_follow_mode logical autocad_viewport_ucs_icon_origin logical autocad_viewport_ucs_icon_visible logical autocad_viewport_ucs_origin_x number(31,15) autocad_viewport_ucs_origin_y number(31,15) autocad_viewport_ucs_origin_z number(31,15) autocad_viewport_ucs_saved_with_viewport logical autocad_viewport_ucs_xdir_x number(31,15) autocad_viewport_ucs_xdir_y number(31,15) autocad_viewport_ucs_xdir_z number(31,15) autocad_viewport_ucs_ydir_x number(31,15) autocad_viewport_ucs_ydir_y number(31,15) autocad_viewport_ucs_ydir_z number(31,15) autocad_viewport_view_center_x number(31,15) autocad_viewport_view_center_y number(31,15) autocad_viewport_view_direction_x number(31,15) autocad_viewport_view_direction_y number(31,15) autocad_viewport_view_direction_z number(31,15) autocad_viewport_view_height number(31,15) autocad_viewport_view_target_x number(31,15) autocad_viewport_view_target_y number(31,15) autocad_viewport_view_target_z number(31,15) autocad_viewport_width number(31,15) autocad_visible_attributes{} char(50) autocad_width number(31,15) autocad_width_factor number(31,15) autocad_x_dir_x number(31,15) autocad_x_dir_y number(31,15) autocad_x_dir_z number(31,15) autocad_xrecord_data_list{} char(50) autocad_xrecord_data{0}.16Bit_integer{0} number(5,0) autocad_xrecord_data{0}.autocad_layer{0} char(50) autocad_xrecord_data{0}.autocad_scale{0} number(31,15) autocad_xrecord_data{0}.binary{0} char(50) autocad_xrecord_data{0}.distance{0} number(31,15) autocad_xrecord_data{0}.handle{0} char(50) autocad_xrecord_data{0}.handle{1} char(50) autocad_xrecord_data{0}.handle{2} char(50) autocad_xrecord_data{0}.real{0} number(31,15) autocad_xrecord_data{0}.string{0} char(50) autocad_xrecord_data{0}.three_reals{0}.real1 number(31,15) autocad_xrecord_data{0}.three_reals{0}.real2 number(31,15) autocad_xrecord_data{0}.three_reals{0}.real3 number(31,15) autocad_xrecord_data{0}.world_direction{0}.x number(31,15) autocad_xrecord_data{0}.world_direction{0}.y number(31,15) autocad_xrecord_data{0}.world_direction{0}.z number(31,15) autocad_xrecord_data{0}.world_displacement{0}.x number(31,15) autocad_xrecord_data{0}.world_displacement{0}.y number(31,15) autocad_xrecord_data{0}.world_displacement{0}.z number(31,15) autocad_xrecord_data{0}.world_position{0}.x number(31,15) autocad_xrecord_data{0}.world_position{0}.y number(31,15) autocad_xrecord_data{0}.world_position{0}.z number(31,15) autocad_xrecord_data{0}.xrecord_name char(50) autocad_xrecord_data{}.16Bit_integer{0} number(5,0) autocad_xrecord_data{}.autocad_layer{0} char(50) autocad_xrecord_data{}.autocad_scale{0} number(31,15) autocad_xrecord_data{}.binary{0} char(50) autocad_xrecord_data{}.distance{0} number(31,15) autocad_xrecord_data{}.handle{0} char(50) autocad_xrecord_data{}.handle{1} char(50) autocad_xrecord_data{}.handle{2} char(50) autocad_xrecord_data{}.real{0} number(31,15) autocad_xrecord_data{}.string{} char(50) autocad_xrecord_data{}.three_reals{0}.real1 number(31,15) autocad_xrecord_data{}.three_reals{0}.real2 number(31,15) autocad_xrecord_data{}.three_reals{0}.real3 number(31,15) autocad_xrecord_data{}.world_direction{0}.x number(31,15) autocad_xrecord_data{}.world_direction{0}.y number(31,15) autocad_xrecord_data{}.world_direction{0}.z number(31,15) autocad_xrecord_data{}.world_displacement{0}.x number(31,15) autocad_xrecord_data{}.world_displacement{0}.y number(31,15) autocad_xrecord_data{}.world_displacement{0}.z number(31,15) autocad_xrecord_data{}.world_position{0}.x number(31,15) autocad_xrecord_data{}.world_position{0}.y number(31,15) autocad_xrecord_data{}.world_position{0}.z number(31,15) autocad_xrecord_data{}.xrecord_name char(50) autocad_xref_name char(50) autocad_xref_path string autocad_xref_status char(50) autocad_xref_type char(10) autocad_xscale number(31,15) autocad_yscale number(31,15) autocad_zscale number(31,15) fme_attrib_info{} char(50) fme_attrib_info{}.align_x number(31,15) fme_attrib_info{}.align_y number(31,15) fme_attrib_info{}.attribute_flag char(2) fme_attrib_info{}.color.blue number(31,15) fme_attrib_info{}.color.green number(31,15) fme_attrib_info{}.color.red number(31,15) fme_attrib_info{}.color.source char(10) fme_attrib_info{}.field_name char(513) fme_attrib_info{}.field_size number(5,0) fme_attrib_info{}.field_value char(2049) fme_attrib_info{}.generation char(25) fme_attrib_info{}.height number(31,15) fme_attrib_info{}.isVisible char(6) fme_attrib_info{}.justification char(25) fme_attrib_info{}.layer char(512) fme_attrib_info{}.location_x number(31,15) fme_attrib_info{}.location_y number(31,15) fme_attrib_info{}.location_z number(31,15) fme_attrib_info{}.oblique number(31,15) fme_attrib_info{}.rotation number(31,15) fme_attrib_info{}.style char(512) fme_attrib_info{}.width_factor number(31,15) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24202"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ACAD_IN_USE_BLOCK_HEADER_LAYER ACAD_IN_USE_BLOCK_LAYER_INFO ACAD_IN_RESOLVE_ENTITY_COLOR ACAD_IN_PRESERVE_INSERTS ACAD_IN_READ_AS_GEOM_INSTANCES ACAD_IN_STORE_BULGE_INFO _BULGES_AS_ARCS ACAD_IN_INTERPRET_EXTENDED_DATA ACAD_IN_READ_GROUPS ACAD_IN_READ_USER_DICTIONARIES ACAD_IN_READ_XREFS ACAD_IN_EVALUATE_MLINE_GEOM ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS ACAD_IN_IGNORE_UCS ACAD_IN_PRESERVE_CLIPPED_RASTERS ACAD_IN_PRESERVE_COMPLEX_HATCHES ACAD_IN_IGNORE_FROZEN_LAYERS ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS ACAD_IN_IGNORE_HIDDEN_LAYERS ACAD_IN_STORE_SPLINE_DEFS ACAD_IN_USE_DXF_HEADER ACAD_IN_RESOLVE_DIMENSIONS ACAD_IN_APPLY_WORLD_FILE ACAD_IN_READ_PROXY_GRAPHICS ACAD_IN_READ_SYS_VARS ACAD_IN_READ_REGIONS_AS_AREAS ACAD_IN_READ_RASTERS ACAD_IN_STORE_LAYER_INFO ACAD_IN_STORE_INSERT_POINT ACAD_IN_LIST_EXTENDED_DATA ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA ACAD_IN_XRECORD_READING"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=".dwg image/vnd.dwg .dxf image/vnd.dxf ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the DWG file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the DWG file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ACAD"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_insert"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_shape"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_leader"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_xline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_ray"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_trace"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_face"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_layout"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_spline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_multi_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_attr_def"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_viewport"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_tolerance"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_dictionary"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_mline_style"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_class"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_hatch"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_mpolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_region"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_solid3d"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_wipeout"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_xref"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_underlay"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_body"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_zombie"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_xrecord"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_leader"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_group"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_proxy"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_block"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_begin_block"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_end_block"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_block"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_dimension"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_dimension_def"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_info"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_attribute"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_region"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ACAD"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="0"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="autocad_line autocad_point autocad_ellipse autocad_shape autocad_text autocad_arc autocad_trace autocad_solid autocad_insert autocad_polygon autocad_face autocad_ray autocad_xline autocad_spline autocad_multi_line autocad_multi_text autocad_dimension autocad_hatch autocad_mpolygon autocad_surface autocad_solid3d autocad_dimension_def autocad_attr_def autocad_info autocad_layout autocad_viewport autocad_group autocad_xrecord autocad_raster autocad_region autocad_wipeout autocad_underlay"
+#!   POSITION="-5955.5168077938361 616.55029659802335"
+#!   BOUNDING_RECT="-5955.5168077938361 616.55029659802335 436 65"
+#!   ORDER="500000000000062"
+#!   COLLAPSED="false"
+#!   KEYWORD="ACAD_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="ACAD_1"
+#!   OVERRIDE="-ACAD_1_DATASET"
+#!   DATASET="ACAD_1/Roads.dwg"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ACAD INCLUDE_WEB_BROWSER%DWG_Files/DXF_Files(*.dwg;*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source Autodesk AutoCAD DWG/DXF File(s):"
+#!   DEFAULT_VALUE="D:\gitHub\quick-tips-fme\1-shortlines\1-dataset\Roads.dwg"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxnaXRIdWJcXHF1aWNrLXRpcHMtZm1lXFwxLXNob3J0bGluZXNcXDEtZGF0YXNldFxcUm9hZHMuZHdnIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJEV0cgRmlsZXMvRFhGIEZpbGVzIiwiZmlsdGVyIjpbIiouZHdnIiwiKi5keGYiXX0seyJkZXNjcmlwdGlvbiI6IkRXRyBGaWxlcyIsImZpbHRlciI6WyIqLmR3ZyJdfSx7ImRlc2NyaXB0aW9uIjoiRFhGIEZpbGVzIiwiZmlsdGVyIjpbIiouZHhmIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9BQ0FEIiwicHJvbXB0IjoiU291cmNlIEF1dG9kZXNrIEF1dG9DQUQgRFdHL0RYRiBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_ACAD" 
+#!   DEFAULT_VALUE="D:\gitHub\quick-tips-fme\1-shortlines\1-dataset\Roads.dwg"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ACAD INCLUDE_WEB_BROWSER%DWG_Files/DXF_Files(*.dwg;*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source Autodesk AutoCAD DWG/DXF File(s):"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="40"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Combina as linhas com base no atributo &lt;span style=&quot; font-weight:700;&quot;&gt;HBlock&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; font-weight:700;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gera uma lista&lt;span style=&quot; font-weight:400;&quot;&gt; de segmentos que foram combinados&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-4027.7590972787748 1027.0015464092203"
+#!   TOP_LEFT="-4027.7590972787748 1027.0015464092203"
+#!   BOTTOM_RIGHT="-3291.5217661554634 721.99879638172001"
+#!   BOUNDING_RECT="-4027.7590972787748 1027.0015464092203 736.23733112331126 305.00275002750027"
+#!   ORDER="500000000000047"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{eb22c532-7811-44fd-b9a9-f3fcfc4441c5}"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="23"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="39"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Expõe o Atributo &lt;span style=&quot; font-weight:700;&quot;&gt;HBlock&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-4849.6423161109624 836.2615899140477"
+#!   TOP_LEFT="-4849.6423161109624 836.2615899140477"
+#!   BOTTOM_RIGHT="-4337.1376910647123 731.26083990654763"
+#!   BOUNDING_RECT="-4849.6423161109624 836.2615899140477 512.50462504625045 105.00075000750007"
+#!   ORDER="500000000000048"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e0d408a3-c2ac-4711-a62e-b200b11891bb}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="12"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="43"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Segmenta as linhas depois de combinadas &lt;/span&gt;através do seu ponto de interssecção&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3043.6649540117587 1009.2688109423307"
+#!   TOP_LEFT="-3043.6649540117587 1009.2688109423307"
+#!   BOTTOM_RIGHT="-2406.1590789530082 804.2670609248305"
+#!   BOUNDING_RECT="-3043.6649540117587 1009.2688109423307 637.50587505875058 205.00175001750017"
+#!   ORDER="500000000000049"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e042e1a5-eae7-4070-b7e8-79ff8690be3d}"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="14"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="45"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Calcula o tamanho de cadas segmento&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1972.0699357359942 888.41004421512844"
+#!   TOP_LEFT="-1972.0699357359942 888.41004421512844"
+#!   BOTTOM_RIGHT="-1536.0797477091139 887.41004421512844"
+#!   BOUNDING_RECT="-1972.0699357359942 888.41004421512844 435.99018802688028 1"
+#!   ORDER="500000000000050"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{1f96337e-0951-4039-b673-9db1456d0a4f}"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="10"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="47"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Filtra os segmentos &lt;span style=&quot; font-weight:700;&quot;&gt;menores que 6 Metros&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-935.59963377411532 872.5081250812508"
+#!   TOP_LEFT="-935.59963377411532 872.5081250812508"
+#!   BOTTOM_RIGHT="-429.34507122848987 717.50687506875067"
+#!   BOUNDING_RECT="-935.59963377411532 872.5081250812508 506.25456254562545 155.00125001250012"
+#!   ORDER="500000000000051"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b7f57ae8-7f0b-43ce-92e6-2cbdb6f0b0cf}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="19"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="50"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Conta quantos segmentos &lt;span style=&quot; font-weight:700;&quot;&gt;foram encontrados&lt;/span&gt; menores do que 6 Metros&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-81.652738140775853 1160.0110001100015"
+#!   TOP_LEFT="-81.652738140775853 1160.0110001100015"
+#!   BOTTOM_RIGHT="443.35201190672461 1005.0097500975014"
+#!   BOUNDING_RECT="-81.652738140775853 1160.0110001100015 525.00475004750047 155.00125001250012"
+#!   ORDER="500000000000052"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{7ef0ed57-cedc-43fd-8839-ffe911d75d68}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="21"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="51"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Conta quantos elementos foram combinados&lt;/span&gt; pelo LineCombiner _element_count&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="582.06917685615201 806.88246882468843"
+#!   TOP_LEFT="582.06917685615201 806.88246882468843"
+#!   BOTTOM_RIGHT="1200.8248644130276 601.88071880718826"
+#!   BOUNDING_RECT="582.06917685615201 806.88246882468843 618.7556875568755 205.00175001750017"
+#!   ORDER="500000000000053"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{3d8611d3-aecf-4765-9715-eba36c1a1a39}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="24"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="52"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Filtra se o &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;_element_count = _segments&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1403.5552265720532 904.27927612609494"
+#!   TOP_LEFT="1403.5552265720532 904.27927612609494"
+#!   BOTTOM_RIGHT="2053.3659121789092 749.27802611359482"
+#!   BOUNDING_RECT="1403.5552265720532 904.27927612609494 649.81068560685605 155.00125001250012"
+#!   ORDER="500000000000055"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{7a2f82d4-ad27-4196-8e57-e97a01a825c2}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="26"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="63"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Combina as linhas sem base em atributos apenas em conectividade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2505.9135675070611 1128.8581961923117"
+#!   TOP_LEFT="2505.9135675070611 1128.8581961923117"
+#!   BOTTOM_RIGHT="3120.7141373877598 923.85644617481148"
+#!   BOUNDING_RECT="2505.9135675070611 1128.8581961923117 614.80056988069884 205.00175001750017"
+#!   ORDER="500000000000058"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{7a024b8d-5aa0-49cb-b15f-6ebf856dee27}"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="30"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="64"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Calcula o tamanho de cadas segmento&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3236.9539175762288 791.94467814357449"
+#!   TOP_LEFT="3236.9539175762288 791.94467814357449"
+#!   BOTTOM_RIGHT="3672.9441056031092 790.94467814357449"
+#!   BOUNDING_RECT="3236.9539175762288 791.94467814357449 435.99018802688028 1"
+#!   ORDER="500000000000059"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b884461f-fa5d-49a2-97c0-e9105c2a268d}"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="29"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="65"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Filtra os segmentos &lt;span style=&quot; font-weight:700;&quot;&gt;menores que 6 Metros&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="3983.0052995328251 883.98059414953798"
+#!   TOP_LEFT="3983.0052995328251 883.98059414953798"
+#!   BOTTOM_RIGHT="4503.1271882517121 728.97934413703786"
+#!   BOUNDING_RECT="3983.0052995328251 883.98059414953798 520.12188871888725 155.00125001250012"
+#!   ORDER="500000000000060"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{77b20a62-df39-4c62-9b9d-c6b03ff24870}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="34"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="66"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; text-decoration: underline;&quot;&gt;IMAGENS DE EXEMPLO&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;1-segmentos-rua&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/1-shortlines/2-images/1-segmentos-rua.png&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/1-shortlines/2-images/1-segmentos-rua.png&lt;/span&gt;&lt;/a&gt; &lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;2-linecombiner&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/1-shortlines/2-images/2-linecombiner.png&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/1-shortlines/2-images/2-linecombiner.png&lt;/span&gt;&lt;/a&gt; &lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;3-resultado&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/solutial-tech/quick-tips-fme/blob/main/1-shortlines/2-images/3-resultado.png&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;https://github.com/solutial-tech/quick-tips-fme/blob/main/1-shortlines/2-images/3-resultado.png&lt;/span&gt;&lt;/a&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-8239.7010292752311 1289.2413848800572"
+#!   TOP_LEFT="-8239.7010292752311 1289.2413848800572"
+#!   BOTTOM_RIGHT="-6406.3335862258009 671.73550982130666"
+#!   BOUNDING_RECT="-8239.7010292752311 1289.2413848800572 1833.3674430494304 617.50587505875058"
+#!   ORDER="500000000000025"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{003a0fe2-923e-45fc-bb65-d22b04ab224c}"
+#!   COLOUR="1,0.95686274509803926,0.80000000000000004,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="37"
+#!   COMMENT_VALUE="General&amp;nbsp;Parameters:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Reader&amp;nbsp;Type:&amp;nbsp;Autodesk&amp;nbsp;AutoCAD&amp;nbsp;DWG/DXF&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Layer&amp;nbsp;Name:&amp;nbsp;&amp;lt;All&amp;gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Reader:&amp;nbsp;Roads&amp;nbsp;[ACAD]&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Allowed&amp;nbsp;Geometries:&amp;nbsp;All&lt;br&gt;Exposed Attributes:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;fme_feature_type&lt;/td&gt;&lt;td&gt;char(50)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+#!   POSITION="-6114.8934015597733 1145.3049841448988"
+#!   TOP_LEFT="-6114.8934015597733 1145.3049841448988"
+#!   BOTTOM_RIGHT="-5281.7312730634885 1146.3049841448988"
+#!   BOUNDING_RECT="-6114.8934015597733 1145.3049841448988 833.16212849628494 -1"
+#!   ORDER="500000000000045"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{6b2b5f6c-e010-434b-9cdc-0e758dbe40ab}"
+#!   ANCHORED_NODE="11"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="36"
+#!   NAME="1.0 | Reader DWG"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-6238.27299535571 1284.0546716417734"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-5125.7618702444579 363.73307098870168"
+#!   BOUNDING_RECT="-6238.27299535571 1284.0546716417734 1112.5111251112517 920.32160065307176"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="37 11 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="38"
+#!   NAME="2.1 | Expõe o Atributo HBlock"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-4958.509683854405 1179.4309962851148"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-4167.8767775253418 373.17293370448897"
+#!   BOUNDING_RECT="-4958.509683854405 1179.4309962851148 790.63290632906319 806.25806258062585"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="39 12 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="41"
+#!   NAME="2.2 | Cobina as Linhas pelo Atributo"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-4072.6713370988464 1177.904818232636"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-3247.6640870263454 359.14663065076024"
+#!   BOUNDING_RECT="-4072.6713370988464 1177.904818232636 825.00725007250094 818.75818758187575"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   CONTENTS="23 40 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="42"
+#!   NAME="2.3 | Segmenta as Linhas nos Cruzamentos"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-3141.554033087295 1168.0209984642061"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-2219.5288056735317 352.38769742569025"
+#!   BOUNDING_RECT="-3141.554033087295 1168.0209984642061 922.02522741376333 815.63330103851581"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   CONTENTS="43 14 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="44"
+#!   NAME="2.4 | Calcula o Tamanho da Linha"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2156.4453264558438 1170.6007049712236"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-1331.4380763833428 354.96740393270784"
+#!   BOUNDING_RECT="-2156.4453264558438 1170.6007049712236 825.00725007250094 815.63330103851581"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   CONTENTS="10 45 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="46"
+#!   NAME="3.1 | Filtragem das Linhas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1071.5345460715403 1165.636410838596"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-280.90163974247707 359.37834825797017"
+#!   BOUNDING_RECT="-1071.5345460715403 1165.636410838596 790.63290632906319 806.25806258062585"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="47 19 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="49"
+#!   NAME="3.2 | Contagem de Linhas e Contagem de Linhas Combinadas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-194.50541696900839 1262.5130161491436"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1244.5758019224029 350.00350003500034"
+#!   BOUNDING_RECT="-194.50541696900839 1262.5130161491436 1439.0812188914113 912.50951611414325"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="50 51 21 24 48 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="54"
+#!   NAME="3.2 | Filtragem de Linhas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1306.5010835522571 1258.5742295779121"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2213.9799974864281 346.75004284289412"
+#!   BOUNDING_RECT="1306.5010835522571 1258.5742295779121 907.47891393417081 911.82418673501797"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="26 52 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="55"
+#!   NAME="4.1 | Combiner das Micro linhas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2441.7616773392679 1208.295259088037"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="3814.2504712718364 325.34571921061683"
+#!   BOUNDING_RECT="2441.7616773392679 1208.295259088037 1372.4887939325686 882.94953987742019"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.40392156862745099"
+#!   CONTENTS="63 29 30 64 32 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="53"
+#!   NAME="4.2 | Expõe o Atributo HBlock"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="3873.2605991551445 1203.7157408611122"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="4631.8956340248333 321.06485448416151"
+#!   BOUNDING_RECT="3873.2605991551445 1203.7157408611122 758.63503486968875 882.65088637695067"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="34 65 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="56"
+#!   NAME="2.0 | Filtragem, União , Segmentação e Extração do Tamanho das Linhas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-5031.9271539095043 1360.6160663228104"
+#!   ORDER="500000000000022"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-1244.4211666047345 244.533476925488"
+#!   BOUNDING_RECT="-5031.9271539095043 1360.6160663228104 3787.5059873047699 1116.0825893973224"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="41 39 12 23 43 15 10 42 14 45 16 44 17 38 40 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="57"
+#!   NAME="3.0 | Validação"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1174.5667089665453 1350.0030579289883"
+#!   ORDER="500000000000022"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2277.4200344743172 233.92046853166585"
+#!   BOUNDING_RECT="-1174.5667089665453 1350.0030579289883 3451.9867434408625 1116.0825893973224"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="50 47 26 54 27 51 21 24 46 28 49 48 19 52 22 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="58"
+#!   NAME="4.0 | Combiner, Extração do Tamanho e Filtragem"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2357.1469058100006 1350.0030561269639"
+#!   ORDER="500000000000022"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="4726.0746580068535 233.92046672964148"
+#!   BOUNDING_RECT="2357.1469058100006 1350.0030561269639 2368.9277521968529 1116.0825893973224"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="55 35 34 63 53 29 30 65 64 32 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="LengthCalculator"
+#!   VERSION="2"
+#!   POSITION="-1972.0699357359942 703.40879420262831"
+#!   BOUNDING_RECT="-1972.0699357359942 703.40879420262831 436 65"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="DIM" PARM_VALUE="2"/>
+#!     <XFORM_PARM PARM_NAME="LEN_ATTR" PARM_VALUE="_length"/>
+#!     <XFORM_PARM PARM_NAME="MULT" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LengthCalculator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="-910.59938377161541 681.2568125681255"
+#!   BOUNDING_RECT="-910.59938377161541 681.2568125681255 436 65"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_length&lt;closeparen&gt; &lt; 6"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="StatisticsCalculator"
+#!   VERSION="11"
+#!   POSITION="-44.152363137025816 925.00925009250147"
+#!   BOUNDING_RECT="-44.152363137025816 925.00925009250147 436 65"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="COMPLETE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADV_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ADV_PARAMETERMAP_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="None"/>
+#!     <XFORM_PARM PARM_NAME="CALCULATION_MODE" PARM_VALUE="NUMERIC"/>
+#!     <XFORM_PARM PARM_NAME="CUMULATIVE_STATS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="FEAT_STATS" PARM_VALUE="_length,NUMERIC_MODE,,,COUNT,,,,,,,,,,"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="fme_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREPEND_ATTR_NAME_OBS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="STATISTIC_SUFFIX_RENAME_MAP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="STATS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StatisticsCalculator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="LineCombiner"
+#!   VERSION="11"
+#!   POSITION="-3888.2954933404098 684.14988068326079"
+#!   BOUNDING_RECT="-3888.2954933404098 684.14988068326079 436 65"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="LINE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="BREAK" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="BREAK_CONNECTION_ATTRIBUTES" PARM_VALUE="HBlock"/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="First Wins"/>
+#!     <XFORM_PARM PARM_NAME="CONSIDER_NODE_ELEVATION" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="DEAGGREGATE_GEOMETRY" PARM_VALUE="Deaggregate"/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION_NAME" PARM_VALUE="_direction"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="JUNCTIONS_IGNORE_ATTRIBUTES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LINES_AS_SEGMENTS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="lista_combiner"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="TOPOLOGY" PARM_VALUE="End noded"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LineCombiner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="AttributeExposer"
+#!   VERSION="2"
+#!   POSITION="-4821.0083088406573 691.23166984740521"
+#!   BOUNDING_RECT="-4821.0083088406573 691.23166984740521 436 65"
+#!   ORDER="500000000000038"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="HBlock,,StreetId,"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeExposer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="Intersector"
+#!   VERSION="13"
+#!   POSITION="-2937.4138915011335 768.01699842420555"
+#!   BOUNDING_RECT="-2937.4138915011335 768.01699842420555 436 65"
+#!   ORDER="500000000000039"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="INTERSECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="NODE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_node_number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="COLLAPSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTRS_ACCUM_MODE" PARM_VALUE="Use Attributes From One Feature"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CLEANING_TOLERANCE" PARM_VALUE="Automatic"/>
+#!     <XFORM_PARM PARM_NAME="DEAGGREGATE_INPUT" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION_NAME" PARM_VALUE="_direction"/>
+#!     <XFORM_PARM PARM_NAME="DUPLICATE_Z_NODES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_DROP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GRP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="INCOMING_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MEASURE_TYPE" PARM_VALUE="Continuous"/>
+#!     <XFORM_PARM PARM_NAME="NODE_NUM_ATTR" PARM_VALUE="_node_number"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OV_ATTR" PARM_VALUE="_overlaps"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEG_ATTR" PARM_VALUE="_segments"/>
+#!     <XFORM_PARM PARM_NAME="SEPARATE_COLLINEAR_SEGMENTS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Intersector"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="ListElementCounter"
+#!   VERSION="2"
+#!   POSITION="657.06992686365209 571.88071880718826"
+#!   BOUNDING_RECT="657.06992686365209 571.88071880718826 437.453125 65"
+#!   ORDER="500000000000042"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_element_count"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="lista_combiner&lt;opencurly&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListElementCounter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="1507.7229349158031 721.36138028046969"
+#!   BOUNDING_RECT="1507.7229349158031 721.36138028046969 436 65"
+#!   ORDER="500000000000043"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_element_count&lt;closeparen&gt; = &lt;at&gt;Value&lt;openparen&gt;_segments&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="29"
+#!   TYPE="LengthCalculator"
+#!   VERSION="2"
+#!   POSITION="3236.9539175762288 606.94342813107437"
+#!   BOUNDING_RECT="3236.9539175762288 606.94342813107437 436 65"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="DIM" PARM_VALUE="2"/>
+#!     <XFORM_PARM PARM_NAME="LEN_ATTR" PARM_VALUE="_length"/>
+#!     <XFORM_PARM PARM_NAME="MULT" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LengthCalculator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="LineCombiner"
+#!   VERSION="11"
+#!   POSITION="2587.2499973097147 895.226322887278"
+#!   BOUNDING_RECT="2587.2499973097147 895.226322887278 436 65"
+#!   ORDER="500000000000044"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="LINE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="BREAK" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="BREAK_CONNECTION_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="First Wins"/>
+#!     <XFORM_PARM PARM_NAME="CONSIDER_NODE_ELEVATION" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="DEAGGREGATE_GEOMETRY" PARM_VALUE="Deaggregate"/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JUNCTIONS_IGNORE_ATTRIBUTES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LINES_AS_SEGMENTS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="TOPOLOGY" PARM_VALUE="End noded"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LineCombiner_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="34"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="4042.9374057032019 683.22576194368173"
+#!   BOUNDING_RECT="4042.9374057032019 683.22576194368173 431 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="HBlock" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="StreetId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lista_combiner{}._direction" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_segments" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_length.total_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_element_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Across Output Ports"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_length&lt;closeparen&gt; &lt; 6"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="59"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="4955.3471900623654 874.94309958889971"
+#!   BOUNDING_RECT="4955.3471900623654 874.94309958889971 431 71"
+#!   ORDER="500000000000056"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Menor_que_6M"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="61"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="4972.1925248864218 477.17645008070014"
+#!   BOUNDING_RECT="4972.1925248864218 477.17645008070014 431 71"
+#!   ORDER="500000000000057"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Maior_que_6M"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 0 INTERSECTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 LINE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="29"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="fo 0 LINE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="60"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="59"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 1 COMPLETE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="62"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="61"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 311
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_ACAD_1,ACAD_IN_ENTITY_OPTIONS_ACAD_1,ACAD_IN_RESOLVE_BLOCKS_ACAD_1,ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_1,ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_1,ACAD_IN_STORE_INSERT_POINT_ACAD_1,ACAD_IN_PRESERVE_INSERTS_ACAD_1,ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_1,ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_1,ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_1,ACAD_IN_EXPLODE_MTEXT_ACAD_1,ACAD_IN_READ_AS_2_5D_ACAD_1,ACAD_IN_SPACE_OPTIONS_ACAD_1,ACAD_IN_READ_MODEL_SPACE_ACAD_1,ACAD_IN_READ_PAPER_SPACE_ACAD_1,ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_1,ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_1,ACAD_IN_RESOLVE_VIEWPORTS_ACAD_1,ACAD_IN_ACAD_ATTRIBUTE_OPTIONS_ACAD_1,ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_1,ACAD_IN_LIST_EXTENDED_DATA_ACAD_1,ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_1,ACAD_IN_XRECORD_READING_ACAD_1,ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1,ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1,ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_1,ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_1,ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_1,ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_1,ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_1,ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_1,ACAD_IN_CLIP_TO_ENVELOPE_ACAD_1,ACAD_IN_ACAD_RDR_ADV_PARM_GROUP_ACAD_1,ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_1,ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_1,ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_1,ACAD_IN_READ_GROUPS_ACAD_1,ACAD_IN_READ_USER_DICTIONARIES_ACAD_1,ACAD_IN_READ_XREFS_ACAD_1,ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_1,ACAD_IN_STORE_LAYER_INFO_ACAD_1,ACAD_IN_STORE_BULGE_INFO_ACAD_1,ACAD_IN_STORE_SPLINE_DEFS_ACAD_1,ACAD_IN_RESOLVE_DIMENSIONS_ACAD_1,ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_1,ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_1,ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_1,ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_1,ACAD_IN_IGNORE_UCS_ACAD_1,ACAD_IN_APPLY_WORLD_FILE_ACAD_1,ACAD_IN_READ_PROXY_GRAPHICS_ACAD_1,ACAD_IN_READ_SYS_VARS_ACAD_1,ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_1,ACAD_IN_READ_RASTERS_ACAD_1,ACAD_IN_DXF_HEADER_GROUP_ACAD_1,ACAD_IN_USE_DXF_HEADER_ACAD_1,ACAD_IN_NETWORK_AUTHENTICATION_ACAD_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_ACAD D:\gitHub\quick-tips-fme\1-shortlines\1-dataset\Roads.dwg
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_ACAD$encode)} == {}} { puts_real {Parameter 'SourceDataset_ACAD' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ACAD
+MULTI_READER_KEYWORD{0} ACAD_1
+MULTI_READER_GEN_DIRECTIVES{0} EXPOSE_ATTRS_MSG,,USE_BLOCK_HEADER_LAYER,yes,CLIP_TO_ENVELOPE,NO,DXF_HEADER_GROUP,,SEARCH_ENVELOPE_MAXY,0,OUTPUT_ZERO_LENGTH_LINES_AS_LINES,no,RESOLVE_DIMENSIONS,yes,EXPLODE_MTEXT,yes,STORE_SPLINE_DEFS,yes,READ_PROXY_GRAPHICS,yes,ACAD_ATTRIBUTE_OPTIONS,,RESOLVE_ENTITY_COLOR,yes,IGNORE_FROZEN_LAYERS,no,STRUCTURE_EXTENDED_DATA,no,USE_SEARCH_ENVELOPE,NO,PRESERVE_INSERTS,no,SPACE_OPTIONS,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,RESOLVE_BLOCKS,yes,XRECORD_READING,Lists,APPLY_WORLD_FILE,yes,IGNORE_UCS,no,EVALUATE_MLINE_GEOM,no,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,PRESERVE_CLIPPED_RASTERS,no,USE_DXF_HEADER,,SEARCH_ENVELOPE_MAXX,0,USE_BLOCK_LAYER_INFO,no,ENTITY_OPTIONS,,READ_XREFS,no,LIST_ATTRIBUTE_ENTITY_DATA,yes,READ_SYS_VARS,no,READ_PAPER_SPACE_LAYOUTS,yes,STORE_BULGE_INFO,no,READ_MODEL_SPACE,yes,VISIBLE_ATTRIBUTES_AS_TEXT,yes,LIST_EXTENDED_DATA,yes,RESOLVE_SELECTED_BLOCKS,,EXPOSE_ATTRS_GROUP,,METAFILE,acadScan,READ_GROUPS,no,RESOLVE_VIEWPORTS,no,READ_PAPER_SPACE,,CONVERT_ZERO_LENGTH_ARCS_TO_POINTS,yes,STORE_INSERT_POINT,no,READ_SELECTED_PAPER_SPACE,,INTERPRET_EXTENDED_DATA,yes,ACAD_RDR_ADV_PARM_GROUP,,STORE_LAYER_INFO,no,PRESERVE_COMPLEX_HATCHES,no,READ_USER_DICTIONARIES,no,ACAD_EXPOSE_FORMAT_ATTRS,,READ_AS_2_5D,no
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ACAD_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ACAD ACAD_1
+ACAD_1_DYNAMIC_WORKFLOW YES
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the DWG/DXF translation.
+# The user input is stored in a MACRO, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ACAD_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ACAD ACAD_1
+DEFAULT_MACRO SourceDataset_ACAD_1 $(SourceDataset_ACAD)
+GUI MULTIFILE SourceDataset_ACAD_1 DWG_Files(*.dwg)/DXF_Files(*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|All_Files(*)|* Source Autodesk AutoCAD DWG/DXF File(s):
+DEFAULT_MACRO _BULGES_AS_ARCS_ACAD_1 no
+ACAD_1_SPLIT_BULGE_ARCS $(_BULGES_AS_ARCS_ACAD_1)
+# ============================================================================
+# Now define a TestFactory which deletes any Insert entities
+# which do not have any attributes following. If you want to get
+# rid of these points for any reason then, remove the comments
+#
+#FACTORY_DEF * TestFactory # INPUT FEATURE_TYPE * autocad_entity autocad_insert # TEST &autocad_attributes_follow = false # OUTPUT FAILED   FEATURE_TYPE *
+#
+DEFAULT_MACRO WB_KEYWORD_ACAD_1 "DWG"
+FACTORY_DEF * TeeFactory                              \
+FACTORY_NAME $(WB_KEYWORD)"RenameAutocadExtendedAttrs"          \
+INPUT FEATURE_TYPE *                               \
+OUTPUT FEATURE_TYPE *                              \
+@CopyAttributes(autocad_extended_data_list{},extended_data_list{})    \
+@CopyAttributes(autocad_extended_data{},extended_data{})    \
+@RemoveAttributes(fme_regexp_match,^extended_data)
+DEFAULT_MACRO ACAD_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ACAD_1 Yes
+ACAD_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ACAD_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ACAD_1)"
+DEFAULT_MACRO ACAD_IN_ALL_MERGED_FILTERS_NEED_NO_DEFS_ACAD_1 Yes
+ACAD_1_ALL_MERGED_FILTERS_NEED_NO_DEFS "$(ACAD_IN_ALL_MERGED_FILTERS_NEED_NO_DEFS_ACAD_1)"
+DEFAULT_MACRO ACAD_IN_APPLY_WORLD_FILE_TO_ATTRS_ACAD_1 YES
+ACAD_1_APPLY_WORLD_FILE_TO_ATTRS "$(ACAD_IN_APPLY_WORLD_FILE_TO_ATTRS_ACAD_1)"
+DEFAULT_MACRO ACAD_IN_ENTITY_OPTIONS_ACAD_1 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_ENTITY_OPTIONS_ACAD_1 ACAD_IN_RESOLVE_BLOCKS_ACAD_1%ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_1%ACAD_IN_EXPLODE_MTEXT_ACAD_1%ACAD_IN_READ_AS_2_5D_ACAD_1 Entity Options
+# ============================================================================
+# And indicate whether or not we are to expand the blocks.
+DEFAULT_MACRO ACAD_IN_RESOLVE_BLOCKS_ACAD_1 yes
+ACAD_1_RESOLVE_BLOCKS "$(ACAD_IN_RESOLVE_BLOCKS_ACAD_1)"
+GUI ACTIVEDISCLOSUREGROUP ACAD_IN_RESOLVE_BLOCKS_ACAD_1 FME_DISCLOSURE_CLOSED%ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_1%ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_1%ACAD_IN_STORE_INSERT_POINT_ACAD_1%ACAD_IN_PRESERVE_INSERTS_ACAD_1%ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_1%ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_1 Explode Blocks into Entities
+GUI LOOKUP ACAD_IN_RESOLVE_BLOCKS_ACAD_1 YES,yes%NO,no 
+# ============================================================================
+# Indicate whether we want to use the block header feature type for the components
+# when blocks are exploded or to read components on their original feature types.
+DEFAULT_MACRO ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_1 yes
+ACAD_1_USE_BLOCK_HEADER_LAYER "$(ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_1 yes%no Use Block Feature Type for Components
+GUI LOOKUP ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_1 <Unused>,no 
+# ============================================================================
+# Indicate whether we want to use the block header layer information for the components
+# when blocks are exploded or to read components with their original layer information.
+DEFAULT_MACRO ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_1 yes
+ACAD_1_USE_BLOCK_LAYER_INFO "$(ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_1 yes%no Use Block Layer Information for Components
+GUI LOOKUP ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_1 <Unused>,no 
+# ============================================================================
+# Indicate whether we want to store the insert location for the block reference
+# on the components when blocks are exploded.
+DEFAULT_MACRO ACAD_IN_STORE_INSERT_POINT_ACAD_1 no
+ACAD_1_STORE_INSERT_POINT "$(ACAD_IN_STORE_INSERT_POINT_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_INSERT_POINT_ACAD_1 yes%no Store Insert Location on Components
+GUI LOOKUP ACAD_IN_STORE_INSERT_POINT_ACAD_1 <Unused>,no 
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_PRESERVE_INSERTS_ACAD_1 no
+ACAD_1_PRESERVE_INSERTS "$(ACAD_IN_PRESERVE_INSERTS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_PRESERVE_INSERTS_ACAD_1 yes%no Preserve Insert Points
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_1 no
+ACAD_1_READ_AS_GEOM_INSTANCES "$(ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_1 yes%no Read as Geometry Instances
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_1 
+ACAD_1_RESOLVE_SELECTED_BLOCKS "$(ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_1)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_1 $[SourceDataset_ACAD_1],_READ_SCHEMA_OVERRIDE_MODE,BLOCK_NAMES,_FORMAT_OVERRIDE_,ACAD Explode Selected Blocks
+# ============================================================================
+# As well, see if we should turn visible attributes into text
+# entities so they will be visible in the output system
+DEFAULT_MACRO ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_1 yes
+ACAD_1_VISIBLE_ATTRIBUTES_AS_TEXT "$(ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_1 yes%no Read Visible Attributes as Text Entities
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_EXPLODE_MTEXT_ACAD_1 yes
+ACAD_1_EXPLODE_MTEXT "$(ACAD_IN_EXPLODE_MTEXT_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_EXPLODE_MTEXT_ACAD_1 yes%no Explode MText Entities
+# ============================================================================
+# read polylines as 2D or 2.5D polylines
+DEFAULT_MACRO ACAD_IN_READ_AS_2_5D_ACAD_1 no
+ACAD_1_READ_AS_2_5D "$(ACAD_IN_READ_AS_2_5D_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_AS_2_5D_ACAD_1 yes%no Read Polylines as 2.5D
+DEFAULT_MACRO ACAD_IN_SPACE_OPTIONS_ACAD_1 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_SPACE_OPTIONS_ACAD_1 ACAD_IN_READ_MODEL_SPACE_ACAD_1%ACAD_IN_READ_PAPER_SPACE_ACAD_1 Model and Paper Space Options
+# ============================================================================
+# Should we read the model space
+DEFAULT_MACRO ACAD_IN_READ_MODEL_SPACE_ACAD_1 yes
+ACAD_1_READ_MODEL_SPACE "$(ACAD_IN_READ_MODEL_SPACE_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_MODEL_SPACE_ACAD_1 yes%no Read Model Space
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_READ_PAPER_SPACE_ACAD_1 NO
+ACAD_1_READ_PAPER_SPACE "$(ACAD_IN_READ_PAPER_SPACE_ACAD_1)"
+GUI ACTIVEDISCLOSUREGROUP ACAD_IN_READ_PAPER_SPACE_ACAD_1 FME_DISCLOSURE_CLOSED%ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_1%ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_1%ACAD_IN_RESOLVE_VIEWPORTS_ACAD_1 Read Paper Space
+# ============================================================================
+# Indicate which paperspaces we will read
+DEFAULT_MACRO ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_1 
+ACAD_1_READ_SELECTED_PAPER_SPACE "$(ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_1)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_1 $[SourceDataset_ACAD_1],_READ_SCHEMA_OVERRIDE_MODE,LAYOUT_NAMES,_FORMAT_OVERRIDE_,ACAD Read Selected Paper Spaces
+GUI LOOKUP ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_1 <Unused>, 
+# ============================================================================
+# Indicate whether or not we will read paper space layout information.
+DEFAULT_MACRO ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_1 yes
+ACAD_1_READ_PAPER_SPACE_LAYOUTS "$(ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_1)"
+GUI OPTIONAL CHECKBOX ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_1 yes%no Read Paper Space Layout Information
+GUI LOOKUP ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_1 <Unused>,yes 
+# ============================================================================
+# Should we resolve viewports
+DEFAULT_MACRO ACAD_IN_RESOLVE_VIEWPORTS_ACAD_1 <Unused>
+ACAD_1_RESOLVE_VIEWPORTS "$(ACAD_IN_RESOLVE_VIEWPORTS_ACAD_1)"
+GUI OPTIONAL CHECKBOX ACAD_IN_RESOLVE_VIEWPORTS_ACAD_1 yes%no Read Model Space Entities Through Viewport
+DEFAULT_MACRO ACAD_IN_ACAD_ATTRIBUTE_OPTIONS_ACAD_1 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_ACAD_ATTRIBUTE_OPTIONS_ACAD_1 ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_1%ACAD_IN_LIST_EXTENDED_DATA_ACAD_1%ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_1%ACAD_IN_XRECORD_READING_ACAD_1%ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1%ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1 Attribute Options
+# ============================================================================
+# 20140211 - allow control over additional interpreted representation for user EED
+DEFAULT_MACRO ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_1 yes
+ACAD_1_INTERPRET_EXTENDED_DATA "$(ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_1 yes%no Read Interpreted Extended Entity Data
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_LIST_EXTENDED_DATA_ACAD_1 yes
+ACAD_1_LIST_EXTENDED_DATA "$(ACAD_IN_LIST_EXTENDED_DATA_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_LIST_EXTENDED_DATA_ACAD_1 yes%no Read Extended Entity Data As List
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_1 yes
+ACAD_1_LIST_ATTRIBUTE_ENTITY_DATA "$(ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_1 yes%no Read Attribute Entity Data As List
+# ============================================================================
+# Ensure that the legacy form is still used, so we don't have to make a new directive
+DEFAULT_MACRO ACAD_IN_XRECORD_READING_ACAD_1 None
+ACAD_1_XRECORD_READING "$(ACAD_IN_XRECORD_READING_ACAD_1)"
+#GUI CHOICE XRECORD_READING None%Lists Entity XRecord Reading
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_XRECORD_READING_ACAD_1 Lists%None Entity XRecord Data Reading
+# ============================================================================
+# Determines whether dynamic block attributes will be read
+DEFAULT_MACRO ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1 no
+ACAD_1_READ_DYNAMIC_BLOCK_ATTRIBUTES "$(ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1 yes%no Read Dynamic Block Attributes
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1 yes
+ACAD_1_LIST_DYNAMIC_BLOCK_ATTRIBUTES "$(ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_1 yes%no Read Dynamic Block Attributes As List
+DEFAULT_MACRO ACAD_IN_EXPOSE_ATTRS_GROUP_ACAD_1 
+ACAD_1_EXPOSE_ATTRS_GROUP "$(ACAD_IN_EXPOSE_ATTRS_GROUP_ACAD_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_1 NO
+ACAD_1_USE_SEARCH_ENVELOPE "$(ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_1)"
+GUI ACTIVEDISCLOSUREGROUP ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_1 ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_1%ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_1%ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_1%ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_1%ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_1%ACAD_IN_CLIP_TO_ENVELOPE_ACAD_1%ACAD_IN_SEARCH_METHOD%ACAD_IN_SEARCH_METHOD_FILTER%ACAD_IN_SEARCH_ORDER%ACAD_IN_SEARCH_FEATURE%ACAD_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_1 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_1 0
+ACAD_1_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_1)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_1 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_1 0
+ACAD_1_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_1)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_1 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_1 0
+ACAD_1_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_1)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_1 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_1 0
+ACAD_1_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_1)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_1 <Unused>, 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_1 
+ACAD_1_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_1)"
+GUI OPTIONAL COORDSYS ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP ACAD_IN_CLIP_TO_ENVELOPE_ACAD_1 <Unused>,NO 
+DEFAULT_MACRO ACAD_IN_CLIP_TO_ENVELOPE_ACAD_1 NO
+ACAD_1_CLIP_TO_ENVELOPE "$(ACAD_IN_CLIP_TO_ENVELOPE_ACAD_1)"
+GUI OPTIONAL CHECKBOX ACAD_IN_CLIP_TO_ENVELOPE_ACAD_1 YES%NO Clip to Search Envelope
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_ALLOW_DASH_CHAR_IN_ATTR_NAMES_ACAD_1 yes
+ACAD_1_ALLOW_DASH_CHAR_IN_ATTR_NAMES "$(ACAD_IN_ALLOW_DASH_CHAR_IN_ATTR_NAMES_ACAD_1)"
+DEFAULT_MACRO ACAD_IN_ACAD_RDR_ADV_PARM_GROUP_ACAD_1 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_ACAD_RDR_ADV_PARM_GROUP_ACAD_1 FME_DISCLOSURE_CLOSED%ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_1%ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_1%ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_1%ACAD_IN_RESOLVE_DIMENSIONS_ACAD_1%ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_1%ACAD_IN_STORE_SPLINE_DEFS_ACAD_1%ACAD_IN_STORE_BULGE_INFO_ACAD_1%ACAD_IN_IGNORE_UCS_ACAD_1%ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_1%ACAD_IN_READ_GROUPS_ACAD_1%ACAD_IN_READ_USER_DICTIONARIES_ACAD_1%ACAD_IN_READ_XREFS_ACAD_1%ACAD_IN_STORE_LAYER_INFO_ACAD_1%ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_1%ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_1%ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_1%ACAD_IN_APPLY_WORLD_FILE_ACAD_1%ACAD_IN_READ_PROXY_GRAPHICS_ACAD_1%ACAD_IN_READ_SYS_VARS_ACAD_1%ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_1%ACAD_IN_READ_RASTERS_ACAD_1%ACAD_IN_DXF_HEADER_GROUP_ACAD_1 Advanced
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_1 yes
+ACAD_1_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS "$(ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_1 yes%no Convert Zero Length Arcs to Points
+# ============================================================================
+# PR#9808 - Indicate whether we want to resolve entities color or keep it as ByLayer.
+# By default, we'll resolve entity color because that's how we have been doing
+# it all along. So to maintain backwards compatibility we'll keep that as default.
+DEFAULT_MACRO ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_1 yes
+ACAD_1_RESOLVE_ENTITY_COLOR "$(ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_1 yes%no Resolve Entity Color
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_1 no
+ACAD_1_PRESERVE_COMPLEX_HATCHES "$(ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_1 yes%no Preserve Complex Hatches and MPolygons
+# ============================================================================
+# And indicate whether or not to read groups.
+DEFAULT_MACRO ACAD_IN_READ_GROUPS_ACAD_1 no
+ACAD_1_READ_GROUPS "$(ACAD_IN_READ_GROUPS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_GROUPS_ACAD_1 yes%no Read Groups
+# ============================================================================
+# And indicate whether or not to read xrecords from user dictionaries.
+DEFAULT_MACRO ACAD_IN_READ_USER_DICTIONARIES_ACAD_1 no
+ACAD_1_READ_USER_DICTIONARIES "$(ACAD_IN_READ_USER_DICTIONARIES_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_USER_DICTIONARIES_ACAD_1 yes%no User Dictionary XRecord Data Reading
+# ============================================================================
+# And indicate whether or not to read xrefs.
+DEFAULT_MACRO ACAD_IN_READ_XREFS_ACAD_1 no
+ACAD_1_READ_XREFS "$(ACAD_IN_READ_XREFS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_XREFS_ACAD_1 yes%no Read External References
+# ============================================================================
+# And indicate whether to read mlines as stored vertexes, or as calculated vertexes.
+DEFAULT_MACRO ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_1 no
+ACAD_1_EVALUATE_MLINE_GEOM "$(ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_1 yes%no Evaluate Multi-line Entity Geometry
+# ============================================================================
+# Indicate if we want to store layer properties as feature attributes
+DEFAULT_MACRO ACAD_IN_STORE_LAYER_INFO_ACAD_1 no
+ACAD_1_STORE_LAYER_INFO "$(ACAD_IN_STORE_LAYER_INFO_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_LAYER_INFO_ACAD_1 yes%no Store Layer Properties on Features
+# ============================================================================
+# Decide how we should handle bulges
+DEFAULT_MACRO ACAD_IN_STORE_BULGE_INFO_ACAD_1 no
+ACAD_1_STORE_BULGE_INFO "$(ACAD_IN_STORE_BULGE_INFO_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_BULGE_INFO_ACAD_1 yes%no Store Bulge Info
+# ============================================================================
+# Decide how we should handle splines
+DEFAULT_MACRO ACAD_IN_STORE_SPLINE_DEFS_ACAD_1 yes
+ACAD_1_STORE_SPLINE_DEFS "$(ACAD_IN_STORE_SPLINE_DEFS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_SPLINE_DEFS_ACAD_1 yes%no Store Spline Definitions
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_RESOLVE_DIMENSIONS_ACAD_1 yes
+ACAD_1_RESOLVE_DIMENSIONS "$(ACAD_IN_RESOLVE_DIMENSIONS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_RESOLVE_DIMENSIONS_ACAD_1 yes%no Explode Dimensions
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_1 no
+ACAD_1_PRESERVE_CLIPPED_RASTERS "$(ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_1 yes%no Preserve Clipped Rasters
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_1 no
+ACAD_1_IGNORE_FROZEN_LAYERS "$(ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_1 yes%no Ignore Frozen Layers
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_1 no
+ACAD_1_IGNORE_VIEWPORT_FROZEN_LAYERS "$(ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_1 yes%no Ignore Viewport Frozen Layers
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_1 yes
+ACAD_1_IGNORE_HIDDEN_LAYERS "$(ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_1 yes%no Ignore Hidden Layers
+# ============================================================================
+# 20040114 - Decide if we should handle the user coordinate system (ucs)
+DEFAULT_MACRO ACAD_IN_IGNORE_UCS_ACAD_1 no
+ACAD_1_IGNORE_UCS "$(ACAD_IN_IGNORE_UCS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_UCS_ACAD_1 yes%no Ignore User Coordinate System (UCS)
+# ============================================================================
+# 20090504 - Decide if we should apply world (.wld/.wld3) file or not - default is YES
+DEFAULT_MACRO ACAD_IN_APPLY_WORLD_FILE_ACAD_1 yes
+ACAD_1_APPLY_WORLD_FILE "$(ACAD_IN_APPLY_WORLD_FILE_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_APPLY_WORLD_FILE_ACAD_1 yes%no Apply World File (.wld/.wld3)
+# ============================================================================
+# Should we read proxy graphics - default is YES
+DEFAULT_MACRO ACAD_IN_READ_PROXY_GRAPHICS_ACAD_1 yes
+ACAD_1_READ_PROXY_GRAPHICS "$(ACAD_IN_READ_PROXY_GRAPHICS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_PROXY_GRAPHICS_ACAD_1 yes%no Read Proxy Entity Graphics
+# ============================================================================
+# Should we read system variables - default is NO
+DEFAULT_MACRO ACAD_IN_READ_SYS_VARS_ACAD_1 no
+ACAD_1_READ_SYS_VARS "$(ACAD_IN_READ_SYS_VARS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_SYS_VARS_ACAD_1 yes%no Read Drawing System Variables
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_1 yes
+ACAD_1_READ_REGIONS_AS_AREAS "$(ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_1 yes%no Read Region Entities as Areas
+# ============================================================================
+# Should we read rasters - default is YES
+DEFAULT_MACRO ACAD_IN_READ_RASTERS_ACAD_1 yes
+ACAD_1_READ_RASTERS "$(ACAD_IN_READ_RASTERS_ACAD_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_RASTERS_ACAD_1 yes%no Read Raster Entities
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_DXF_HEADER_GROUP_ACAD_1 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_DXF_HEADER_GROUP_ACAD_1 FME_DISCLOSURE_CLOSED%ACAD_IN_USE_DXF_HEADER_ACAD_1 DXF header
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_USE_DXF_HEADER_ACAD_1 
+ACAD_1_USE_DXF_HEADER "$(ACAD_IN_USE_DXF_HEADER_ACAD_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST ACAD_IN_USE_DXF_HEADER_ACAD_1 DXF_Files(*.dxf)|*.dxf|All_files(*.*)|*.* DXF Header File
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_STRUCTURE_EXTENDED_DATA_ACAD_1 no
+ACAD_1_STRUCTURE_EXTENDED_DATA "$(ACAD_IN_STRUCTURE_EXTENDED_DATA_ACAD_1)"
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_USE_NEW_PAPER_SPACE_PARAMETERS_ACAD_1 yes
+ACAD_1_USE_NEW_PAPER_SPACE_PARAMETERS "$(ACAD_IN_USE_NEW_PAPER_SPACE_PARAMETERS_ACAD_1)"
+# ===========================================================================
+DEFAULT_MACRO ACAD_IN_NETWORK_AUTHENTICATION_ACAD_1 
+ACAD_1_NETWORK_AUTHENTICATION "$(ACAD_IN_NETWORK_AUTHENTICATION_ACAD_1)"
+GUI OPTIONAL AUTHENTICATOR ACAD_IN_NETWORK_AUTHENTICATION_ACAD_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_ATTRIBUTE_READING_ACAD_1 ALL
+ACAD_1_ATTRIBUTE_READING "$(ACAD_IN_ATTRIBUTE_READING_ACAD_1)"
+# ============================================================================
+ACAD_1_GENERATE_FME_BUILD_NUM 24202
+# ============================================================================
+# Bring in macros for all the autocad colors
+INCLUDE "$(FME_HOME)/metafile/autocadColors.fmi"
+ACAD_1_DATASET "$(SourceDataset_ACAD_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)qa_shortlines_complete.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.1.0 (20240328 - Build 24202 - WIN64)"
+MAPPING_FILE_ID Valida<u00e7><u00e3>o<space>e<space>Qualidade<space>de<space>Dados<space>com<space>FME<lf>
+DEFAULT_MACRO DATASET_KEYWORD_ACAD_1 ACAD_1
+# -------------------------------------------------------------------------
+
+ACAD_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME qa_shortlines_complete
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_ACAD_1)   INPUT FEATURE_TYPE *    ROUTE ACAD ACAD_1::0 multi_reader_keyword,$(DATASET_KEYWORD_ACAD_1) TO FME_GENERIC ::0 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ACAD_1_MERGE_DEF ACAD_1::0 GLOB * DEFLINE autocad_color,10,autocad_linetype,CONTINUOUS,autocad_layer_frozen,no,autocad_layer_hidden,no,autocad_layer_locked,no,autocad_layer_on,yes,autocad_layer_plottable,yes,autocad_layer_desc,
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "0_ACAD_1 Splitter"    INPUT FEATURE_TYPE 0    OUTPUT FEATURE_TYPE 0_ACAD_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeExposer }    INPUT  FEATURE_TYPE 0_ACAD_1    OUTPUT { FEATURE_TYPE AttributeExposer_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} ArcFactory    FACTORY_NAME { LineCombiner }    INPUT  FEATURE_TYPE AttributeExposer_OUTPUT    END_NODED    PRESERVE_ORIENTATION { no  }    DEAGGREGATE_GEOMETRY { Deaggregate }    CLOSE_LOOPS          { yes }    ACCUMULATE_ATTRIBUTES { ONE }    LIST_NAME            { "lista_combiner{}" }    LIST_ATTRS_TO_INCLUDE {  }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    DIRECTION_NAME { "_direction" }    LINES_AS_SEGMENTS    { No }    CONSIDER_NODE_ELEVATION { NO }    CONNECT_Z_MODE        { FIRST_WINS }    BREAK_CONNECTION_ATTRIBUTES { HBlock }    BREAK_CONNECTION_ACROSS_SETS { No }    OUTPUT { LINE FEATURE_TYPE LineCombiner_LINE         }    OUTPUT { REJECTED FEATURE_TYPE LineCombiner_<REJECTED>         }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME LineCombiner_<Rejected> INPUT FEATURE_TYPE LineCombiner_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, LineCombiner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} IntersectionFactory    FACTORY_NAME { Intersector_ALL }    INPUT  FEATURE_TYPE LineCombiner_LINE    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INTERSECTION_MODE { SELF_AND_GROUP }    OVERLAP_COUNT_ATTRIBUTE { "_overlaps" }    SEGMENT_COUNT_ATTRIBUTE { "_segments" }    ACCUMULATE_ATTRIBUTES { "ONE" }    ACCUMULATE_COLLINEAR_ATTRIBUTES { "ONE" }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    DIRECTION_NAME { "_direction" }    SEPARATE_COLLINEAR_SEGMENTS { No }    COMPUTE_MEASURES_MODE { CONTINUOUS }    NODE_NUMBER_ATTR { "_node_number" }    ACCUMULATE_NODE_ATTRIBUTES { "ONE" }    IGNORE_NODE_HEIGHTS { YES }    MODE COMPLETE    DEAGGREGATE_INPUT { Yes }    REJECT_INVALID_GEOM Yes    OUTPUT_COLLAPSED    CLEANING_TOLERANCE { AUTO }    OUTPUT { SEGMENT FEATURE_TYPE Intersector_INTERSECTED         }    OUTPUT { REJECTED FEATURE_TYPE Intersector_<REJECTED>         }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME Intersector_<Rejected> INPUT FEATURE_TYPE Intersector_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Intersector<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { LengthCalculator_LengthCalculatorInput }    INPUT  FEATURE_TYPE Intersector_INTERSECTED    OUTPUT { FEATURE_TYPE ___TOLENGTHCALCULATOR___ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { LengthCalculator_LengthCalculator }    INPUT FEATURE_TYPE ___TOLENGTHCALCULATOR___         @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT { FEATURE_TYPE ___TOREJECTOR___         @SupplyAttributes(ENCODED, _length, @Length(REJECTABLE,2,"1")) }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { LengthCalculator_Rejector }    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT { FAILED FEATURE_TYPE LengthCalculator_OUTPUT       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE LengthCalculator_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_length<closeparen>,Tester)" < 6 ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_FAILED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StatisticsCalculatorFactory    FACTORY_NAME { StatisticsCalculator }    INPUT  FEATURE_TYPE Tester_PASSED    GROUP_BY { fme_feature_type }    FLUSH_WHEN_GROUPS_CHANGE { No }    FEAT_STATS { _length,NUMERIC_MODE,,,COUNT,,,,,,,,,, }    ADVANCED_MODE { NO }    CUMULATIVE_STATS {  }    CALCULATION_MODE { NUMERIC }    ATTR_ACCUM_MODE { None }    ATTRIBUTE_NAMES_AND_TYPES { fme_feature_type,varchar<openparen>50<closeparen>,HBlock,varchar<openparen>200<closeparen>,StreetId,varchar<openparen>200<closeparen>,lista_combiner<opencurly><closecurly>._direction,char<openparen>9<closeparen>,_overlaps,uint32,_segments,uint32,_length,real64 }    TREAT_INVALID_AS_NULL Yes    OUTPUT { COMPLETE FEATURE_TYPE StatisticsCalculator_COMPLETE        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListElementCounter }    INPUT  FEATURE_TYPE Tester_FAILED    INPUT  FEATURE_TYPE StatisticsCalculator_COMPLETE    OUTPUT { FEATURE_TYPE ListElementCounter_OUTPUT         @SupplyAttributes(ENCODED, _element_count, @NumElements("lista_combiner<opencurly><closecurly>",ENCODED))          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_2 }    INPUT  FEATURE_TYPE ListElementCounter_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_element_count<closeparen>,Tester_2)" = "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_segments<closeparen>,Tester_2)" ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_2_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_2_FAILED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} ArcFactory    FACTORY_NAME { LineCombiner_3 }    INPUT  FEATURE_TYPE Tester_2_PASSED    END_NODED    PRESERVE_ORIENTATION { no  }    DEAGGREGATE_GEOMETRY { Deaggregate }    CLOSE_LOOPS          { yes }    ACCUMULATE_ATTRIBUTES { ONE }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    DIRECTION_NAME { "<Unused>" }    LINES_AS_SEGMENTS    { No }    CONSIDER_NODE_ELEVATION { NO }    CONNECT_Z_MODE        { FIRST_WINS }    BREAK_CONNECTION_ACROSS_SETS { No }    OUTPUT { LINE FEATURE_TYPE LineCombiner_3_LINE         }    OUTPUT { REJECTED FEATURE_TYPE LineCombiner_3_<REJECTED>         }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME LineCombiner_3_<Rejected> INPUT FEATURE_TYPE LineCombiner_3_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, LineCombiner_3<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { LengthCalculator_2_LengthCalculatorInput }    INPUT  FEATURE_TYPE LineCombiner_3_LINE    INPUT  FEATURE_TYPE Tester_2_FAILED    OUTPUT { FEATURE_TYPE ___TOLENGTHCALCULATOR___ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { LengthCalculator_2_LengthCalculator }    INPUT FEATURE_TYPE ___TOLENGTHCALCULATOR___         @RenameAttributes(FME_STRICT,___fme_rejection_code___,fme_rejection_code)    OUTPUT { FEATURE_TYPE ___TOREJECTOR___         @SupplyAttributes(ENCODED, _length, @Length(REJECTABLE,2,"1")) }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { LengthCalculator_2_Rejector }    INPUT FEATURE_TYPE ___TOREJECTOR___    TEST @Value(fme_rejection_code) != ""    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT { FAILED FEATURE_TYPE LengthCalculator_2_OUTPUT       @RenameAttributes(FME_STRICT,fme_rejection_code,___fme_rejection_code___)        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_3 }    INPUT  FEATURE_TYPE LengthCalculator_2_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_length<closeparen>,Tester_3)" < 6 ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { ACROSS_OUTPUT_PORTS }    OUTPUT { PASSED FEATURE_TYPE Tester_3_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_3_FAILED         }
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {Menor_que_6M} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+INCLUDE [    if {{NoReduction} == {NoReduction} &&        {NO_THINNING} == {NO_THINNING}} {       puts "MACRO Menor_que_6M_99ba8e2d_5d09_40f7_8113_7f67890ed92f0_LARGE_GEOMETRY_DATA_STORAGE REFERENCE";    } else {       puts "MACRO Menor_que_6M_99ba8e2d_5d09_40f7_8113_7f67890ed92f0_LARGE_GEOMETRY_DATA_STORAGE FULL";    }; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME { Menor_que_6M_Prepper }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Tester_3_PASSED    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_ATTRIBUTE_PREFIX { Menor_que_6M }    RASTER_REDUCTION { NoReduction }    POINT_CLOUD_REDUCTION { NO_THINNING }    OUTPUT { RESULT FEATURE_TYPE __viewme__       }
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { Menor_que_6M_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { fme_feature_type,varchar<openparen>50<closeparen>,HBlock,varchar<openparen>200<closeparen>,StreetId,varchar<openparen>200<closeparen>,lista_combiner<opencurly><closecurly>._direction,char<openparen>9<closeparen>,_overlaps,uint32,_segments,uint32,_length,real64,_length.total_count,uint64,_element_count,uint64 }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000    LARGE_GEOMETRY_DATA_STORAGE { $(Menor_que_6M_99ba8e2d_5d09_40f7_8113_7f67890ed92f0_LARGE_GEOMETRY_DATA_STORAGE) }
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {Maior_que_6M} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+INCLUDE [    if {{NoReduction} == {NoReduction} &&        {NO_THINNING} == {NO_THINNING}} {       puts "MACRO Maior_que_6M_c90f1b38_c59b_4cec_bd75_2dc4eda3da0f0_LARGE_GEOMETRY_DATA_STORAGE REFERENCE";    } else {       puts "MACRO Maior_que_6M_c90f1b38_c59b_4cec_bd75_2dc4eda3da0f0_LARGE_GEOMETRY_DATA_STORAGE FULL";    }; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME { Maior_que_6M_Prepper }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Tester_3_FAILED    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_ATTRIBUTE_PREFIX { Maior_que_6M }    RASTER_REDUCTION { NoReduction }    POINT_CLOUD_REDUCTION { NO_THINNING }    OUTPUT { RESULT FEATURE_TYPE __viewme__       }
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { Maior_que_6M_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { fme_feature_type,varchar<openparen>50<closeparen>,HBlock,varchar<openparen>200<closeparen>,StreetId,varchar<openparen>200<closeparen>,lista_combiner<opencurly><closecurly>._direction,char<openparen>9<closeparen>,_overlaps,uint32,_segments,uint32,_length,real64,_length.total_count,uint64,_element_count,uint64 }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000    LARGE_GEOMETRY_DATA_STORAGE { $(Maior_que_6M_c90f1b38_c59b_4cec_bd75_2dc4eda3da0f0_LARGE_GEOMETRY_DATA_STORAGE) }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
