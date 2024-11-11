@@ -1,0 +1,2256 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\fme-form_202401-b24202\fme.exe" D:\gitHub\SolutialTech\2024\11\quick-tips-fme-part2\1-valores-duplicados\3-workspace\valores_duplicados.fmw
+#          --SourceDataset_XLSXR "D:\gitHub\SolutialTech\2024\11\quick-tips-fme-part2\1-valores-duplicados\1-dataset\businesslicenses.xlsx"
+#          --DestDataset_XLSXW "$(FME_MF_DIR)output.xlsx"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY="SolutialTech"
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="7875.08 2305.97"
+#!   DOC_TOP_LEFT="-5931.31 -412.895"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24202"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="bd91d651-d8e9-4538-b744-bc96729e56dc"
+#!   FME_DOCUMENT_PRIORGUID="224e66ac-f343-4bbe-9c7e-6508631204f0,11ffb53f-1725-45b0-b3ab-94a0cc3ac5d1"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY="06&lt;solidus&gt;11&lt;solidus&gt;2024,Thiago&lt;space&gt;Brigag&lt;u00e3&gt;o,Cria&lt;u00e7&gt;&lt;u00e3&gt;o&lt;space&gt;do&lt;space&gt;fluxo"
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.1.0 (20240328 - Build 24202 - WIN64)"
+#!   LAST_SAVE_DATE="2024-11-07T08:14:56"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="311"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="Validação e Qualidade de Dados com FME"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-3979.53 2055.68"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="64"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR)"
+#!   KEYWORD="XLSXR_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot; xlsx_apply_filters &quot;No&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50) xlsx_col_id number(11,0) xlsx_raster_format char(20) xlsx_raster_height number(11,0) xlsx_raster_location char(256) xlsx_raster_width number(11,0) xlsx_row_id number(11,0) xlsx_type char(20)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row%xlsx_apply_filters Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; &quot;GUI OPTIONAL CHECKBOX xlsx_apply_filters Yes%No Apply Filter(s):&quot; No "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24202"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_APPLY_FILTERS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="XLSXW"
+#!   DATASET="$(DestDataset_XLSXW)"
+#!   KEYWORD="XLSXW_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_drop_sheet No xlsx_trunc_sheet No xlsx_sheet_order &quot;&quot; xlsx_freeze_end_row &quot;&quot; xlsx_names_are_positions No xlsx_field_names_out Yes xlsx_field_names_formatting YES xlsx_field_names_row_height &quot;&quot; xlsx_field_names_font_name &quot;&quot; xlsx_field_names_font_color &quot;&quot; xlsx_field_names_background_color &quot;&quot; xlsx_field_names_pattern_color &quot;&quot; xlsx_field_names_pattern_style &quot;&quot; xlsx_field_names_cell_border_color &quot;&quot; xlsx_field_names_cell_border_style &quot;&quot; xlsx_field_names_horizontal_alignment &quot;&quot; xlsx_field_names_vertical_alignment &quot;&quot; xlsx_field_names_text_indent &quot;&quot; xlsx_field_names_text_orientation &quot;&quot; xlsx_field_names_text_control &quot;&quot; xlsx_start_col &quot;&quot; xlsx_start_row &quot;&quot; xlsx_offset_col &quot;&quot; xlsx_offset_row &quot;&quot; xlsx_raster_type PNG xlsx_table_writer_mode Insert xlsx_row_id_column &quot;&quot; xlsx_protect_sheet &quot;NO&quot; xlsx_protect_sheet_level &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_password &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_permissions &quot;&lt;Unused&gt;&quot; xlsx_template_sheet &quot;&quot; xlsx_remove_unchanged_template_sheet &quot;No&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename string(50,xlsx_col_props) fme_color string(50,xlsx_col_props) fme_dataset string(50,xlsx_col_props) fme_db_operation string(width,xlsx_col_props) fme_feature_type string(50,xlsx_col_props) fme_fill_color string(50,xlsx_col_props) fme_geometry string(50,xlsx_col_props) fme_primary_axis number(width,xlsx_col_props) fme_rotation number(width,xlsx_col_props) fme_secondary_axis number(width,xlsx_col_props) fme_start_angle number(width,xlsx_col_props) fme_sweep_angle number(width,xlsx_col_props) fme_text_size number(width,xlsx_col_props) fme_text_string string(50,xlsx_col_props) fme_type string(50,xlsx_col_props) xlsx_col_id number(width,xlsx_col_props) xlsx_raster_height number(width,xlsx_col_props) xlsx_raster_scale_factor number(width,xlsx_col_props) xlsx_raster_width number(width,xlsx_col_props) xlsx_row_formatting string(width,xlsx_col_props) xlsx_row_id number(width,xlsx_col_props) xlsx_type string(width,xlsx_col_props)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_layer_group xlsx_table_writer_mode%xlsx_names_are_positions%xlsx_row_id_column%xlsx_freeze_end_row%xlsx_field_names_out%xlsx_field_names_formatting%xlsx_truncate_group%xlsx_rowcolumn_group%xlsx_template_group%xlsx_protect_sheet%xlsx_advanced_group Sheet Settings&quot; &quot;&quot; &quot;GUI ACTIVECHOICE xlsx_table_writer_mode Insert,+xlsx_row_id_column+%Update,+xlsx_row_id_column%Delete,+xlsx_row_id_column Writer Mode:&quot; Insert &quot;GUI CHOICE xlsx_names_are_positions Yes%No Use Attribute Names As Column Positions:&quot; No &quot;GUI OPTIONAL ATTR xlsx_row_id_column ALLOW_NEW Row Number Attribute:&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_freeze_end_row 1%MAX Freeze First Row(s):&quot; &quot;&quot; &quot;GUI ACTIVECHOICE xlsx_field_names_out Yes%No,xlsx_field_names_formatting,++xlsx_field_names_formatting+No Output Field Names:&quot; Yes &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_field_names_formatting xlsx_field_names_row_height%xlsx_field_names_font%xlsx_field_names_fill%xlsx_field_names_cell%xlsx_field_names_alignment Field Names Row Formatting&quot; YES &quot;GUI OPTIONAL RANGE_SLIDER_OR_ATTR xlsx_field_names_row_height 0%409.5%2%OFF Row Height:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_font xlsx_field_names_font_name%xlsx_field_names_font_color Font&quot; &quot;&quot; &quot;GUI OPTIONAL FONT_OR_ATTR_ENCODED xlsx_field_names_font_name Font:&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_font_color COLOR_SPEC%RGBF Font Color:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_fill xlsx_field_names_background_color%xlsx_field_names_pattern_color%xlsx_field_names_pattern_style Fill&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_background_color COLOR_SPEC%RGBF Background Color:&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_pattern_color COLOR_SPEC%RGBF Pattern Color:&quot; &quot;&quot; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_pattern_style None,FILLPATTERN_NONE%Solid,FILLPATTERN_SOLID%Half&lt;space&gt;Filled,FILLPATTERN_GRAY50%75&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY75%25&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY25%Horizontal&lt;space&gt;Stripe,FILLPATTERN_HORSTRIPE%Vertical&lt;space&gt;Stripe,FILLPATTERN_VERSTRIPE%Reversed&lt;space&gt;Diagonal&lt;space&gt;Stripe,FILLPATTERN_REVDIAGSTRIPE%Diagonal&lt;space&gt;Stripe,FILLPATTERN_DIAGSTRIPE%Diagonal&lt;space&gt;Cross-Hatch,FILLPATTERN_DIAGCROSSHATCH%Thick&lt;space&gt;Diagonal&lt;space&gt;Cross-Hatch,FILLPATTERN_THICKDIAGCROSSHATCH%Thin&lt;space&gt;Horizontal&lt;space&gt;Stripe,FILLPATTERN_THINHORSTRIPE%Thin&lt;space&gt;Vertical&lt;space&gt;Stripe,FILLPATTERN_THINVERSTRIPE%Thin&lt;space&gt;Reversed&lt;space&gt;Diagonal&lt;space&gt;Stripe,FILLPATTERN_THINREVDIAGSTRIPE%Thin&lt;space&gt;Diagonal&lt;space&gt;Stripe,FILLPATTERN_THINDIAGSTRIPE%Thin&lt;space&gt;Horizontal&lt;space&gt;Cross-Hatch,FILLPATTERN_THINHORCROSSHATCH%Thin&lt;space&gt;Diagonal&lt;space&gt;Cross-Hatch,FILLPATTERN_THINDIAGCROSSHATCH%12.5&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY12P5%6.25&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY6P25 Pattern Style:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_cell xlsx_field_names_cell_border_color%xlsx_field_names_cell_border_style Cell Border&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_cell_border_color COLOR_SPEC%RGBF Border Color:&quot; &quot;&quot; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_cell_border_style None,BORDERSTYLE_NONE%Thin,BORDERSTYLE_THIN%Medium,BORDERSTYLE_MEDIUM%Dashed,BORDERSTYLE_DASHED%Dotted,BORDERSTYLE_DOTTED%Thick,BORDERSTYLE_THICK%Double,BORDERSTYLE_DOUBLE%Hair,BORDERSTYLE_HAIR%Medium&lt;space&gt;Dashed,BORDERSTYLE_MEDIUMDASHED%Dash&lt;space&gt;Dot,BORDERSTYLE_DASHDOT%Medium&lt;space&gt;Dash&lt;space&gt;Dot,BORDERSTYLE_MEDIUMDASHDOT%Dash&lt;space&gt;Dot&lt;space&gt;Dot,BORDERSTYLE_DASHDOTDOT%Medium&lt;space&gt;Dash&lt;space&gt;Dot&lt;space&gt;Dot,BORDERSTYLE_MEDIUMDASHDOTDOT%Slant&lt;space&gt;Dash&lt;space&gt;Dot,BORDERSTYLE_SLANTDASHDOT Border Style:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_alignment xlsx_field_names_horizontal_alignment%xlsx_field_names_vertical_alignment%xlsx_field_names_text_indent%xlsx_field_names_text_orientation%xlsx_field_names_text_control Text Alignment:&quot; &quot;&quot; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_horizontal_alignment Left,left%Center,center%Right,right Horizontal Alignment:&quot; &quot;&quot; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_vertical_alignment Top,top%Center,center%Bottom,bottom Vertical Alignment:&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER_OR_ATTR xlsx_field_names_text_indent 0%15%1%OFF Text Indent:&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER_OR_ATTR xlsx_field_names_text_orientation -90%90%0%ON%INCR,15 Text Orientation:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_truncate_group xlsx_drop_sheet%xlsx_trunc_sheet Drop/Truncate&quot; &quot;&quot; &quot;GUI CHOICE xlsx_drop_sheet Yes%No Drop Existing Sheet/Named Range:&quot; No &quot;GUI CHOICE xlsx_trunc_sheet Yes%No Truncate Existing Sheet/Named Range:&quot; No &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_rowcolumn_group xlsx_start_col%xlsx_start_row%xlsx_offset_col%xlsx_offset_row Start Position&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_start_col Named Range Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_start_row Named Range Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_offset_col Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_offset_row Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_template_group xlsx_template_sheet%xlsx_remove_unchanged_template_sheet Template Options&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT xlsx_template_sheet \&quot; \&quot; Template Sheet:&quot; &quot;&quot; &quot;GUI CHOICE xlsx_remove_unchanged_template_sheet Yes%No Remove Template Sheet if Unchanged:&quot; No &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_protect_sheet xlsx_protect_sheet_password%xlsx_protect_sheet_level%xlsx_protect_sheet_permissions Protect Sheet&quot; NO &quot;GUI OPTIONAL PASSWORD_ENCODED xlsx_protect_sheet_password Password:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE_LOOKUP xlsx_protect_sheet_level Select&lt;space&gt;Only&lt;space&gt;Permissions,PROT_DEFAULT,xlsx_protect_sheet_permissions%View&lt;space&gt;Only&lt;space&gt;Permissions,PROT_ALL,xlsx_protect_sheet_permissions%Specific&lt;space&gt;Permissions Protection Level:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_LISTBOX xlsx_protect_sheet_permissions Select&lt;space&gt;locked&lt;space&gt;cells,PROT_SEL_LOCKED_CELLS%Select&lt;space&gt;unlocked&lt;space&gt;cells,PROT_SEL_UNLOCKED_CELLS%Format&lt;space&gt;cells,PROT_FORMAT_CELLS%Format&lt;space&gt;columns,PROT_FORMAT_COLUMNS%Format&lt;space&gt;rows,PROT_FORMAT_ROWS%Insert&lt;space&gt;columns,PROT_INSERT_COLUMNS%Insert&lt;space&gt;rows,PROT_INSERT_ROWS%Add&lt;space&gt;hyperlinks&lt;space&gt;to&lt;space&gt;unlocked&lt;space&gt;cells,PROT_INSERT_HYPERLINKS%Delete&lt;space&gt;unlocked&lt;space&gt;columns,PROT_DELETE_COLUMNS%Delete&lt;space&gt;unlocked&lt;space&gt;rows,PROT_DELETE_ROWS%Sort&lt;space&gt;unlocked&lt;space&gt;cells/rows/columns,PROT_SORT%Use&lt;space&gt;Autofilter&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_AUTOFILTER%Use&lt;space&gt;PivotTable&lt;space&gt;&amp;&lt;space&gt;PivotChart&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_PIVOTTABLES%Edit&lt;space&gt;unlocked&lt;space&gt;objects,PROT_OBJECTS%Edit&lt;space&gt;unprotected&lt;space&gt;scenarios,PROT_SCENARIOS Specific Permissions:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_advanced_group xlsx_sheet_order%xlsx_raster_type Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_sheet_order 1%MAX Sheet Order (1 - n):&quot; &quot;&quot; &quot;GUI CHOICE xlsx_raster_type BMP%JPEG%PNG Raster Format:&quot; PNG "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24202"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="auto"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_READER"
+#!   VALUE="XLSXR"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Sheet1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="USER_ATTRIBUTES_COLUMNS"
+#!   VALUE="Width,Cell Width%Precision,Formatting"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Microsoft Excel file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="raster_blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="auto(width,xlsx_col_props)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime(width,xlsx_col_props)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time(width,xlsx_col_props)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date(width,xlsx_col_props)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean(width,xlsx_col_props)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXW"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="XLSXW"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Business_Licences"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="xlsx_none xlsx_point"
+#!   POSITION="-5503.1800318003188 973.13703137031303"
+#!   BOUNDING_RECT="-5503.1800318003188 973.13703137031303 640.6304063040634 65"
+#!   ORDER="500000000000006"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="RecordID" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LicenceRSN" ATTR_TYPE="number(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LicenceNumber" ATTR_TYPE="char(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BusinessTradeName" ATTR_TYPE="char(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Status" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IssuedDate" ATTR_TYPE="char(19)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ExpiredDate" ATTR_TYPE="char(19)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BusinessType" ATTR_TYPE="char(13)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Number" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Street" ATTR_TYPE="char(31)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="char(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Province" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PostalCode" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LocalArea" ATTR_TYPE="char(28)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NumberOfEmployees" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FeePaid" ATTR_TYPE="number(7,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_apply_filters" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Sheet1"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="43"
+#!   FEAT_NAMEDGEOMTYPE=""
+#!   POSITION="1320.3828438284384 1466.8919689196896"
+#!   BOUNDING_RECT="1320.3828438284384 1466.8919689196896 436 65"
+#!   ORDER="500000000000036.13"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXW_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="RecordID" ATTR_TYPE="number(4,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LicenceRSN" ATTR_TYPE="number(7,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LicenceNumber" ATTR_TYPE="string(9,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BusinessTradeName" ATTR_TYPE="string(40,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Status" ATTR_TYPE="string(20,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IssuedDate" ATTR_TYPE="string(19,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ExpiredDate" ATTR_TYPE="string(19,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BusinessType" ATTR_TYPE="string(13,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Number" ATTR_TYPE="string(7,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Street" ATTR_TYPE="string(31,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="string(18,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Province" ATTR_TYPE="string(2,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="string(3,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PostalCode" ATTR_TYPE="string(10,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LocalArea" ATTR_TYPE="string(28,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NumberOfEmployees" ATTR_TYPE="number(4,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FeePaid" ATTR_TYPE="number(7,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_background_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell_border_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell_border_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_fill" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font_name" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_formatting" PARM_VALUE="YES"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_horizontal_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_pattern_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_pattern_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_row_height" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_text_indent" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_text_orientation" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_vertical_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_remove_unchanged_template_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_template_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_template_sheet" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="analisar_dados"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="45"
+#!   FEAT_NAMEDGEOMTYPE=""
+#!   POSITION="1289.827256107033 769.61757542746398"
+#!   BOUNDING_RECT="1289.827256107033 769.61757542746398 469.828125 65"
+#!   ORDER="500000000000039.13"
+#!   COLLAPSED="false"
+#!   KEYWORD="XLSXW_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="mensagem_erro" ATTR_TYPE="string(50,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="RecordID" ATTR_TYPE="number(4,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LicenceRSN" ATTR_TYPE="number(7,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LicenceNumber" ATTR_TYPE="string(9,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BusinessTradeName" ATTR_TYPE="string(40,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Status" ATTR_TYPE="string(20,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IssuedDate" ATTR_TYPE="string(19,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ExpiredDate" ATTR_TYPE="string(19,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BusinessType" ATTR_TYPE="string(13,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Number" ATTR_TYPE="string(7,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Street" ATTR_TYPE="string(31,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="string(18,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Province" ATTR_TYPE="string(2,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="string(3,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PostalCode" ATTR_TYPE="string(10,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LocalArea" ATTR_TYPE="string(28,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NumberOfEmployees" ATTR_TYPE="number(4,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FeePaid" ATTR_TYPE="number(7,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_background_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell_border_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell_border_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_fill" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font_name" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_formatting" PARM_VALUE="YES"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_horizontal_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_pattern_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_pattern_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_row_height" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_text_indent" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_text_orientation" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_vertical_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_remove_unchanged_template_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_template_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_template_sheet" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="XLSXR_1"
+#!   OVERRIDE="-XLSXR_1_DATASET"
+#!   DATASET="XLSXR_1/businesslicenses.xlsx"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="XLSXW_1"
+#!   OVERRIDE="-XLSXW_1_DATASET"
+#!   DATASET="XLSXW_1/output.xlsx"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR INCLUDE_WEB_BROWSER%Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Binary_Workbook_-_Windows_Only(*.xlsb)|*.xlsb|Excel_Workbook_Pre_2007(*.xls)|*.xls|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\11\quick-tips-fme-part2\1-valores-duplicados\1-dataset\businesslicenses.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_XLSXW Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Destination Microsoft Excel File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxnaXRIdWJcXFNvbHV0aWFsVGVjaFxcMjAyNFxcMTFcXHF1aWNrLXRpcHMtZm1lLXBhcnQyXFwxLXZhbG9yZXMtZHVwbGljYWRvc1xcMS1kYXRhc2V0XFxidXNpbmVzc2xpY2Vuc2VzLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayAyMDA3IiwiZmlsdGVyIjpbIioueGxzeCJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgTWFjcm8gV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHNtIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBCaW5hcnkgV29ya2Jvb2sgLSBXaW5kb3dzIE9ubHkiLCJmaWx0ZXIiOlsiKi54bHNiIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayBQcmUgMjAwNyIsImZpbHRlciI6WyIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfWExTWFIiLCJwcm9tcHQiOiJTb3VyY2UgTWljcm9zb2Z0IEV4Y2VsIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVIpb3V0cHV0Lnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJNaWNyb3NvZnQgRXhjZWwgMjAwNysgV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHN4Il19LHsiZGVzY3JpcHRpb24iOiJNaWNyb3NvZnQgRXhjZWwgMjAwNysgTWFjcm8gV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHNtIl19LHsiZGVzY3JpcHRpb24iOiJNaWNyb3NvZnQgRXhjZWwgUHJlLTIwMDcgV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X1hMU1hXIiwicHJvbXB0IjoiRGVzdGluYXRpb24gTWljcm9zb2Z0IEV4Y2VsIEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_XLSXR" 
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\11\quick-tips-fme-part2\1-valores-duplicados\1-dataset\businesslicenses.xlsx"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR INCLUDE_WEB_BROWSER%Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Binary_Workbook_-_Windows_Only(*.xlsb)|*.xlsb|Excel_Workbook_Pre_2007(*.xls)|*.xls|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source Microsoft Excel File(s):"
+#! />
+#!     <INFO NAME="DestDataset_XLSXW" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output.xlsx"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILENAME DestDataset_XLSXW Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Destination Microsoft Excel File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;RecordID&lt;/span&gt; é um número de ID exclusivo em todo o conjunto de dados; ou seja, cada registro deve ter um valor diferente.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LicenseNumber&lt;/span&gt; é um número de ID que pode ser reutilizado e, portanto, pode não ser exclusivo. Além disso, podem existir vários registros para o mesmo LicenseNumber; por exemplo, uma empresa que opera em vários endereços terá um registro no conjunto de dados para cada endereço (mas com o mesmo LicenseNumber).&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LicenseRSN&lt;/span&gt; é um número de ID exclusivo por licença; ou seja, cada licença emitida deve ter um LicenseRSN exclusivo. Claro, pode haver múltiplos registros com este valor, pois ele deve corresponder a cada registro de uma característica de múltiplos LicenseNumber.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-5859.8199067928199 1698.7686876868752"
+#!   TOP_LEFT="-5859.8199067928199 1698.7686876868752"
+#!   BOTTOM_RIGHT="-4412.5891376101281 1018.7621876218745"
+#!   BOUNDING_RECT="-5859.8199067928199 1698.7686876868752 1447.2307691826918 680.00650006500064"
+#!   ORDER="500000000000005"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5e9fd01e-2bbd-4c5a-9e41-202c750942a3}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="9"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Desabilite a opção&lt;/span&gt; &amp;gt; &amp;quot;Check Geometry&amp;quot;&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Attribute Matching Strategy:&lt;/span&gt; Match Selected Attributes&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Selected Attributes:&lt;/span&gt; LicenceRSN&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Attributes That Must Differ:&lt;/span&gt; LicenceNumber&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-2965.6546565465651 1491.2643126431246"
+#!   TOP_LEFT="-2965.6546565465651 1491.2643126431246"
+#!   BOTTOM_RIGHT="-1793.7684376843765 1236.2620626206244"
+#!   BOUNDING_RECT="-2965.6546565465651 1491.2643126431246 1171.8862188621886 255.00225002250022"
+#!   ORDER="500000000000010"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{ef60cc48-40ff-440a-a02e-933ce91b3766}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="6"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="22"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Filtragem com de dados com base no atributo &lt;span style=&quot; font-weight:700;&quot;&gt;RecordID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-4037.5403754037552 1381.8882188821894"
+#!   TOP_LEFT="-4037.5403754037552 1381.8882188821894"
+#!   BOTTOM_RIGHT="-3409.4095940959423 1226.8869688696893"
+#!   BOUNDING_RECT="-4037.5403754037552 1381.8882188821894 628.13078130781309 155.00125001250012"
+#!   ORDER="500000000000023.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{f95e1119-946a-4984-a2b1-881a297fe973}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="3"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="26"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Essa configuração faz com que  caso o &lt;span style=&quot; font-weight:700;&quot;&gt;LicenceRSN&lt;/span&gt; esteja para mais de um &lt;span style=&quot; font-weight:700;&quot;&gt;LicenceNumber&lt;/span&gt; seja apresentado na Porta Matched.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3085.0310003100035 1691.2678126781259"
+#!   TOP_LEFT="-3085.0310003100035 1691.2678126781259"
+#!   BOTTOM_RIGHT="-1625.055963059631 1536.2665626656258"
+#!   BOUNDING_RECT="-3085.0310003100035 1691.2678126781259 1459.9750372503725 155.00125001250012"
+#!   ORDER="500000000000025.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{f447e59b-2881-4a0e-a363-d79127c3e22b}"
+#!   COLOUR="1,1,0,0.12941176470588237"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="25"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="30"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;É necessário para minimizar erros&lt;/span&gt; verificar somente as licenças Válidas com o&lt;span style=&quot; font-weight:700;&quot;&gt; status de Issued&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1384.3888438884383 1441.2638126381273"
+#!   TOP_LEFT="-1384.3888438884383 1441.2638126381273"
+#!   BOTTOM_RIGHT="-718.75768757687513 1236.2620626206271"
+#!   BOUNDING_RECT="-1384.3888438884383 1441.2638126381273 665.63115631156313 205.00175001750017"
+#!   ORDER="500000000000026.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d1afa46a-621a-4c63-87bd-2ac7350f6214}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="10"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="33"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Foi encontrado valores mais de um registro para o LicenceRSN. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Verificar o registro:&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LicenceRSN:&lt;/span&gt; @Value(LicenceRSN) &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LicenceNumber:&lt;/span&gt;@Value(LicenceNumber)&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;RecordID:&lt;/span&gt;@Value(RecordID)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1752.3929399328163 430.00353352257878"
+#!   TOP_LEFT="-1752.3929399328163 430.00353352257878"
+#!   BOTTOM_RIGHT="-600.03816638508079 125.00078349507851"
+#!   BOUNDING_RECT="-1752.3929399328163 430.00353352257878 1152.3547735477355 305.00275002750027"
+#!   ORDER="500000000000029.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{7b2d4eb3-35f1-4db5-a82a-66e8d6367bc3}"
+#!   COLOUR="0.96862745098039216,0.6470588235294118,0.72156862745098038,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="27"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="35"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;O registro &lt;span style=&quot; font-weight:700;&quot;&gt;RecordID&lt;/span&gt;: @Value(RecordID) está duplicado na base de dados.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-2818.778187781877 353.75293752937512"
+#!   TOP_LEFT="-2818.778187781877 353.75293752937512"
+#!   BOTTOM_RIGHT="-1959.3950939509386 198.75168751687499"
+#!   BOUNDING_RECT="-2818.778187781877 353.75293752937512 859.38309383093826 155.00125001250012"
+#!   ORDER="500000000000030.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{bf57c904-bddd-40c4-a287-6d61f5f8d06d}"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="23"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="37"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Desabilite a opção&lt;/span&gt; &amp;gt; &amp;quot;Check Geometry&amp;quot;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Attribute Matching Strategy:&lt;/span&gt; Match Selected Attributes&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Selected Attributes:&lt;/span&gt; LicenceNumber &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Attributes That Must Differ:&lt;/span&gt; LicenceRSN&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-400.00400003999994 1472.5141251412513"
+#!   TOP_LEFT="-400.00400003999994 1472.5141251412513"
+#!   BOTTOM_RIGHT="656.25606256062611 1217.511875118751"
+#!   BOUNDING_RECT="-400.00400003999994 1472.5141251412513 1056.260062600626 255.00225002250022"
+#!   ORDER="500000000000034.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{e7203ad7-89ec-4daa-ab24-4632198b4d6b}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="12"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="38"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Essa configuração faz com que  caso o  &lt;span style=&quot; font-weight:700;&quot;&gt;LicenceNumber &lt;/span&gt;esteja para mais de um &lt;span style=&quot; font-weight:700;&quot;&gt;LicenceRSN &lt;/span&gt; seja apresentado na Porta Matched.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-481.87925490766202 1678.7676876768769"
+#!   TOP_LEFT="-481.87925490766202 1678.7676876768769"
+#!   BOTTOM_RIGHT="698.74728573274433 1677.7676876768769"
+#!   BOUNDING_RECT="-481.87925490766202 1678.7676876768769 1180.6265406404063 1"
+#!   ORDER="500000000000035.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{5eced160-0e20-4cf3-b0c2-c1b8e2458c8f}"
+#!   COLOUR="1,1,0,0.14117647058823529"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="31"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="40"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Foi encontrado valores mais de um registro para o LicenceNumber. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Verificar o registro:&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;RecordID&lt;/span&gt;:@Value(RecordID)&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LicenceNumber&lt;/span&gt;:@Value(LicenceNumber)&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LicenceRSN:&lt;/span&gt; @Value(LicenceRSN) &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-444.57166455453466 372.77655993189421"
+#!   TOP_LEFT="-444.57166455453466 372.77655993189421"
+#!   BOTTOM_RIGHT="707.78310899320081 67.773809904393943"
+#!   BOUNDING_RECT="-444.57166455453466 372.77655993189421 1152.3547735477355 305.00275002750027"
+#!   ORDER="500000000000029.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5c93d71b-6ecd-440f-9b2b-64db2d443a6b}"
+#!   COLOUR="0.96862745098039216,0.6470588235294118,0.72156862745098038,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="39"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="49"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Aba do XLS que contém os &lt;span style=&quot; font-weight:700;&quot;&gt;pontos a serem verificados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1199.2013498479705 954.6188254399641"
+#!   TOP_LEFT="1199.2013498479705 954.6188254399641"
+#!   BOTTOM_RIGHT="1829.1876184606567 953.6188254399641"
+#!   BOUNDING_RECT="1199.2013498479705 954.6188254399641 629.9862686126861 1"
+#!   ORDER="500000000000040.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{a03c65e9-e292-44a0-b128-0b352a44b083}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="45"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="50"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Licenças em Uso&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1279.7574375743759 1601.8927189271897"
+#!   TOP_LEFT="1279.7574375743759 1601.8927189271897"
+#!   BOTTOM_RIGHT="1778.7365367403677 1600.8927189271897"
+#!   BOUNDING_RECT="1279.7574375743759 1601.8927189271897 498.97909916599167 1"
+#!   ORDER="500000000000042.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{4d35a8df-cf87-4786-8fc8-55149576a553}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="43"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="20"
+#!   NAME="1.0 | Reader XLSx"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-5931.309313093132 1800.0180001800024"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-4327.3393251120024 859.38359383593911"
+#!   BOUNDING_RECT="-5931.309313093132 1800.0180001800024 1603.9699879811296 940.63440634406334"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="2 5 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="21"
+#!   NAME="2.1 | Verificação RecordID Duplicado"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-4162.5406254062545 1784.3928439284393"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-3256.2825628256292 840.63340633406335"
+#!   BOUNDING_RECT="-4162.5406254062545 1784.3928439284393 906.25806258062539 943.75943759437598"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="3 22 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="25"
+#!   NAME="2.2 | Verificação de LicenceRSN para LicenceNumber "
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-3191.2810628106286 1784.3928439284391"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-1534.7768033930345 840.63340633406335"
+#!   BOUNDING_RECT="-3191.2810628106286 1784.3928439284391 1656.5042594175941 943.75943759437575"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="6 9 26 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="29"
+#!   NAME="2.3 | Filtra somente as Licences em Uso"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1478.1398342489899 1778.1434248696132"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-571.88177166836454 843.75843758437577"
+#!   BOUNDING_RECT="-1478.1398342489899 1778.1434248696132 906.25806258062539 934.38498728523746"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="10 30 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="31"
+#!   NAME="2.4 | Verificação de LicenceNumber p/ LicenceRSN"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-503.12931740828697 1771.8927189271894"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="737.50737507375072 850.00850008500106"
+#!   BOUNDING_RECT="-503.12931740828697 1771.8927189271894 1240.6366924820377 921.88421884218837"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="38 12 37 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="32"
+#!   NAME="3.2 | LicenceRSN para MAIS de um LicenceNumber"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1784.3921300364127 600.00600006000059"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR="Error"
+#!   BOTTOM_RIGHT="-553.13053130531262 -134.3763437634376"
+#!   BOUNDING_RECT="-1784.3921300364127 600.00600006000059 1231.2615987311001 734.38234382343819"
+#!   STICKY="true"
+#!   COLOUR="0.96862745098039216,0.6470588235294118,0.72156862745098038,1"
+#!   CONTENTS="27 33 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="34"
+#!   NAME="3.1 | RecordID Duplicado"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2918.778187781877 587.50587505875035"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR="Error"
+#!   BOTTOM_RIGHT="-1855.3950939509386 -140.62640626406289"
+#!   BOUNDING_RECT="-2918.778187781877 587.50587505875035 1063.3830938309384 728.13228132281324"
+#!   STICKY="true"
+#!   COLOUR="0.96862745098039216,0.6470588235294118,0.72156862745098038,1"
+#!   CONTENTS="35 23 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="36"
+#!   NAME="2.0 | Filtragem e Tratamento das Curvas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-4215.6671566715668 1893.0737451005493"
+#!   ORDER="500000000000022"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="850.00850008500129 812.50812508125091"
+#!   BOUNDING_RECT="-4215.6671566715668 1893.0737451005493 5065.6756567565681 1080.5656200192984"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="6 11 10 30 38 12 21 9 26 7 37 3 22 25 31 13 29 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="41"
+#!   NAME="3.2 | LicenceRSN para MAIS de um LicenceNumber"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-490.63349528453784 589.06855186456994"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR="Error"
+#!   BOTTOM_RIGHT="793.75793757937606 -145.31379195886825"
+#!   BOUNDING_RECT="-490.63349528453784 589.06855186456994 1284.3914328639139 734.38234382343819"
+#!   STICKY="true"
+#!   COLOUR="0.96862745098039216,0.6470588235294118,0.72156862745098038,1"
+#!   CONTENTS="39 40 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="47"
+#!   NAME="4.2 | Writer XLSx"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1072.0579380708341 1127.7456524565252"
+#!   ORDER="500000000000041.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1914.6675841758415 -412.89475394753867"
+#!   BOUNDING_RECT="1072.0579380708341 1127.7456524565252 842.60964610500741 1540.6404064040639"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="45 54 49 56 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="48"
+#!   NAME="4.1 | Writer XLSx"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1061.0062500625002 1750.0175001750022"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1943.7694376943764 1340.6384063840642"
+#!   BOUNDING_RECT="1061.0062500625002 1750.0175001750022 882.76318763187624 409.37909379093799"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="43 50 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="51"
+#!   NAME="3.0 | Tratamento das Falhas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2970.3416977309421 743.40780762086183"
+#!   ORDER="500000000000022"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="846.8834688346883 -187.50187501875007"
+#!   BOUNDING_RECT="-2970.3416977309421 743.40780762086183 3817.2251665656304 930.9096826396119"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="35 27 39 40 34 32 23 33 41 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="-3940.6644066440672 1193.7619376193768"
+#!   BOUNDING_RECT="-3940.6644066440672 1193.7619376193768 436 65"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="RecordID"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="Matcher"
+#!   VERSION="7"
+#!   POSITION="-2634.4013440134395 1206.2620626206244"
+#!   BOUNDING_RECT="-2634.4013440134395 1206.2620626206244 436 65"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="SINGLE_MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="NOT_MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_COMPARISONS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_MATCH_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="BLANK_AND_MISSING_DIFFER" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="BLANK_AND_MISSING_NAMES_TRAITS_DIFFER" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CHECK_COORDINATE_SYSTEMS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CHECK_TYPES_AND_ENCODINGS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_match_id"/>
+#!     <XFORM_PARM PARM_NAME="DIFFATTRS" PARM_VALUE="LicenceNumber"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_MATCH_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="LENIENT_MATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCHATTRS" PARM_VALUE="LicenceRSN"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_STRATEGY" PARM_VALUE="Match Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SM_COUNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SM_LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Matcher"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="-1268.7626876268755 1200.0120001200019"
+#!   BOUNDING_RECT="-1268.7626876268755 1200.0120001200019 436 65"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;Status&lt;closeparen&gt; = Issued"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="Matcher"
+#!   VERSION="7"
+#!   POSITION="-106.25106251062516 1178.1367813678141"
+#!   BOUNDING_RECT="-106.25106251062516 1178.1367813678141 436 65"
+#!   ORDER="500000000000012"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="SINGLE_MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="NOT_MATCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_COMPARISONS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_MATCH_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="BLANK_AND_MISSING_DIFFER" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="BLANK_AND_MISSING_NAMES_TRAITS_DIFFER" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CHECK_COORDINATE_SYSTEMS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CHECK_TYPES_AND_ENCODINGS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="_match_id"/>
+#!     <XFORM_PARM PARM_NAME="DIFFATTRS" PARM_VALUE="LicenceRSN"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_MATCH_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="LENIENT_MATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MATCHATTRS" PARM_VALUE="LicenceNumber"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_STRATEGY" PARM_VALUE="Match Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SM_COUNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SM_LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Matcher_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="AttributeCreator"
+#!   VERSION="10"
+#!   POSITION="-2606.2760627606276 162.50162501625005"
+#!   BOUNDING_RECT="-2606.2760627606276 162.50162501625005 436 65"
+#!   ORDER="500000000000024.13"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="mensagem_erro" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; mensagem_erro SET_TO O&lt;space&gt;registro&lt;space&gt;RecordID:&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;RecordID&lt;closeparen&gt;&lt;space&gt;est&lt;u00e1&gt;&lt;space&gt;duplicado&lt;space&gt;na&lt;space&gt;base&lt;space&gt;de&lt;space&gt;dados. varchar&lt;openparen&gt;200&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="27"
+#!   TYPE="AttributeCreator"
+#!   VERSION="10"
+#!   POSITION="-1414.8895648990656 95.000783495078508"
+#!   BOUNDING_RECT="-1414.8895648990656 95.000783495078508 436 65"
+#!   ORDER="500000000000024.13"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="mensagem_erro" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; mensagem_erro SET_TO Foi&lt;space&gt;encontrado&lt;space&gt;valores&lt;space&gt;mais&lt;space&gt;de&lt;space&gt;um&lt;space&gt;registro&lt;space&gt;para&lt;space&gt;o&lt;space&gt;LicenceRSN.&lt;space&gt;&lt;lf&gt;Verificar&lt;space&gt;o&lt;space&gt;registro:&lt;lf&gt;RecordID:&lt;at&gt;Value&lt;openparen&gt;RecordID&lt;closeparen&gt;&lt;lf&gt;LicenceRSN:&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;LicenceRSN&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;LicenceNumber:&lt;at&gt;Value&lt;openparen&gt;LicenceNumber&lt;closeparen&gt; varchar&lt;openparen&gt;200&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="39"
+#!   TYPE="AttributeCreator"
+#!   VERSION="10"
+#!   POSITION="-74.255461392502752 77.813272799022712"
+#!   BOUNDING_RECT="-74.255461392502752 77.813272799022712 436 65"
+#!   ORDER="500000000000024.13"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="mensagem_erro" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; mensagem_erro SET_TO Foi&lt;space&gt;encontrado&lt;space&gt;valores&lt;space&gt;mais&lt;space&gt;de&lt;space&gt;um&lt;space&gt;registro&lt;space&gt;para&lt;space&gt;o&lt;space&gt;LicenceNumber.&lt;space&gt;&lt;lf&gt;Verificar&lt;space&gt;o&lt;space&gt;registro:&lt;lf&gt;RecordID:&lt;at&gt;Value&lt;openparen&gt;RecordID&lt;closeparen&gt;&lt;lf&gt;LicenceNumber:&lt;at&gt;Value&lt;openparen&gt;LicenceNumber&lt;closeparen&gt;&lt;lf&gt;LicenceRSN:&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;LicenceRSN&lt;closeparen&gt;&lt;space&gt; varchar&lt;openparen&gt;200&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="54"
+#!   TYPE="Junction"
+#!   VERSION="0"
+#!   POSITION="1106.2162929112205 765.51571711617316"
+#!   BOUNDING_RECT="1106.2162929112205 765.51571711617316 132 58"
+#!   ORDER="500000000000043.13"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="mensagem_erro" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceRSN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LicenceNumber" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessTradeName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Status" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IssuedDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ExpiredDate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BusinessType" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Street" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Province" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LocalArea" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NumberOfEmployees" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FeePaid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_match_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Junction"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="53"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="54"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="true"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="27"
+#!   TARGET_NODE="54"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="true"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="39"
+#!   TARGET_NODE="54"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="true"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="56"
+#!   SOURCE_NODE="54"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 1 DUPLICATE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="27"
+#!   SOURCE_PORT_DESC="fo 1 SINGLE_MATCHED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="39"
+#!   SOURCE_PORT_DESC="fo 1 SINGLE_MATCHED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 2 NOT_MATCHED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="fo 2 NOT_MATCHED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 311
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_READ_RASTER_MODE_XLSXR_1,XLSXR_IN_ADDITIONAL_DATETIME_FORMATS_XLSXR_1,XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1,XLSXR_IN_SCAN_FOR_GEOMETRIC_TYPES_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,DestDataset_XLSXW_1,XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_XLSXR D:\gitHub\SolutialTech\2024\11\quick-tips-fme-part2\1-valores-duplicados\1-dataset\businesslicenses.xlsx
+
+DEFAULT_MACRO DestDataset_XLSXW $(FME_MF_DIR)output.xlsx
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_XLSXR$encode)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_XLSXW$encode)} == {}} { puts_real {Parameter 'DestDataset_XLSXW' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} XLSXR
+MULTI_READER_KEYWORD{0} XLSXR_1
+MULTI_READER_GEN_DIRECTIVES{0} REPLACE_ONLY_NEWLINES_CARRIAGE_RETURNS,YES,_MERGE_SCHEMAS,YES,EXPAND_MERGED_CELLS,Yes,ADDITIONAL_DATETIME_FORMATS,<lt>Unused<gt>,CASE_SENSITIVE_FEATURE_TYPES,YES,TRIM_ATTR_NAME_WHITESPACE,Yes,SCHEMA_HANDLING_REVISION,2,USE_CUSTOM_SCHEMA,NO,SCAN_FOR_GEOMETRIC_TYPES,Yes,CREATE_FEATURE_TABLES_FROM_DATA,Yes,CONFIGURATION_DATASET,,SKIP_EMPTY_ROWS,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,XLSXR_EXPOSE_FORMAT_ATTRS,,ADVANCED,,READ_FORM_CONTROLS,NONE,EXCEL_COL_NAMES,YES,STRIP_SHEETNAME_SPACES,YES,FORCE_DATETIME,NO,READ_RASTER_MODE,None,SCHEMA,,SCAN_MAX_FEATURES,1000,EXPOSE_ATTRS_GROUP,,ALLOW_DOLLAR_SIGNS,YES,EXPANDED_DATES_SCANNING,No,APPLY_FILTERS,No,TABLELIST,,READ_BLANK_AS,Null,TRIM_ATTR_NAME_CHARACTERS,
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} XLSXW
+PRIMARY_DEST_KEYWORD{0} XLSXW_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} MULTIPLE_TEMPLATE_SHEETS,Yes,PROTECT_SHEET_LEVEL,<lt>Unused<gt>,FIELD_NAMES_CELL_BORDER,,FIELD_NAMES_ROW_HEIGHT,,TRUNCATE_TABLE,No,FIELD_NAMES_TEXT_ALIGNMENT,,STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING,yes,FIELD_NAMES_FILL,,FIELD_NAMES_FONT,,REMOVE_UNCHANGED_TEMPLATE_SHEET,No,PROTECT_SHEET_PASSWORD,<lt>Unused<gt>,FIELD_NAMES_CELL_BORDER_COLOR,,TEMPLATE_SHEET,,FIELD_NAMES_FONT_COLOR,,FIELD_NAMES_PATTERN_COLOR,,FIELD_NAMES_TEXT_ORIENTATION,,FIELD_NAMES_OUT,Yes,FIELD_NAMES_HORIZONTAL_ALIGNMENT,,FIELD_NAMES_TEXT_CONTROL,,FIELD_NAMES_FONT_NAME,,TEMPLATEFILE,,FIELD_NAMES_PATTERN_STYLE,,FIELD_NAMES_TEXT_INDENT,,WRITER_MODE,Insert,FIELD_NAMES_CELL_BORDER_STYLE,,RASTER_FORMAT,PNG,FIELD_NAMES_FORMATTING,YES,INSERT_IGNORE_DB_OP,Yes,OVERWRITE_FILE,No,COORDINATE_SYSTEM_GRANULARITY,FEATURE,FIELD_NAMES_BACKGROUND_COLOR,,PROTECT_SHEET_PERMISSIONS,<lt>Unused<gt>,FIELD_NAMES_VERTICAL_ALIGNMENT,,ADD_WRITER_NEXT_ACTION,automatic,PROTECT_SHEET,NO,CUSTOM_NUMBER_FORMATTING,ENABLE_NATIVE,DROP_TABLE,No,DESTINATION_DATASETTYPE_VALIDATION,Yes
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset_XLSXR)
+GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Binary_Workbook_-_Windows_Only(*.xlsb)|*.xlsb|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1 
+XLSXR_1_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1 YES
+XLSXR_1_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_1 NO
+XLSXR_1_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_1 XLSXR_IN_APPLY_FILTERS%XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1%XLSXR_IN_TRIM_ATTR_NAME_WHITESPACE%XLSXR_IN_TRIM_ATTR_NAME_CHARACTERS%XLSXR_IN_READ_BLANK_AS_XLSXR_1%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1%XLSXR_IN_READ_RASTER_MODE_XLSXR_1%XLSXR_IN_EXPANDED_DATES_SCANNING%XLSXR_IN_ADDITIONAL_DATETIME_FORMATS_XLSXR_1%XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1%XLSXR_IN_SCAN_FOR_GEOMETRIC_TYPES_XLSXR_1 Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1 1000
+XLSXR_1_SCAN_MAX_FEATURES "$(XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1)"
+GUI RANGE_SLIDER XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1 0%MAX%0 Maximum Rows to Scan:
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_1 Null
+XLSXR_1_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_1)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing%Null Read Blank Cells As:
+DEFAULT_MACRO XLSXR_IN_TRIM_ATTR_NAME_WHITESPACE_XLSXR_1 Yes
+XLSXR_1_TRIM_ATTR_NAME_WHITESPACE "$(XLSXR_IN_TRIM_ATTR_NAME_WHITESPACE_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes
+XLSXR_1_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_READ_RASTER_MODE_XLSXR_1 None
+XLSXR_1_READ_RASTER_MODE "$(XLSXR_IN_READ_RASTER_MODE_XLSXR_1)"
+GUI LOOKUP_CHOICE XLSXR_IN_READ_RASTER_MODE_XLSXR_1 None%Attribute%Geometry Read Embedded Images As:
+DEFAULT_MACRO XLSXR_IN_EXPANDED_DATES_SCANNING_XLSXR_1 No
+XLSXR_1_EXPANDED_DATES_SCANNING "$(XLSXR_IN_EXPANDED_DATES_SCANNING_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ADDITIONAL_DATETIME_FORMATS_XLSXR_1 <Unused>
+XLSXR_1_ADDITIONAL_DATETIME_FORMATS "$(XLSXR_IN_ADDITIONAL_DATETIME_FORMATS_XLSXR_1)"
+GUI OPTIONAL STRING_ENCODED XLSXR_IN_ADDITIONAL_DATETIME_FORMATS_XLSXR_1 Additional Date/Time Format:
+DEFAULT_MACRO XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1 NONE
+XLSXR_1_READ_FORM_CONTROLS "$(XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1 CELL_VALUE%NONE Read Form Control as Cell Values:
+DEFAULT_MACRO XLSXR_IN_TRIM_ATTR_NAME_CHARACTERS_XLSXR_1 
+XLSXR_1_TRIM_ATTR_NAME_CHARACTERS "$(XLSXR_IN_TRIM_ATTR_NAME_CHARACTERS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_SCAN_FOR_GEOMETRIC_TYPES_XLSXR_1 Yes
+XLSXR_1_SCAN_FOR_GEOMETRIC_TYPES "$(XLSXR_IN_SCAN_FOR_GEOMETRIC_TYPES_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_FOR_GEOMETRIC_TYPES_XLSXR_1 Yes%No Scan For Geometric Types:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 
+XLSXR_1_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_APPLY_FILTERS_XLSXR_1 No
+XLSXR_1_APPLY_FILTERS "$(XLSXR_IN_APPLY_FILTERS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1 Yes
+XLSXR_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1 YES
+XLSXR_1_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1 YES
+XLSXR_1_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_CREATE_FEATURE_TABLES_FROM_DATA_XLSXR_1 Yes
+XLSXR_1_CREATE_FEATURE_TABLES_FROM_DATA "$(XLSXR_IN_CREATE_FEATURE_TABLES_FROM_DATA_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_STRIP_SHEETNAME_SPACES_XLSXR_1 YES
+XLSXR_1_STRIP_SHEETNAME_SPACES "$(XLSXR_IN_STRIP_SHEETNAME_SPACES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_SCHEMA_HANDLING_REVISION_XLSXR_1 2
+XLSXR_1_SCHEMA_HANDLING_REVISION "$(XLSXR_IN_SCHEMA_HANDLING_REVISION_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_SKIP_EMPTY_ROWS_XLSXR_1 YES
+XLSXR_1_SKIP_EMPTY_ROWS "$(XLSXR_IN_SKIP_EMPTY_ROWS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_REPLACE_ONLY_NEWLINES_CARRIAGE_RETURNS_XLSXR_1 YES
+XLSXR_1_REPLACE_ONLY_NEWLINES_CARRIAGE_RETURNS "$(XLSXR_IN_REPLACE_ONLY_NEWLINES_CARRIAGE_RETURNS_XLSXR_1)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 
+XLSXR_1_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_1 DEFLINE
+XLSXR_1_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_1)"
+# ============================================================================
+XLSXR_1_GENERATE_FME_BUILD_NUM 24202
+XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXW_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_1
+DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset_XLSXW)
+GUI FILENAME DestDataset_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Destination Microsoft Excel File:
+CHECK_RASTER_ATTRIBUTES YES
+# ============================================================================
+DEFAULT_MACRO XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 XLSXW_OUT_OVERWRITE_FILE_XLSXW_1%XLSXW_OUT_TEMPLATEFILE_XLSXW_1%XLSXW_OUT_TEMPLATE_SHEET%XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET Writer Parameters
+# Whether or not to overwrite the file
+DEFAULT_MACRO XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 No
+XLSXW_1_OVERWRITE_FILE "$(XLSXW_OUT_OVERWRITE_FILE_XLSXW_1)"
+GUI ACTIVECHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 Yes%No,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,XLSXW_OUT_TEMPLATE_SHEET,XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET Overwrite Existing File:
+# Template file option
+DEFAULT_MACRO XLSXW_OUT_TEMPLATEFILE_XLSXW_1 
+XLSXW_1_TEMPLATEFILE "$(XLSXW_OUT_TEMPLATEFILE_XLSXW_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST XLSXW_OUT_TEMPLATEFILE_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Template File:
+GUI LOOKUP XLSXW_OUT_TEMPLATEFILE_XLSXW_1 <Unused>, 
+DEFAULT_MACRO XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1
+XLSXW_1_TEMPLATE_SHEET "$(XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_1 No
+XLSXW_1_REMOVE_UNCHANGED_TEMPLATE_SHEET "$(XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_1)"
+# Compatibility case to support reading old workspaces which have one template sheet per writer
+DEFAULT_MACRO XLSXW_OUT_MULTIPLE_TEMPLATE_SHEETS_XLSXW_1 Yes
+XLSXW_1_MULTIPLE_TEMPLATE_SHEETS "$(XLSXW_OUT_MULTIPLE_TEMPLATE_SHEETS_XLSXW_1)"
+# Compatibility case to support old case where insert would allow fme_db_operation
+DEFAULT_MACRO XLSXW_OUT_INSERT_IGNORE_DB_OP_XLSXW_1 Yes
+XLSXW_1_INSERT_IGNORE_DB_OP "$(XLSXW_OUT_INSERT_IGNORE_DB_OP_XLSXW_1)"
+# ============================================================================
+# Parameters whose values will be percolated to the feature types, but will not
+# remain as writer level settings
+# Default to not drop feature type first
+DEFAULT_MACRO XLSXW_OUT_DROP_TABLE_XLSXW_1 No
+XLSXW_1_DROP_TABLE "$(XLSXW_OUT_DROP_TABLE_XLSXW_1)"
+# Default to not truncate feature type first (removeallcelldata,retainformatting/headers,etc.)
+DEFAULT_MACRO XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1 No
+XLSXW_1_TRUNCATE_TABLE "$(XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1)"
+# Maintain compatibility with lenient attrName.* matching
+DEFAULT_MACRO XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1 yes
+XLSXW_1_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING "$(XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1)"
+# Default to write out the field names
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1 Yes
+XLSXW_1_FIELD_NAMES_OUT "$(XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1)"
+# Allow header row to be unformatted
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_FORMATTING_XLSXW_1 YES
+XLSXW_1_FIELD_NAMES_FORMATTING "$(XLSXW_OUT_FIELD_NAMES_FORMATTING_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_ROW_HEIGHT_XLSXW_1
+XLSXW_1_FIELD_NAMES_ROW_HEIGHT "$(XLSXW_OUT_FIELD_NAMES_ROW_HEIGHT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_FONT_NAME_XLSXW_1
+XLSXW_1_FIELD_NAMES_FONT_NAME "$(XLSXW_OUT_FIELD_NAMES_FONT_NAME_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_FONT_COLOR_XLSXW_1
+XLSXW_1_FIELD_NAMES_FONT_COLOR "$(XLSXW_OUT_FIELD_NAMES_FONT_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_BACKGROUND_COLOR_XLSXW_1
+XLSXW_1_FIELD_NAMES_BACKGROUND_COLOR "$(XLSXW_OUT_FIELD_NAMES_BACKGROUND_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_PATTERN_COLOR_XLSXW_1
+XLSXW_1_FIELD_NAMES_PATTERN_COLOR "$(XLSXW_OUT_FIELD_NAMES_PATTERN_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_PATTERN_STYLE_XLSXW_1
+XLSXW_1_FIELD_NAMES_PATTERN_STYLE "$(XLSXW_OUT_FIELD_NAMES_PATTERN_STYLE_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_CELL_BORDER_COLOR_XLSXW_1
+XLSXW_1_FIELD_NAMES_CELL_BORDER_COLOR "$(XLSXW_OUT_FIELD_NAMES_CELL_BORDER_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_CELL_BORDER_STYLE_XLSXW_1
+XLSXW_1_FIELD_NAMES_CELL_BORDER_STYLE "$(XLSXW_OUT_FIELD_NAMES_CELL_BORDER_STYLE_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_HORIZONTAL_ALIGNMENT_XLSXW_1
+XLSXW_1_FIELD_NAMES_HORIZONTAL_ALIGNMENT "$(XLSXW_OUT_FIELD_NAMES_HORIZONTAL_ALIGNMENT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_VERTICAL_ALIGNMENT_XLSXW_1
+XLSXW_1_FIELD_NAMES_VERTICAL_ALIGNMENT "$(XLSXW_OUT_FIELD_NAMES_VERTICAL_ALIGNMENT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_TEXT_INDENT_XLSXW_1
+XLSXW_1_FIELD_NAMES_TEXT_INDENT "$(XLSXW_OUT_FIELD_NAMES_TEXT_INDENT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_TEXT_ORIENTATION_XLSXW_1
+XLSXW_1_FIELD_NAMES_TEXT_ORIENTATION "$(XLSXW_OUT_FIELD_NAMES_TEXT_ORIENTATION_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_TEXT_CONTROL_XLSXW_1
+XLSXW_1_FIELD_NAMES_TEXT_CONTROL "$(XLSXW_OUT_FIELD_NAMES_TEXT_CONTROL_XLSXW_1)"
+# Default writer mode
+DEFAULT_MACRO XLSXW_OUT_WRITER_MODE_XLSXW_1 Insert
+XLSXW_1_WRITER_MODE "$(XLSXW_OUT_WRITER_MODE_XLSXW_1)"
+# Default raster writing type
+DEFAULT_MACRO XLSXW_OUT_RASTER_FORMAT_XLSXW_1 PNG
+XLSXW_1_RASTER_FORMAT "$(XLSXW_OUT_RASTER_FORMAT_XLSXW_1)"
+# ============================================================================
+# Choose excel file protection mode
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_XLSXW_1 NO
+XLSXW_1_PROTECT_SHEET "$(XLSXW_OUT_PROTECT_SHEET_XLSXW_1)"
+# Whether or not to enable sheet password protection
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_PASSWORD "$(XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1)"
+# Which kind of protection level
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_LEVEL "$(XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1)"
+# Which kind of specific permissions will be enabled
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_PERMISSIONS "$(XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1)"
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1 Yes
+XLSXW_1_DESTINATION_DATASETTYPE_VALIDATION "$(XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1 FEATURE
+XLSXW_1_COORDINATE_SYSTEM_GRANULARITY "$(XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_CUSTOM_NUMBER_FORMATTING_XLSXW_1 ENABLE_NATIVE
+XLSXW_1_CUSTOM_NUMBER_FORMATTING "$(XLSXW_OUT_CUSTOM_NUMBER_FORMATTING_XLSXW_1)"
+# ============================================================================
+XLSXW_1_GENERATE_FME_BUILD_NUM 24202
+XLSXW_1_DATASET "$(DestDataset_XLSXW_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)valores_duplicados.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.1.0 (20240328 - Build 24202 - WIN64)"
+MAPPING_FILE_ID Valida<u00e7><u00e3>o<space>e<space>Qualidade<space>de<space>Dados<space>com<space>FME
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
+DEFAULT_MACRO DATASET_KEYWORD_XLSXW_1 XLSXW_1
+# -------------------------------------------------------------------------
+
+XLSXR_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME valores_duplicados
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_XLSXR_1)   INPUT FEATURE_TYPE *    ROUTE XLSXR XLSXR_1::Business_Licences multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC ::Business_Licences ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+XLSXR_1_MERGE_DEF XLSXR_1::Business_Licences EXACT Business_Licences DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_apply_filters,No,fme_attribute_reading,defined,RecordID,number<openparen>4<comma>0<closeparen>,LicenceRSN,number<openparen>7<comma>0<closeparen>,LicenceNumber,char<openparen>9<closeparen>,BusinessTradeName,char<openparen>40<closeparen>,Status,char<openparen>20<closeparen>,IssuedDate,char<openparen>19<closeparen>,ExpiredDate,char<openparen>19<closeparen>,BusinessType,char<openparen>13<closeparen>,Number,char<openparen>7<closeparen>,Street,char<openparen>31<closeparen>,City,char<openparen>18<closeparen>,Province,char<openparen>2<closeparen>,Country,char<openparen>3<closeparen>,PostalCode,char<openparen>10<closeparen>,LocalArea,char<openparen>28<closeparen>,NumberOfEmployees,number<openparen>4<comma>0<closeparen>,FeePaid,number<openparen>7<comma>2<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Business_Licences_XLSXR_1 Splitter"    INPUT FEATURE_TYPE Business_Licences    OUTPUT FEATURE_TYPE Business_Licences_XLSXR_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME { DuplicateFilter }    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE Business_Licences_XLSXR_1    KEY_ATTRIBUTES { RecordID }    INPUT_IS_ORDERED { NO }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { DUPLICATE FEATURE_TYPE DuplicateFilter_DUPLICATE         }    OUTPUT { UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE         }
+# -------------------------------------------------------------------------
+INCLUDE [    if { {MATCH} == {EXCEPT} } {       puts {MACRO Matcher_ATTRMATCH MATCH_ALL_ATTRS_EXCEPT { LicenceRSN } };    }    elseif { {MATCH} == {ALL} } {       puts {MACRO Matcher_ATTRMATCH MATCH_ALL_ATTRIBUTES};    }    elseif { {MATCH} == {MATCH} } {       puts {MACRO Matcher_ATTRMATCH MATCH_ATTRIBUTES { LicenceRSN } };    }    else {       puts {MACRO Matcher_ATTRMATCH MATCH_ATTRIBUTES};    } ]
+FACTORY_DEF {*} MatchingFactory    FACTORY_NAME { Matcher }    INPUT  FEATURE_TYPE DuplicateFilter_UNIQUE    MATCH_GEOMETRY { <Unused> }    $(Matcher_ATTRMATCH)    DIFFERING_ATTRIBUTES { LicenceNumber }    BLANK_AND_MISSING_DIFFER { No }    BLANK_AND_MISSING_NAMES_TRAITS_DIFFER { <Unused> }    CHECK_TYPES_AND_ENCODINGS { No }    VECTOR_TOLERANCE { <Unused> }    LENIENT_GEOMETRY_MATCH { <Unused> }    CHECK_COORDINATE_SYSTEMS { <Unused> }    ADD_TO_MATCHED { _match_id }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    OUTPUT { SINGLE_MATCHED FEATURE_TYPE Matcher_SINGLE_MATCHED          }    OUTPUT { NOT_MATCHED FEATURE_TYPE Matcher_NOT_MATCHED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_2 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Matcher_SINGLE_MATCHED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "mensagem_erro" "SET_TO" "Foi<space>encontrado<space>valores<space>mais<space>de<space>um<space>registro<space>para<space>o<space>LicenceRSN.<space><lf>Verificar<space>o<space>registro:<lf>RecordID:<at>Value<openparen>RecordID<closeparen><lf>LicenceRSN:<space><at>Value<openparen>LicenceRSN<closeparen><space><lf>LicenceNumber:<at>Value<openparen>LicenceNumber<closeparen>" "varchar<openparen>200<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE Matcher_NOT_MATCHED    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Status<closeparen>,Tester)" = Issued ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }
+# -------------------------------------------------------------------------
+INCLUDE [    if { {MATCH} == {EXCEPT} } {       puts {MACRO Matcher_2_ATTRMATCH MATCH_ALL_ATTRS_EXCEPT { LicenceNumber } };    }    elseif { {MATCH} == {ALL} } {       puts {MACRO Matcher_2_ATTRMATCH MATCH_ALL_ATTRIBUTES};    }    elseif { {MATCH} == {MATCH} } {       puts {MACRO Matcher_2_ATTRMATCH MATCH_ATTRIBUTES { LicenceNumber } };    }    else {       puts {MACRO Matcher_2_ATTRMATCH MATCH_ATTRIBUTES};    } ]
+FACTORY_DEF {*} MatchingFactory    FACTORY_NAME { Matcher_2 }    INPUT  FEATURE_TYPE Tester_PASSED    MATCH_GEOMETRY { <Unused> }    $(Matcher_2_ATTRMATCH)    DIFFERING_ATTRIBUTES { LicenceRSN }    BLANK_AND_MISSING_DIFFER { No }    BLANK_AND_MISSING_NAMES_TRAITS_DIFFER { <Unused> }    CHECK_TYPES_AND_ENCODINGS { No }    VECTOR_TOLERANCE { <Unused> }    LENIENT_GEOMETRY_MATCH { <Unused> }    CHECK_COORDINATE_SYSTEMS { <Unused> }    ADD_TO_MATCHED { _match_id }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    OUTPUT { SINGLE_MATCHED FEATURE_TYPE Matcher_2_SINGLE_MATCHED          }    OUTPUT { NOT_MATCHED FEATURE_TYPE Matcher_2_NOT_MATCHED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_3 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Matcher_2_SINGLE_MATCHED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "mensagem_erro" "SET_TO" "Foi<space>encontrado<space>valores<space>mais<space>de<space>um<space>registro<space>para<space>o<space>LicenceNumber.<space><lf>Verificar<space>o<space>registro:<lf>RecordID:<at>Value<openparen>RecordID<closeparen><lf>LicenceNumber:<at>Value<openparen>LicenceNumber<closeparen><lf>LicenceRSN:<space><at>Value<openparen>LicenceRSN<closeparen><space>" "varchar<openparen>200<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE DuplicateFilter_DUPLICATE    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "mensagem_erro" "SET_TO" "O<space>registro<space>RecordID:<space><at>Value<openparen>RecordID<closeparen><space>est<u00e1><space>duplicado<space>na<space>base<space>de<space>dados." "varchar<openparen>200<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Junction }    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    OUTPUT { FEATURE_TYPE Junction_Output         }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Matcher_2_NOT_MATCHED TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Sheet1<closeparen> GEOMETRY    ROUTE FME_GENERIC Junction_Output TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>analisar_dados<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+XLSXW_1_DEF Sheet1   xlsx_drop_sheet              No   xlsx_trunc_sheet             No   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_field_names_formatting  YES   xlsx_field_names_row_height  ""   xlsx_field_names_font_name   ""   xlsx_field_names_font_color  ""   xlsx_field_names_background_color ""   xlsx_field_names_pattern_color ""   xlsx_field_names_pattern_style ""   xlsx_field_names_cell_border_color ""   xlsx_field_names_cell_border_style ""   xlsx_field_names_horizontal_alignment ""   xlsx_field_names_vertical_alignment ""   xlsx_field_names_text_indent ""   xlsx_field_names_text_orientation ""   xlsx_field_names_text_control ""   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   xlsx_template_sheet          ""   xlsx_remove_unchanged_template_sheet No   RecordID                     number(4,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   LicenceRSN                   number(7,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   LicenceNumber                string(9,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   BusinessTradeName            string(40,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Status                       string(20,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   IssuedDate                   string(19,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   ExpiredDate                  string(19,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   BusinessType                 string(13,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Number                       string(7,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Street                       string(31,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   City                         string(18,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Province                     string(2,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Country                      string(3,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   PostalCode                   string(10,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   LocalArea                    string(28,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   NumberOfEmployees            number(4,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   FeePaid                      number(7,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)
+# -------------------------------------------------------------------------
+XLSXW_1_DEF analisar_dados   xlsx_drop_sheet              No   xlsx_trunc_sheet             No   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_field_names_formatting  YES   xlsx_field_names_row_height  ""   xlsx_field_names_font_name   ""   xlsx_field_names_font_color  ""   xlsx_field_names_background_color ""   xlsx_field_names_pattern_color ""   xlsx_field_names_pattern_style ""   xlsx_field_names_cell_border_color ""   xlsx_field_names_cell_border_style ""   xlsx_field_names_horizontal_alignment ""   xlsx_field_names_vertical_alignment ""   xlsx_field_names_text_indent ""   xlsx_field_names_text_orientation ""   xlsx_field_names_text_control ""   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   xlsx_template_sheet          ""   xlsx_remove_unchanged_template_sheet No   mensagem_erro                string(50,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   RecordID                     number(4,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   LicenceRSN                   number(7,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   LicenceNumber                string(9,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   BusinessTradeName            string(40,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Status                       string(20,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   IssuedDate                   string(19,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   ExpiredDate                  string(19,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   BusinessType                 string(13,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Number                       string(7,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Street                       string(31,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   City                         string(18,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Province                     string(2,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   Country                      string(3,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   PostalCode                   string(10,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   LocalArea                    string(28,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   NumberOfEmployees            number(4,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   FeePaid                      number(7,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)
