@@ -1,0 +1,845 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\2024-2-b24783\fme.exe" D:\gitHub\SolutialTech\2024\12\python-shapirowilk\3-workspace\python-shapirowilk.fmw
+#          --qtd_registros "5000"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5976.59 888.219"
+#!   DOC_TOP_LEFT="87.7795 -576.762"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24783"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="ab158806-6f9e-438a-9f8c-c061ffcb2e4e"
+#!   FME_DOCUMENT_PRIORGUID="9f281327-e1ff-4cc1-947f-30c11e50de82,9d31c923-af03-4123-b380-a71756e2a7b7,f39f2833-ad64-44bd-b646-deb6bed2bdb1,e006d6bc-4a88-43d1-98f2-ecc12ec6f070,5d4341f1-7828-43f7-ad14-afaae1c09459"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+#!   LAST_SAVE_DATE="2024-12-02T21:29:43"
+#!   LOG_FILE="$(WORKSPACE_NAME).log"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="311"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="1609.39 106.251"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR qtd_registros RANGE:[1,5000]%PRECISION:0%ON%INCR,499 Quantidade Registros (Amostragem)"
+#!   DEFAULT_VALUE="5000"
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoicXRkX3JlZ2lzdHJvcyIsInByb21wdCI6IlF1YW50aWRhZGUgUmVnaXN0cm9zIChBbW9zdHJhZ2VtKSIsInNob3dQcm9tcHQiOnRydWUsInZhbHVlVHlwZSI6InN0cmluZyIsInJlcXVpcmVkIjp0cnVlLCJkZWZhdWx0VmFsdWUiOiI1MDAwIiwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJudW1iZXIiLCJtaW5pbXVtIjoxLCJtaW5pbXVtRXhjbHVzaXZlIjpmYWxzZSwibWF4aW11bSI6NTAwMCwibWF4aW11bUV4Y2x1c2l2ZSI6ZmFsc2UsIm11bHRpcGxlT2YiOjEsInNob3dTbGlkZXIiOnRydWUsInNsaWRlclRpY2tJbmNyZW1lbnQiOjQ5OX1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="qtd_registros" 
+#!   DEFAULT_VALUE="5000"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI RANGE_SLIDER_OR_ATTR qtd_registros RANGE:[1,5000]%PRECISION:0%ON%INCR,499 Quantidade Registros (Amostragem)"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="4"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Somente para dar o Gatilhor de Start do fluxo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="150.00150001500015 -86.876468764687644"
+#!   TOP_LEFT="150.00150001500015 -86.876468764687644"
+#!   BOTTOM_RIGHT="899.95967147171473 -136.87646876468764"
+#!   BOUNDING_RECT="150.00150001500015 -86.876468764687644 749.95817145671458 50"
+#!   ORDER="500000000000066.25"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{2137c084-52fe-4470-aaef-b27878bdaf04}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="6"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gera a quantidade de registros &lt;span style=&quot; font-weight:700;&quot;&gt;(CLONA)&lt;/span&gt; determinados nos parâmetros para a Simulação&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;General:&lt;/span&gt;&lt;br /&gt;    Number of Copies: 1000&lt;br /&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Output Attribute Name:&lt;/span&gt;&lt;br /&gt;    Copy Number: id&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1326.3774742457663 178.39433398256386"
+#!   TOP_LEFT="1326.3774742457663 178.39433398256386"
+#!   BOTTOM_RIGHT="2236.1516969879935 -276.60991605993655"
+#!   BOUNDING_RECT="1326.3774742457663 178.39433398256386 909.77422274222738 455.00425004250042"
+#!   ORDER="500000000000027.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{2963f9ed-b8d3-4777-ae19-525143e02b8b}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="5"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="10"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gera os valores &lt;span style=&quot; font-weight:700;&quot;&gt;RANDOMICAMENTE&lt;/span&gt; para a amostragem dos dados&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;General:&lt;/span&gt;&lt;br /&gt;    Minimum Value: -1.7824&lt;br /&gt;    Maximum Value: 1.1977&lt;br /&gt;    Decimal Places: 8&lt;br /&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Output Attribute Name:&lt;/span&gt;&lt;br /&gt;    Generated Number: x&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2415.5290623907631 241.82341264159567"
+#!   TOP_LEFT="2415.5290623907631 241.82341264159567"
+#!   BOTTOM_RIGHT="3640.7849555746952 -163.1803373959047"
+#!   BOUNDING_RECT="2415.5290623907631 241.82341264159567 1225.2558931839319 405.00375003750037"
+#!   ORDER="500000000000030.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{73cf852d-6b5c-4c4b-9232-a6af0a783168}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="9"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="15"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ShapiroWilk [ShapiroWilk]&lt;/span&gt;&lt;br /&gt;[Embedded]&lt;br /&gt;User Parameters:&lt;br /&gt;    x: @Value(x)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="4190.9379200570938 54.597194139140925"
+#!   TOP_LEFT="4190.9379200570938 54.597194139140925"
+#!   BOTTOM_RIGHT="4734.1557428603219 -200.4050558833593"
+#!   BOUNDING_RECT="4190.9379200570938 54.597194139140925 543.21782280322805 255.00225002250022"
+#!   ORDER="500000000000056.25"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5573d854-b626-4290-8cf1-ea7b04b04f5e}"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.37647058823529411"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="14"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="18"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Inspecionar a Saída&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="5585.744906165065 -140.21594073194774"
+#!   TOP_LEFT="5585.744906165065 -140.21594073194774"
+#!   BOTTOM_RIGHT="6058.8936689026923 -141.21594073194774"
+#!   BOUNDING_RECT="5585.744906165065 -140.21594073194774 473.14876273762735 1"
+#!   ORDER="500000000000060.25"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{89404466-b288-4202-bbda-4da4ebac20c4}"
+#!   COLOUR="1,0.95686274509803926,0.80000000000000004,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="17"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="3"
+#!   NAME="1.0 | Trigger"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="87.779484136368865 120.20659380189954"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1074.7340146981956 -538.97107661782547"
+#!   BOUNDING_RECT="87.779484136368865 120.20659380189954 986.95453056182669 659.17767041972502"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="2 4 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="8"
+#!   NAME="2.1 | Criação da Amostragem"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1162.3608668579045 309.50495358804881"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2312.6764018073427 -572.0142782709371"
+#!   BOUNDING_RECT="1162.3608668579045 309.50495358804881 1150.3155349494382 881.5192318589859"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="6 5 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="12"
+#!   NAME="2.2 | Valores Randômicos para a Amostragem"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2368.894032506144 311.45651058062759"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="3793.6697691069535 -573.96578583929568"
+#!   BOUNDING_RECT="2368.894032506144 311.45651058062759 1424.7757366008095 885.42229641992321"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="10 9 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="13"
+#!   NAME="3.1 | Transformer Customizado"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="3853.0643789567785 308.01230759164253"
+#!   ORDER="500000000000054.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="5097.0208732189858 -576.76216515308499"
+#!   BOUNDING_RECT="3853.0643789567785 308.01230759164253 1243.9564942622073 884.77447274472752"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.37647058823529411"
+#!   CONTENTS="14 15 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="Creator"
+#!   VERSION="7"
+#!   POSITION="300.00300003000029 -287.50287502875028"
+#!   BOUNDING_RECT="300.00300003000029 -287.50287502875028 436 65"
+#!   ORDER="500000000000065.25"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOJSON" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="Cloner"
+#!   VERSION="0"
+#!   POSITION="1535.4941487458441 -257.39067386751469"
+#!   BOUNDING_RECT="1535.4941487458441 -257.39067386751469 436 65"
+#!   ORDER="500000000000012"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24202"
+#! >
+#!     <OUTPUT_FEAT NAME="COPY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="COPIES" PARM_VALUE="$(qtd_registros)"/>
+#!     <XFORM_PARM PARM_NAME="COPYATT" PARM_VALUE="id"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Cloner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="RandomNumberGenerator"
+#!   VERSION="3"
+#!   POSITION="2731.0313981257314 -258.06862672823632"
+#!   BOUNDING_RECT="2731.0313981257314 -258.06862672823632 551.625 65"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="1.1977"/>
+#!     <XFORM_PARM PARM_NAME="MIN" PARM_VALUE="-1.7824"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PLACES" PARM_VALUE="8"/>
+#!     <XFORM_PARM PARM_NAME="RESULT_ATTR" PARM_VALUE="x"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RandomNumberGenerator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="1"
+#!   POSITION="4216.5028415478928 -233.34444171286134"
+#!   BOUNDING_RECT="4216.5028415478928 -233.34444171286134 436 65"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="Saida"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="shapiro.result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="shapiro.pvalue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="ShapiroWilk"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ShapiroWilk"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="atributo_analise" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;x&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="5591.1797431221303 -275.21669073944781"
+#!   BOUNDING_RECT="5591.1797431221303 -275.21669073944781 473.1875 65"
+#!   ORDER="500000000000032.13"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION_REAL" PARM_VALUE="NoReduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="NO_THINNING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ShapiroWilk_Saida"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_IS_LOOKUP="true" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Thinning"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 COPY"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 Dados"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 Saida"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#!   NAME="ShapiroWilk"
+#!   ARCGIS_COMPATIBILITY=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="4176.19 921.884"
+#!   DOC_TOP_LEFT="-1468.48 -306.253"
+#!   FME_DOCUMENT_GUID=""
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   HISTORY=""
+#!   IS_VISIBLE="true"
+#!   LAST_SAVE_BUILD=""
+#!   LAST_SAVE_DATE=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   REPLACED_BY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="ShapiroWilk"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-2367.32 1091.62"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="73"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR atributo_analise FME_SYNTAX%FME%FME_SUPPORTSNUMERIC%YES Atributo para Análise"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiYXRyaWJ1dG9fYW5hbGlzZSIsInByb21wdCI6IkF0cmlidXRvIHBhcmEgQW7DoWxpc2UiLCJzaG93UHJvbXB0Ijp0cnVlLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIiwicmVxdWlyZWQiOnRydWUsImRlZmF1bHRWYWx1ZSI6IiIsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsImVkaXRvciI6InBsYWludGV4dCIsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlfV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="atributo_analise" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI TEXT_EDIT_OR_ATTR atributo_analise FME_SYNTAX%FME%FME_SUPPORTSNUMERIC%YES Atributo para Análise"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="9"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Entrada dos Dados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1370.5552675223184 45.623628900173173"
+#!   TOP_LEFT="-1370.5552675223184 45.623628900173173"
+#!   BOTTOM_RIGHT="-862.54287489839226 -109.37762111232695"
+#!   BOUNDING_RECT="-1370.5552675223184 45.623628900173173 508.01239262392625 155.00125001250012"
+#!   ORDER="500000000000016"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{42b378f3-5229-49b2-91f4-e345c4a9357f}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="10"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Necessita da Instalação da &lt;span style=&quot; font-weight:700;&quot;&gt;LIB SCIPY&lt;/span&gt;&lt;/li&gt;&#10;&lt;li style=&quot; font-weight:700;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Executa o código Python e retorna os atributos &lt;/span&gt;shapiro.result &lt;span style=&quot; font-weight:400;&quot;&gt;e &lt;/span&gt;shapiro.pvalue&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A aplicação do teste ShapiroWilk consiste em analisar a normalização dos dados. Sendo o quantitativo de registros de entrada são processados, &lt;span style=&quot; font-weight:700;&quot;&gt;saindo somente uma linha&lt;/span&gt;, com o resultado da testagem.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-518.00636125200504 467.50284769236146"
+#!   TOP_LEFT="-518.00636125200504 467.50284769236146"
+#!   BOTTOM_RIGHT="562.4726935385429 162.50009766486119"
+#!   BOUNDING_RECT="-518.00636125200504 467.50284769236146 1080.4790547905479 305.00275002750027"
+#!   ORDER="500000000000023.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{4c5a44fa-f189-4305-b75e-10308a1d568c}"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.37647058823529411"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="11"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;AttributeKeeper [AttributeKeeper Version 3]&lt;/span&gt;&lt;br /&gt;General:&lt;br /&gt;    Attributes to Keep: shapiro.pvalue,shapiro.result&lt;br /&gt;    Lists to Keep: &amp;lt;not set&amp;gt;&lt;br /&gt;Advanced:&lt;br /&gt;    Feature Output: Individual Mode&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="839.44530385884173 310.62689260086796"
+#!   TOP_LEFT="839.44530385884173 310.62689260086796"
+#!   BOTTOM_RIGHT="1743.5065788465915 -44.376357431632357"
+#!   BOUNDING_RECT="839.44530385884173 310.62689260086796 904.06127498774981 355.00325003250032"
+#!   ORDER="500000000000051.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{20ef38b5-b002-46a7-b46c-109f05f16eb6}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="4"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="12"
+#!   NAME="Entrada dos Dados"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1468.4841921293246 218.75218752187513"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-696.88196881968861 -300.00300003000041"
+#!   BOUNDING_RECT="-1468.4841921293246 218.75218752187513 771.60222330963597 518.75518755187557"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="2 9 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="13"
+#!   NAME="Saida dos Dados"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1936.098736088567 236.67080676363796"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2707.7009593982029 -286.67128055039109"
+#!   BOUNDING_RECT="1936.098736088567 236.67080676363796 771.60222330963597 523.34208731402907"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="3 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="14"
+#!   NAME="Aplicação do Código Python"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-625.00625006250061 615.63115631156325"
+#!   ORDER="500000000000054.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="681.25681256812572 -306.25306253062513"
+#!   BOUNDING_RECT="-625.00625006250061 615.63115631156325 1306.2630626306263 921.88421884218837"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.37647058823529411"
+#!   CONTENTS="10 5 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="15"
+#!   NAME="Mantém os Atributos para Saída"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="759.23047846134159 433.59486147890721"
+#!   ORDER="500000000000022.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1862.5186251862519 -296.87796877968776"
+#!   BOUNDING_RECT="759.23047846134159 433.59486147890721 1103.2881467249103 730.47283025859497"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="11 4 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="AttributeKeeper"
+#!   VERSION="3"
+#!   POSITION="1064.4475538813419 -83.751451182569696"
+#!   BOUNDING_RECT="1064.4475538813419 -83.751451182569696 436 65"
+#!   ORDER="500000000000049.13"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="shapiro.result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="shapiro.pvalue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CREATE_BULK_MODE_FEATURES" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="shapiro.pvalue,shapiro.result"/>
+#!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_ON_ATTRIBUTE_CHANGE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="PythonCaller"
+#!   VERSION="6"
+#!   POSITION="-261.88819503021784 -46.837696418865903"
+#!   BOUNDING_RECT="-261.88819503021784 -46.837696418865903 436 65"
+#!   ORDER="500000000000056.25"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="shapiro.result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="shapiro.pvalue" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;Rejected&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="x" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="shapiro.result buffer shapiro.pvalue buffer"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fme&lt;lf&gt;from&lt;space&gt;fme&lt;space&gt;import&lt;space&gt;BaseTransformer&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;scipy&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureProcessor&lt;openparen&gt;BaseTransformer&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;Template&lt;space&gt;Class&lt;space&gt;Interface:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;When&lt;space&gt;using&lt;space&gt;this&lt;space&gt;class&lt;comma&gt;&lt;space&gt;make&lt;space&gt;sure&lt;space&gt;its&lt;space&gt;name&lt;space&gt;is&lt;space&gt;set&lt;space&gt;as&lt;space&gt;the&lt;space&gt;value&lt;space&gt;of&lt;space&gt;the&lt;space&gt;&lt;apos&gt;Class&lt;space&gt;to&lt;space&gt;Process&lt;space&gt;Features&lt;apos&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;transformer&lt;space&gt;parameter.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;This&lt;space&gt;class&lt;space&gt;inherits&lt;space&gt;from&lt;space&gt;&lt;apos&gt;fme.BaseTransformer&lt;apos&gt;.&lt;space&gt;For&lt;space&gt;full&lt;space&gt;details&lt;space&gt;of&lt;space&gt;this&lt;space&gt;class&lt;comma&gt;&lt;space&gt;its&lt;space&gt;methods&lt;comma&gt;&lt;space&gt;and&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;expected&lt;space&gt;usage&lt;comma&gt;&lt;space&gt;see&lt;space&gt;https:&lt;solidus&gt;&lt;solidus&gt;docs.safe.com&lt;solidus&gt;fme&lt;solidus&gt;html&lt;solidus&gt;fmepython&lt;solidus&gt;api&lt;solidus&gt;fme.html#fme.BaseTransformer.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;Base&lt;space&gt;constructor&lt;space&gt;for&lt;space&gt;class&lt;space&gt;members.&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.x&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;has_support_for&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;support_type:&lt;space&gt;int&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;by&lt;space&gt;FME&lt;space&gt;to&lt;space&gt;determine&lt;space&gt;if&lt;space&gt;the&lt;space&gt;PythonCaller&lt;space&gt;supports&lt;space&gt;Bulk&lt;space&gt;mode&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;which&lt;space&gt;allows&lt;space&gt;for&lt;space&gt;significant&lt;space&gt;performance&lt;space&gt;gains&lt;space&gt;when&lt;space&gt;processing&lt;space&gt;large&lt;space&gt;numbers&lt;space&gt;of&lt;space&gt;features.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;return&lt;space&gt;support_type&lt;space&gt;==&lt;space&gt;fmeobjects.FME_SUPPORT_FEATURE_TABLE_SHIM&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature:&lt;space&gt;fmeobjects.FMEFeature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;for&lt;space&gt;each&lt;space&gt;feature&lt;space&gt;which&lt;space&gt;enters&lt;space&gt;the&lt;space&gt;PythonCaller.&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.x.append&lt;openparen&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;x&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;have&lt;space&gt;been&lt;space&gt;processed&lt;space&gt;from&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;results&lt;space&gt;=&lt;space&gt;scipy.stats.shapiro&lt;openparen&gt;self.x&lt;closeparen&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;shapiro.result&lt;apos&gt;&lt;comma&gt;&lt;space&gt;results&lt;openbracket&gt;0&lt;closebracket&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;shapiro.pvalue&lt;apos&gt;&lt;comma&gt;&lt;space&gt;results&lt;openbracket&gt;1&lt;closebracket&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;feature&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;process_group&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;by&lt;space&gt;FME&lt;space&gt;for&lt;space&gt;each&lt;space&gt;group&lt;space&gt;when&lt;space&gt;group&lt;space&gt;processing&lt;space&gt;mode&lt;space&gt;is&lt;space&gt;enabled.&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;reject_feature&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature:&lt;space&gt;fmeobjects.FMEFeature&lt;comma&gt;&lt;space&gt;code:&lt;space&gt;str&lt;comma&gt;&lt;space&gt;message:&lt;space&gt;str&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;can&lt;space&gt;be&lt;space&gt;used&lt;space&gt;to&lt;space&gt;output&lt;space&gt;a&lt;space&gt;feature&lt;space&gt;to&lt;space&gt;the&lt;space&gt;&lt;lt&gt;Rejected&lt;gt&gt;&lt;space&gt;port.&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;fme_rejection_code&lt;quote&gt;&lt;comma&gt;&lt;space&gt;code&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;fme_rejection_message&lt;quote&gt;&lt;comma&gt;&lt;space&gt;message&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;feature&lt;comma&gt;&lt;space&gt;output_tag=&lt;quote&gt;&lt;lt&gt;Rejected&lt;gt&gt;&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="Dados"
+#!   POSITION="-1329.9298612682564 -101.87724610857691"
+#!   BOUNDING_RECT="-1329.9298612682564 -101.87724610857691 431 71"
+#!   COLLAPSED="false"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="x" ATTR_TYPE="real64" ATTR_VALUE="$(atributo_analise)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="Saida"
+#!   POSITION="2109.3960939609378 -43.750437504375128"
+#!   BOUNDING_RECT="2109.3960939609378 -43.750437504375128 431 71"
+#!   COLLAPSED="false"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 311
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+# ============================================================================
+DEFAULT_MACRO qtd_registros 5000
+
+# ============================================================================
+INCLUDE [ if {{$(qtd_registros$encode)} == {}} { puts_real {Parameter 'qtd_registros' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_GEOJSON NOT_ACTIVATED
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {GeoJSON} } {            puts {MACRO Creator_GEOJSON *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_GEOJSON)} CreationFactory    FACTORY_NAME { Creator_GEOJSON_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ 	   @SupplyAttributes(ENCODED,__GeoJSONCreatorTemp__,<Unused>)        @JSONGeometry(FROM_ATTRIBUTE,GEOJSON,__GeoJSONCreatorTemp__, PREFER_ERROR_OVER_REJECTION) 	   @RemoveAttributes(__GeoJSONCreatorTemp__) }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_CREATED        fme_feature_type Creator         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 7"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Cloner_Cloner }    INPUT  FEATURE_TYPE Creator_CREATED    NUMBER_OF_COPIES { "@EvaluateExpression(FDIV,FLOAT,$(qtd_registros$encode),Cloner)" }    COPY_NUMBER_ATTRIBUTE { id }    REJECT_INVALID YES    OUTPUT { COPY Cloner_COPY         }    OUTPUT { <REJECTED> Cloner_<REJECTED>       fme_rejection_code "INVALID_PARAMETER_NUMBER_OF_COPIES"        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME Cloner_<Rejected> INPUT FEATURE_TYPE Cloner_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Cloner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+Tcl2 proc RandomNumberGenerator_generator {paramMin paramMax paramPlaces} {    set absoluteMax [expr abs($paramMax)];    set absoluteMin [expr abs($paramMin)];    if {$absoluteMin > $absoluteMax} {       set temp $absoluteMax;       set absoluteMax $absoluteMin;       set absoluteMin $temp;    };    set maxNumDigits 1;    if {$absoluteMax > 0} {       set maxNumDigits [expr int(log10($absoluteMax) + 1)];    };    set positiveParamPlaces [expr abs($paramPlaces)];    if {$paramMin > $paramMax} {       FME_SetAttribute {"x"} NaN;    } elseif {$paramPlaces < 0 && $maxNumDigits <= $positiveParamPlaces} {       FME_SetAttribute {"x"} 0;    } else {       set randomNumber [expr rand()];       set mult [expr pow(10, $paramPlaces)];       set innerMin [expr double($paramMin)];       set innerMax [expr double($paramMax)];       if {$paramPlaces > 0} {          set addValue [expr pow(10, -$paramPlaces)];          set indexDotMin [string first "." $innerMin];          set indexDotMax [string first "." $innerMax];          set countDecPlacesMin [expr [string length $innerMin] - $indexDotMin - 1];          set countDecPlacesMax [expr [string length $innerMax] - $indexDotMax - 1];          set countTruncatedDecPlaces [expr $countDecPlacesMin - $paramPlaces];          if {$countTruncatedDecPlaces > 0} {             set zeroes [string repeat "0" $countTruncatedDecPlaces];             set truncatedDecPlaces [string range $innerMin [expr $indexDotMin + 1 + $paramPlaces] [string length $innerMin]];             if {![string equal $truncatedDecPlaces $zeroes]}             {                set truncatedResult [string range $innerMin 0 [expr $indexDotMin + $paramPlaces]];                if {$innerMin > 0} {                   set truncatedResult [expr $truncatedResult + $addValue];                };                set innerMin $truncatedResult;             };          };          set countTruncatedDecPlaces [expr $countDecPlacesMax - $paramPlaces];          if {$countTruncatedDecPlaces > 0} {             set zeroes [string repeat "0" $countTruncatedDecPlaces];             set truncatedDecPlaces [string range $innerMax [expr $indexDotMax + 1 + $paramPlaces] [string length $innerMax]];             if {![string equal $truncatedDecPlaces $zeroes]}             {                set truncatedResult [string range $innerMax 0 [expr $indexDotMax + $paramPlaces]];                if {$innerMax < 0} {                   set truncatedResult [expr $truncatedResult - $addValue];                };                set innerMax $truncatedResult;             };          };       } else {          set innerMin [expr ceil($paramMin * $mult) * 1.0 / $mult];          set innerMax [expr floor($paramMax * $mult) * 1.0 / $mult];       };       set integerMin $innerMin;       set integerMax $innerMax;       set integerMin [expr wide($innerMin * $mult)];       set integerMax [expr wide($innerMax * $mult)];       set integerResult [expr $integerMin + wide($randomNumber * ($integerMax + 1 - $integerMin))];       set result [expr $integerResult * 1.0 / $mult];       set formatString "%.0f";       if {$paramPlaces > 0} {          set formatString [format "%%.%df" $paramPlaces];       };       FME_SetAttribute {"x"} [format $formatString $result];    }; }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { RandomNumberGenerator_MinRejecter }    INPUT  FEATURE_TYPE Cloner_COPY    TEST { "-1.7824" TYPE NUM ENCODED }    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT { PASSED FEATURE_TYPE RandomNumberGenerator__toMaxRejecter__ }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { RandomNumberGenerator_MaxRejecter }    INPUT { FEATURE_TYPE RandomNumberGenerator__toMaxRejecter__ }    TEST { "1.1977" TYPE NUM ENCODED }    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT { PASSED FEATURE_TYPE RandomNumberGenerator__toPlacesRejecter__ }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { RandomNumberGenerator_PlacesRejecter }    INPUT { FEATURE_TYPE RandomNumberGenerator__toPlacesRejecter__ }    TEST { "8" TYPE INT ENCODED }    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT { PASSED FEATURE_TYPE RandomNumberGenerator__toOutput__ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { RandomNumberGenerator_RandomNumberGenerator }    INPUT { FEATURE_TYPE RandomNumberGenerator__toOutput__ }    OUTPUT { FEATURE_TYPE RandomNumberGenerator_OUTPUT         @Tcl2("RandomNumberGenerator_generator {-1.7824} {1.1977} {8} ")          }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ShapiroWilk Dados Input Collector"   INPUT FEATURE_TYPE RandomNumberGenerator_OUTPUT   OUTPUT FEATURE_TYPE ShapiroWilk_Dados
+MACRO ShapiroWilk_WORKSPACE_NAME ShapiroWilk
+MACRO $(ShapiroWilk_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(ShapiroWilk_WORKSPACE_NAME)_XFORMER_NAME ShapiroWilk
+MACRO $(ShapiroWilk_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(ShapiroWilk_WORKSPACE_NAME)_atributo_analise <at>Value<openparen>x<closeparen>
+MACRO $(ShapiroWilk_WORKSPACE_NAME)_SUB_DOC_NAME ShapiroWilk
+MACRO $(ShapiroWilk_WORKSPACE_NAME)_SUB_DOC_NAME ShapiroWilk
+DEFAULT_MACRO ShapiroWilk_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(ShapiroWilk_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(ShapiroWilk_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ShapiroWilk_WORKSPACE_NAME)_Dados1733185783 Input Splitter"   INPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_Dados"   OUTPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_Dados" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,x,$($(ShapiroWilk_WORKSPACE_NAME)_atributo_analise),FLOAT, FEATURE_TYPE)"
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { $(ShapiroWilk_WORKSPACE_NAME)_PythonCaller }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_Dados"    SYMBOL_NAME { FeatureProcessor }    SOURCE_CODE { import<space>fme<lf>from<space>fme<space>import<space>BaseTransformer<lf>import<space>fmeobjects<lf>import<space>scipy<lf><lf><lf>class<space>FeatureProcessor<openparen>BaseTransformer<closeparen>:<lf><space><space><space><space><quote><quote><quote>Template<space>Class<space>Interface:<lf><space><space><space><space>When<space>using<space>this<space>class<comma><space>make<space>sure<space>its<space>name<space>is<space>set<space>as<space>the<space>value<space>of<space>the<space><apos>Class<space>to<space>Process<space>Features<apos><lf><space><space><space><space>transformer<space>parameter.<lf><lf><space><space><space><space>This<space>class<space>inherits<space>from<space><apos>fme.BaseTransformer<apos>.<space>For<space>full<space>details<space>of<space>this<space>class<comma><space>its<space>methods<comma><space>and<lf><space><space><space><space>expected<space>usage<comma><space>see<space>https:<solidus><solidus>docs.safe.com<solidus>fme<solidus>html<solidus>fmepython<solidus>api<solidus>fme.html#fme.BaseTransformer.<lf><space><space><space><space><quote><quote><quote><lf><lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>Base<space>constructor<space>for<space>class<space>members.<quote><quote><quote><lf><space><space><space><space><space><space><space><space>self.x<space>=<space><openbracket><closebracket><lf><lf><space><space><space><space>def<space>has_support_for<openparen>self<comma><space>support_type:<space>int<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>by<space>FME<space>to<space>determine<space>if<space>the<space>PythonCaller<space>supports<space>Bulk<space>mode<comma><lf><space><space><space><space><space><space><space><space>which<space>allows<space>for<space>significant<space>performance<space>gains<space>when<space>processing<space>large<space>numbers<space>of<space>features.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>return<space>support_type<space>==<space>fmeobjects.FME_SUPPORT_FEATURE_TABLE_SHIM<lf><lf><space><space><space><space>def<space>input<openparen>self<comma><space>feature:<space>fmeobjects.FMEFeature<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>for<space>each<space>feature<space>which<space>enters<space>the<space>PythonCaller.<quote><quote><quote><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>self.x.append<openparen>feature.getAttribute<openparen><apos>x<apos><closeparen><closeparen><lf><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>once<space>all<space>the<space>FME<space>Features<space>have<space>been<space>processed<space>from<space>input<openparen><closeparen>.<quote><quote><quote><lf><space><space><space><space><space><space><space><space>results<space>=<space>scipy.stats.shapiro<openparen>self.x<closeparen><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>feature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>shapiro.result<apos><comma><space>results<openbracket>0<closebracket><closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><apos>shapiro.pvalue<apos><comma><space>results<openbracket>1<closebracket><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>self.pyoutput<openparen>feature<closeparen><lf><lf><space><space><space><space>def<space>process_group<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>by<space>FME<space>for<space>each<space>group<space>when<space>group<space>processing<space>mode<space>is<space>enabled.<quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf><lf><space><space><space><space>def<space>reject_feature<openparen>self<comma><space>feature:<space>fmeobjects.FMEFeature<comma><space>code:<space>str<comma><space>message:<space>str<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>can<space>be<space>used<space>to<space>output<space>a<space>feature<space>to<space>the<space><lt>Rejected<gt><space>port.<quote><quote><quote><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>fme_rejection_code<quote><comma><space>code<closeparen><lf><space><space><space><space><space><space><space><space>feature.setAttribute<openparen><quote>fme_rejection_message<quote><comma><space>message<closeparen><lf><space><space><space><space><space><space><space><space>self.pyoutput<openparen>feature<comma><space>output_tag=<quote><lt>Rejected<gt><quote><closeparen><lf> }    PY_OUTPUT_TAGS { PYOUTPUT <Rejected> }    OUTPUT { PYOUTPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_PythonCaller_OUTPUT"         }    OUTPUT { <Rejected> FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_PythonCaller_<Rejected>"         }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME "$(ShapiroWilk_WORKSPACE_NAME)_PythonCaller_<Rejected>" INPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_PythonCaller_<Rejected>"  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, ShapiroWilk_PythonCaller<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttributeKeeperFactory    FACTORY_NAME { $(ShapiroWilk_WORKSPACE_NAME)_AttributeKeeper }    INPUT  FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_PythonCaller_OUTPUT"    KEEP_ATTRS { shapiro.pvalue,shapiro.result }    KEEP_LISTS {  }    KEEP_FME_ATTRIBUTES Yes    BUILD_FEATURE_TABLES { NO }    OUTPUT_ON_ATTRIBUTE_CHANGE { <Unused> }    OUTPUT { OUTPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_AttributeKeeper_OUTPUT"        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ShapiroWilk_WORKSPACE_NAME)_Saida1733185783 Output Collector"   INPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_AttributeKeeper_OUTPUT"   OUTPUT FEATURE_TYPE "$(ShapiroWilk_WORKSPACE_NAME)_Saida"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(ShapiroWilk_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ShapiroWilk Saida Output Renamer/Nuker"   INPUT FEATURE_TYPE ShapiroWilk_Saida   OUTPUT FEATURE_TYPE ShapiroWilk_Saida
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {ShapiroWilk_Saida} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+INCLUDE [    if {{NoReduction} == {NoReduction} &&        {NO_THINNING} == {NO_THINNING}} {       puts "MACRO ShapiroWilk_Saida_e45194dc_7bd6_4c8c_8f9f_0b2085c1f0163_LARGE_GEOMETRY_DATA_STORAGE REFERENCE";    } else {       puts "MACRO ShapiroWilk_Saida_e45194dc_7bd6_4c8c_8f9f_0b2085c1f0163_LARGE_GEOMETRY_DATA_STORAGE FULL";    }; ]
+INCLUDE [    if {{$(FME_LAUNCH_VIEWER_APP)} != {NO}} {       puts "MACRO ENABLE_RECORDING *";    } else {       puts "MACRO ENABLE_RECORDING _NOT_THIS_TIME_";    }; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME { ShapiroWilk_Saida_Prepper }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ShapiroWilk_Saida    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_ATTRIBUTE_PREFIX { ShapiroWilk_Saida }    RASTER_REDUCTION { NoReduction }    POINT_CLOUD_REDUCTION { NO_THINNING }    OUTPUT { RESULT FEATURE_TYPE __viewme__       }
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF {$(ENABLE_RECORDING)} RecorderFactory    FACTORY_NAME { ShapiroWilk_Saida_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { shapiro.result,buffer,shapiro.pvalue,buffer }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000    LARGE_GEOMETRY_DATA_STORAGE { $(ShapiroWilk_Saida_e45194dc_7bd6_4c8c_8f9f_0b2085c1f0163_LARGE_GEOMETRY_DATA_STORAGE) }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ShapiroWilk_Saida_Nuker }    INPUT FEATURE_TYPE __viewme__
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
