@@ -1,0 +1,1617 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\2024-2-b24783\fme.exe" D:\gitHub\SolutialTech\2024\12\fme-chatgpt\3-workspace\fme-chatgpt.fmw
+#          --SourceDataset_PDF2D "D:\gitHub\SolutialTech\2024\12\fme-chatgpt\1-dataset\memorial-descritivo-ZEIS.pdf"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY="SolutialTech"
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="12402.2 1701.54"
+#!   DOC_TOP_LEFT="-8244.76 -353.873"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24783"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="84a29808-3ec9-46f0-9f0b-83531365a3eb"
+#!   FME_DOCUMENT_PRIORGUID="402ce085-24df-4cdb-9486-50740bf7a0d9,f45e8dfc-2447-4c93-ab90-20a40b51006d,84cc3e59-9986-4c81-8ea1-ad03c5164b76,a43d2950-d1a4-4d03-8a7b-7ff51bf75592"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY="06&lt;solidus&gt;12&lt;solidus&gt;2024,Thiago&lt;space&gt;Brigag&lt;u00e3&gt;o,Cria&lt;u00e7&gt;&lt;u00e3&gt;o&lt;space&gt;do&lt;space&gt;Workspace"
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+#!   LAST_SAVE_DATE="2024-12-07T11:18:30"
+#!   LOG_FILE="$(WORKSPACE_NAME).log"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="Automatizando com ChatGPT"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-8335.21 2591.62"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="58"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="PDF2D"
+#!   DATASET="$(SourceDataset_PDF2D)"
+#!   KEYWORD="PDF2D_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="pdf_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string string fme_type string multi_reader_full_id string multi_reader_id string multi_reader_keyword string multi_reader_type string pdf_all_layer_names{} string pdf_document_info_metadata string pdf_feature_order string pdf_fill_color string pdf_fill_opacity string pdf_frame_clipping_enabled string pdf_frame_description string pdf_frame_fixed_aspect string pdf_frame_metadata string pdf_frame_name string pdf_frame_order string pdf_frame_rectangle string pdf_line_cap_style string pdf_line_dash_pattern_phase string pdf_line_dash_pattern{} string pdf_line_join_style string pdf_line_miter_limit string pdf_line_width string pdf_name string pdf_no_output string pdf_page_height string pdf_page_metadata string pdf_page_number string pdf_page_size string pdf_page_text string pdf_page_width string pdf_pen_color string pdf_pen_opacity string pdf_point_width string pdf_raster_compression_level string pdf_text_bold string pdf_text_font string pdf_text_italic string pdf_text_rich string pdf_text_strikethrough string pdf_text_underline string pdf_tooltip string pdf_type string pdf_url string pdf_world_rectangle string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="PDF2D_OUT_PDF14_COMPATIBLE PDF2D_OUT_COMPRESS_STREAMS PDF2D_OUT_WRITE_ATTRIBUTES PDF2D_OUT_RANDOMIZE_FEATURE_TYPE_COLOR PDF2D_IN_MAKE_DONUTS_FROM_MULTIPOLYGONS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/pdf"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the 2D PDF file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the 2D PDF file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="PDF2D"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="PDF2D"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_null"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_null"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="PDF2D"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="pdf_area"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="PDF2D"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="pdf_no_layer"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="pdf_text"
+#!   POSITION="-8050.5791200556341 421.93262912423666"
+#!   BOUNDING_RECT="-8050.5791200556341 421.93262912423666 502.45036288746542 65"
+#!   ORDER="500000000000006"
+#!   COLLAPSED="false"
+#!   KEYWORD="PDF2D_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="pdf_page_number" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_text_string" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="PDF2D_1"
+#!   OVERRIDE="-PDF2D_1_DATASET"
+#!   DATASET="PDF2D_1/memorial-descritivo-ZEIS.pdf"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_PDF2D INCLUDE_WEB_BROWSER%PDF_Files(*.pdf)|*.pdf|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source Adobe Geospatial PDF File:"
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\12\fme-chatgpt\1-dataset\memorial-descritivo-ZEIS.pdf"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiU291cmNlRGF0YXNldF9QREYyRCIsInByb21wdCI6IlNvdXJjZSBBZG9iZSBHZW9zcGF0aWFsIFBERiBGaWxlOiIsInZhbHVlVHlwZSI6InN0cmluZyIsInJlcXVpcmVkIjp0cnVlLCJkZWZhdWx0VmFsdWUiOiJEOlxcZ2l0SHViXFxTb2x1dGlhbFRlY2hcXDIwMjRcXDEyXFxmbWUtY2hhdGdwdFxcMS1kYXRhc2V0XFxtZW1vcmlhbC1kZXNjcml0aXZvLVpFSVMucGRmIiwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwiYWNjZXNzTW9kZSI6InJlYWQiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlBERiBGaWxlcyIsImZpbHRlciI6WyIqLnBkZiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dfV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_PDF2D" 
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\12\fme-chatgpt\1-dataset\memorial-descritivo-ZEIS.pdf"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_PDF2D INCLUDE_WEB_BROWSER%PDF_Files(*.pdf)|*.pdf|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source Adobe Geospatial PDF File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="25"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Leitura do PDF&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-7986.6924898067573 556.93337913173673"
+#!   TOP_LEFT="-7986.6924898067573 556.93337913173673"
+#!   BOTTOM_RIGHT="-7582.6362148690077 451.93262912423666"
+#!   BOUNDING_RECT="-7986.6924898067573 556.93337913173673 404.05627493774938 105.00075000750007"
+#!   ORDER="500000000000016"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{f94d0661-1f0c-497e-9f85-9d52a73dbcfd}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="26"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Referência:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://goiana.pe.gov.br/wp-content/uploads/2020/01/memorial-descritivo-ZEIS.pdf&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;http://goiana.pe.gov.br/wp-content/uploads/2020/01/memorial-descritivo-ZEIS.pdf&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-8198.5135691747873 833.96817776255125"
+#!   TOP_LEFT="-8198.5135691747873 833.96817776255125"
+#!   BOTTOM_RIGHT="-7320.0384875489708 628.96642774505108"
+#!   BOUNDING_RECT="-8198.5135691747873 833.96817776255125 878.47508162581619 205.00175001750017"
+#!   ORDER="500000000000017"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{22c2c2eb-1cfd-47f4-87a6-bf6808ac0421}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="24"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="23"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Cria um contador por extração que o FME Faz. A ideia é utilizar como ID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-6952.3970214687279 735.63326028907375"
+#!   TOP_LEFT="-6952.3970214687279 735.63326028907375"
+#!   BOTTOM_RIGHT="-6303.5140795143088 530.63151027157357"
+#!   BOUNDING_RECT="-6952.3970214687279 735.63326028907375 648.88294195441949 205.00175001750017"
+#!   ORDER="500000000000018"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{2a40206d-bedb-4b15-8a5d-1c2122b4d59f}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="5"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="28"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Se o valor do atributo fme_text_string for &lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Missing&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Null&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Empty&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;vazio&amp;gt; &lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Assumimos que os valores acima são &lt;span style=&quot; font-weight:700;&quot;&gt;quebras de linhas&lt;/span&gt;, sendo assim, &lt;span style=&quot; font-weight:700;&quot;&gt;mapearemos para o valor 999.&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-5972.777190658674 985.75140439980714"
+#!   TOP_LEFT="-5972.777190658674 985.75140439980714"
+#!   BOTTOM_RIGHT="-4898.7923414351817 480.74665435230668"
+#!   BOUNDING_RECT="-5972.777190658674 985.75140439980714 1073.9848492234923 505.00475004750047"
+#!   ORDER="500000000000020"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{a6e6be83-ad59-4f06-a29a-780935337916}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="11"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="32"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ordena os registros com base no&lt;span style=&quot; font-weight:700;&quot;&gt; ID Temporário&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-2245.2566262493688 647.58964869367412"
+#!   TOP_LEFT="-2245.2566262493688 647.58964869367412"
+#!   BOTTOM_RIGHT="-1739.3926926100323 492.588398681174"
+#!   BOUNDING_RECT="-2245.2566262493688 647.58964869367412 505.86393363933638 155.00125001250012"
+#!   ORDER="500000000000026.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{6571e70f-1610-4470-96f3-caa833f30f9d}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="14"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="33"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Une os textos das multiplas linhas,  transformando o texto em apenas 1 linha&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1249.8526171925107 698.71161349920646"
+#!   TOP_LEFT="-1249.8526171925107 698.71161349920646"
+#!   BOTTOM_RIGHT="-677.2399691910307 493.70986348170629"
+#!   BOUNDING_RECT="-1249.8526171925107 698.71161349920646 572.61264800148001 205.00175001750017"
+#!   ORDER="500000000000027.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5c462047-53ce-4bc6-90aa-9fccc1902913}"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="17"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="31"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Substituimos os&lt;span style=&quot; font-weight:700;&quot;&gt; valores 999&lt;/span&gt; com &lt;span style=&quot; font-weight:700;&quot;&gt;&amp;lt;enter&amp;gt;&lt;/span&gt; garantindo a quebra de linha&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3432.9632824185819 1119.370164829837"
+#!   TOP_LEFT="-3432.9632824185819 1119.370164829837"
+#!   BOTTOM_RIGHT="-2727.0485201459592 964.36891481733687"
+#!   BOUNDING_RECT="-3432.9632824185819 1119.370164829837 705.91476227262274 155.00125001250012"
+#!   ORDER="500000000000028.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{0e6fabfd-ed68-42fc-9f71-f5db40f152e8}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="4"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="36"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Substitui &amp;quot;  &amp;quot; por &amp;quot;&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-152.36086396340801 636.60124314144502"
+#!   TOP_LEFT="-152.36086396340801 636.60124314144502"
+#!   BOTTOM_RIGHT="283.62932406347227 635.60124314144502"
+#!   BOUNDING_RECT="-152.36086396340801 636.60124314144502 435.99018802688028 1"
+#!   ORDER="500000000000029.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{814edbd3-843f-4e97-9a39-f0cc4706e375}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="19"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="39"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;RETORNO DO CHATGPT&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;POLYGON((277192.747 9163832.739, 277608.420 9163620.234, 277587.178 9163546.965, 277758.008 9163477.561, 277724.376 9163424.516, 277733.989 9163419.181, 277759.979 9163411.000, 277776.712 9163401.042, 277797.357 9163383.420, 277617.073 9163299.041, 277612.465 9162938.353, 277464.923 9162912.050, 277353.693 9162880.125, 277246.105 9162829.878, 277190.447 9162794.580, 277123.029 9162770.651, 277051.968 9162758.076, 277045.004 9162969.189, 277058.096 9162982.267, 277052.054 9163013.454, 277028.388 9163025.526, 277008.193 9163560.981, 277046.200 9163561.377, 277045.499 9163571.026, 277063.737 9163568.656, 277062.012 9163660.304, 277128.550 9163638.247, 277192.747 9163832.739))&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="217.62675340843361 101.13075796487396"
+#!   TOP_LEFT="217.62675340843361 101.13075796487396"
+#!   BOTTOM_RIGHT="2698.8522375382749 -353.87349207762645"
+#!   BOUNDING_RECT="217.62675340843361 101.13075796487396 2481.2254841298413 455.00425004250042"
+#!   ORDER="500000000000034.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d9572a8d-a688-402e-9043-9837d4f506c9}"
+#!   COLOUR="1,0.95686274509803926,0.80000000000000004,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="21"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="67"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;OpenAIChatGPTConnector&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;INSTRUÇÃO&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Tenho um arquivo memorial descritivo e preciso extrair as coordenadas. Gostaria que você me devolvesse somente o wkt, sem nenhum texto adicional.&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;RESULTADO&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;WKT &lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1073.3453493154427 1122.4636967293277"
+#!   TOP_LEFT="1073.3453493154427 1122.4636967293277"
+#!   BOTTOM_RIGHT="1945.8633401203506 567.45844667682718"
+#!   BOUNDING_RECT="1073.3453493154427 1122.4636967293277 872.51799080490798 555.00525005250051"
+#!   ORDER="500000000000048.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{c86d4d09-762b-4d4d-9cc2-af8146eb48da}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="21"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="45"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Espacializa a geometria&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2505.6481183651345 701.78895904660908"
+#!   TOP_LEFT="2505.6481183651345 701.78895904660908"
+#!   BOTTOM_RIGHT="2941.6383063920148 700.78895904660908"
+#!   BOUNDING_RECT="2505.6481183651345 701.78895904660908 435.99018802688028 1"
+#!   ORDER="500000000000050.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{52280ffe-a9fc-45a9-9f4e-d86d61ca8da6}"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="55"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="30"
+#!   COMMENT_VALUE="&lt;b&gt;Tester&amp;nbsp;[Tester&amp;nbsp;Version&amp;nbsp;4]&lt;/b&gt;&lt;br&gt;Test&amp;nbsp;Clauses:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Left&amp;nbsp;Value&lt;/td&gt;&lt;td&gt;Operator&lt;/td&gt;&lt;td&gt;Right&amp;nbsp;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;@Value(fme_text_string)&lt;/td&gt;&lt;td&gt;=&lt;/td&gt;&lt;td&gt;999&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;Advanced:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preserve&amp;nbsp;Feature&amp;nbsp;Order:&amp;nbsp;Per&amp;nbsp;Output&amp;nbsp;Port"
+#!   POSITION="-4597.026310304228 939.3547351300848"
+#!   TOP_LEFT="-4597.026310304228 939.3547351300848"
+#!   BOTTOM_RIGHT="-3678.2676227173524 940.3547351300848"
+#!   BOUNDING_RECT="-4597.026310304228 939.3547351300848 918.75868758687579 -1"
+#!   ORDER="500000000000023.13"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{00d4c251-b69b-4d52-a9bf-d23835678d9b}"
+#!   ANCHORED_NODE="8"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="24"
+#!   NAME="1.1 | Leitura do PDF Memorial"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-8244.7638816779127 911.46805276130112"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-7282.5316668538308 182.0100006050219"
+#!   BOUNDING_RECT="-8244.7638816779127 911.46805276130112 962.23221482408144 729.45805215627922"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="26 2 25 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="27"
+#!   NAME="2.1 | Cria um ID Temporário"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-7116.1474568328476 937.41503113708518"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-6147.2344276552849 207.81493210579185"
+#!   BOUNDING_RECT="-7116.1474568328476 937.41503113708518 968.9130291775632 729.60009903129333"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="5 23 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="29"
+#!   NAME="2.2 | Mapeamento de Valores Missing | Nulos | Empty | Vazios"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-6071.3129882577423 1232.6357863749408"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-4774.343489149941 202.79594252195693"
+#!   BOUNDING_RECT="-6071.3129882577423 1232.6357863749408 1296.9694991078013 1029.8398438529839"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="11 28 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="34"
+#!   NAME="2.3 | Filtragem dos Valores 999 e Alteração por &lt;Enter&gt;"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-4691.9431339531393 1246.8957456827957"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-2679.6887042182543 206.74168905012925"
+#!   BOUNDING_RECT="-4691.9431339531393 1246.8957456827957 2012.2544297348852 1040.1540566326664"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="31 30 8 10 4 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="35"
+#!   NAME="3.1 | Ordenação dos Dados"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2456.6509261818555 936.82478677060317"
+#!   ORDER="500000000000044.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-1487.7378970042923 221.80009721632848"
+#!   BOUNDING_RECT="-2456.6509261818555 936.82478677060317 968.9130291775632 715.02468955427469"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="32 14 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="59"
+#!   NAME="3.2 | Agrupamento do Texto"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1426.0206719245684 940.76461597949299"
+#!   ORDER="500000000000044.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-457.10764274700523 213.41676831402435"
+#!   BOUNDING_RECT="-1426.0206719245684 940.76461597949299 968.9130291775632 727.34784766546863"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.75686274509803919"
+#!   CONTENTS="17 33 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="60"
+#!   NAME="3.3 | Replace do Texto"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-404.27021209595171 930.99889332226644"
+#!   ORDER="500000000000044.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="564.6428170816115 222.65847658476582"
+#!   BOUNDING_RECT="-404.27021209595171 930.99889332226644 968.9130291775632 708.34041673750062"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="19 36 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="62"
+#!   NAME="1.2 | Chamada do ChatGPT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="738.61037534176512 1347.6697266972669"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2165.9199036594214 181.43414337060653"
+#!   BOUNDING_RECT="738.61037534176512 1347.6697266972669 1427.3095283176563 1166.2355833266604"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="21 67 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="61"
+#!   NAME="2.0 | Tratamento do Texto Extraído do PDF e Transformação em Linhas"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-7166.1474568328476 1336.8957456827957"
+#!   ORDER="500000000000043.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-2600.3816948738595 172.79594252195693"
+#!   BOUNDING_RECT="-7166.1474568328476 1336.8957456827957 4565.7657619589882 1164.0998031608387"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="13 31 30 29 27 8 34 12 5 10 11 28 4 23 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="63"
+#!   NAME="3.0 | Transformação do Texto em linha ÚNICA"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2506.6509261818555 1331.0318288368067"
+#!   ORDER="500000000000044.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="654.34087666383311 179.11764483498496"
+#!   BOUNDING_RECT="-2506.6509261818555 1331.0318288368067 3160.9918028456887 1151.9141840018217"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="59 32 14 17 19 36 60 20 33 35 18 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="66"
+#!   NAME="4.1 | Cria a Geometria"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2261.9599773572345 891.93724653662434"
+#!   ORDER="500000000000044.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="3230.8730065347977 187.49970558316545"
+#!   BOUNDING_RECT="2261.9599773572345 891.93724653662434 968.9130291775632 704.43754095345889"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.33333333333333331,0.49803921568627452,0.75686274509803919"
+#!   CONTENTS="45 55 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="Counter"
+#!   VERSION="4"
+#!   POSITION="-6843.0209277077875 500.63151027157369"
+#!   BOUNDING_RECT="-6843.0209277077875 500.63151027157369 436 65"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="pdf_page_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_temporario" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CNT_ATTR" PARM_VALUE="id_temporario"/>
+#!     <XFORM_PARM PARM_NAME="DOMAIN" PARM_VALUE="counter"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GRP_CNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_ATTR_NAMES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SCOPE" PARM_VALUE="Global"/>
+#!     <XFORM_PARM PARM_NAME="START" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Counter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="StringReplacer"
+#!   VERSION="5"
+#!   POSITION="-3303.5427962945287 884.36841481233671"
+#!   BOUNDING_RECT="-3303.5427962945287 884.36841481233671 436 65"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="pdf_page_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_temporario" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="999"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="fme_text_string"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="Tester"
+#!   VERSION="4"
+#!   POSITION="-4358.3086453498008 501.92040523123035"
+#!   BOUNDING_RECT="-4358.3086453498008 501.92040523123035 436 65"
+#!   ORDER="500000000000009"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="pdf_page_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_temporario" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="pdf_page_number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="id_temporario" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="PER_OUTPUT_PORT"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;fme_text_string&lt;closeparen&gt; = 999"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="NullAttributeMapper"
+#!   VERSION="2"
+#!   POSITION="-5646.4481697927085 444.93851546283702"
+#!   BOUNDING_RECT="-5646.4481697927085 444.93851546283702 463.484375 65"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="pdf_page_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_temporario" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE_ACTION" PARM_VALUE="SELECTED"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="fme_text_string"/>
+#!     <XFORM_PARM PARM_NAME="NEW_VALUE" PARM_VALUE="999"/>
+#!     <XFORM_PARM PARM_NAME="NULL_TREATMENT_LU" PARM_VALUE="SETVALUE"/>
+#!     <XFORM_PARM PARM_NAME="OTHER_VALUE" PARM_VALUE="&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP2" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REG_EXP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SOURCE_ATTR_VAL_LU" PARM_VALUE="SETNULL EMPTY MISSINGATTR"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="NullAttributeMapper"/>
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_IS_LOOKUP="true" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="NULL_TREATMENT" PARM_IS_LOOKUP="true" PARM_VALUE="New Value"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE_ATTR_VAL" PARM_IS_LOOKUP="true" PARM_VALUE="Null Empty &quot;Missing (Selected Attributes Only)&quot;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="Sorter"
+#!   VERSION="3"
+#!   POSITION="-2214.7685164902223 462.58839868117389"
+#!   BOUNDING_RECT="-2214.7685164902223 462.58839868117389 436 65"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="pdf_page_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_temporario" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="id_temporario NUMERIC ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="Aggregator"
+#!   VERSION="17"
+#!   POSITION="-1184.6162745933948 460.86191132092779"
+#!   BOUNDING_RECT="-1184.6162745933948 460.86191132092779 436 65"
+#!   ORDER="500000000000012"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="AGGREGATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Drop Incoming Attributes"/>
+#!     <XFORM_PARM PARM_NAME="AGGREGATE_TYPE" PARM_VALUE="Homogeneous Collection (If Possible)"/>
+#!     <XFORM_PARM PARM_NAME="ASSEMBLE_HIERARCHY_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="ASSEMBLE_ONE_LEVEL_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TO_TRAIT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AV" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONCAT_ATTRS" PARM_VALUE="fme_text_string"/>
+#!     <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CYCLE_ID_ERROR_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE_LU" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Geometry - Assemble One Level"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_ID" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SEP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SUM" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WEIGHT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Aggregator"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_IS_LOOKUP="true" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="StringReplacer"
+#!   VERSION="5"
+#!   POSITION="-152.36086396340801 501.60049313394472"
+#!   BOUNDING_RECT="-152.36086396340801 501.60049313394472 436 65"
+#!   ORDER="500000000000013"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;space&gt;&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="fme_text_string"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="OpenAIChatGPTConnector"
+#!   VERSION="6"
+#!   POSITION="1164.4585349318352 514.52007296319312"
+#!   BOUNDING_RECT="1164.4585349318352 514.52007296319312 622.96875 65"
+#!   ORDER="500000000000014"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Response" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ChatHistory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="Rejected"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_frequency_penalty" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_logit_bias" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_max_tokens" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_model" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_n" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_presence_penalty" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_stop" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_stream" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_temperature" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_top_p" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_user" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_Version" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_BaseURL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_Auth" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Header" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_History" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_userContent" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_systemContent" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_Service" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_TRANSFER_TIMEOUT_LENGTH" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="UploadBody" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="choices{}.message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="choices{}.message.content" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.line" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.column" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_json_error{}.severity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="Advanced" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="Auth" PARM_VALUE="fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMsz2/7xRB/QWSXDTWV5J6toyn9eykFwZP2TmtjsKcBqYhJaUt8VcW8iDwABkXFYwBWPUtKOLODHihcMGdsmNMVt0MYOhxvH6bhEqayoM32AaFh1qQ0eOURo7zrbLvHqd8D/A7evTIVEwDVBp3gTflXixRLR2z3S17jQ6NiKWnBNeN6F+StKDY1Yv/LlYu0Q6KoR0S8RCZwGnT++HMDk5KeqkPw6ZYr3sgqelgwcQoNNWM8zSTLg8J5w3Bzy21RxLQXC6ITKJSNUanR7oSy15ClTOOeCimsI0oUAMUdFRElHDNidQu8o61b1XYptTjpRO7qiQUptoxuxQHQOrCR/Yij5tR6zfYeT70Aj)"/>
+#!     <XFORM_PARM PARM_NAME="Authentication" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BaseURL" PARM_VALUE="https://api.openai.com/"/>
+#!     <XFORM_PARM PARM_NAME="ChatCompletion" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ChatHistory" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="General" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="History" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="Service" PARM_VALUE="OpenAI"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFER_TIMEOUT_LENGTH" PARM_VALUE="360"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Version" PARM_VALUE="2023-03-15-preview"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="OpenAIChatGPTConnector"/>
+#!     <XFORM_PARM PARM_NAME="frequency_penalty" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="logit_bias" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="max_tokens" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="model" PARM_VALUE="gpt-4o"/>
+#!     <XFORM_PARM PARM_NAME="n" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="presence_penalty" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="stop" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="stream" PARM_VALUE="false"/>
+#!     <XFORM_PARM PARM_NAME="systemContent" PARM_VALUE="Tenho um arquivo memorial descritivo e preciso extrair as coordenadas. Gostaria que você me devolvesse somente o wkt, sem nenhum texto adicional."/>
+#!     <XFORM_PARM PARM_NAME="temperature" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="top_p" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="user" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="userContent" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_text_string&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="55"
+#!   TYPE="GeometryReplacer"
+#!   VERSION="10"
+#!   POSITION="2505.6481183651345 516.78770903410896"
+#!   BOUNDING_RECT="2505.6481183651345 516.78770903410896 436 65"
+#!   ORDER="500000000000040.13"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ChatHistory" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_response_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Response" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ChatHistory" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ELLIPSOID_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ENC_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="KIND" PARM_VALUE="wkt"/>
+#!     <XFORM_PARM PARM_NAME="LETTERING_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_FORMAT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OGC_WKT_PRECISION" PARM_VALUE="FLOAT_64"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_POINT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_ATTRIBUTE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;Response&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRS_AXIS_ORDER_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryReplacer"/>
+#!     <XFORM_PARM PARM_NAME="KIND_LONG" PARM_IS_LOOKUP="true" PARM_VALUE="OGC Well Known Text"/>
+#!     <XFORM_PARM PARM_NAME="LETTERING" PARM_IS_LOOKUP="true" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_FORMAT_CHOICE" PARM_IS_LOOKUP="true" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OGC_WKT_PRECISION_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="64-bit"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_POINT_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="64"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="3533.380511880107 465.62964468387764"
+#!   BOUNDING_RECT="3533.380511880107 465.62964468387764 624.09375 65"
+#!   ORDER="500000000000045.13"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION_REAL" PARM_VALUE="NoReduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="NO_THINNING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryReplacer_Output"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_IS_LOOKUP="true" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Thinning"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 AGGREGATE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="56"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="55"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="65"
+#!   SOURCE_NODE="55"
+#!   TARGET_NODE="64"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS="-2359 287"
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_PDF2D_1,PDF2D_IN_DOCUMENT_GROUP_PDF2D_1,PDF2D_IN_PAGE_RANGES_TO_READ_PDF2D_1,PDF2D_IN_USE_PASSWORD_PDF2D_1,PDF2D_IN_DOCUMENT_PASSWORD_PDF2D_1,PDF2D_IN_READ_SPATIAL_PDF2D_1,PDF2D_IN_READ_IMAGES_PDF2D_1,PDF2D_IN_READ_SPATIAL_TEXT_PDF2D_1,PDF2D_IN_READ_VECTORS_PDF2D_1,PDF2D_IN_COORDINATE_UNITS_PDF2D_1,PDF2D_IN_SPATIAL_ADVANCED_GROUP_PDF2D_1,PDF2D_IN_MAKE_DONUTS_FROM_MULTIPOLYGONS_PDF2D_1,PDF2D_IN_BEZIER_INTERPOLATION_MODE_PDF2D_1,PDF2D_IN_BEZIER_NUM_INTERPOLATION_POINTS_PDF2D_1,PDF2D_IN_READ_NONSPATIAL_PDF2D_1,PDF2D_IN_READ_METADATA_PDF2D_1,PDF2D_IN_READ_NONSPATIAL_TEXT_PDF2D_1,PDF2D_IN_READ_TAGGED_TABLES_PDF2D_1,PDF2D_IN_READ_RASTERIZED_PAGES_PDF2D_1,PDF2D_IN_PAGE_RASTER_SIZE_MODE_PDF2D_1,PDF2D_IN_PAGE_PIXELS_PER_POINT_PDF2D_1,PDF2D_IN_RASTERIZED_PAGE_HEIGHT_PDF2D_1,PDF2D_IN_RASTERIZED_PAGE_WIDTH_PDF2D_1,PDF2D_IN_EXPOSE_ATTRS_GROUP_PDF2D_1,PDF2D_IN_USE_SEARCH_ENVELOPE_PDF2D_1,PDF2D_IN_SEARCH_ENVELOPE_MINX_PDF2D_1,PDF2D_IN_SEARCH_ENVELOPE_MINY_PDF2D_1,PDF2D_IN_SEARCH_ENVELOPE_MAXX_PDF2D_1,PDF2D_IN_SEARCH_ENVELOPE_MAXY_PDF2D_1,PDF2D_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_PDF2D_1,PDF2D_IN_CLIP_TO_ENVELOPE_PDF2D_1,PDF2D_IN_NETWORK_AUTHENTICATION_PDF2D_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_PDF2D D:\gitHub\SolutialTech\2024\12\fme-chatgpt\1-dataset\memorial-descritivo-ZEIS.pdf
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_PDF2D$encode)} == {}} { puts_real {Parameter 'SourceDataset_PDF2D' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} PDF2D
+MULTI_READER_KEYWORD{0} PDF2D_1
+MULTI_READER_GEN_DIRECTIVES{0} SEARCH_ENVELOPE_COORDINATE_SYSTEM,,PAGE_RANGES_TO_READ,,READ_SPATIAL,YES,COORDINATE_UNITS,GEOSPATIAL,MAKE_DONUTS_FROM_MULTIPOLYGONS,YES,READ_NONSPATIAL_TEXT,NO,READ_RASTERIZED_PAGES,NO,DOCUMENT_PASSWORD,<lt>Unused<gt>,SEARCH_ENVELOPE_MAXX,0,READ_NONSPATIAL,NO,READ_SPATIAL_TEXT,TEXT_BLOCKS,SEARCH_ENVELOPE_MAXY,0,READ_VECTORS,YES,FEATURE_TYPE_CATEGORY,OCG_LAYERS,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,PDF2D_EXPOSE_FORMAT_ATTRS,pdf_page_number<comma>string,TRIM_OCG_NAMES,YES,REORDER_BANDS_TO_RGBA,YES,SPATIAL_ADVANCED_GROUP,FME_DISCLOSURE_CLOSED,PAGE_NUMBERS_START_AT_ONE,YES,READ_METADATA,<lt>Unused<gt>,BEZIER_FLATNESS_TOLERANCE,0.25,READ_IMAGES,NO,BEZIER_NUM_INTERPOLATION_POINTS,17,SEARCH_ENVELOPE_MINY,0,BEZIER_INTERPOLATION_MODE,FLATNESS,CLIP_TO_ENVELOPE,NO,USE_PASSWORD,NO,RASTERIZED_PAGE_HEIGHT,,SEARCH_ENVELOPE_MINX,0,USE_SEARCH_ENVELOPE,NO,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,READ_TAGGED_TABLES,NO,RASTERIZED_PAGE_WIDTH,,_MERGE_SCHEMAS,YES,PAGE_RASTER_SIZE_MODE,SCALE,PAGE_PIXELS_PER_POINT,1.0
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "PDF2D_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER PDF2D PDF2D_1
+# =====================================================================
+# The following GUI line prompts for a file (orfiles) to be used as
+# the source for the PDF file(s). The user input is stored in a macro,
+# which is then used to define the dataset to be read.
+# The dataset this mapping file was generated from was:
+GUI FILENAME SourceDataset_PDF2D_1 PDF_Files(*.pdf)|*.pdf|All_files(*)|* Source Adobe Geospatial PDF File:
+DEFAULT_MACRO PDF2D_IN_DOCUMENT_GROUP_PDF2D_1 
+GUI OPTIONAL DISCLOSUREGROUP PDF2D_IN_DOCUMENT_GROUP_PDF2D_1 PDF2D_IN_PAGE_RANGES_TO_READ_PDF2D_1%PDF2D_IN_USE_PASSWORD_PDF2D_1 Document
+DEFAULT_MACRO PDF2D_IN_PAGE_RANGES_TO_READ_PDF2D_1 
+PDF2D_1_PAGE_RANGES_TO_READ "$(PDF2D_IN_PAGE_RANGES_TO_READ_PDF2D_1)"
+GUI OPTIONAL STRING PDF2D_IN_PAGE_RANGES_TO_READ_PDF2D_1 Page Ranges:
+DEFAULT_MACRO PDF2D_IN_USE_PASSWORD_PDF2D_1 NO
+PDF2D_1_USE_PASSWORD "$(PDF2D_IN_USE_PASSWORD_PDF2D_1)"
+GUI ACTIVEDISCLOSUREGROUP PDF2D_IN_USE_PASSWORD_PDF2D_1 PDF2D_IN_DOCUMENT_PASSWORD_PDF2D_1 Protection
+DEFAULT_MACRO PDF2D_IN_FEATURE_TYPE_CATEGORY_PDF2D_1 OCG_LAYERS
+PDF2D_1_FEATURE_TYPE_CATEGORY "$(PDF2D_IN_FEATURE_TYPE_CATEGORY_PDF2D_1)"
+DEFAULT_MACRO PDF2D_IN_DOCUMENT_PASSWORD_PDF2D_1 <Unused>
+PDF2D_1_DOCUMENT_PASSWORD "$(PDF2D_IN_DOCUMENT_PASSWORD_PDF2D_1)"
+GUI OPTIONAL PASSWORD_ENCODED PDF2D_IN_DOCUMENT_PASSWORD_PDF2D_1 Password:
+DEFAULT_MACRO PDF2D_IN_READ_SPATIAL_PDF2D_1 YES
+PDF2D_1_READ_SPATIAL "$(PDF2D_IN_READ_SPATIAL_PDF2D_1)"
+GUI ACTIVEDISCLOSUREGROUP PDF2D_IN_READ_SPATIAL_PDF2D_1 PDF2D_IN_READ_IMAGES_PDF2D_1%PDF2D_IN_READ_SPATIAL_TEXT_PDF2D_1%PDF2D_IN_READ_VECTORS_PDF2D_1%PDF2D_IN_COORDINATE_UNITS_PDF2D_1%PDF2D_IN_SPATIAL_ADVANCED_GROUP_PDF2D_1 Spatial
+DEFAULT_MACRO PDF2D_IN_READ_IMAGES_PDF2D_1 NO
+PDF2D_1_READ_IMAGES "$(PDF2D_IN_READ_IMAGES_PDF2D_1)"
+GUI LOOKUP_CHOICE PDF2D_IN_READ_IMAGES_PDF2D_1 Yes,YES%No,NO Read Images:
+DEFAULT_MACRO PDF2D_IN_READ_SPATIAL_TEXT_PDF2D_1 TEXT_BLOCKS
+PDF2D_1_READ_SPATIAL_TEXT "$(PDF2D_IN_READ_SPATIAL_TEXT_PDF2D_1)"
+GUI LOOKUP_CHOICE_ENCODED PDF2D_IN_READ_SPATIAL_TEXT_PDF2D_1 Feature<space>Per<space>Block,TEXT_BLOCKS%Feature<space>Per<space>Character<space><openparen>Text<closeparen>,TEXT_CHARACTERS%Feature<space>Per<space>Character<space><openparen>Vector<closeparen>,STROKED_VECTOR_CHARACTERS%Ignore,IGNORE Spatial Text:
+DEFAULT_MACRO PDF2D_IN_READ_VECTORS_PDF2D_1 YES
+PDF2D_1_READ_VECTORS "$(PDF2D_IN_READ_VECTORS_PDF2D_1)"
+GUI LOOKUP_CHOICE PDF2D_IN_READ_VECTORS_PDF2D_1 Yes,YES%No,NO Read Vectors:
+DEFAULT_MACRO PDF2D_IN_COORDINATE_UNITS_PDF2D_1 GEOSPATIAL
+PDF2D_1_COORDINATE_UNITS "$(PDF2D_IN_COORDINATE_UNITS_PDF2D_1)"
+GUI LOOKUP_CHOICE_ENCODED PDF2D_IN_COORDINATE_UNITS_PDF2D_1 Geospatial<space><openparen>if<space>possible<closeparen>,GEOSPATIAL%Page<space>points,PAGE_POINTS Coordinate Units:
+DEFAULT_MACRO PDF2D_IN_SPATIAL_ADVANCED_GROUP_PDF2D_1 FME_DISCLOSURE_CLOSED
+PDF2D_1_SPATIAL_ADVANCED_GROUP "$(PDF2D_IN_SPATIAL_ADVANCED_GROUP_PDF2D_1)"
+GUI OPTIONAL DISCLOSUREGROUP PDF2D_IN_SPATIAL_ADVANCED_GROUP_PDF2D_1 PDF2D_IN_MAKE_DONUTS_FROM_MULTIPOLYGONS_PDF2D_1%PDF2D_IN_BEZIER_INTERPOLATION_MODE_PDF2D_1%PDF2D_IN_BEZIER_NUM_INTERPOLATION_POINTS_PDF2D_1 Advanced
+DEFAULT_MACRO PDF2D_IN_MAKE_DONUTS_FROM_MULTIPOLYGONS_PDF2D_1 YES
+PDF2D_1_MAKE_DONUTS_FROM_MULTIPOLYGONS "$(PDF2D_IN_MAKE_DONUTS_FROM_MULTIPOLYGONS_PDF2D_1)"
+GUI LOOKUP_CHOICE PDF2D_IN_MAKE_DONUTS_FROM_MULTIPOLYGONS_PDF2D_1 Yes,YES%No,NO Make Donuts from Multipolygons:
+DEFAULT_MACRO PDF2D_IN_BEZIER_INTERPOLATION_MODE_PDF2D_1 FLATNESS
+PDF2D_1_BEZIER_INTERPOLATION_MODE "$(PDF2D_IN_BEZIER_INTERPOLATION_MODE_PDF2D_1)"
+GUI ACTIVECHOICE_LOOKUP PDF2D_IN_BEZIER_INTERPOLATION_MODE_PDF2D_1 Flatness,FLATNESS,PDF2D_IN_BEZIER_NUM_INTERPOLATION_POINTS_PDF2D_1%Number<space>of<space>Points,NUM_POINTS,PDF2D_IN_BEZIER_FLATNESS_TOLERANCE Bezier Interpolation Mode:
+DEFAULT_MACRO PDF2D_IN_BEZIER_FLATNESS_TOLERANCE_PDF2D_1 0.25
+PDF2D_1_BEZIER_FLATNESS_TOLERANCE "$(PDF2D_IN_BEZIER_FLATNESS_TOLERANCE_PDF2D_1)"
+DEFAULT_MACRO PDF2D_IN_BEZIER_NUM_INTERPOLATION_POINTS_PDF2D_1 17
+PDF2D_1_BEZIER_NUM_INTERPOLATION_POINTS "$(PDF2D_IN_BEZIER_NUM_INTERPOLATION_POINTS_PDF2D_1)"
+GUI RANGE_SLIDER PDF2D_IN_BEZIER_NUM_INTERPOLATION_POINTS_PDF2D_1 2%MAX%0%OFF Interpolated Points per Bezier Curve:
+DEFAULT_MACRO PDF2D_IN_READ_NONSPATIAL_PDF2D_1 NO
+PDF2D_1_READ_NONSPATIAL "$(PDF2D_IN_READ_NONSPATIAL_PDF2D_1)"
+GUI ACTIVEDISCLOSUREGROUP PDF2D_IN_READ_NONSPATIAL_PDF2D_1 FME_DISCLOSURE_OPEN%PDF2D_IN_READ_METADATA_PDF2D_1%PDF2D_IN_READ_NONSPATIAL_TEXT_PDF2D_1%PDF2D_IN_READ_TAGGED_TABLES_PDF2D_1%PDF2D_IN_READ_RASTERIZED_PAGES_PDF2D_1 Non-Spatial
+DEFAULT_MACRO PDF2D_IN_READ_METADATA_PDF2D_1 <Unused>
+PDF2D_1_READ_METADATA "$(PDF2D_IN_READ_METADATA_PDF2D_1)"
+GUI NO_SORT OPTIONAL LOOKUP_LISTBOX_ENCODED PDF2D_IN_READ_METADATA_PDF2D_1 Document<space>Info,DOCUMENT_INFO%Pages,PAGES%Map<space>Frames,FRAMES Metadata Objects To Read:
+DEFAULT_MACRO PDF2D_IN_READ_NONSPATIAL_TEXT_PDF2D_1 NO
+PDF2D_1_READ_NONSPATIAL_TEXT "$(PDF2D_IN_READ_NONSPATIAL_TEXT_PDF2D_1)"
+GUI LOOKUP_CHOICE PDF2D_IN_READ_NONSPATIAL_TEXT_PDF2D_1 Yes,YES%No,NO Read Non-Spatial Text:
+DEFAULT_MACRO PDF2D_IN_READ_TAGGED_TABLES_PDF2D_1 NO
+PDF2D_1_READ_TAGGED_TABLES "$(PDF2D_IN_READ_TAGGED_TABLES_PDF2D_1)"
+GUI LOOKUP_CHOICE PDF2D_IN_READ_TAGGED_TABLES_PDF2D_1 Yes,YES%No,NO Read Tagged Tables:
+DEFAULT_MACRO PDF2D_IN_READ_RASTERIZED_PAGES_PDF2D_1 NO
+PDF2D_1_READ_RASTERIZED_PAGES "$(PDF2D_IN_READ_RASTERIZED_PAGES_PDF2D_1)"
+GUI ACTIVEDISCLOSUREGROUP PDF2D_IN_READ_RASTERIZED_PAGES_PDF2D_1 PDF2D_IN_PAGE_RASTER_SIZE_MODE_PDF2D_1%PDF2D_IN_PAGE_PIXELS_PER_POINT_PDF2D_1%PDF2D_IN_RASTERIZED_PAGE_HEIGHT_PDF2D_1%PDF2D_IN_RASTERIZED_PAGE_WIDTH_PDF2D_1 Read Rasterized Pages
+DEFAULT_MACRO PDF2D_IN_PAGE_RASTER_SIZE_MODE_PDF2D_1 SCALE
+PDF2D_1_PAGE_RASTER_SIZE_MODE "$(PDF2D_IN_PAGE_RASTER_SIZE_MODE_PDF2D_1)"
+GUI ACTIVECHOICE_LOOKUP PDF2D_IN_PAGE_RASTER_SIZE_MODE_PDF2D_1 Scale,SCALE,PDF2D_IN_RASTERIZED_PAGE_HEIGHT_PDF2D_1,PDF2D_IN_RASTERIZED_PAGE_WIDTH_PDF2D_1%Custom,CUSTOM_DIMENSIONS,PDF2D_IN_PAGE_PIXELS_PER_POINT_PDF2D_1 Mode:
+DEFAULT_MACRO PDF2D_IN_PAGE_PIXELS_PER_POINT_PDF2D_1 1.0
+PDF2D_1_PAGE_PIXELS_PER_POINT "$(PDF2D_IN_PAGE_PIXELS_PER_POINT_PDF2D_1)"
+GUI RANGE_SLIDER PDF2D_IN_PAGE_PIXELS_PER_POINT_PDF2D_1 0%MAX%MAX%OFF%EXCLUSIVE_MIN Pixels per Point:
+DEFAULT_MACRO PDF2D_IN_RASTERIZED_PAGE_HEIGHT_PDF2D_1 
+PDF2D_1_RASTERIZED_PAGE_HEIGHT "$(PDF2D_IN_RASTERIZED_PAGE_HEIGHT_PDF2D_1)"
+GUI OPTIONAL RANGE_SLIDER PDF2D_IN_RASTERIZED_PAGE_HEIGHT_PDF2D_1 1%MAX%0%OFF Raster Height:
+DEFAULT_MACRO PDF2D_IN_RASTERIZED_PAGE_WIDTH_PDF2D_1 
+PDF2D_1_RASTERIZED_PAGE_WIDTH "$(PDF2D_IN_RASTERIZED_PAGE_WIDTH_PDF2D_1)"
+GUI OPTIONAL RANGE_SLIDER PDF2D_IN_RASTERIZED_PAGE_WIDTH_PDF2D_1 1%MAX%0%OFF Raster Width:
+DEFAULT_MACRO PDF2D_IN_EXPOSE_ATTRS_GROUP_PDF2D_1 FME_DISCLOSURE_OPEN
+PDF2D_1_EXPOSE_ATTRS_GROUP "$(PDF2D_IN_EXPOSE_ATTRS_GROUP_PDF2D_1)"
+GUI OPTIONAL DISCLOSUREGROUP PDF2D_IN_EXPOSE_ATTRS_GROUP_PDF2D_1 PDF2D_IN_PDF2D_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO PDF2D_IN_USE_SEARCH_ENVELOPE_PDF2D_1 NO
+PDF2D_1_USE_SEARCH_ENVELOPE "$(PDF2D_IN_USE_SEARCH_ENVELOPE_PDF2D_1)"
+GUI ACTIVEDISCLOSUREGROUP PDF2D_IN_USE_SEARCH_ENVELOPE_PDF2D_1 PDF2D_IN_SEARCH_ENVELOPE_MINX_PDF2D_1%PDF2D_IN_SEARCH_ENVELOPE_MINY_PDF2D_1%PDF2D_IN_SEARCH_ENVELOPE_MAXX_PDF2D_1%PDF2D_IN_SEARCH_ENVELOPE_MAXY_PDF2D_1%PDF2D_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_PDF2D_1%PDF2D_IN_CLIP_TO_ENVELOPE_PDF2D_1%PDF2D_IN_SEARCH_METHOD%PDF2D_IN_SEARCH_METHOD_FILTER%PDF2D_IN_SEARCH_ORDER%PDF2D_IN_SEARCH_FEATURE%PDF2D_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP PDF2D_IN_SEARCH_ENVELOPE_MINX_PDF2D_1 <Unused>,0 
+DEFAULT_MACRO PDF2D_IN_SEARCH_ENVELOPE_MINX_PDF2D_1 0
+PDF2D_1_SEARCH_ENVELOPE "$(PDF2D_IN_SEARCH_ENVELOPE_MINX_PDF2D_1)"
+GUI OPTIONAL FLOAT PDF2D_IN_SEARCH_ENVELOPE_MINX_PDF2D_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP PDF2D_IN_SEARCH_ENVELOPE_MINY_PDF2D_1 <Unused>,0 
+DEFAULT_MACRO PDF2D_IN_SEARCH_ENVELOPE_MINY_PDF2D_1 0
+PDF2D_1_SEARCH_ENVELOPE "$(PDF2D_IN_SEARCH_ENVELOPE_MINY_PDF2D_1)"
+GUI OPTIONAL FLOAT PDF2D_IN_SEARCH_ENVELOPE_MINY_PDF2D_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP PDF2D_IN_SEARCH_ENVELOPE_MAXX_PDF2D_1 <Unused>,0 
+DEFAULT_MACRO PDF2D_IN_SEARCH_ENVELOPE_MAXX_PDF2D_1 0
+PDF2D_1_SEARCH_ENVELOPE "$(PDF2D_IN_SEARCH_ENVELOPE_MAXX_PDF2D_1)"
+GUI OPTIONAL FLOAT PDF2D_IN_SEARCH_ENVELOPE_MAXX_PDF2D_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP PDF2D_IN_SEARCH_ENVELOPE_MAXY_PDF2D_1 <Unused>,0 
+DEFAULT_MACRO PDF2D_IN_SEARCH_ENVELOPE_MAXY_PDF2D_1 0
+PDF2D_1_SEARCH_ENVELOPE "$(PDF2D_IN_SEARCH_ENVELOPE_MAXY_PDF2D_1)"
+GUI OPTIONAL FLOAT PDF2D_IN_SEARCH_ENVELOPE_MAXY_PDF2D_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP PDF2D_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_PDF2D_1 <Unused>, 
+DEFAULT_MACRO PDF2D_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_PDF2D_1 
+PDF2D_1_SEARCH_ENVELOPE "$(PDF2D_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_PDF2D_1)"
+GUI OPTIONAL COORDSYS PDF2D_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_PDF2D_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP PDF2D_IN_CLIP_TO_ENVELOPE_PDF2D_1 <Unused>,NO 
+DEFAULT_MACRO PDF2D_IN_CLIP_TO_ENVELOPE_PDF2D_1 NO
+PDF2D_1_CLIP_TO_ENVELOPE "$(PDF2D_IN_CLIP_TO_ENVELOPE_PDF2D_1)"
+GUI OPTIONAL CHECKBOX PDF2D_IN_CLIP_TO_ENVELOPE_PDF2D_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO PDF2D_IN_TRIM_OCG_NAMES_PDF2D_1 YES
+PDF2D_1_TRIM_OCG_NAMES "$(PDF2D_IN_TRIM_OCG_NAMES_PDF2D_1)"
+DEFAULT_MACRO PDF2D_IN_REORDER_BANDS_TO_RGBA_PDF2D_1 YES
+PDF2D_1_REORDER_BANDS_TO_RGBA "$(PDF2D_IN_REORDER_BANDS_TO_RGBA_PDF2D_1)"
+DEFAULT_MACRO PDF2D_IN_PAGE_NUMBERS_START_AT_ONE_PDF2D_1 YES
+PDF2D_1_PAGE_NUMBERS_START_AT_ONE "$(PDF2D_IN_PAGE_NUMBERS_START_AT_ONE_PDF2D_1)"
+DEFAULT_MACRO PDF2D_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_PDF2D_1 Yes
+PDF2D_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(PDF2D_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_PDF2D_1)"
+# ===========================================================================
+DEFAULT_MACRO PDF2D_IN_NETWORK_AUTHENTICATION_PDF2D_1 
+PDF2D_1_NETWORK_AUTHENTICATION "$(PDF2D_IN_NETWORK_AUTHENTICATION_PDF2D_1)"
+GUI OPTIONAL AUTHENTICATOR PDF2D_IN_NETWORK_AUTHENTICATION_PDF2D_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO PDF2D_IN_ATTRIBUTE_READING_PDF2D_1 ALL
+PDF2D_1_ATTRIBUTE_READING "$(PDF2D_IN_ATTRIBUTE_READING_PDF2D_1)"
+# ============================================================================
+PDF2D_1_GENERATE_FME_BUILD_NUM 24783
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_PDF2D_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER PDF2D PDF2D_1
+DEFAULT_MACRO SourceDataset_PDF2D_1 $(SourceDataset_PDF2D)
+PDF2D_1_DATASET "$(SourceDataset_PDF2D_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+MAPPING_FILE_ID Automatizando<space>com<space>ChatGPT
+DEFAULT_MACRO DATASET_KEYWORD_PDF2D_1 PDF2D_1
+# -------------------------------------------------------------------------
+
+PDF2D_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_PDF2D_1)   INPUT FEATURE_TYPE *    ROUTE PDF2D PDF2D_1::pdf_no_layer multi_reader_keyword,$(DATASET_KEYWORD_PDF2D_1) TO FME_GENERIC ::pdf_no_layer ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+PDF2D_1_MERGE_DEF PDF2D_1::pdf_no_layer EXACT pdf_no_layer DEFLINE pdf_type,pdf_text
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "pdf_no_layer_PDF2D_1 Splitter"    INPUT FEATURE_TYPE pdf_no_layer    OUTPUT FEATURE_TYPE pdf_no_layer_PDF2D_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} CounterFactory    FACTORY_NAME { Counter }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    START { "1" }    SCOPE { Global }    DOMAIN { "counter" }    COUNT_ATTR { "id_temporario" }    GROUP_ID_ATTR { "" }    INPUT  FEATURE_TYPE pdf_no_layer_PDF2D_1    OUTPUT { OUTPUT FEATURE_TYPE Counter_OUTPUT        }    OUTPUT { REJECTED FEATURE_TYPE Counter_<REJECTED>        }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {NullAttributeMapper_7d08fbdd_4492_4eb0_83dd_6102c481f3590} ]
+Tcl2 proc $(FME_UUID_SAFE)_null_replacer { otherValue newValue regExp } {    set attrs [split {fme_text_string} { }];    set decode true;    if { {SELECTED} == {ALL} } {       set attrs [FME_AttributeNames];       set decode false; 	 };    set decodedVal [FME_DecodeText $otherValue];    set decodedRegExp [FME_DecodeText $regExp];    foreach attr $attrs {      set act {NOOP};      if {$decode} {        set attr [FME_DecodeText $attr];      };      if {[FME_AttributeExists $attr]} {          set attrVal [FME_GetAttribute $attr];          if {[FME_IsAttributeNull $attr] } {             if {[string first {SETNULL} {SETNULL EMPTY MISSINGATTR}] != -1} {                 set act {SETVALUE};             };          }          elseif { [string first {EMPTY} {SETNULL EMPTY MISSINGATTR}] != -1 && $attrVal == {}} {             set act {SETVALUE};          }          elseif { $otherValue != {} && [string equal $attrVal $decodedVal]} {             set act {SETVALUE};          }          elseif { $decodedRegExp != {} }          {             set results [FME_GetRegex $decodedRegExp $attrVal];             if {[llength [lindex $results 0]] > 0}             {                set act {SETVALUE};             }          };      }      elseif {[string first {MISSINGATTR} {SETNULL EMPTY MISSINGATTR}] != -1} {             set act {SETVALUE};      };      if {$act == {DELETEATTR} } {         FME_UnsetAttributes $attr;      } elseif { $act == {SETVALUE} } {         FME_SetAttribute $attr [FME_DecodeText $newValue];      } elseif { $act == {SETNULL} } {         FME_SetAttributeNull $attr;      } elseif { $act == {EMPTY} }      {         FME_SetAttribute $attr {};      };   }; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { NullAttributeMapper }    INPUT  FEATURE_TYPE Counter_OUTPUT    OUTPUT { FEATURE_TYPE NullAttributeMapper_OUTPUT         @Tcl2("$(FME_UUID_SAFE)_null_replacer {<space>} {999} {}")       }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE NullAttributeMapper_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_text_string<closeparen>,Tester)" = 999 ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }    OUTPUT { FAILED FEATURE_TYPE Tester_FAILED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer }    INPUT  FEATURE_TYPE Tester_PASSED    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { fme_text_string }    FIND_TEXT { "999" }    REPLACE_TEXT { "<lf>" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SortFactory    FACTORY_NAME { Sorter }    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    INPUT  FEATURE_TYPE Tester_FAILED    SORT_ALPHA_AS_UTF8 { YES }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SORT_BY { id_temporario NUMERIC ASCENDING }    OUTPUT { SORTED FEATURE_TYPE Sorter_SORTED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AggregateFactory    FACTORY_NAME { Aggregator }    INPUT  FEATURE_TYPE Sorter_SORTED    MODE { ONE_LEVEL }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    REMOVE_GEOMETRY { NO }    ACCUMULATE_ATTRIBUTES { None }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    CONCATENATE_FIELDS { fme_text_string }    PRODUCE_MULTIS { YES }    ALL_ATTRS_LIST_GROUP_BY_MODE ADD    OUTPUT { AGGREGATE FEATURE_TYPE Aggregator_AGGREGATE          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer_2 }    INPUT  FEATURE_TYPE Aggregator_AGGREGATE    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { fme_text_string }    FIND_TEXT { "<space><space>" }    REPLACE_TEXT { "<space>" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_2_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "OpenAIChatGPTConnector Input Input Collector"   INPUT FEATURE_TYPE StringReplacer_2_OUTPUT   OUTPUT FEATURE_TYPE OpenAIChatGPTConnector_Input
+MACRO OpenAIChatGPTConnector_WORKSPACE_NAME OpenAIChatGPTConnector
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_XFORMER_NAME OpenAIChatGPTConnector
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_Authentication 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_Service OpenAI
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_Auth fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMsz2/7xRB/QWSXDTWV5J6toyn9eykFwZP2TmtjsKcBqYhJaUt8VcW8iDwABkXFYwBWPUtKOLODHihcMGdsmNMVt0MYOhxvH6bhEqayoM32AaFh1qQ0eOURo7zrbLvHqd8D/A7evTIVEwDVBp3gTflXixRLR2z3S17jQ6NiKWnBNeN6F+StKDY1Yv/LlYu0Q6KoR0S8RCZwGnT++HMDk5KeqkPw6ZYr3sgqelgwcQoNNWM8zSTLg8J5w3Bzy21RxLQXC6ITKJSNUanR7oSy15ClTOOeCimsI0oUAMUdFRElHDNidQu8o61b1XYptTjpRO7qiQUptoxuxQHQOrCR/Yij5tR6zfYeT70Aj)
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_BaseURL https://api.openai.com/
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_Version 2023-03-15-preview
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_General 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_ChatHistory NO
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_History <Unused>
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_ChatCompletion 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_systemContent Tenho um arquivo memorial descritivo e preciso extrair as coordenadas. Gostaria que você me devolvesse somente o wkt, sem nenhum texto adicional.
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_userContent <at>Value<openparen>fme_text_string<closeparen>
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_model gpt-4o
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_Advanced FME_DISCLOSURE_OPEN
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_temperature 0
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_top_p 1
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_n 1
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_stream false
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_stop 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_max_tokens 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_presence_penalty 0
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_frequency_penalty 0
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_logit_bias 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_user 
+MACRO $(OpenAIChatGPTConnector_WORKSPACE_NAME)_TRANSFER_TIMEOUT_LENGTH 360
+INCLUDE_CUSTOM_TRANSFORMER_VER OpenAIChatGPTConnector:6
+FACTORY_DEF * TeeFactory   FACTORY_NAME "OpenAIChatGPTConnector Output Output Renamer/Nuker"   INPUT FEATURE_TYPE OpenAIChatGPTConnector_Output   OUTPUT FEATURE_TYPE OpenAIChatGPTConnector_Output
+FACTORY_DEF * TeeFactory   FACTORY_NAME "OpenAIChatGPTConnector Rejected Output Renamer/Nuker"   INPUT FEATURE_TYPE OpenAIChatGPTConnector_Rejected
+# -------------------------------------------------------------------------
+# First determine which function we are going to be using -- we can do
+# this statically at parse time for efficiency sake
+MACRO GeometryReplacer_SetTempAttr
+MACRO GeometryReplacer_Function
+MACRO GeometryReplacer_RemoveTempAttr
+MACRO GeometryReplacer_RemoveSourceAttr
+INCLUDE [ set sourceText {@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Response<closeparen>,GeometryReplacer)};           set decodedText [FME_DecodeText "$sourceText"];           if ![regexp {@EvaluateExpression\([^)]*STRING_ENCODED,@Value\(([^()]*)\),[^()]*\)} "$decodedText" dummy geomSrcAttr] {               puts "MACRO GeometryReplacer_SetTempAttr @SupplyAttributes(ENCODED,__GeometryReplacerTemp__,\"$sourceText\")";               puts "MACRO GeometryReplacer_RemoveTempAttr @RemoveAttributes(__GeometryReplacerTemp__)";               set geomSrcAttr __GeometryReplacerTemp__;           } elseif {{Yes} == {Yes} } {                puts "MACRO GeometryReplacer_RemoveSourceAttr @RemoveAttributes(\"$geomSrcAttr\")";           };           if {{wkt} == {fmebinary} } {               puts "MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_BINARY,\"$geomSrcAttr\")";           } elseif {{wkt} == {fmehex} } {               puts "MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_BINARY_HEX,\"$geomSrcAttr\")";           } elseif {{wkt} == {fmexml} } {               puts "MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE,\"$geomSrcAttr\")";           } elseif {{wkt} == {fmexmlencoded} } {               puts "MACRO GeometryReplacer_Function @Geometry(FROM_ENCODED_STRING,&\"$geomSrcAttr\")";           } elseif {{wkt} == {polyline} } {               puts "MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_POLYLINE,\"$geomSrcAttr\")";           } elseif {{wkt} == {wkt} } {               puts "MACRO GeometryReplacer_Function @OGCGeometry(from_attribute,wkt,\"$geomSrcAttr\",FLOAT_64)";           } elseif {{wkt} == {wkb} ||                      {wkt} == {wkbhex} } {               puts "MACRO GeometryReplacer_Function @OGCGeometry(from_attribute,wkt,\"$geomSrcAttr\")";           } elseif {{wkt} == {GEOJSON} ||                     {wkt} == {ESRIJSON} } {               puts "MACRO GeometryReplacer_Function @JSONGeometry(FROM_ATTRIBUTE,wkt,\"$geomSrcAttr\")";           } elseif {{wkt} == {GEORSS} } {               puts "MACRO GeometryReplacer_Function @GeoRSSGeometry(FROM_ATTRIBUTE,\"$geomSrcAttr\")";           } elseif {{wkt} == {KML} } {               puts "MACRO GeometryReplacer_Function @KMLGeometry(FROM_ATTRIBUTE,\"$geomSrcAttr\")";           } elseif {{wkt} == {GML} } {               puts "MACRO GeometryReplacer_Function @GMLGeometry(FROM_ATTRIBUTE,\"$geomSrcAttr\",<Unused>)";           } elseif {{wkt} == {geohash} } {               puts "MACRO GeometryReplacer_Function @GeoHash(FROM_ATTRIBUTE,\"$geomSrcAttr\",<Unused>)";           } elseif {{wkt} == {ogeosms} ||                     {wkt} == {geosms}  ||                     {wkt} == {geo} } {               puts "MACRO GeometryReplacer_Function @OGCGeometry(from_attribute,wkt,\"$geomSrcAttr\")";           } elseif {{wkt} == {mgrs}} {               puts "MACRO GeometryReplacer_Function @MGRS(FROM_MGRS, <Unused>, <Unused>,\"@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Response<closeparen>,GeometryReplacer)\")"           } elseif {{wkt} == {mssql} } {               puts "MACRO GeometryReplacer_Function @SerializeGeometry(from_attribute,wkt,\"$geomSrcAttr\",<Unused>)";           } elseif {{wkt} == {iso6709} } {               puts "MACRO GeometryReplacer_Function @GeographicPoint(FROM_ATTRIBUTE,\"$geomSrcAttr\")";           } elseif {{wkt} == {qlikmaps} } {               puts "MACRO GeometryReplacer_Function @Geometry(FROM_ATTRIBUTE_QLIKMAPS_POLYLINE,\"$geomSrcAttr\")";           }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { GeometryReplacer_Rejector }    COMMAND_PARM_EVALUATION SINGLE_PASS    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    INPUT  FEATURE_TYPE OpenAIChatGPTConnector_Output    $(GeometryReplacer_SetTempAttr)    FUNCTION_DEFINITION { $(GeometryReplacer_Function) }    OUTPUT { COMPLETE FEATURE_TYPE GeometryReplacer_OUTPUT        $(GeometryReplacer_RemoveTempAttr) $(GeometryReplacer_RemoveSourceAttr) }    OUTPUT { REJECTED FEATURE_TYPE GeometryReplacer_<REJECTED>        $(GeometryReplacer_RemoveTempAttr) }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME GeometryReplacer_<Rejected> INPUT FEATURE_TYPE GeometryReplacer_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, GeometryReplacer<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {GeometryReplacer_Output} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+INCLUDE [    if {{NoReduction} == {NoReduction} &&        {NO_THINNING} == {NO_THINNING}} {       puts "MACRO GeometryReplacer_Output_eb6fc005_46f5_4137_8ef1_6486eb1882820_LARGE_GEOMETRY_DATA_STORAGE REFERENCE";    } else {       puts "MACRO GeometryReplacer_Output_eb6fc005_46f5_4137_8ef1_6486eb1882820_LARGE_GEOMETRY_DATA_STORAGE FULL";    }; ]
+INCLUDE [    if {{$(FME_LAUNCH_VIEWER_APP)} != {NO}} {       puts "MACRO ENABLE_RECORDING *";    } else {       puts "MACRO ENABLE_RECORDING _NOT_THIS_TIME_";    }; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME { GeometryReplacer_Output_Prepper }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryReplacer_OUTPUT    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_ATTRIBUTE_PREFIX { GeometryReplacer_Output }    RASTER_REDUCTION { NoReduction }    POINT_CLOUD_REDUCTION { NO_THINNING }    OUTPUT { RESULT FEATURE_TYPE __viewme__       }
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF {$(ENABLE_RECORDING)} RecorderFactory    FACTORY_NAME { GeometryReplacer_Output_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { _response_body,buffer,ChatHistory,buffer,fme_text_string,buffer }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000    LARGE_GEOMETRY_DATA_STORAGE { $(GeometryReplacer_Output_eb6fc005_46f5_4137_8ef1_6486eb1882820_LARGE_GEOMETRY_DATA_STORAGE) }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { GeometryReplacer_Output_Nuker }    INPUT FEATURE_TYPE __viewme__
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
