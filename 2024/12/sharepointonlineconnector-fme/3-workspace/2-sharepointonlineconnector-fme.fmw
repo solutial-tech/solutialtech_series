@@ -1,0 +1,1682 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\2024-2-b24783\fme.exe" D:\gitHub\SolutialTech\2024\12\sharepoint-fme\3-workspace\2-sharepoint-fme.fmw
+#          --SourceDataset_PATH "D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\shp_estado_municipio\RR"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="6117.87 7925.53"
+#!   DOC_TOP_LEFT="-1622.63 -5795.76"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24783"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="0ad4a56c-027f-4560-8ee4-b656cd1b385f"
+#!   FME_DOCUMENT_PRIORGUID="53fb2303-5066-4735-aebd-ade9e4225292,e5cdf0b6-6678-49c1-81ae-bf2e890ced18,acc74864-78bd-49f8-acd9-ddf4b4621699,fe916e0c-4257-42da-910e-612c41d74d75"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+#!   LAST_SAVE_DATE="2024-12-16T07:46:12"
+#!   LOG_FILE="$(WORKSPACE_NAME).log"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-2336.56 2370.22"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="65"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="PATH"
+#!   DATASET="$(SourceDataset_PATH)"
+#!   KEYWORD="PATH_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50) path_geom char(13)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DIRONLY"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="PATH"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Folder or Files pathnames"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="PATH"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="PATH"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="PATH"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="path_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="PATH"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="PATH"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="path_none"
+#!   POSITION="-1377.6447332175201 1109.5809585683851"
+#!   BOUNDING_RECT="-1377.6447332175201 1109.5809585683851 436 65"
+#!   ORDER="500000000000037"
+#!   COLLAPSED="false"
+#!   KEYWORD="PATH_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_unix" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_windows" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_rootname" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_filename" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_extension" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_directory_unix" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_directory_windows" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="path_type" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="PATH_1"
+#!   OVERRIDE="-PATH_1_DATASET"
+#!   DATASET="PATH_1/RR"
+#! />
+#! </READER_DATASETS>
+#! <DEPENDENCIES>
+#! <PACKAGES>
+#! <PACKAGE
+#!   NAME="safe.microsoft-sharepoint"
+#!   VERSION="1.2.2"
+#! />
+#! </PACKAGES>
+#! </DEPENDENCIES>
+#! <CONNECTIONS>
+#! <CONNECTION
+#!   NAME="SolutialTech-APP"
+#!   TYPE="WEB"
+#!   FAMILY="safe.microsoft-sharepoint.Microsoft SharePoint Online"
+#!   USAGE="INTERNAL"
+#! />
+#! </CONNECTIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIDIRECTORY SourceDataset_PATH INCLUDE_WEB_BROWSER Source Folder and File Pathnames Folder:"
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\shp_estado_municipio\RR"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiU291cmNlRGF0YXNldF9QQVRIIiwicHJvbXB0IjoiU291cmNlIEZvbGRlciBhbmQgRmlsZSBQYXRobmFtZXMgRm9sZGVyOiIsInZhbHVlVHlwZSI6InN0cmluZyIsInJlcXVpcmVkIjp0cnVlLCJkZWZhdWx0VmFsdWUiOiJEOlxcZ2l0SHViXFxTb2x1dGlhbFRlY2hcXDIwMjRcXDEyXFxzaGFyZXBvaW50LWZtZVxcMS1kYXRhc2V0XFxzaHBfZXN0YWRvX211bmljaXBpb1xcUlIiLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZm9sZGVycyIsImFjY2Vzc01vZGUiOiJyZWFkIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZX1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_PATH" 
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\shp_estado_municipio\RR"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIDIRECTORY SourceDataset_PATH INCLUDE_WEB_BROWSER Source Folder and File Pathnames Folder:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="22"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Leitura de Diretório com os arquivos compactados &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1452.0502391773418 1296.2191297120009"
+#!   TOP_LEFT="-1452.0502391773418 1296.2191297120009"
+#!   BOTTOM_RIGHT="-874.26175816753175 1141.2178796995008"
+#!   BOUNDING_RECT="-1452.0502391773418 1296.2191297120009 577.78848100981008 155.00125001250012"
+#!   ORDER="500000000000070"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b30daa37-7fba-40e1-8728-e37090c26aab}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="26"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Passa somente uma &lt;span style=&quot; font-weight:700;&quot;&gt;amostra de 10 registros para teste&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="514.46554838219117 1039.5840712030304"
+#!   TOP_LEFT="514.46554838219117 1039.5840712030304"
+#!   BOTTOM_RIGHT="1124.2855997077045 884.58282119053024"
+#!   BOUNDING_RECT="514.46554838219117 1039.5840712030304 609.82005132551319 155.00125001250012"
+#!   ORDER="500000000000072"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{90680fe2-87a0-4b79-9476-56e2b7ba5f35}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="7"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="31"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Somente utilizado como gatilho&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1436.0909654645197 -833.18832947845226"
+#!   TOP_LEFT="-1436.0909654645197 -833.18832947845226"
+#!   BOTTOM_RIGHT="-1000.1007774376394 -834.18832947845226"
+#!   BOUNDING_RECT="-1436.0909654645197 -833.18832947845226 435.99018802688028 1"
+#!   ORDER="500000000000074"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{aa1aba24-e37d-48dc-ae8d-9e0f2914fc61}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="11"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="46"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Somente utilizado como gatilho&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1431.11464018275 -2916.3421639055432"
+#!   TOP_LEFT="-1431.11464018275 -2916.3421639055432"
+#!   BOTTOM_RIGHT="-995.12445215586968 -2917.3421639055432"
+#!   BOUNDING_RECT="-1431.11464018275 -2916.3421639055432 435.99018802688028 1"
+#!   ORDER="500000000000074"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{86471170-5a46-402b-8012-175d76eda19d}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="39"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="63"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Somente utilizado como gatilho&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1457.779957854779 -4874.1202426835189"
+#!   TOP_LEFT="-1457.779957854779 -4874.1202426835189"
+#!   BOTTOM_RIGHT="-1021.7897698278987 -4875.1202426835189"
+#!   BOUNDING_RECT="-1457.779957854779 -4874.1202426835189 435.99018802688028 1"
+#!   ORDER="500000000000074"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{3bf46a13-8b12-4c9a-baa5-7a2046603671}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="54"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="29"
+#!   COMMENT_VALUE="&lt;b&gt;SharePointOnlineConnector&amp;nbsp;[safe.microsoft-sharepoint.SharePointOnlineConnector&amp;nbsp;Version&amp;nbsp;1]&lt;/b&gt;&lt;br&gt;Authentication:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Account:&amp;nbsp;SolutialTech-APP&lt;br&gt;Request:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Action:&amp;nbsp;Upload&lt;br&gt;Data&amp;nbsp;Source:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Upload:&amp;nbsp;File&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;File&amp;nbsp;to&amp;nbsp;Upload:&amp;nbsp;@Value(path_windows)&lt;br&gt;Upload&amp;nbsp;Options:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Site:&amp;nbsp;https://solutialfme.sharepoint.com/sites/SolutialTech/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Document&amp;nbsp;Library:&amp;nbsp;Documentos&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Path:&amp;nbsp;RR/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;If&amp;nbsp;File&amp;nbsp;Exists:&amp;nbsp;Overwrite&lt;br&gt;Output&amp;nbsp;Attributes:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Attributes&amp;nbsp;to&amp;nbsp;Add:&amp;nbsp;_name&amp;nbsp;_full_path&amp;nbsp;_id&amp;nbsp;_url&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="1489.0168758445648 1806.0070798092854"
+#!   TOP_LEFT="1489.0168758445648 1806.0070798092854"
+#!   BOTTOM_RIGHT="3214.2777690784969 1807.0070798092854"
+#!   BOUNDING_RECT="1489.0168758445648 1806.0070798092854 1725.2608932339324 -1"
+#!   ORDER="500000000000073"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{0dd698e8-6926-4e06-a9a1-3da97f69cec1}"
+#!   ANCHORED_NODE="10"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="33"
+#!   COMMENT_VALUE="&lt;b&gt;SharePointOnlineConnector_2&amp;nbsp;[safe.microsoft-sharepoint.SharePointOnlineConnector&amp;nbsp;Version&amp;nbsp;1]&lt;/b&gt;&lt;br&gt;Authentication:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Account:&amp;nbsp;SolutialTech-APP&lt;br&gt;Request:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Action:&amp;nbsp;List&lt;br&gt;List&amp;nbsp;Options:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Site:&amp;nbsp;https://solutialfme.sharepoint.com/sites/SolutialTech/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Document&amp;nbsp;Library:&amp;nbsp;Documentos&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Path:&amp;nbsp;RR/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Include&amp;nbsp;Subfolders:&amp;nbsp;Yes&lt;br&gt;Output&amp;nbsp;Attributes:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Attributes&amp;nbsp;to&amp;nbsp;Add:&amp;nbsp;_name&amp;nbsp;_full_path&amp;nbsp;_id&amp;nbsp;_url&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="-579.46156429396365 -330.82818271733515"
+#!   TOP_LEFT="-579.46156429396365 -330.82818271733515"
+#!   BOTTOM_RIGHT="1182.8602464241435 -329.82818271733515"
+#!   BOUNDING_RECT="-579.46156429396365 -330.82818271733515 1762.3218107181071 -1"
+#!   ORDER="500000000000075"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{3cfff5e3-744f-4114-8628-6784b4a3a10d}"
+#!   ANCHORED_NODE="12"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="36"
+#!   COMMENT_VALUE="&lt;b&gt;SharePointOnlineConnector_3&amp;nbsp;[safe.microsoft-sharepoint.SharePointOnlineConnector&amp;nbsp;Version&amp;nbsp;1]&lt;/b&gt;&lt;br&gt;Authentication:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Account:&amp;nbsp;SolutialTech-APP&lt;br&gt;Request:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Action:&amp;nbsp;Upload&lt;br&gt;Data&amp;nbsp;Source:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Upload:&amp;nbsp;File&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;File&amp;nbsp;to&amp;nbsp;Upload:&amp;nbsp;@Value(path_windows)&lt;br&gt;Upload&amp;nbsp;Options:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Site:&amp;nbsp;https://solutialfme.sharepoint.com/sites/SolutialTech/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Document&amp;nbsp;Library:&amp;nbsp;Documentos&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Path:&amp;nbsp;RR/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;If&amp;nbsp;File&amp;nbsp;Exists:&amp;nbsp;Overwrite&lt;br&gt;Output&amp;nbsp;Attributes:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Attributes&amp;nbsp;to&amp;nbsp;Add:&amp;nbsp;_name&amp;nbsp;_full_path&amp;nbsp;_id&amp;nbsp;_url&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="2565.7881038111941 -239.03670235063447"
+#!   TOP_LEFT="2565.7881038111941 -239.03670235063447"
+#!   BOTTOM_RIGHT="4328.109914529301 -238.03670235063447"
+#!   BOUNDING_RECT="2565.7881038111941 -239.03670235063447 1762.3218107181071 -1"
+#!   ORDER="500000000000073"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b6f5d6a7-c4af-4368-bf63-50650e66900b}"
+#!   ANCHORED_NODE="35"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="47"
+#!   COMMENT_VALUE="&lt;b&gt;SharePointOnlineConnector_4&amp;nbsp;[safe.microsoft-sharepoint.SharePointOnlineConnector&amp;nbsp;Version&amp;nbsp;1]&lt;/b&gt;&lt;br&gt;Authentication:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Account:&amp;nbsp;SolutialTech-APP&lt;br&gt;Request:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Action:&amp;nbsp;List&lt;br&gt;List&amp;nbsp;Options:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Site:&amp;nbsp;https://solutialfme.sharepoint.com/sites/SolutialTech/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Document&amp;nbsp;Library:&amp;nbsp;Documentos&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Path:&amp;nbsp;RR/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Include&amp;nbsp;Subfolders:&amp;nbsp;Yes&lt;br&gt;Output&amp;nbsp;Attributes:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Attributes&amp;nbsp;to&amp;nbsp;Add:&amp;nbsp;_name&amp;nbsp;_full_path&amp;nbsp;_id&amp;nbsp;_url&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="-603.33168132277092 -2371.6839662684629"
+#!   TOP_LEFT="-603.33168132277092 -2371.6839662684629"
+#!   BOTTOM_RIGHT="1158.9901293953362 -2370.6839662684629"
+#!   BOUNDING_RECT="-603.33168132277092 -2371.6839662684629 1762.3218107181071 -1"
+#!   ORDER="500000000000075"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{60734c2a-595a-45fc-b6a7-c8db1b622b1f}"
+#!   ANCHORED_NODE="40"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="48"
+#!   COMMENT_VALUE="&lt;b&gt;SharePointOnlineConnector_5&amp;nbsp;[safe.microsoft-sharepoint.SharePointOnlineConnector&amp;nbsp;Version&amp;nbsp;1]&lt;/b&gt;&lt;br&gt;Authentication:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Account:&amp;nbsp;SolutialTech-APP&lt;br&gt;Request:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Action:&amp;nbsp;Delete&lt;br&gt;Delete&amp;nbsp;Options:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Site:&amp;nbsp;https://solutialfme.sharepoint.com/sites/SolutialTech/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Document&amp;nbsp;Library:&amp;nbsp;Documentos&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Path:&amp;nbsp;@Value(_full_path)&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="2479.7831681097887 -2557.2472351707947"
+#!   TOP_LEFT="2479.7831681097887 -2557.2472351707947"
+#!   BOTTOM_RIGHT="4242.104978827896 -2556.2472351707947"
+#!   BOUNDING_RECT="2479.7831681097887 -2557.2472351707947 1762.3218107181071 -1"
+#!   ORDER="500000000000073"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{a28ccdd8-6ac5-4872-a800-86725e77cf9f}"
+#!   ANCHORED_NODE="42"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="64"
+#!   COMMENT_VALUE="&lt;b&gt;SharePointOnlineConnector_6&amp;nbsp;[safe.microsoft-sharepoint.SharePointOnlineConnector&amp;nbsp;Version&amp;nbsp;1]&lt;/b&gt;&lt;br&gt;Authentication:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Account:&amp;nbsp;SolutialTech-APP&lt;br&gt;Request:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Action:&amp;nbsp;Download&lt;br&gt;Download&amp;nbsp;Options:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Site:&amp;nbsp;https://solutialfme.sharepoint.com/sites/SolutialTech/&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Document&amp;nbsp;Library:&amp;nbsp;Documentos&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Path:&amp;nbsp;RR/&lt;br&gt;Destination:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download&amp;nbsp;as:&amp;nbsp;Folder&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Download&amp;nbsp;to&amp;nbsp;Folder:&amp;nbsp;D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\Nova&amp;nbsp;pasta&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;If&amp;nbsp;File&amp;nbsp;Exists:&amp;nbsp;Overwrite&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Include&amp;nbsp;Subfolders:&amp;nbsp;No&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="-601.15055668422315 -4284.2692854265324"
+#!   TOP_LEFT="-601.15055668422315 -4284.2692854265324"
+#!   BOTTOM_RIGHT="1161.171254033884 -4283.2692854265324"
+#!   BOUNDING_RECT="-601.15055668422315 -4284.2692854265324 1762.3218107181071 -1"
+#!   ORDER="500000000000075"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d270ccf6-9469-4e08-a751-cadbda0990bf}"
+#!   ANCHORED_NODE="57"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="58"
+#!   COMMENT_VALUE="&lt;b&gt;AttributeManager&amp;nbsp;[AttributeManager&amp;nbsp;Version&amp;nbsp;5]&lt;/b&gt;&lt;br&gt;Attribute&amp;nbsp;Actions:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Input&amp;nbsp;Attribute&lt;/td&gt;&lt;td&gt;Output&amp;nbsp;Attribute&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;td&gt;Type&lt;/td&gt;&lt;td&gt;Action&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path_rootname&lt;/td&gt;&lt;td&gt;path_rootname&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;buffer&lt;/td&gt;&lt;td&gt;Remove&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path_unix&lt;/td&gt;&lt;td&gt;path_unix&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;buffer&lt;/td&gt;&lt;td&gt;Remove&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path_extension&lt;/td&gt;&lt;td&gt;path_extension&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;buffer&lt;/td&gt;&lt;td&gt;Remove&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path_directory_unix&lt;/td&gt;&lt;td&gt;path_directory_unix&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;buffer&lt;/td&gt;&lt;td&gt;Remove&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path_type&lt;/td&gt;&lt;td&gt;path_type&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;varchar(10)&lt;/td&gt;&lt;td&gt;Remove&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+#!   POSITION="-687.96604247780169 1938.1821450514531"
+#!   TOP_LEFT="-687.96604247780169 1938.1821450514531"
+#!   BOTTOM_RIGHT="583.92117639438698 1939.1821450514531"
+#!   BOUNDING_RECT="-687.96604247780169 1938.1821450514531 1271.8872188721887 -1"
+#!   ORDER="500000000000077"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{de84f8c2-17b1-4be1-b96f-0c344f957afa}"
+#!   ANCHORED_NODE="4"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="59"
+#!   COMMENT_VALUE="&lt;b&gt;Tester&amp;nbsp;[Tester&amp;nbsp;Version&amp;nbsp;4]&lt;/b&gt;&lt;br&gt;Test&amp;nbsp;Clauses:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Left&amp;nbsp;Value&lt;/td&gt;&lt;td&gt;Operator&lt;/td&gt;&lt;td&gt;Right&amp;nbsp;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;@Value(_name)&lt;/td&gt;&lt;td&gt;Begins&amp;nbsp;With&lt;/td&gt;&lt;td&gt;ca&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comparison&amp;nbsp;Mode:&amp;nbsp;Case&amp;nbsp;Insensitive&lt;br&gt;Advanced:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preserve&amp;nbsp;Feature&amp;nbsp;Order:&amp;nbsp;Per&amp;nbsp;Output&amp;nbsp;Port&lt;br&gt;State:&amp;nbsp;DISABLED"
+#!   POSITION="1409.2950294051432 -2649.4752552876689"
+#!   TOP_LEFT="1409.2950294051432 -2649.4752552876689"
+#!   BOTTOM_RIGHT="2234.3027794826439 -2648.4752552876689"
+#!   BOUNDING_RECT="1409.2950294051432 -2649.4752552876689 825.00775007750076 -1"
+#!   ORDER="500000000000078"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{fc33b635-11c2-488c-afed-7faddbf185b4}"
+#!   ANCHORED_NODE="45"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="19"
+#!   NAME="1.1 | Leitura dos Arquivos"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1562.483274936269 1447.478242898371"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-751.46325997421468 517.26739979566355"
+#!   BOUNDING_RECT="-1562.483274936269 1447.478242898371 811.02001496205435 930.21084310270749"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="22 2 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="23"
+#!   NAME="[UPLOAD] de Arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1620.2607678250693 2129.776732549934"
+#!   ORDER="500000000000071"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="3461.5730772692336 404.21599868172598"
+#!   BOUNDING_RECT="-1620.2607678250693 2129.776732549934 5081.8338450943029 1725.560733868208"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="10 27 22 19 8 28 2 7 26 58 9 29 4 5 25 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="24"
+#!   NAME="[LISTAGEM] de Arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1598.7598958748351 71.62179776643751"
+#!   ORDER="500000000000071"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="4476.0062985245222 -1754.8252405600979"
+#!   BOUNDING_RECT="-1598.7598958748351 71.62179776643751 6074.7661943993571 1826.4470383265354"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="34 12 32 30 11 16 13 31 14 36 38 35 37 33 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="25"
+#!   NAME="2.2 | Extrai a amostragem"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="351.73441916819388 1263.2950506975287"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1320.6474483457571 533.6949516662354"
+#!   BOUNDING_RECT="351.73441916819388 1263.2950506975287 968.9130291775632 729.60009903129333"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="7 26 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="27"
+#!   NAME="2.1 | Manipulação dos Atributos"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-678.07219467071593 1261.5484183427404"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="290.84083450684727 531.94831931144711"
+#!   BOUNDING_RECT="-678.07219467071593 1261.5484183427404 968.9130291775632 729.60009903129333"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="4 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="28"
+#!   NAME="3.1 | Upload dos arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1366.785236428301 1987.1122624269717"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="3335.6311823987799 533.29337641202483"
+#!   BOUNDING_RECT="1366.785236428301 1987.1122624269717 1968.8459459704791 1453.8188860149469"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.28627450980392155"
+#!   CONTENTS="10 29 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="30"
+#!   NAME="1.1 | Start do Fluxo"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1561.7748668487698 -682.19359261903469"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-816.58425279904918 -1218.6315425027149"
+#!   BOUNDING_RECT="-1561.7748668487698 -682.19359261903469 745.19061404972058 536.43794988368018"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="11 31 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="32"
+#!   NAME="2.1 | Listagem dos arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-697.06278632234421 -196.76122687152795"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1271.7831596481349 -1592.2767668111399"
+#!   BOUNDING_RECT="-697.06278632234421 -196.76122687152795 1968.8459459704791 1395.5155399396119"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.28627450980392155"
+#!   CONTENTS="12 33 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="34"
+#!   NAME="3.1 | Join para fazer o DIFF"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1394.5362948697025 -781.97668606188313"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2363.4493240472657 -1511.5767850931766"
+#!   BOUNDING_RECT="1394.5362948697025 -781.97668606188313 968.9130291775632 729.60009903129333"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="14 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="38"
+#!   NAME="2.2 | Upload dos arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2463.5463960654661 -113.54576983566605"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="4409.8998682294514 -1645.1968888159915"
+#!   BOUNDING_RECT="2463.5463960654661 -113.54576983566605 1946.3534721639849 1531.6511189803255"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.28627450980392155"
+#!   CONTENTS="36 35 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="49"
+#!   NAME="[DELETE] de Arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1622.6300129036424 -2006.7242962755568"
+#!   ORDER="500000000000071"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="4495.2372600649069 -3833.1713346020924"
+#!   BOUNDING_RECT="-1622.6300129036424 -2006.7242962755568 6117.8672729685495 1826.4470383265354"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="48 51 43 42 45 46 52 56 39 59 47 53 50 55 40 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="50"
+#!   NAME="1.1 | Start do Fluxo"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1556.798541567 -2765.3474270461256"
+#!   ORDER="500000000000071.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-811.60792751727945 -3301.7853769298058"
+#!   BOUNDING_RECT="-1556.798541567 -2765.3474270461256 745.19061404972058 536.43794988368018"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="46 39 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="51"
+#!   NAME="2.1 | Listagem dos arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-720.93290335115148 -2275.1073209135225"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1247.9130426193276 -3528.8814426605795"
+#!   BOUNDING_RECT="-720.93290335115148 -2275.1073209135225 1968.8459459704791 1253.7741217470571"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.28627450980392155"
+#!   CONTENTS="47 40 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="52"
+#!   NAME="3.1 | Condicional de Exemplo"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1346.6274759154155 -2456.755336784136"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="2315.5405050929785 -3514.4582215052906"
+#!   BOUNDING_RECT="1346.6274759154155 -2456.755336784136 968.9130291775632 1057.7028847211545"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="45 59 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="53"
+#!   NAME="2.2 | Upload dos arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="2425.6711222626877 -2442.2798575811839"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="4372.0245944266726 -3495.2272599649059"
+#!   BOUNDING_RECT="2425.6711222626877 -2442.2798575811839 1946.3534721639849 1052.947402383722"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.28627450980392155"
+#!   CONTENTS="48 42 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="66"
+#!   NAME="[Download] de Arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1620.4488882650946 -3969.3101154386277"
+#!   ORDER="500000000000071"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1350.3451784103247 -5795.7571537651629"
+#!   BOUNDING_RECT="-1620.4488882650946 -3969.3101154386277 2970.7940666754193 1826.4470383265354"
+#!   STICKY="true"
+#!   COLOUR="0.87450980392156863,0.87450980392156863,0.87450980392156863,1"
+#!   CONTENTS="57 64 54 63 60 67 68 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="67"
+#!   NAME="1.1 | Start do Fluxo"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1583.463859239029 -4723.1255058241004"
+#!   ORDER="500000000000071.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-838.27324518930845 -5259.563455707781"
+#!   BOUNDING_RECT="-1583.463859239029 -4723.1255058241004 745.19061404972058 536.43794988368018"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="54 63 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="68"
+#!   NAME="2.1 | Download dos arquivos para o SHAREPOINT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-718.75177871260325 -4128.4616826267766"
+#!   ORDER="500000000000071.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1250.0941672578758 -5633.2086800162051"
+#!   BOUNDING_RECT="-718.75177871260325 -4128.4616826267766 1968.8459459704791 1504.7469973894288"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0,0.49803921568627452,0.28627450980392155"
+#!   CONTENTS="57 64 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="safe.microsoft-sharepoint.SharePointOnlineConnector"
+#!   VERSION="1"
+#!   POSITION="1967.9618826859378 881.136390968618"
+#!   BOUNDING_RECT="1967.9618826859378 881.136390968618 660.6875 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OPERATION_TYPE" PARM_VALUE="Upload"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_SETUP" PARM_VALUE="_FME_SOURCE_TYPE]File]_FME_SOURCE_FILE]&lt;at&gt;Value&lt;openparen&gt;path_windows&lt;closeparen&gt;]_FME_SOURCE_FOLDER]&lt;Unused&gt;]_FME_INCLUDE_SUBFOLDERS]&lt;Unused&gt;]_FME_CONTENTS_ONLY]&lt;Unused&gt;]_FME_DATA_TO_UPLOAD]&lt;Unused&gt;]__microsoftsharepoint_site]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;solutialfme.sharepoint.com&lt;solidus&gt;sites&lt;solidus&gt;SolutialTech&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;solutialfme.sharepoint.com&lt;comma&gt;ffd72a00-7046-46c4-b36f-8ff3c5176c2f&lt;comma&gt;e547c487-c2e7-49d6-b4a0-f3be40cee4fa&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]__microsoftsharepoint_document_library]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;Documentos&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;b!ACrX_0ZwxEazb4_zxRdsL4fER-XnwtZJtKDzvkDO5PrCfDX8f5ZrQrS3vdlEPbRv&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_UPLOAD_DESTINATION_PATH]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;RR&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;&lt;solidus&gt;RR&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_UPLOAD_ATTR_FILENAME]&lt;Unused&gt;]_FME_HANDLE_EXISTING_FILE]Overwrite]__microsoftsharepoint_link]NO]__microsoftsharepoint_link_permission]&lt;Unused&gt;]__microsoftsharepoint_link_scope]&lt;Unused&gt;]__microsoftsharepoint_link_expiration_date]&lt;Unused&gt;]_FME_ATTRIBUTES_TO_ADD]&quot;_name _full_path _id _url&quot;]FME_CONTROLLER_QUERY_FILE]sharepointconnector_deps&lt;solidus&gt;Upload.fme]FME_CONTROLLER_CHOICE]Upload"/>
+#!     <XFORM_PARM PARM_NAME="REQUEST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SharePointOnlineConnector"/>
+#!     <XFORM_PARM PARM_NAME="__microsoftsharepoint_connection" PARM_VALUE="SolutialTech-APP"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="AttributeManager"
+#!   VERSION="5"
+#!   POSITION="-440.25015068473743 873.29404738998915"
+#!   BOUNDING_RECT="-440.25015068473743 873.29404738998915 436 65"
+#!   ORDER="500000000000066"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="path_windows path_windows  buffer NO_OP path_filename path_filename  buffer NO_OP path_directory_windows path_directory_windows  buffer NO_OP path_rootname path_rootname  buffer REMOVE path_unix path_unix  buffer REMOVE path_extension path_extension  buffer REMOVE path_directory_unix path_directory_unix  buffer REMOVE path_type path_type  varchar&lt;openparen&gt;10&lt;closeparen&gt; REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE" PARM_VALUE="NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Substitution"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="Sampler"
+#!   VERSION="5"
+#!   POSITION="592.59132964000378 845.34359836351962"
+#!   BOUNDING_RECT="592.59132964000378 845.34359836351962 436 65"
+#!   ORDER="500000000000067"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="SAMPLED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="NOT_SAMPLED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="ORIGINAL"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RATE" PARM_VALUE="10"/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_TYPE_MULTIPLIER" PARM_VALUE="-1"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sampler"/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_MODE" PARM_IS_LOOKUP="true" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SAMPLE_TYPE_LONG" PARM_IS_LOOKUP="true" PARM_VALUE="First N Features"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="Creator"
+#!   VERSION="7"
+#!   POSITION="-1436.0909654645197 -1018.1895794909526"
+#!   BOUNDING_RECT="-1436.0909654645197 -1018.1895794909526 436 65"
+#!   ORDER="500000000000068"
+#!   PARMS_EDITED="false"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOJSON" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="safe.microsoft-sharepoint.SharePointOnlineConnector"
+#!   VERSION="1"
+#!   POSITION="-74.432694896305719 -1028.3446222939688"
+#!   BOUNDING_RECT="-74.432694896305719 -1028.3446222939688 660.6875 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OPERATION_TYPE" PARM_VALUE="List"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_SETUP" PARM_VALUE="__microsoftsharepoint_site]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;solutialfme.sharepoint.com&lt;solidus&gt;sites&lt;solidus&gt;SolutialTech&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;solutialfme.sharepoint.com&lt;comma&gt;ffd72a00-7046-46c4-b36f-8ff3c5176c2f&lt;comma&gt;e547c487-c2e7-49d6-b4a0-f3be40cee4fa&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]__microsoftsharepoint_document_library]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;Documentos&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;b!ACrX_0ZwxEazb4_zxRdsL4fER-XnwtZJtKDzvkDO5PrCfDX8f5ZrQrS3vdlEPbRv&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_FILES]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;RR&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;&lt;solidus&gt;RR&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_INCLUDE_SUBFOLDERS]Yes]_FME_ATTRIBUTES_TO_ADD]&quot;_name _full_path _id _url&quot;]FME_CONTROLLER_QUERY_FILE]sharepointconnector_deps&lt;solidus&gt;List.fme]FME_CONTROLLER_CHOICE]List"/>
+#!     <XFORM_PARM PARM_NAME="REQUEST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SharePointOnlineConnector_2"/>
+#!     <XFORM_PARM PARM_NAME="__microsoftsharepoint_connection" PARM_VALUE="SolutialTech-APP"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="1623.9088772477166 -1016.631791974871"
+#!   BOUNDING_RECT="1623.9088772477166 -1016.631791974871 436 65"
+#!   ORDER="500000000000069"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES_LOOKUP" PARM_VALUE="USE_LEFT"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING_LOOKUP" PARM_VALUE="USE_LEFT"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="path_filename _name AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_IS_LOOKUP="true" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_IS_LOOKUP="true" PARM_VALUE="Prefer Left"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="35"
+#!   TYPE="safe.microsoft-sharepoint.SharePointOnlineConnector"
+#!   VERSION="1"
+#!   POSITION="3023.4629109151333 -1290.8803549572422"
+#!   BOUNDING_RECT="3023.4629109151333 -1290.8803549572422 660.6875 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="path_filename" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="path_directory_windows" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OPERATION_TYPE" PARM_VALUE="Upload"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_SETUP" PARM_VALUE="_FME_SOURCE_TYPE]File]_FME_SOURCE_FILE]&lt;at&gt;Value&lt;openparen&gt;path_windows&lt;closeparen&gt;]_FME_SOURCE_FOLDER]&lt;Unused&gt;]_FME_INCLUDE_SUBFOLDERS]&lt;Unused&gt;]_FME_CONTENTS_ONLY]&lt;Unused&gt;]_FME_DATA_TO_UPLOAD]&lt;Unused&gt;]__microsoftsharepoint_site]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;solutialfme.sharepoint.com&lt;solidus&gt;sites&lt;solidus&gt;SolutialTech&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;solutialfme.sharepoint.com&lt;comma&gt;ffd72a00-7046-46c4-b36f-8ff3c5176c2f&lt;comma&gt;e547c487-c2e7-49d6-b4a0-f3be40cee4fa&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]__microsoftsharepoint_document_library]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;Documentos&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;b!ACrX_0ZwxEazb4_zxRdsL4fER-XnwtZJtKDzvkDO5PrCfDX8f5ZrQrS3vdlEPbRv&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_UPLOAD_DESTINATION_PATH]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;RR&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;&lt;solidus&gt;RR&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_UPLOAD_ATTR_FILENAME]&lt;Unused&gt;]_FME_HANDLE_EXISTING_FILE]Overwrite]__microsoftsharepoint_link]NO]__microsoftsharepoint_link_permission]&lt;Unused&gt;]__microsoftsharepoint_link_scope]&lt;Unused&gt;]__microsoftsharepoint_link_expiration_date]&lt;Unused&gt;]_FME_ATTRIBUTES_TO_ADD]&quot;_name _full_path _id _url&quot;]FME_CONTROLLER_QUERY_FILE]sharepointconnector_deps&lt;solidus&gt;Upload.fme]FME_CONTROLLER_CHOICE]Upload"/>
+#!     <XFORM_PARM PARM_NAME="REQUEST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SharePointOnlineConnector_3"/>
+#!     <XFORM_PARM PARM_NAME="__microsoftsharepoint_connection" PARM_VALUE="SolutialTech-APP"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="39"
+#!   TYPE="Creator"
+#!   VERSION="7"
+#!   POSITION="-1431.11464018275 -3101.3434139180436"
+#!   BOUNDING_RECT="-1431.11464018275 -3101.3434139180436 436 65"
+#!   ORDER="500000000000068"
+#!   PARMS_EDITED="false"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOJSON" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="40"
+#!   TYPE="safe.microsoft-sharepoint.SharePointOnlineConnector"
+#!   VERSION="1"
+#!   POSITION="-98.302811925113019 -3106.6907163359633"
+#!   BOUNDING_RECT="-98.302811925113019 -3106.6907163359633 660.6875 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OPERATION_TYPE" PARM_VALUE="List"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_SETUP" PARM_VALUE="__microsoftsharepoint_site]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;solutialfme.sharepoint.com&lt;solidus&gt;sites&lt;solidus&gt;SolutialTech&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;solutialfme.sharepoint.com&lt;comma&gt;ffd72a00-7046-46c4-b36f-8ff3c5176c2f&lt;comma&gt;e547c487-c2e7-49d6-b4a0-f3be40cee4fa&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]__microsoftsharepoint_document_library]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;Documentos&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;b!ACrX_0ZwxEazb4_zxRdsL4fER-XnwtZJtKDzvkDO5PrCfDX8f5ZrQrS3vdlEPbRv&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_FILES]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;RR&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;&lt;solidus&gt;RR&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_INCLUDE_SUBFOLDERS]Yes]_FME_ATTRIBUTES_TO_ADD]&quot;_name _full_path _id _url&quot;]FME_CONTROLLER_QUERY_FILE]sharepointconnector_deps&lt;solidus&gt;List.fme]FME_CONTROLLER_CHOICE]List"/>
+#!     <XFORM_PARM PARM_NAME="REQUEST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SharePointOnlineConnector_4"/>
+#!     <XFORM_PARM PARM_NAME="__microsoftsharepoint_connection" PARM_VALUE="SolutialTech-APP"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="42"
+#!   TYPE="safe.microsoft-sharepoint.SharePointOnlineConnector"
+#!   VERSION="1"
+#!   POSITION="3000.010858267643 -3142.3742640894279"
+#!   BOUNDING_RECT="3000.010858267643 -3142.3742640894279 660.6875 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OPERATION_TYPE" PARM_VALUE="Delete"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_SETUP" PARM_VALUE="__microsoftsharepoint_site]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;solutialfme.sharepoint.com&lt;solidus&gt;sites&lt;solidus&gt;SolutialTech&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;solutialfme.sharepoint.com&lt;comma&gt;ffd72a00-7046-46c4-b36f-8ff3c5176c2f&lt;comma&gt;e547c487-c2e7-49d6-b4a0-f3be40cee4fa&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]__microsoftsharepoint_document_library]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;Documentos&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;b!ACrX_0ZwxEazb4_zxRdsL4fER-XnwtZJtKDzvkDO5PrCfDX8f5ZrQrS3vdlEPbRv&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_FILEID]&lt;at&gt;Value&lt;openparen&gt;_full_path&lt;closeparen&gt;]FME_CONTROLLER_QUERY_FILE]sharepointconnector_deps&lt;solidus&gt;Delete.fme]FME_CONTROLLER_CHOICE]Delete"/>
+#!     <XFORM_PARM PARM_NAME="REQUEST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SharePointOnlineConnector_5"/>
+#!     <XFORM_PARM PARM_NAME="__microsoftsharepoint_connection" PARM_VALUE="SolutialTech-APP"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="45"
+#!   TYPE="Tester"
+#!   VERSION="4"
+#!   POSITION="1596.7969044238932 -3202.2686447600254"
+#!   BOUNDING_RECT="1596.7969044238932 -3202.2686447600254 436 65"
+#!   ORDER="500000000000076"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_full_path" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_url" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="PER_OUTPUT_PORT"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="CASE_INSENSITIVE_TEST &lt;at&gt;Value&lt;openparen&gt;_name&lt;closeparen&gt; BEGINS_WITH ca"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="54"
+#!   TYPE="Creator"
+#!   VERSION="7"
+#!   POSITION="-1457.779957854779 -5059.1214926960201"
+#!   BOUNDING_RECT="-1457.779957854779 -5059.1214926960201 436 65"
+#!   ORDER="500000000000068"
+#!   PARMS_EDITED="false"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOJSON" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="57"
+#!   TYPE="safe.microsoft-sharepoint.SharePointOnlineConnector"
+#!   VERSION="1"
+#!   POSITION="-96.12168728656502 -5069.2765354990333"
+#!   BOUNDING_RECT="-96.12168728656502 -5069.2765354990333 660.6875 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="false"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_download_path" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OPERATION_TYPE" PARM_VALUE="Download"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETER_SETUP" PARM_VALUE="__microsoftsharepoint_site]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;solutialfme.sharepoint.com&lt;solidus&gt;sites&lt;solidus&gt;SolutialTech&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;solutialfme.sharepoint.com&lt;comma&gt;ffd72a00-7046-46c4-b36f-8ff3c5176c2f&lt;comma&gt;e547c487-c2e7-49d6-b4a0-f3be40cee4fa&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]__microsoftsharepoint_document_library]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;Documentos&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;b!ACrX_0ZwxEazb4_zxRdsL4fER-XnwtZJtKDzvkDO5PrCfDX8f5ZrQrS3vdlEPbRv&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_FILES]&lt;openbracket&gt;&lt;opencurly&gt;&lt;quote&gt;display&lt;quote&gt;:&lt;quote&gt;RR&lt;solidus&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;value&lt;quote&gt;:&lt;quote&gt;&lt;solidus&gt;RR&lt;quote&gt;&lt;closecurly&gt;&lt;closebracket&gt;]_FME_DATA_TARGET]Folder]_FME_TARGET_ATTRIBUTE]&lt;Unused&gt;]_FME_ENCODING_TYPE]&lt;Unused&gt;]_FME_TARGET_FOLDER]D:&lt;backslash&gt;gitHub&lt;backslash&gt;SolutialTech&lt;backslash&gt;2024&lt;backslash&gt;12&lt;backslash&gt;sharepoint-fme&lt;backslash&gt;1-dataset&lt;backslash&gt;Nova&lt;space&gt;pasta]_FME_HANDLE_EXISTING_FILE]Overwrite]_FME_INCLUDE_SUBFOLDERS]No]FME_CONTROLLER_QUERY_FILE]sharepointconnector_deps&lt;solidus&gt;Download.fme]FME_CONTROLLER_CHOICE]Download"/>
+#!     <XFORM_PARM PARM_NAME="REQUEST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SharePointOnlineConnector_6"/>
+#!     <XFORM_PARM PARM_NAME="__microsoftsharepoint_connection" PARM_VALUE="SolutialTech-APP"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="5"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="39"
+#!   TARGET_NODE="40"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="60"
+#!   SOURCE_NODE="54"
+#!   TARGET_NODE="57"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="false"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   COLOUR="0.33333333333333331,0,1,1"
+#!   PEN_WIDTH="8"
+#!   PEN_STYLE="2"
+#!   LINK_STYLE_NAME=""
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 0 SAMPLED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="56"
+#!   SOURCE_NODE="45"
+#!   TARGET_NODE="42"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="37"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="35"
+#!   SOURCE_PORT_DESC="fo 1 UNJOINED_LEFT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE PATH_IN_FME_GROUP_NAMED1_PATH_1,PATH_IN_GLOB_PATTERN_PATH_1,PATH_IN_RECURSE_DIRECTORIES_PATH_1,PATH_IN_TYPE_PATH_1,PATH_IN_HIDDEN_FILES_PATH_1,SourceDataset_PATH_1,PATH_IN_NETWORK_AUTHENTICATION_PATH_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_PATH D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\shp_estado_municipio\RR
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_PATH$encode)} == {}} { puts_real {Parameter 'SourceDataset_PATH' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} PATH
+MULTI_READER_KEYWORD{0} PATH_1
+MULTI_READER_GEN_DIRECTIVES{0} RETRIEVE_FILE_PROPERTIES,NO,HIDDEN_FILES,INCLUDE,OFFSET_DATETIME,yes,USE_NON_STRING_ATTR,yes,NO_EMPTY_PROPERTIES,YES,EXPOSE_ATTRS_GROUP,,RECURSE_DIRECTORIES,NO,GLOB_PATTERN,*.shp,PATH_EXPOSE_FORMAT_ATTRS,,_MERGE_SCHEMAS,YES,TYPE,ANY
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "PATH_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER PATH PATH_1
+DEFAULT_MACRO PATH_IN_FME_GROUP_NAMED1_PATH_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP PATH_IN_FME_GROUP_NAMED1_PATH_1 PATH_IN_GLOB_PATTERN_PATH_1%PATH_IN_RECURSE_DIRECTORIES_PATH_1%PATH_IN_TYPE_PATH_1%PATH_IN_HIDDEN_FILES_PATH_1%PATH_IN_RETRIEVE_FILE_PROPERTIES Path Parameters
+# =============================================================================
+DEFAULT_MACRO PATH_IN_OFFSET_DATETIME_PATH_1 yes
+PATH_1_OFFSET_DATETIME "$(PATH_IN_OFFSET_DATETIME_PATH_1)"
+# =============================================================================
+DEFAULT_MACRO PATH_IN_USE_NON_STRING_ATTR_PATH_1 yes
+PATH_1_USE_NON_STRING_ATTR "$(PATH_IN_USE_NON_STRING_ATTR_PATH_1)"
+# =============================================================================
+DEFAULT_MACRO PATH_IN_GLOB_PATTERN_PATH_1 *
+PATH_1_GLOB_PATTERN "$(PATH_IN_GLOB_PATTERN_PATH_1)"
+GUI OPTIONAL TEXT_ENCODED PATH_IN_GLOB_PATTERN_PATH_1 Path Filter:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_RECURSE_DIRECTORIES_PATH_1 YES
+PATH_1_RECURSE_DIRECTORIES "$(PATH_IN_RECURSE_DIRECTORIES_PATH_1)"
+GUI CHOICE PATH_IN_RECURSE_DIRECTORIES_PATH_1 YES%NO Recurse Into Subfolders:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_TYPE_PATH_1 ANY
+PATH_1_TYPE "$(PATH_IN_TYPE_PATH_1)"
+GUI LOOKUP_CHOICE PATH_IN_TYPE_PATH_1 Any,ANY%Directory,DIRECTORY%File,FILE Allowed Path Type:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_HIDDEN_FILES_PATH_1 INCLUDE
+PATH_1_HIDDEN_FILES "$(PATH_IN_HIDDEN_FILES_PATH_1)"
+GUI LOOKUP_CHOICE PATH_IN_HIDDEN_FILES_PATH_1 Include,INCLUDE%Exclude,EXCLUDE Hidden Files and Folders:
+# =============================================================================
+DEFAULT_MACRO PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1 NO
+PATH_1_RETRIEVE_FILE_PROPERTIES "$(PATH_IN_RETRIEVE_FILE_PROPERTIES_PATH_1)"
+# =============================================================================
+DEFAULT_MACRO PATH_IN_NO_EMPTY_PROPERTIES_PATH_1 YES
+PATH_1_NO_EMPTY_PROPERTIES "$(PATH_IN_NO_EMPTY_PROPERTIES_PATH_1)"
+DEFAULT_MACRO PATH_IN_EXPOSE_ATTRS_GROUP_PATH_1 
+PATH_1_EXPOSE_ATTRS_GROUP "$(PATH_IN_EXPOSE_ATTRS_GROUP_PATH_1)"
+# =====================================================================
+# The following GUI line prompts for the folder from which to
+# read
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_PATH_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER PATH PATH_1
+DEFAULT_MACRO SourceDataset_PATH_1 $(SourceDataset_PATH)
+GUI MULTIDIR SourceDataset_PATH_1 Source Folder and File Pathnames Folder:
+# ===========================================================================
+DEFAULT_MACRO PATH_IN_NETWORK_AUTHENTICATION_PATH_1 
+PATH_1_NETWORK_AUTHENTICATION "$(PATH_IN_NETWORK_AUTHENTICATION_PATH_1)"
+GUI OPTIONAL AUTHENTICATOR PATH_IN_NETWORK_AUTHENTICATION_PATH_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO PATH_IN_ATTRIBUTE_READING_PATH_1 ALL
+PATH_1_ATTRIBUTE_READING "$(PATH_IN_ATTRIBUTE_READING_PATH_1)"
+# ============================================================================
+PATH_1_GENERATE_FME_BUILD_NUM 24783
+PATH_1_DATASET "$(SourceDataset_PATH_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_PATH_1 PATH_1
+# -------------------------------------------------------------------------
+
+PATH_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_PATH_1)   INPUT FEATURE_TYPE *    ROUTE PATH PATH_1::PATH multi_reader_keyword,$(DATASET_KEYWORD_PATH_1) TO FME_GENERIC ::PATH ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+PATH_1_MERGE_DEF PATH_1::PATH EXACT PATH
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PATH_PATH_1 Splitter"    INPUT FEATURE_TYPE PATH    OUTPUT FEATURE_TYPE PATH_PATH_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Creator_CREATED Disabled Nuker -1 13"   INPUT FEATURE_TYPE Creator_CREATED   NO_LOGGING 
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Creator_2_CREATED Disabled Nuker -1 43"   INPUT FEATURE_TYPE Creator_2_CREATED   NO_LOGGING 
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Creator_3_CREATED Disabled Nuker -1 60"   INPUT FEATURE_TYPE Creator_3_CREATED   NO_LOGGING 
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_6 (Disabled) Nuker"   INPUT FEATURE_TYPE Creator_3_CREATED
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SharePointOnlineConnector_6_<Rejected> INPUT FEATURE_TYPE SharePointOnlineConnector_6_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SharePointOnlineConnector_6<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_4 (Disabled) Nuker"   INPUT FEATURE_TYPE Creator_2_CREATED
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_4_OUTPUT Disabled Nuker -1 55"   INPUT FEATURE_TYPE SharePointOnlineConnector_4_OUTPUT   NO_LOGGING 
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SharePointOnlineConnector_4_<Rejected> INPUT FEATURE_TYPE SharePointOnlineConnector_4_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SharePointOnlineConnector_4<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Tester (Disabled) Nuker"   INPUT FEATURE_TYPE SharePointOnlineConnector_4_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Tester_PASSED Disabled Nuker -1 56"   INPUT FEATURE_TYPE Tester_PASSED   NO_LOGGING 
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_5 (Disabled) Nuker"   INPUT FEATURE_TYPE Tester_PASSED
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SharePointOnlineConnector_5_<Rejected> INPUT FEATURE_TYPE SharePointOnlineConnector_5_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SharePointOnlineConnector_5<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_2 (Disabled) Nuker"   INPUT FEATURE_TYPE Creator_CREATED
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_2_OUTPUT Disabled Nuker -1 16"   INPUT FEATURE_TYPE SharePointOnlineConnector_2_OUTPUT   NO_LOGGING 
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SharePointOnlineConnector_2_<Rejected> INPUT FEATURE_TYPE SharePointOnlineConnector_2_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SharePointOnlineConnector_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE PATH_PATH_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "path_windows" "path_windows" "" "buffer" "NO_OP" }      ATTR_ACTION { "path_filename" "path_filename" "" "buffer" "NO_OP" }      ATTR_ACTION { "path_directory_windows" "path_directory_windows" "" "buffer" "NO_OP" }      ATTR_ACTION { "path_rootname" "path_rootname" "" "buffer" "REMOVE" }      ATTR_ACTION { "path_unix" "path_unix" "" "buffer" "REMOVE" }      ATTR_ACTION { "path_extension" "path_extension" "" "buffer" "REMOVE" }      ATTR_ACTION { "path_directory_unix" "path_directory_unix" "" "buffer" "REMOVE" }      ATTR_ACTION { "path_type" "path_type" "" "varchar<openparen>10<closeparen>" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeManager_OUTPUT   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_0_llG+vd7T7nc=   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_1_PxJ3LejZikY=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager_OUTPUT_1_PxJ3LejZikY= Disabled Nuker -1 15"   INPUT FEATURE_TYPE AttributeManager_OUTPUT_1_PxJ3LejZikY=   NO_LOGGING 
+# -------------------------------------------------------------------------
+# If we're doing LAST N features, then the multiplier comes in as 0.
+# If we're doing First N, multiplier is -1.
+# For RANDOM, we need to treat LAST N as if it was first N (i.e. have a -1)
+# That is what the ? : does in the rate multiplier.
+INCLUDE [ if { {-1} == {0} && {ORIGINAL} == {ORIGINAL} } {              puts "MACRO REAL_MODE LAST"; 	         puts "MACRO REAL_RATE 10"; 	      } else {              puts "MACRO REAL_MODE ORIGINAL";              puts "MACRO REAL_RATE [expr 10 * ( -1 ? -1 : -1 ) ]"; 	      } ]
+FACTORY_DEF {*} SamplingFactory    FACTORY_NAME { Sampler }    COMMAND_PARM_EVALUATION SINGLE_PASS    SAMPLE_RATE { $(REAL_RATE) }    SAMPLE_ORDER { $(REAL_MODE) }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_llG+vd7T7nc=    OUTPUT { SAMPLED FEATURE_TYPE ___SAMPLED___ }
+# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
+# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Sampler_Sampled }    INPUT FEATURE_TYPE ___SAMPLED___    OUTPUT { FEATURE_TYPE Sampler_SAMPLED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector (Disabled) Nuker"   INPUT FEATURE_TYPE Sampler_SAMPLED
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SharePointOnlineConnector_<Rejected> INPUT FEATURE_TYPE SharePointOnlineConnector_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SharePointOnlineConnector<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureJoiner (Disabled) Nuker"   INPUT FEATURE_TYPE AttributeManager_OUTPUT_1_PxJ3LejZikY=   INPUT FEATURE_TYPE SharePointOnlineConnector_2_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureJoiner_UNJOINED_LEFT Disabled Nuker -1 37"   INPUT FEATURE_TYPE FeatureJoiner_UNJOINED_LEFT   NO_LOGGING 
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureJoiner_<Rejected> INPUT FEATURE_TYPE FeatureJoiner_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureJoiner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SharePointOnlineConnector_3 (Disabled) Nuker"   INPUT FEATURE_TYPE FeatureJoiner_UNJOINED_LEFT
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SharePointOnlineConnector_3_<Rejected> INPUT FEATURE_TYPE SharePointOnlineConnector_3_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SharePointOnlineConnector_3<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

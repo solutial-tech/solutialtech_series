@@ -1,0 +1,1234 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "D:\Program Files\FME\2024\2024-2-b24783\fme.exe" D:\gitHub\SolutialTech\2024\12\sharepoint-fme\3-workspace\1-shp_filtro_rr.fmw
+#          --SourceDataset_SHAPEFILE "D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\BR_Municipios_2022\BR_Municipios_2022.shp"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="7983.79 768.346"
+#!   DOC_TOP_LEFT="-6858.1 -827.15"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24783"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="501798e0-3c41-414b-9035-a1eea0f4b117"
+#!   FME_DOCUMENT_PRIORGUID="b276b2ad-8d9e-4898-bb60-e5090b869ea1,ccafd7f2-ed52-4f4c-93cb-56608e5797ba,4371fa4a-a8ac-44fb-bb87-c9323396a5ff,edf974b5-1432-4e16-98b0-b977db4b79ad,a50e7f47-7c22-489c-afa0-9b62734f4f51,111e54ea-97fd-4bda-96c4-43da039411d2"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY="14&lt;solidus&gt;12&lt;solidus&gt;2024,Thiago&lt;space&gt;Brigag&lt;u00e3&gt;o,Cria&lt;u00e7&gt;&lt;u00e3&gt;o&lt;space&gt;do&lt;space&gt;Workspace"
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+#!   LAST_SAVE_DATE="2024-12-15T12:16:30"
+#!   LOG_FILE="$(WORKSPACE_NAME).log"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="Solutialtech - FME &amp; Sharepoint"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-3766.84 292.342"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="93"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="SHAPEFILE"
+#!   DATASET="$(SourceDataset_SHAPEFILE)"
+#!   KEYWORD="SHAPEFILE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="shapefile_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id long multi_reader_id long multi_reader_keyword varchar(50) multi_reader_type varchar(50) shape_geometry_error varchar(254) shapefile_type varchar(30)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SHAPEFILE_IN_ENCODING"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shapefile_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_first_feature"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="BR_Municipios_2022"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="-5854.3826776280803 -399.24754549071946"
+#!   BOUNDING_RECT="-5854.3826776280803 -399.24754549071946 665.13448442723211 65"
+#!   ORDER="500000000000006"
+#!   COLLAPSED="false"
+#!   KEYWORD="SHAPEFILE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CD_MUN" ATTR_TYPE="varchar(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NM_MUN" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SIGLA_UF" ATTR_TYPE="varchar(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AREA_KM2" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="SHAPEFILE_1"
+#!   OVERRIDE="-SHAPEFILE_1_DATASET"
+#!   DATASET="SHAPEFILE_1/BR_Municipios_2022.shp"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="FeatureWriter"
+#!   OVERRIDE="--FeatureWriterDataset_FeatureWriter"
+#!   DATASET="D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\shp_estado_municipio\@Value(SIGLA_UF)\@Value(filename).zip"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_SHAPEFILE INCLUDE_WEB_BROWSER%Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source Esri Shapefile(s):"
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\BR_Municipios_2022\BR_Municipios_2022.shp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiU291cmNlRGF0YXNldF9TSEFQRUZJTEUiLCJwcm9tcHQiOiJTb3VyY2UgRXNyaSBTaGFwZWZpbGUocyk6IiwidmFsdWVUeXBlIjoic3RyaW5nIiwicmVxdWlyZWQiOnRydWUsImRlZmF1bHRWYWx1ZSI6IkQ6XFxnaXRIdWJcXFNvbHV0aWFsVGVjaFxcMjAyNFxcMTJcXHNoYXJlcG9pbnQtZm1lXFwxLWRhdGFzZXRcXEJSX011bmljaXBpb3NfMjAyMlxcQlJfTXVuaWNpcGlvc18yMDIyLnNocCIsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwic2VsZWN0TXVsdGlwbGUiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsImFjY2Vzc01vZGUiOiJyZWFkIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2hwIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFNoYXBlZmlsZXMiLCJmaWx0ZXIiOlsiKi5zaHoiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XX1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_SHAPEFILE" 
+#!   DEFAULT_VALUE="D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\BR_Municipios_2022\BR_Municipios_2022.shp"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_SHAPEFILE INCLUDE_WEB_BROWSER%Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source Esri Shapefile(s):"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="11"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gravação dos arquivos shapefiles separados por municípios&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="264.29033043783789 -272.21729216739647"
+#!   TOP_LEFT="264.29033043783789 -272.21729216739647"
+#!   BOTTOM_RIGHT="926.79645549908855 -273.21729216739647"
+#!   BOUNDING_RECT="264.29033043783789 -272.21729216739647 662.5061250612506 1"
+#!   ORDER="500000000000036"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{65b74cab-bf07-4423-bb22-a895b14a5315}"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="6"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="29"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copia o arquivo para não sobrepor os valores&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3648.5472416260436 -349.9307141602348"
+#!   TOP_LEFT="-3648.5472416260436 -349.9307141602348"
+#!   BOTTOM_RIGHT="-3131.7945272238994 -504.93196417273492"
+#!   BOUNDING_RECT="-3648.5472416260436 -349.9307141602348 516.75271440214397 155.00125001250012"
+#!   ORDER="500000000000060"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d8f65269-c08c-41be-84ee-8e6da7b78bf5}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="23"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="33"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Remove acentuação do atributo selecionado&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-2746.6407723526199 -357.94089120103411"
+#!   TOP_LEFT="-2746.6407723526199 -357.94089120103411"
+#!   BOTTOM_RIGHT="-2173.1980379252755 -358.94089120103411"
+#!   BOUNDING_RECT="-2746.6407723526199 -357.94089120103411 573.44273442734425 1"
+#!   ORDER="500000000000061"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{2511a60e-7d0a-442e-836a-b42fb26dd7d6}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="17"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="34"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Substitui &apos; por &amp;lt;nada&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1900.8867218447729 -394.87077619480152"
+#!   TOP_LEFT="-1900.8867218447729 -394.87077619480152"
+#!   BOTTOM_RIGHT="-1391.1653277558321 -499.8715262023016"
+#!   BOUNDING_RECT="-1900.8867218447729 -394.87077619480152 509.72139408894088 105.00075000750007"
+#!   ORDER="500000000000062"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{50698b87-a814-4ad8-96c3-a1526c42fd83}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="22"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="35"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Substitui &amp;lt;espaço&amp;gt; por _&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1241.6404989477614 -351.18754366355154"
+#!   TOP_LEFT="-1241.6404989477614 -351.18754366355154"
+#!   BOTTOM_RIGHT="-805.65031092088111 -352.18754366355154"
+#!   BOUNDING_RECT="-1241.6404989477614 -351.18754366355154 435.99018802688028 1"
+#!   ORDER="500000000000063"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{46c0c5d2-e638-4809-a17a-079dfec7a474}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="18"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="36"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Passa o case para lowercase&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-599.98152963817392 -344.46704635105152"
+#!   TOP_LEFT="-599.98152963817392 -344.46704635105152"
+#!   BOTTOM_RIGHT="-163.99134161129365 -345.46704635105152"
+#!   BOUNDING_RECT="-599.98152963817392 -344.46704635105152 435.99018802688028 1"
+#!   ORDER="500000000000064"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{699e4cb9-352a-4c06-a858-eb45d9a3bd4c}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="19"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="37"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SIGLA_UF = SP&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-4627.8877754188461 -337.79563522381602"
+#!   TOP_LEFT="-4627.8877754188461 -337.79563522381602"
+#!   BOTTOM_RIGHT="-4191.8975873919662 -338.79563522381602"
+#!   BOUNDING_RECT="-4627.8877754188461 -337.79563522381602 435.99018802688028 1"
+#!   ORDER="500000000000065"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{b97f1e22-002f-4439-a468-097cc5815ab7}"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="12"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="9"
+#!   COMMENT_VALUE="General&amp;nbsp;Parameters:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Reader&amp;nbsp;Type:&amp;nbsp;Esri&amp;nbsp;Shapefile&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Shapefile&amp;nbsp;Name:&amp;nbsp;BR_Municipios_2022&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Reader:&amp;nbsp;BR_Municipios_2022&amp;nbsp;[SHAPEFILE]&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Allowed&amp;nbsp;Geometries:&amp;nbsp;shapefile_polygon&lt;br&gt;Exposed Attributes:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CD_MUN&lt;/td&gt;&lt;td&gt;varchar(7)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;NM_MUN&lt;/td&gt;&lt;td&gt;varchar(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SIGLA_UF&lt;/td&gt;&lt;td&gt;varchar(2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AREA_KM2&lt;/td&gt;&lt;td&gt;double&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+#!   POSITION="-6858.104225107485 -110.92475884154305"
+#!   TOP_LEFT="-6858.104225107485 -110.92475884154305"
+#!   BOTTOM_RIGHT="-6064.5421019862533 -109.92475884154305"
+#!   BOUNDING_RECT="-6858.104225107485 -110.92475884154305 793.56212312123125 -1"
+#!   ORDER="500000000000035"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{fa3093d5-9d86-4629-93b5-6fb701435bdd}"
+#!   ANCHORED_NODE="5"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="8"
+#!   NAME="1.1 | Leitura SHP de Municípios"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-5986.422603474819 -83.781897412930363"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-5024.1903886507371 -826.62116943750061"
+#!   BOUNDING_RECT="-5986.422603474819 -83.781897412930363 962.23221482408144 742.83927202457028"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="5 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="10"
+#!   NAME="1.2| Gravação SHP "
+#!   DESCRIPTION=""
+#!   TOP_LEFT="42.912656817110474 -63.083726053378513"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="1125.6832998437508 -816.54042346875065"
+#!   BOUNDING_RECT="42.912656817110474 -63.083726053378513 1082.7706430266403 753.4566974153721"
+#!   STICKY="true"
+#!   COLOUR="0.33333333333333331,0.66666666666666663,0,0.6470588235294118"
+#!   CONTENTS="11 6 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="16"
+#!   NAME="2.1 | Filtragem da UF RR"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-4952.920954406346 -67.204973125000052"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-3850.5629811542867 -827.14987989040719"
+#!   BOUNDING_RECT="-4952.920954406346 -67.204973125000052 1102.3579732520595 759.94490676540715"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="37 12 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="30"
+#!   NAME="2.2 | Copia de Atributo"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-3803.9017244571296 -60.484475812500051"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-2940.2175742187524 -823.26092078125066"
+#!   BOUNDING_RECT="-3803.9017244571296 -60.484475812500051 863.68415023837724 762.77644496875064"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="29 23 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="31"
+#!   NAME="2.3 | Remove Acentos"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-2888.1856003301787 -58.804063941406611"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-2024.5014500918014 -821.58050891015728"
+#!   BOUNDING_RECT="-2888.1856003301787 -58.804063941406611 863.68415023837724 762.77644496875064"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="33 17 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="32"
+#!   NAME="2.4 | Tratamento do Texto"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1960.7508080157263 -58.803644746094477"
+#!   ORDER="500000000000043.25"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="-33.602486562499962 -821.58008971484514"
+#!   BOUNDING_RECT="-1960.7508080157263 -58.803644746094477 1927.1483214532263 762.77644496875064"
+#!   STICKY="true"
+#!   COLOUR="1,0.66666666666666663,0,0.75686274509803919"
+#!   CONTENTS="35 36 18 21 22 19 27 34 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="FeatureWriter"
+#!   VERSION="0"
+#!   POSITION="264.29033043783789 -457.21854217989659"
+#!   BOUNDING_RECT="264.29033043783789 -457.21854217989659 662.50662506625099 65"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_types{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_types{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="D:&lt;backslash&gt;gitHub&lt;backslash&gt;SolutialTech&lt;backslash&gt;2024&lt;backslash&gt;12&lt;backslash&gt;sharepoint-fme&lt;backslash&gt;1-dataset&lt;backslash&gt;shp_estado_municipio&lt;backslash&gt;&lt;at&gt;Value&lt;openparen&gt;SIGLA_UF&lt;closeparen&gt;&lt;backslash&gt;&lt;at&gt;Value&lt;openparen&gt;filename&lt;closeparen&gt;.zip"/>
+#!     <XFORM_PARM PARM_NAME="DATASET_ATTR" PARM_VALUE="_dataset"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE_LIST_ATTR" PARM_VALUE="_feature_types"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="SHAPEFILE"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="RUNTIME_MACROS,ENCODING&lt;comma&gt;utf-8&lt;comma&gt;SPATIAL_INDEXES&lt;comma&gt;NONE&lt;comma&gt;COMPRESSED_FILE&lt;comma&gt;No&lt;comma&gt;DIMENSION&lt;comma&gt;AUTO&lt;comma&gt;DATETIME_STORAGE&lt;comma&gt;TIMESTAMP_STRING&lt;comma&gt;ADVANCED&lt;comma&gt;&lt;comma&gt;SURFACE_SOLID_STORAGE&lt;comma&gt;PATCH&lt;comma&gt;MEASURES_AS_Z&lt;comma&gt;No&lt;comma&gt;DATASET_SPLITTING&lt;comma&gt;Yes&lt;comma&gt;ENFORCE_ATTRIBUTE_LIMIT&lt;comma&gt;No&lt;comma&gt;DESTINATION_DATASETTYPE_VALIDATION&lt;comma&gt;Yes&lt;comma&gt;REQUIRE_FIRST_ATTRNAME_ALPHA&lt;comma&gt;Yes&lt;comma&gt;PERMIT_NONASCII_FIRST_ATTRNAME&lt;comma&gt;Yes&lt;comma&gt;NETWORK_AUTHENTICATION&lt;comma&gt;,METAFILE,SHAPEFILE"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="SHAPEFILE_DIMENSION,&quot;OPTIONAL LOOKUP_CHOICE &quot;&quot;Dimension From First Feature&quot;&quot;,AUTO%&quot;&quot;2D&quot;&quot;,2D%&quot;&quot;2D + Measures&quot;&quot;,2DM%&quot;&quot;3D + Measures&quot;&quot;,3DM&quot;,SHAPEFILE&lt;space&gt;Output&lt;space&gt;Dimension,SHAPEFILE_ENCODING,&quot;OPTIONAL STRING_OR_ENCODING fme-system%*&quot;,SHAPEFILE&lt;space&gt;Character&lt;space&gt;Encoding,SHAPEFILE_REQUIRE_FIRST_ATTRNAME_ALPHA,&quot;OPTIONAL NO_EDIT TEXT&quot;,SHAPEFILE&lt;space&gt;,SHAPEFILE_COMPRESSED_FILE,&quot;OPTIONAL CHECKBOX Yes%No&quot;,SHAPEFILE&lt;space&gt;Create&lt;space&gt;Compressed&lt;space&gt;Shapefile&lt;space&gt;&lt;openparen&gt;.shz&lt;closeparen&gt;,SHAPEFILE_DATETIME_STORAGE,&quot;OPTIONAL LOOKUP_CHOICE &quot;&quot;As String &lt;openparen&gt;FME Datetime Format&lt;closeparen&gt;&quot;&quot;,TIMESTAMP_STRING%&quot;&quot;Date &lt;openparen&gt;YYYYMMDD only&lt;closeparen&gt;&quot;&quot;,DATE_ONLY&quot;,SHAPEFILE&lt;space&gt;Datetime&lt;space&gt;Type&lt;space&gt;Storage,SHAPEFILE_SPATIAL_INDEXES,&quot;OPTIONAL LOOKUP_CHOICE None,NONE%&quot;&quot;ArcGIS Compatible Spatial Index (.sbn)&quot;&quot;,SBN%&quot;&quot;QGIS and MapServer Spatial Index (.qix)&quot;&quot;,QIX%&quot;&quot;Both ArcGIS and QGIS/MapServer Compatible (.sbn&lt;space&gt;and&lt;space&gt;.qix)&quot;&quot;,BOTH&quot;,SHAPEFILE&lt;space&gt;Create&lt;space&gt;Spatial&lt;space&gt;Index:,SHAPEFILE_DESTINATION_DATASETTYPE_VALIDATION,&quot;OPTIONAL NO_EDIT TEXT&quot;,SHAPEFILE&lt;space&gt;,SHAPEFILE_ENFORCE_ATTRIBUTE_LIMIT,&quot;OPTIONAL CHOICE Yes%No&quot;,SHAPEFILE&lt;space&gt;Enforce&lt;space&gt;Number&lt;space&gt;of&lt;space&gt;Attributes&lt;space&gt;Limit,SHAPEFILE_ADVANCED,&quot;OPTIONAL DISCLOSUREGROUP SURFACE_SOLID_STORAGE%MEASURES_AS_Z%DATASET_SPLITTING%ENFORCE_ATTRIBUTE_LIMIT&quot;,SHAPEFILE&lt;space&gt;Advanced,SHAPEFILE_DATASET_SPLITTING,&quot;OPTIONAL CHECKBOX Yes%No&quot;,SHAPEFILE&lt;space&gt;Split&lt;space&gt;Dataset&lt;space&gt;into&lt;space&gt;2GB&lt;space&gt;Files,SHAPEFILE_PERMIT_NONASCII_FIRST_ATTRNAME,&quot;OPTIONAL NO_EDIT TEXT&quot;,SHAPEFILE&lt;space&gt;,SHAPEFILE_SURFACE_SOLID_STORAGE,&quot;OPTIONAL LOOKUP_CHOICE Multipatch,PATCH%Polygon,POLYGON&quot;,SHAPEFILE&lt;space&gt;Surface&lt;space&gt;and&lt;space&gt;Solid&lt;space&gt;Storage,SHAPEFILE_MEASURES_AS_Z,&quot;OPTIONAL CHOICE Yes%No&quot;,SHAPEFILE&lt;space&gt;Treat&lt;space&gt;Elevation&lt;space&gt;as&lt;space&gt;Measures,SHAPEFILE_NETWORK_AUTHENTICATION,&quot;OPTIONAL AUTHENTICATOR CONTAINER%ACTIVEDISCLOSUREGROUP%CONTAINER_TITLE%Use Network Authentication%PROMPT_TYPE%NETWORK&quot;,SHAPEFILE&lt;space&gt;Use&lt;space&gt;Network&lt;space&gt;Authentication"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MORE_SUMMARY_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NO_OUTPUT_PORTS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS" PARM_VALUE="&quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="NO_OUTPUT_PORTS"/>
+#!     <XFORM_PARM PARM_NAME="PER_EACH_INPUT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_ADVANCED" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_COMPRESSED_FILE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_DATASET_SPLITTING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_DATETIME_STORAGE" PARM_VALUE="TIMESTAMP_STRING"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_DESTINATION_DATASETTYPE_VALIDATION" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_DIMENSION" PARM_VALUE="AUTO"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_ENCODING" PARM_VALUE="utf-8"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_ENFORCE_ATTRIBUTE_LIMIT" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_MEASURES_AS_Z" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_NETWORK_AUTHENTICATION" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_PERMIT_NONASCII_FIRST_ATTRNAME" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_REQUIRE_FIRST_ATTRNAME_ALPHA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_SPATIAL_INDEXES" PARM_VALUE="NONE"/>
+#!     <XFORM_PARM PARM_NAME="SHAPEFILE_SURFACE_SOLID_STORAGE" PARM_VALUE="PATCH"/>
+#!     <XFORM_PARM PARM_NAME="SUMMARY_ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TOTAL_FEATURES_WRITTEN_ATTR" PARM_VALUE="_total_features_written"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_DIRECTIVES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_FEATURE_TYPE_PARAMS" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;SIGLA_UF&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;NM_MUN&lt;closeparen&gt;:BR_Municipios_2022,ftp_feature_type_name_exp,&lt;at&gt;Value&lt;openparen&gt;SIGLA_UF&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;NM_MUN&lt;closeparen&gt;,ftp_writer,SHAPEFILE,ftp_geometry,shapefile_first_feature,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,&lt;lt&gt;lt&lt;gt&gt;Unused&lt;lt&gt;gt&lt;gt&gt;,ftp_attribute_source,0,ftp_user_attributes,NM_MUN&lt;comma&gt;varchar&lt;lt&gt;openparen&lt;gt&gt;50&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;filename&lt;comma&gt;varchar&lt;lt&gt;openparen&lt;gt&gt;50&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;CD_MUN&lt;comma&gt;varchar&lt;lt&gt;openparen&lt;gt&gt;7&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;SIGLA_UF&lt;comma&gt;varchar&lt;lt&gt;openparen&lt;gt&gt;2&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;AREA_KM2&lt;comma&gt;double,ftp_user_attribute_values,&lt;comma&gt;&lt;comma&gt;&lt;comma&gt;&lt;comma&gt;,ftp_format_parameters,shape_layer_group&lt;comma&gt;&lt;comma&gt;shape_dimension&lt;comma&gt;AUTO"/>
+#!     <XFORM_PARM PARM_NAME="WRITER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_METAFILE" PARM_VALUE="ATTRIBUTE_CASE,FIRST_LETTER,ATTRIBUTE_INVALID_CHARS,.,ATTRIBUTE_LENGTH,10,ATTR_TYPE_MAP,varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varbinary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_binary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;varchar&lt;openparen&gt;254&lt;closeparen&gt;&lt;comma&gt;fme_buffer&lt;comma&gt;varchar&lt;openparen&gt;254&lt;closeparen&gt;&lt;comma&gt;fme_binarybuffer&lt;comma&gt;varchar&lt;openparen&gt;254&lt;closeparen&gt;&lt;comma&gt;fme_xml&lt;comma&gt;varchar&lt;openparen&gt;254&lt;closeparen&gt;&lt;comma&gt;fme_json&lt;comma&gt;datetime&lt;comma&gt;fme_datetime&lt;comma&gt;varchar&lt;openparen&gt;12&lt;closeparen&gt;&lt;comma&gt;fme_time&lt;comma&gt;date&lt;comma&gt;fme_date&lt;comma&gt;double&lt;comma&gt;fme_real64&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;31&lt;comma&gt;15&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_real64&lt;comma&gt;double&lt;comma&gt;fme_uint32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;11&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint32&lt;comma&gt;float&lt;comma&gt;fme_real32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;15&lt;comma&gt;7&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_real32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;20&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int64&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;20&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint64&lt;comma&gt;logical&lt;comma&gt;fme_boolean&lt;comma&gt;short&lt;comma&gt;fme_int16&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;6&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int16&lt;comma&gt;short&lt;comma&gt;fme_int8&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;4&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int8&lt;comma&gt;short&lt;comma&gt;fme_uint8&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;4&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint8&lt;comma&gt;long&lt;comma&gt;fme_int32&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;11&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_int32&lt;comma&gt;long&lt;comma&gt;fme_uint16&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;6&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint16&lt;comma&gt;&lt;quote&gt;number&lt;openparen&gt;width&lt;comma&gt;decimal&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;fme_decimal&lt;openparen&gt;width&lt;comma&gt;decimal&lt;closeparen&gt;&lt;quote&gt;,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,&lt;quote&gt;:?*&lt;lt&gt;&lt;gt&gt;|,FEATURE_TYPE_LENGTH,0,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile&lt;backslash&gt;SHAPEFILE.fmf,FORMAT_NAME,SHAPEFILE,GEOM_MAP,shapefile_point&lt;comma&gt;fme_point&lt;comma&gt;shapefile_multipoint&lt;comma&gt;fme_point&lt;comma&gt;shapefile_point&lt;comma&gt;fme_text&lt;comma&gt;shapefile_line&lt;comma&gt;fme_line&lt;comma&gt;shapefile_line&lt;comma&gt;fme_arc&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_polygon&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_rectangle&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_rounded_rectangle&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_ellipse&lt;comma&gt;shapefile_multipatch&lt;comma&gt;fme_surface&lt;comma&gt;shapefile_multipatch&lt;comma&gt;fme_solid&lt;comma&gt;shapefile_first_feature&lt;comma&gt;fme_no_geom&lt;comma&gt;shapefile_null&lt;comma&gt;fme_no_geom&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_raster&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_point_cloud&lt;comma&gt;shapefile_polygon&lt;comma&gt;fme_voxel_grid&lt;comma&gt;shapefile_first_feature&lt;comma&gt;fme_collection,READER_ATTR_INDEX_TYPES,Indexed,READER_FORMAT_TYPE,DYNAMIC,READER_USES_DEF,yes,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,no,WORKBENCH_CANNED_SCHEMA,,WRITER,SHAPEFILE,WRITER_ATTR_INDEX_TYPES,Indexed,WRITER_DEFLINE_PARMS,&lt;quote&gt;GUI&lt;space&gt;NAMEDGROUP&lt;space&gt;shape_layer_group&lt;space&gt;shape_dimension&lt;space&gt;Shapefile&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;LOOKUP_CHOICE&lt;space&gt;shape_dimension&lt;space&gt;Dimension&lt;lt&gt;space&lt;gt&gt;From&lt;lt&gt;space&lt;gt&gt;First&lt;lt&gt;space&lt;gt&gt;Feature&lt;comma&gt;AUTO%2D&lt;comma&gt;2D%2D&lt;lt&gt;space&lt;gt&gt;+&lt;lt&gt;space&lt;gt&gt;Measures&lt;comma&gt;2DM%3D&lt;lt&gt;space&lt;gt&gt;+&lt;lt&gt;space&lt;gt&gt;Measures&lt;comma&gt;3DM&lt;space&gt;Output&lt;space&gt;Dimension&lt;quote&gt;&lt;comma&gt;AUTO,WRITER_DEF_LINE_TEMPLATE,&lt;opencurly&gt;FME_GEN_GROUP_NAME&lt;closecurly&gt;&lt;comma&gt;shapefile_type&lt;comma&gt;&lt;opencurly&gt;FME_GEN_GEOMETRY&lt;closecurly&gt;&lt;comma&gt;shape_dimension&lt;comma&gt;AUTO,WRITER_FORMAT_PARAMETER,DEFAULT_GEOMETRY_TYPE&lt;comma&gt;shapefile_first_feature&lt;comma&gt;ADVANCED_PARMS&lt;comma&gt;&lt;quote&gt;SHAPEFILE_OUT_SURFACE_SOLID_STORAGE&lt;space&gt;SHAPEFILE_OUT_MEASURES_AS_Z&lt;quote&gt;&lt;comma&gt;FEATURE_TYPE_NAME&lt;comma&gt;Shapefile&lt;comma&gt;FEATURE_TYPE_DEFAULT_NAME&lt;comma&gt;Shapefile1&lt;comma&gt;READER_DATASET_HINT&lt;comma&gt;&lt;quote&gt;Select&lt;space&gt;the&lt;space&gt;Esri&lt;space&gt;Shapefile&lt;openparen&gt;s&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;WRITER_DATASET_HINT&lt;comma&gt;&lt;quote&gt;Specify&lt;space&gt;a&lt;space&gt;folder&lt;space&gt;for&lt;space&gt;the&lt;space&gt;Esri&lt;space&gt;Shapefile&lt;quote&gt;,WRITER_FORMAT_TYPE,DYNAMIC,WRITER_HAS_DEFLINE_ATTRS,yes,WRITER_USES_DEF,yes"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureWriter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="Tester"
+#!   VERSION="4"
+#!   POSITION="-4627.8877754188461 -472.79638523131609"
+#!   BOUNDING_RECT="-4627.8877754188461 -472.79638523131609 436 65"
+#!   ORDER="500000000000056"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="PER_OUTPUT_PORT"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;SIGLA_UF&lt;closeparen&gt; = RR"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="StringDiacriticRemover"
+#!   VERSION="4"
+#!   POSITION="-2746.6407723526199 -542.94214121353423"
+#!   BOUNDING_RECT="-2746.6407723526199 -542.94214121353423 573.453125 65"
+#!   ORDER="500000000000047"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="MOD_ATTRS" PARM_VALUE="filename"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringDiacriticRemover"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="StringReplacer"
+#!   VERSION="5"
+#!   POSITION="-1241.6404989477614 -536.18879367605166"
+#!   BOUNDING_RECT="-1241.6404989477614 -536.18879367605166 436 65"
+#!   ORDER="500000000000048"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="_"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="filename"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="StringCaseChanger"
+#!   VERSION="6"
+#!   POSITION="-599.98152963817392 -529.46829636355164"
+#!   BOUNDING_RECT="-599.98152963817392 -529.46829636355164 436 65"
+#!   ORDER="500000000000049"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="SELECTED"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="filename"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CHANGE_TYPE" PARM_VALUE="lower"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringCaseChanger"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="AttributeCopier"
+#!   VERSION="7"
+#!   POSITION="-3598.1435117822939 -534.52873433398486"
+#!   BOUNDING_RECT="-3598.1435117822939 -534.52873433398486 436 65"
+#!   ORDER="500000000000059"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="NM_MUN filename COPY "/>
+#!     <XFORM_PARM PARM_NAME="MISSING_INPUT_ATTRS" PARM_VALUE="REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCopier"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="22"
+#!   TYPE="StringReplacer"
+#!   VERSION="5"
+#!   POSITION="-1860.5637379697728 -542.90929098855167"
+#!   BOUNDING_RECT="-1860.5637379697728 -542.90929098855167 436 65"
+#!   ORDER="500000000000048"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NM_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="filename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CD_MUN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SIGLA_UF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="AREA_KM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;apos&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="filename"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 BR_Municipios_2022"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 Input"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_SHAPEFILE_1,SHAPEFILE_IN_READER_PARAMETERS_SHAPEFILE_1,SHAPEFILE_IN_ENCODING_SHAPEFILE_1,SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1,SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1,SHAPEFILE_IN_ADVANCED_SHAPEFILE_1,SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1,SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1,SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1,SHAPEFILE_IN_USE_STRING_FOR_NUMERIC_STORAGE_SHAPEFILE_1,SHAPEFILE_IN_ALLOW_MISMATCHED_SHZ_BASENAME_SHAPEFILE_1,SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1,SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1,SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1,SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_SHAPEFILE D:\gitHub\SolutialTech\2024\12\sharepoint-fme\1-dataset\BR_Municipios_2022\BR_Municipios_2022.shp
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_SHAPEFILE$encode)} == {}} { puts_real {Parameter 'SourceDataset_SHAPEFILE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} SHAPEFILE
+MULTI_READER_KEYWORD{0} SHAPEFILE_1
+MULTI_READER_GEN_DIRECTIVES{0} CLIP_TO_ENVELOPE,NO,ALLOW_MISMATCHED_SHZ_BASENAME,No,TRIM_PRECEDING_SPACES,Yes,ENCODING,fme-source-encoding,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SEARCH_ENVELOPE_MINY,0,DONUT_DETECTION,ORIENTATION,USE_SEARCH_ENVELOPE,NO,USE_STRING_FOR_NUMERIC_STORAGE,No,SEARCH_ENVELOPE_MAXY,0,ADVANCED,,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,SEARCH_ENVELOPE_MINX,0,REPORT_BAD_GEOMETRY,No,EXPOSE_ATTRS_GROUP,,READ_NUMERIC_PADDING_AS,ZERO,SEARCH_ENVELOPE_MAXX,0,READ_BLANK_AS,MISSING,MEASURES_AS_Z,No,_MERGE_SCHEMAS,YES,SHAPEFILE_EXPOSE_FORMAT_ATTRS,
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SHAPEFILE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SHAPEFILE SHAPEFILE_1
+# ============================================================================
+# The following GUI line prompts for the source shapefiles
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_SHAPEFILE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SHAPEFILE SHAPEFILE_1
+DEFAULT_MACRO SourceDataset_SHAPEFILE_1 $(SourceDataset_SHAPEFILE)
+GUI MULTIFILE SourceDataset_SHAPEFILE_1 Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):
+DEFAULT_MACRO SHAPEFILE_IN_READER_PARAMETERS_SHAPEFILE_1 
+GUI OPTIONAL DISCLOSUREGROUP SHAPEFILE_IN_READER_PARAMETERS_SHAPEFILE_1 SHAPEFILE_IN_ENCODING_SHAPEFILE_1%SHAPEFILE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING Reader Parameters
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for reading the shapefile, overrides dbf file LDID or .cpg
+# file if present.
+DEFAULT_MACRO SHAPEFILE_IN_ENCODING_SHAPEFILE_1 fme-source-encoding
+SHAPEFILE_1_ENCODING "$(SHAPEFILE_IN_ENCODING_SHAPEFILE_1)"
+GUI STRING_OR_ENCODING SHAPEFILE_IN_ENCODING_SHAPEFILE_1 fme-source-encoding%UTF-8%ISO*%Big5%ibm*%Shift_JIS%GB2312%GBK%win*%KSC_5601%macintosh%x-mac* Character Encoding
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as binary or as
+# bound number fields (ActualDBFrepresentation)
+DEFAULT_MACRO SHAPEFILE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_SHAPEFILE_1 STANDARD_TYPES
+SHAPEFILE_1_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(SHAPEFILE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_SHAPEFILE_1)"
+#Note: Using the search envelope requires the shape index files (.sbnand.sbx)
+DEFAULT_MACRO SHAPEFILE_IN_EXPOSE_ATTRS_GROUP_SHAPEFILE_1 
+SHAPEFILE_1_EXPOSE_ATTRS_GROUP "$(SHAPEFILE_IN_EXPOSE_ATTRS_GROUP_SHAPEFILE_1)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1 NO
+SHAPEFILE_1_USE_SEARCH_ENVELOPE "$(SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1)"
+GUI ACTIVEDISCLOSUREGROUP SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1 SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1%SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_METHOD%SHAPEFILE_IN_SEARCH_METHOD_FILTER%SHAPEFILE_IN_SEARCH_ORDER%SHAPEFILE_IN_SEARCH_FEATURE%SHAPEFILE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1 <Unused>, 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1 
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1)"
+GUI OPTIONAL COORDSYS SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1 <Unused>,NO 
+DEFAULT_MACRO SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1 NO
+SHAPEFILE_1_CLIP_TO_ENVELOPE "$(SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1)"
+GUI OPTIONAL CHECKBOX SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO SHAPEFILE_IN_ADVANCED_SHAPEFILE_1 
+GUI OPTIONAL DISCLOSUREGROUP SHAPEFILE_IN_ADVANCED_SHAPEFILE_1 SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1%SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1%SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1%SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1%SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1%SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1%SHAPEFILE_IN_USE_STRING_FOR_NUMERIC_STORAGE_SHAPEFILE_1%SHAPEFILE_IN_ALLOW_MISMATCHED_SHZ_BASENAME_SHAPEFILE_1 Advanced
+DEFAULT_MACRO SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1 Yes
+SHAPEFILE_1_TRIM_PRECEDING_SPACES "$(SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1)"
+GUI CHOICE SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1 Yes%No Trim Preceding Spaces
+DEFAULT_MACRO SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1 ZERO
+SHAPEFILE_1_READ_NUMERIC_PADDING_AS "$(SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1 "\"Zero (0)\",ZERO"%Blank,BLANK Read Fully Padded Numeric Fields as:
+DEFAULT_MACRO SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1 MISSING
+SHAPEFILE_1_READ_BLANK_AS "$(SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1 Missing,MISSING%Null,NULL Read Blank Fields as:
+DEFAULT_MACRO SHAPEFILE_IN_USE_STRING_FOR_NUMERIC_STORAGE_SHAPEFILE_1 No
+SHAPEFILE_1_USE_STRING_FOR_NUMERIC_STORAGE "$(SHAPEFILE_IN_USE_STRING_FOR_NUMERIC_STORAGE_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_USE_STRING_FOR_NUMERIC_STORAGE_SHAPEFILE_1 Yes%No Read Floating Point Values as Strings:
+DEFAULT_MACRO SHAPEFILE_IN_ALLOW_MISMATCHED_SHZ_BASENAME_SHAPEFILE_1 No
+SHAPEFILE_1_ALLOW_MISMATCHED_SHZ_BASENAME "$(SHAPEFILE_IN_ALLOW_MISMATCHED_SHZ_BASENAME_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_ALLOW_MISMATCHED_SHZ_BASENAME_SHAPEFILE_1 Yes%No Allow Filenames in .shz to Differ From Archive:
+# ============================================================================
+# Option to use simple donut geometry creation, which is faster than the
+# original creation method, but less meticulous at detecting and correcting
+# geometric anomalies (i.e.holeswithinholes)
+DEFAULT_MACRO SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1 ORIENTATION
+SHAPEFILE_1_DONUT_DETECTION "$(SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1 "\"Orientation Only\",ORIENTATION"%"\"Orientation and Spatial Relationship\",SPATIAL" Donut Geometry Detection
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1 No
+SHAPEFILE_1_MEASURES_AS_Z "$(SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1)"
+GUI CHOICE SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1 Yes%No Treat Measures as Elevation
+# ============================================================================
+# The following keyword sets whether bad geometry should be reported via
+# the shape_geometry_errors attribute.
+DEFAULT_MACRO SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1 No
+SHAPEFILE_1_REPORT_BAD_GEOMETRY "$(SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1)"
+GUI CHOICE SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1 Yes%No Report Geometry Anomalies
+# ===========================================================================
+DEFAULT_MACRO SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1 
+SHAPEFILE_1_NETWORK_AUTHENTICATION "$(SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1)"
+GUI OPTIONAL AUTHENTICATOR SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO SHAPEFILE_IN_ATTRIBUTE_READING_SHAPEFILE_1 ALL
+SHAPEFILE_1_ATTRIBUTE_READING "$(SHAPEFILE_IN_ATTRIBUTE_READING_SHAPEFILE_1)"
+# ============================================================================
+SHAPEFILE_1_GENERATE_FME_BUILD_NUM 24783
+SHAPEFILE_1_DATASET "$(SourceDataset_SHAPEFILE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+MAPPING_FILE_ID Solutialtech<space>-<space>FME<space><amp><space>Sharepoint
+DEFAULT_MACRO DATASET_KEYWORD_SHAPEFILE_1 SHAPEFILE_1
+# -------------------------------------------------------------------------
+
+SHAPEFILE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+SHAPEFILE_1_DEF BR_Municipios_2022   shapefile_type               shapefile_polygon   CD_MUN                       varchar(7)   NM_MUN                       varchar(50)   SIGLA_UF                     varchar(2)   AREA_KM2                     double
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_SHAPEFILE_1)   INPUT FEATURE_TYPE *    ROUTE SHAPEFILE SHAPEFILE_1::BR_Municipios_2022 multi_reader_keyword,$(DATASET_KEYWORD_SHAPEFILE_1) TO FME_GENERIC ::BR_Municipios_2022 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+SHAPEFILE_1_MERGE_DEF SHAPEFILE_1::BR_Municipios_2022 EXACT BR_Municipios_2022
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "BR_Municipios_2022_SHAPEFILE_1 Splitter"    INPUT FEATURE_TYPE BR_Municipios_2022    OUTPUT FEATURE_TYPE BR_Municipios_2022_SHAPEFILE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE BR_Municipios_2022_SHAPEFILE_1    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>SIGLA_UF<closeparen>,Tester)" = RR ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeCopier }    INPUT  FEATURE_TYPE Tester_PASSED    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    MISSING_INPUT_ATTR_HANDLING { COPY REMOVE }    ATTR_ACTION { "NM_MUN" "filename" "COPY" "" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCopier_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringDiacriticRemover Input Input Collector"   INPUT FEATURE_TYPE AttributeCopier_OUTPUT   OUTPUT FEATURE_TYPE StringDiacriticRemover_Input
+MACRO StringDiacriticRemover_WORKSPACE_NAME StringDiacriticRemover
+MACRO $(StringDiacriticRemover_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(StringDiacriticRemover_WORKSPACE_NAME)_XFORMER_NAME StringDiacriticRemover
+MACRO $(StringDiacriticRemover_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(StringDiacriticRemover_WORKSPACE_NAME)_MOD_ATTRS filename
+INCLUDE_CUSTOM_TRANSFORMER_VER StringDiacriticRemover:4
+FACTORY_DEF * TeeFactory   FACTORY_NAME "StringDiacriticRemover Output Output Renamer/Nuker"   INPUT FEATURE_TYPE StringDiacriticRemover_Output   OUTPUT FEATURE_TYPE StringDiacriticRemover_Output
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer_2 }    INPUT  FEATURE_TYPE StringDiacriticRemover_Output    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { filename }    FIND_TEXT { "<apos>" }    REPLACE_TEXT { "" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_2_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer }    INPUT  FEATURE_TYPE StringReplacer_2_OUTPUT    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { filename }    FIND_TEXT { "<space>" }    REPLACE_TEXT { "_" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringValueFactory    FACTORY_NAME { StringCaseChanger }    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    FACTORY_MODE ATTRIBUTE_CASE_CHANGER    ATTRCHOICE { SELECTED }       ATTRLIST { filename }       CHANGE_TYPE { lower }    OUTPUT { OUTPUT FEATURE_TYPE StringCaseChanger_OUTPUT          }
+# -------------------------------------------------------------------------
+INCLUDE [    puts {DEFAULT_MACRO FeatureWriterDataset_FeatureWriter @EvaluateExpression(FDIV,STRING_ENCODED,D:<backslash>gitHub<backslash>SolutialTech<backslash>2024<backslash>12<backslash>sharepoint-fme<backslash>1-dataset<backslash>shp_estado_municipio<backslash><at>Value<openparen>SIGLA_UF<closeparen><backslash><at>Value<openparen>filename<closeparen>.zip,FeatureWriter)}; ]
+FACTORY_DEF {*} WriterFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FEATURE_TABLE_SHIM_SUPPORT INPUT_SPEC_ONLY    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    FACTORY_NAME { FeatureWriter }    WRITER_TYPE { SHAPEFILE }    WRITER_DATASET { "$(FeatureWriterDataset_FeatureWriter)" }    WRITER_SETTINGS { "RUNTIME_MACROS,ENCODING<comma>utf-8<comma>SPATIAL_INDEXES<comma>NONE<comma>COMPRESSED_FILE<comma>No<comma>DIMENSION<comma>AUTO<comma>DATETIME_STORAGE<comma>TIMESTAMP_STRING<comma>ADVANCED<comma><comma>SURFACE_SOLID_STORAGE<comma>PATCH<comma>MEASURES_AS_Z<comma>No<comma>DATASET_SPLITTING<comma>Yes<comma>ENFORCE_ATTRIBUTE_LIMIT<comma>No<comma>DESTINATION_DATASETTYPE_VALIDATION<comma>Yes<comma>REQUIRE_FIRST_ATTRNAME_ALPHA<comma>Yes<comma>PERMIT_NONASCII_FIRST_ATTRNAME<comma>Yes<comma>NETWORK_AUTHENTICATION<comma>,METAFILE,SHAPEFILE" }    WRITER_METAFILE { "ATTRIBUTE_CASE,FIRST_LETTER,ATTRIBUTE_INVALID_CHARS,.,ATTRIBUTE_LENGTH,10,ATTR_TYPE_MAP,varchar<openparen>width<closeparen><comma>fme_varchar<openparen>width<closeparen><comma>varchar<openparen>width<closeparen><comma>fme_varbinary<openparen>width<closeparen><comma>varchar<openparen>width<closeparen><comma>fme_char<openparen>width<closeparen><comma>varchar<openparen>width<closeparen><comma>fme_binary<openparen>width<closeparen><comma>varchar<openparen>254<closeparen><comma>fme_buffer<comma>varchar<openparen>254<closeparen><comma>fme_binarybuffer<comma>varchar<openparen>254<closeparen><comma>fme_xml<comma>varchar<openparen>254<closeparen><comma>fme_json<comma>datetime<comma>fme_datetime<comma>varchar<openparen>12<closeparen><comma>fme_time<comma>date<comma>fme_date<comma>double<comma>fme_real64<comma><quote>number<openparen>31<comma>15<closeparen><quote><comma>fme_real64<comma>double<comma>fme_uint32<comma><quote>number<openparen>11<comma>0<closeparen><quote><comma>fme_uint32<comma>float<comma>fme_real32<comma><quote>number<openparen>15<comma>7<closeparen><quote><comma>fme_real32<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_int64<comma><quote>number<openparen>20<comma>0<closeparen><quote><comma>fme_uint64<comma>logical<comma>fme_boolean<comma>short<comma>fme_int16<comma><quote>number<openparen>6<comma>0<closeparen><quote><comma>fme_int16<comma>short<comma>fme_int8<comma><quote>number<openparen>4<comma>0<closeparen><quote><comma>fme_int8<comma>short<comma>fme_uint8<comma><quote>number<openparen>4<comma>0<closeparen><quote><comma>fme_uint8<comma>long<comma>fme_int32<comma><quote>number<openparen>11<comma>0<closeparen><quote><comma>fme_int32<comma>long<comma>fme_uint16<comma><quote>number<openparen>6<comma>0<closeparen><quote><comma>fme_uint16<comma><quote>number<openparen>width<comma>decimal<closeparen><quote><comma><quote>fme_decimal<openparen>width<comma>decimal<closeparen><quote>,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,<quote>:?*<lt><gt>|,FEATURE_TYPE_LENGTH,0,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile<backslash>SHAPEFILE.fmf,FORMAT_NAME,SHAPEFILE,GEOM_MAP,shapefile_point<comma>fme_point<comma>shapefile_multipoint<comma>fme_point<comma>shapefile_point<comma>fme_text<comma>shapefile_line<comma>fme_line<comma>shapefile_line<comma>fme_arc<comma>shapefile_polygon<comma>fme_polygon<comma>shapefile_polygon<comma>fme_rectangle<comma>shapefile_polygon<comma>fme_rounded_rectangle<comma>shapefile_polygon<comma>fme_ellipse<comma>shapefile_multipatch<comma>fme_surface<comma>shapefile_multipatch<comma>fme_solid<comma>shapefile_first_feature<comma>fme_no_geom<comma>shapefile_null<comma>fme_no_geom<comma>shapefile_polygon<comma>fme_raster<comma>shapefile_polygon<comma>fme_point_cloud<comma>shapefile_polygon<comma>fme_voxel_grid<comma>shapefile_first_feature<comma>fme_collection,READER_ATTR_INDEX_TYPES,Indexed,READER_FORMAT_TYPE,DYNAMIC,READER_USES_DEF,yes,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,no,WORKBENCH_CANNED_SCHEMA,,WRITER,SHAPEFILE,WRITER_ATTR_INDEX_TYPES,Indexed,WRITER_DEFLINE_PARMS,<quote>GUI<space>NAMEDGROUP<space>shape_layer_group<space>shape_dimension<space>Shapefile<quote><comma><comma><quote>GUI<space>LOOKUP_CHOICE<space>shape_dimension<space>Dimension<lt>space<gt>From<lt>space<gt>First<lt>space<gt>Feature<comma>AUTO%2D<comma>2D%2D<lt>space<gt>+<lt>space<gt>Measures<comma>2DM%3D<lt>space<gt>+<lt>space<gt>Measures<comma>3DM<space>Output<space>Dimension<quote><comma>AUTO,WRITER_DEF_LINE_TEMPLATE,<opencurly>FME_GEN_GROUP_NAME<closecurly><comma>shapefile_type<comma><opencurly>FME_GEN_GEOMETRY<closecurly><comma>shape_dimension<comma>AUTO,WRITER_FORMAT_PARAMETER,DEFAULT_GEOMETRY_TYPE<comma>shapefile_first_feature<comma>ADVANCED_PARMS<comma><quote>SHAPEFILE_OUT_SURFACE_SOLID_STORAGE<space>SHAPEFILE_OUT_MEASURES_AS_Z<quote><comma>FEATURE_TYPE_NAME<comma>Shapefile<comma>FEATURE_TYPE_DEFAULT_NAME<comma>Shapefile1<comma>READER_DATASET_HINT<comma><quote>Select<space>the<space>Esri<space>Shapefile<openparen>s<closeparen><quote><comma>WRITER_DATASET_HINT<comma><quote>Specify<space>a<space>folder<space>for<space>the<space>Esri<space>Shapefile<quote>,WRITER_FORMAT_TYPE,DYNAMIC,WRITER_HAS_DEFLINE_ATTRS,yes,WRITER_USES_DEF,yes" }    WRITER_FEATURE_TYPES { "<at>Value<openparen>SIGLA_UF<closeparen>_<at>Value<openparen>NM_MUN<closeparen>:BR_Municipios_2022,ftp_feature_type_name_exp,<at>Value<openparen>SIGLA_UF<closeparen>_<at>Value<openparen>NM_MUN<closeparen>,ftp_writer,SHAPEFILE,ftp_geometry,shapefile_first_feature,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,<lt>lt<gt>Unused<lt>gt<gt>,ftp_attribute_source,0,ftp_user_attributes,NM_MUN<comma>varchar<lt>openparen<gt>50<lt>closeparen<gt><comma>filename<comma>varchar<lt>openparen<gt>50<lt>closeparen<gt><comma>CD_MUN<comma>varchar<lt>openparen<gt>7<lt>closeparen<gt><comma>SIGLA_UF<comma>varchar<lt>openparen<gt>2<lt>closeparen<gt><comma>AREA_KM2<comma>double,ftp_user_attribute_values,<comma><comma><comma><comma>,ftp_format_parameters,shape_layer_group<comma><comma>shape_dimension<comma>AUTO" }    WRITER_PARAMS { "ADVANCED,,COMPRESSED_FILE,No,DATASET_SPLITTING,Yes,DATETIME_STORAGE,TIMESTAMP_STRING,DESTINATION_DATASETTYPE_VALIDATION,Yes,DIMENSION,AUTO,ENCODING,utf-8,ENFORCE_ATTRIBUTE_LIMIT,No,MEASURES_AS_Z,No,NETWORK_AUTHENTICATION,,PERMIT_NONASCII_FIRST_ATTRNAME,Yes,REQUIRE_FIRST_ATTRNAME_ALPHA,Yes,SPATIAL_INDEXES,NONE,SURFACE_SOLID_STORAGE,PATCH" }    DATASET_ATTR { "_dataset" }    FEATURE_TYPE_LIST_ATTR { "_feature_types" }    TOTAL_FEATURES_WRITTEN_ATTR { "_total_features_written" }    OUTPUT_PORTS { "" }    INPUT BR_Municipios_2022 FEATURE_TYPE StringCaseChanger_OUTPUT  @SupplyAttributes(ENCODED,fme_template_feature_type,BR_Municipios_2022)  @FeatureType(ENCODED,@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>SIGLA_UF<closeparen>_<at>Value<openparen>NM_MUN<closeparen>,FeatureWriter))
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
